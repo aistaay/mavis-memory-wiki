@@ -114,17 +114,19 @@
       "entries": [
         {
           "date": "2026-05-31",
-          "title": "Dynamic baseline alerts, aggressive paper mode, and n8n repair",
+          "title": "Crypto Paper Trading Status",
           "notes": [
-            "Set up paper-only market monitoring for Bitkub assets: XRP, ADA, BTC, ETH, and KUB.",
-            "Dynamic baseline hierarchy: open paper lot weighted entry first; otherwise blended market baseline using anchored VWAP, EMA trend, swing midpoint, and ATR-adjusted thresholds.",
-            "Aggressive comparison profile created with a 3% daily stretch target and -2.5% daily kill switch; still simulation only, no real trades.",
-            "Buy-and-hold benchmark remains 831 XRP + 28,794 ADA for strategy comparison.",
-            "Hermes cron runs the live paper automation: dynamic price-alert watchdog every 2 minutes, aggressive 3% paper trader every 5 minutes, dip ladder watchdog every 15 minutes.",
-            "n8n was repaired and is reachable at localhost:5678; workflow Bitkub price alerts → Mavis paper decision is active and executing successfully every 2 minutes.",
-            "n8n currently runs the Bitkub sensor in --no-post mode to avoid duplicate Telegram alerts while Hermes cron handles live alert/trading decisions.",
-            "Paper trade logs: high_risk_trades.csv for aggressive profile; trades.csv for conservative/dip ladder profile.",
-            "Latest snapshots: high_risk_latest_snapshot.json and dip_ladder_latest_snapshot.json in the xrp-paper-trader folder."
+            "Paper-only status; no real trades are authorized or executed.",
+            "Latest paper trade: SELL_XRP 21.889872 at 43.360000 THB on 2026-05-31T14:30:42+00:00; latest recommendation/status: HOLD.",
+            "Aggressive daily P/L: -0.56%; current 256,178.95 THB vs start 257,614.81 THB; guard ACTIVE (target 3.0%, kill -2.5%).",
+            "Benchmark: 831 XRP + 28,794 ADA; paper strategy value 256,178.95 THB vs buy-and-hold 256,322.88 THB (-143.93 THB / -0.06% vs hold).",
+            "Current mode: paper_aggressive_daily_3pct_target; latest recommendation/status HOLD; snapshot 2026-05-31T14:35:52+00:00.",
+            "Conservative/dip ladder mode: paper_only_dip_ladder; actions this run 0; open lots {\"ADA\": 0, \"BTC\": 0, \"ETH\": 0, \"KUB\": 0, \"XRP\": 0}; snapshot 2026-05-31T14:24:31+00:00.",
+            "n8n workflow Bitkub price alerts → Mavis paper decision is active; latest execution #88 finished success at 2026-05-31 14:36:05.014 UTC. It is used as a health/sensor runner in --no-post mode, not the live trader.",
+            "Hermes cron status: Crypto multi-asset dip ladder watchdog: every 15m, last ok at 2026-05-31T21:24:31.758944+07:00, next 2026-05-31T21:39:31.758944+07:00; Bitkub dynamic baseline price-alert watchdog: every 2m, last ok at 2026-05-31T21:34:49.449875+07:00, next 2026-05-31T21:36:49.449875+07:00; Aggressive 3pct daily-target paper trader: every 5m, last ok at 2026-05-31T21:35:52.720482+07:00, next 2026-05-31T21:40:52.720482+07:00.",
+            "Trade counts: aggressive 17 rows in high_risk_trades.csv; conservative 5 rows in trades.csv.",
+            "Logs/snapshots live in Google Drive Hermes/xrp-paper-trader: high_risk_latest_snapshot.json, dip_ladder_latest_snapshot.json, high_risk_trades.csv, trades.csv; Hermes cron state is in ~/.hermes/cron/jobs.json.",
+            "Warnings: none."
           ]
         }
       ]
@@ -303,17 +305,19 @@
       "entries": [
         {
           "date": "2026-05-31",
-          "title": "Dynamic baseline alerts, aggressive paper mode, and n8n repair",
+          "title": "Crypto Paper Trading Status",
           "notes": [
-            "Set up paper-only market monitoring for Bitkub assets: XRP, ADA, BTC, ETH, and KUB.",
-            "Dynamic baseline hierarchy: open paper lot weighted entry first; otherwise blended market baseline using anchored VWAP, EMA trend, swing midpoint, and ATR-adjusted thresholds.",
-            "Aggressive comparison profile created with a 3% daily stretch target and -2.5% daily kill switch; still simulation only, no real trades.",
-            "Buy-and-hold benchmark remains 831 XRP + 28,794 ADA for strategy comparison.",
-            "Hermes cron runs the live paper automation: dynamic price-alert watchdog every 2 minutes, aggressive 3% paper trader every 5 minutes, dip ladder watchdog every 15 minutes.",
-            "n8n was repaired and is reachable at localhost:5678; workflow Bitkub price alerts → Mavis paper decision is active and executing successfully every 2 minutes.",
-            "n8n currently runs the Bitkub sensor in --no-post mode to avoid duplicate Telegram alerts while Hermes cron handles live alert/trading decisions.",
-            "Paper trade logs: high_risk_trades.csv for aggressive profile; trades.csv for conservative/dip ladder profile.",
-            "Latest snapshots: high_risk_latest_snapshot.json and dip_ladder_latest_snapshot.json in the xrp-paper-trader folder."
+            "Paper-only status; no real trades are authorized or executed.",
+            "Latest paper trade: SELL_XRP 21.889872 at 43.360000 THB on 2026-05-31T14:30:42+00:00; latest recommendation/status: HOLD.",
+            "Aggressive daily P/L: -0.56%; current 256,178.95 THB vs start 257,614.81 THB; guard ACTIVE (target 3.0%, kill -2.5%).",
+            "Benchmark: 831 XRP + 28,794 ADA; paper strategy value 256,178.95 THB vs buy-and-hold 256,322.88 THB (-143.93 THB / -0.06% vs hold).",
+            "Current mode: paper_aggressive_daily_3pct_target; latest recommendation/status HOLD; snapshot 2026-05-31T14:35:52+00:00.",
+            "Conservative/dip ladder mode: paper_only_dip_ladder; actions this run 0; open lots {\"ADA\": 0, \"BTC\": 0, \"ETH\": 0, \"KUB\": 0, \"XRP\": 0}; snapshot 2026-05-31T14:24:31+00:00.",
+            "n8n workflow Bitkub price alerts → Mavis paper decision is active; latest execution #88 finished success at 2026-05-31 14:36:05.014 UTC. It is used as a health/sensor runner in --no-post mode, not the live trader.",
+            "Hermes cron status: Crypto multi-asset dip ladder watchdog: every 15m, last ok at 2026-05-31T21:24:31.758944+07:00, next 2026-05-31T21:39:31.758944+07:00; Bitkub dynamic baseline price-alert watchdog: every 2m, last ok at 2026-05-31T21:34:49.449875+07:00, next 2026-05-31T21:36:49.449875+07:00; Aggressive 3pct daily-target paper trader: every 5m, last ok at 2026-05-31T21:35:52.720482+07:00, next 2026-05-31T21:40:52.720482+07:00.",
+            "Trade counts: aggressive 17 rows in high_risk_trades.csv; conservative 5 rows in trades.csv.",
+            "Logs/snapshots live in Google Drive Hermes/xrp-paper-trader: high_risk_latest_snapshot.json, dip_ladder_latest_snapshot.json, high_risk_trades.csv, trades.csv; Hermes cron state is in ~/.hermes/cron/jobs.json.",
+            "Warnings: none."
           ]
         }
       ]
@@ -322,8 +326,8 @@
   "dailyLogs": [
     {
       "date": "2026-05-31",
-      "title": "Crypto Paper Trading Automation",
-      "summary": "Built and repaired the paper-only Bitkub trading automation: dynamic baselines, aggressive 3% stretch profile, Hermes cron watchdogs, and n8n scheduled health/sensor workflow.",
+      "title": "Crypto Paper Trading Status",
+      "summary": "Paper-only crypto status from 2026-05-31T14:35:52+00:00: HOLD; Aggressive daily P/L: -0.56%; current 256,178.95 THB vs start 257,614.81 THB; guard ACTIVE (target 3.0%, kill -2.5%). Trade counts: aggressive 17 rows in high_risk_trades.csv; conservative 5 rows in trades.csv.",
       "subjects": [
         "crypto-paper-trading"
       ],
@@ -331,11 +335,12 @@
         "crypto-paper-trading"
       ],
       "highlights": [
-        "Dynamic position-aware baselines added for price alerts",
-        "Aggressive paper profile added with +3% daily target and -2.5% kill switch",
-        "n8n repaired and verified with successful scheduled executions",
-        "Hermes cron remains the live paper-trading engine; no real trading enabled",
-        "Paper trade locations documented: high_risk_trades.csv, trades.csv, latest snapshot JSON files"
+        "Paper-only status; no real trades are authorized or executed.",
+        "Latest paper trade: SELL_XRP 21.889872 at 43.360000 THB on 2026-05-31T14:30:42+00:00; latest recommendation/status: HOLD.",
+        "Aggressive daily P/L: -0.56%; current 256,178.95 THB vs start 257,614.81 THB; guard ACTIVE (target 3.0%, kill -2.5%).",
+        "Benchmark: 831 XRP + 28,794 ADA; paper strategy value 256,178.95 THB vs buy-and-hold 256,322.88 THB (-143.93 THB / -0.06% vs hold).",
+        "Current mode: paper_aggressive_daily_3pct_target; latest recommendation/status HOLD; snapshot 2026-05-31T14:35:52+00:00.",
+        "Conservative/dip ladder mode: paper_only_dip_ladder; actions this run 0; open lots {\"ADA\": 0, \"BTC\": 0, \"ETH\": 0, \"KUB\": 0, \"XRP\": 0}; snapshot 2026-05-31T14:24:31+00:00."
       ]
     },
     {
