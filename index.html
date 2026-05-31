@@ -198,6 +198,30 @@
     border-bottom: 1px solid var(--border);
   }
 
+  .dashboard {
+    background: linear-gradient(180deg, rgba(88,166,255,0.10), rgba(22,27,34,1));
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  .dashboard h3 { font-size: 18px; margin-bottom: 4px; }
+  .dashboard .subtle { color: var(--text-dim); font-size: 12px; margin-bottom: 16px; }
+  .dash-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 12px; margin-bottom: 16px; }
+  .dash-tile { background: rgba(13,17,23,0.70); border: 1px solid var(--border); border-radius: 8px; padding: 12px; }
+  .dash-tile .label { color: var(--text-dim); font-size: 11px; text-transform: uppercase; letter-spacing: .04em; }
+  .dash-tile .value { font-size: 18px; font-weight: 700; margin-top: 4px; }
+  .dash-tile .small { color: var(--text-dim); font-size: 12px; margin-top: 2px; }
+  .positive { color: var(--green); }
+  .negative { color: var(--red); }
+  .neutral { color: var(--text-dim); }
+  .asset-table { width: 100%; border-collapse: collapse; font-size: 12px; overflow-x: auto; display: block; }
+  .asset-table th, .asset-table td { border-bottom: 1px solid var(--border); padding: 8px 10px; text-align: right; white-space: nowrap; }
+  .asset-table th:first-child, .asset-table td:first-child { text-align: left; }
+  .asset-table th { color: var(--text-dim); font-weight: 600; }
+  .note-list { margin-top: 14px; padding-left: 18px; }
+  .note-list li { color: var(--text-dim); font-size: 12px; margin-bottom: 4px; }
+
   footer {
     text-align: center;
     padding: 32px;
@@ -394,7 +418,8 @@ function showProjectDetail(id) {
   if (!p) return;
   document.getElementById('projectDetailTitle').innerHTML = `${p.name} <span class="status ${p.status}">${p.status}</span>`;
   document.getElementById('projectDetailMeta').textContent = `${p.entries.length} entries · ${p.subjectIds.length} related subjects`;
-  document.getElementById('projectDetailEntries').innerHTML = p.entries.map(e => `
+  const dashboard = p.cryptoDashboard ? cryptoDashboardHtml(p.cryptoDashboard) : '';
+  document.getElementById('projectDetailEntries').innerHTML = dashboard + p.entries.map(e => `
     <div class="entry">
       <h4>${e.title}</h4>
       <div class="entry-date">${formatDate(e.date)}</div>
@@ -410,6 +435,90 @@ function showProjectDetail(id) {
     : '<p style="color:var(--text-dim)">No related subjects yet.</p>';
 
   showPage('project-detail');
+}
+
+function cryptoDashboardHtml(d) {
+  const p = d.portfolio || {};
+  const holdings = d.holdings || [];
+  const assets = d.assets || [];
+  const m = d.marketRead || {};
+  const auto = d.automation || {};
+  const holdingTiles = holdings.map(h => `
+    <div class="dash-tile">
+      <div class="label">${h.asset}</div>
+      <div class="value">${fmtAmount(h.amount, h.asset)}</div>
+      <div class="small">≈ ${fmtThb(h.valueThb)}</div>
+    </div>
+  `).join('');
+  const rows = assets.map(a => `
+    <tr>
+      <td><strong>${a.asset}</strong></td>
+      <td>${fmtThb(a.livePriceThb)}</td>
+      <td>${fmtThb(a.baselinePriceThb)}</td>
+      <td>${a.baselineSourceLabel || a.baselineSource || '—'}</td>
+      <td class="${numClass(a.moveFromBaselinePct)}">${fmtPct(a.moveFromBaselinePct)}</td>
+      <td>${fmtThb(a.volumeThb24h)}</td>
+      <td>${fmtPct(a.spreadPct)}</td>
+      <td>${fmtPct(a.atrPct)}</td>
+      <td>${fmtPct(a.dipTriggerPct)} / ${fmtPct(a.jumpTriggerPct)}</td>
+    </tr>
+  `).join('');
+  const lastTrade = m.lastTrade ? `${m.lastTrade.action} ${m.lastTrade.amount_xrp} @ ${m.lastTrade.price_thb} THB` : '—';
+  const latestN8n = (auto.n8nRecentExecutions || [])[0];
+  return `
+    <div class="dashboard">
+      <h3>Crypto Executive Dashboard</h3>
+      <div class="subtle">Paper-only · Updated ${d.lastUpdatedIso || '—'} · ${d.mode || '—'}</div>
+
+      <div class="dash-grid">
+        <div class="dash-tile"><div class="label">Portfolio value</div><div class="value">${fmtThb(p.valueThb)}</div><div class="small">Daily ${fmtPct(p.dailyPnlPct)} · Status ${d.dailyStatus || '—'}</div></div>
+        <div class="dash-tile"><div class="label">Vs buy & hold</div><div class="value ${numClass(p.vsHoldThb)}">${fmtSignedThb(p.vsHoldThb)}</div><div class="small">${fmtPct(p.vsHoldPct)}</div></div>
+        <div class="dash-tile"><div class="label">Current action</div><div class="value">${d.recommendedAction || d.paperStatus || '—'}</div><div class="small">Last trade: ${lastTrade}</div></div>
+        <div class="dash-tile"><div class="label">Automation</div><div class="value">${latestN8n?.status || '—'}</div><div class="small">n8n ${auto.n8nSchedule || '—'} · last checked ${auto.n8nLastCheckedIso || '—'}</div></div>
+      </div>
+
+      <h4 style="margin:12px 0 8px;">Current holdings</h4>
+      <div class="dash-grid">${holdingTiles}</div>
+
+      <h4 style="margin:16px 0 8px;">Baselines, live prices, volume</h4>
+      <table class="asset-table">
+        <thead><tr><th>Asset</th><th>Live</th><th>Baseline</th><th>Baseline source</th><th>Move</th><th>24h volume</th><th>Spread</th><th>ATR</th><th>Dip / Jump triggers</th></tr></thead>
+        <tbody>${rows}</tbody>
+      </table>
+
+      <div class="dash-grid" style="margin-top:16px;">
+        <div class="dash-tile"><div class="label">Selected signal</div><div class="small">${m.selectedSignal || '—'}</div></div>
+        <div class="dash-tile"><div class="label">Scores / Sentiment</div><div class="small">XRP ${m.xrpScore ?? '—'} · ADA ${m.adaScore ?? '—'} · ${m.sentimentRegime || '—'}</div></div>
+        <div class="dash-tile"><div class="label">Fee credit</div><div class="small">${fmtThb(p.feeCreditThb)} available · ${m.kubFeeCredit?.status || 'KUB status —'}</div></div>
+      </div>
+
+      <ul class="note-list">${(d.executiveNotes || []).map(n => `<li>${n}</li>`).join('')}</ul>
+    </div>
+  `;
+}
+
+function fmtThb(v) {
+  if (v === null || v === undefined || isNaN(Number(v))) return '—';
+  return Number(v).toLocaleString(undefined, {maximumFractionDigits: 2}) + ' THB';
+}
+function fmtSignedThb(v) {
+  if (v === null || v === undefined || isNaN(Number(v))) return '—';
+  const n = Number(v);
+  return (n >= 0 ? '+' : '') + n.toLocaleString(undefined, {maximumFractionDigits: 2}) + ' THB';
+}
+function fmtPct(v) {
+  if (v === null || v === undefined || isNaN(Number(v))) return '—';
+  const n = Number(v);
+  return (n >= 0 ? '+' : '') + n.toFixed(2) + '%';
+}
+function fmtAmount(v, asset) {
+  if (v === null || v === undefined || isNaN(Number(v))) return '—';
+  const digits = ['BTC','ETH'].includes(asset) ? 8 : asset === 'THB' ? 2 : 4;
+  return Number(v).toLocaleString(undefined, {maximumFractionDigits: digits}) + ' ' + asset;
+}
+function numClass(v) {
+  if (v === null || v === undefined || isNaN(Number(v))) return 'neutral';
+  return Number(v) > 0 ? 'positive' : Number(v) < 0 ? 'negative' : 'neutral';
 }
 
 function showSubjectDetail(id) {

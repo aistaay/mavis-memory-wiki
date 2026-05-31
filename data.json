@@ -97,7 +97,7 @@
       "id": "crypto-paper-trading",
       "name": "Crypto Paper Trading",
       "status": "active",
-      "summary": "Paper-only Bitkub crypto trading system for XRP/ADA/BTC with dynamic baselines, aggressive comparison mode, n8n health automation, and benchmark tracking against buy-and-hold.",
+      "summary": "Paper-only Bitkub crypto dashboard for BTC/ETH/ADA/XRP/THB holdings, live prices, baselines, volume, n8n event-wake automation, and benchmark tracking.",
       "tags": [
         "crypto",
         "paper-trading",
@@ -114,8 +114,10 @@
       "entries": [
         {
           "date": "2026-05-31",
-          "title": "Crypto Paper Trading Status",
+          "title": "Crypto Paper Trading Status + Executive Dashboard",
           "notes": [
+            "Executive dashboard added at top: holdings, portfolio value, live prices, baseline source/price, volume, spread, ATR, trigger levels, selected signal, n8n status.",
+            "Current paper holdings: BTC 0.00000000, ETH 0.00000000, ADA 3.599250, XRP 332.152099, THB 241742.66.",
             "Paper-only status; no real trades are authorized or executed.",
             "Latest paper trade: SELL_XRP 21.889872 at 43.360000 THB on 2026-05-31T14:30:42+00:00; latest recommendation/status: HOLD.",
             "Aggressive daily P/L: -0.56%; current 256,178.95 THB vs start 257,614.81 THB; guard ACTIVE (target 3.0%, kill -2.5%).",
@@ -129,7 +131,242 @@
             "Warnings: none."
           ]
         }
-      ]
+      ],
+      "cryptoDashboard": {
+        "lastUpdatedIso": "2026-05-31T15:07:32+00:00",
+        "paperOnly": true,
+        "mode": "paper_aggressive_daily_3pct_target",
+        "recommendedAction": "HOLD",
+        "paperStatus": "HOLD",
+        "dailyStatus": "ACTIVE",
+        "holdings": [
+          {
+            "asset": "BTC",
+            "amount": 0.0,
+            "priceThb": 2400849.98,
+            "valueThb": 0.0
+          },
+          {
+            "asset": "ETH",
+            "amount": 0.0,
+            "priceThb": 65531.62,
+            "valueThb": 0.0
+          },
+          {
+            "asset": "ADA",
+            "amount": 3.5992499999999836,
+            "priceThb": 7.64,
+            "valueThb": 27.498269999999874
+          },
+          {
+            "asset": "XRP",
+            "amount": 332.1520985040867,
+            "priceThb": 43.37,
+            "valueThb": 14405.43651212224
+          },
+          {
+            "asset": "THB",
+            "amount": 241742.65889257495,
+            "priceThb": 1,
+            "valueThb": 241742.65889257495
+          }
+        ],
+        "portfolio": {
+          "valueThb": 256182.20072416725,
+          "pnlThb": 1050.1407241672568,
+          "pnlXrp": -82.84878266256055,
+          "pnlXrpPct": -1.383805552299422,
+          "dailyPnlPct": -0.5561036860046831,
+          "dailyTargetPct": 3.0,
+          "dailyKillSwitchPct": -2.5,
+          "vsHoldThb": 426.89072416725685,
+          "vsHoldPct": 0.1669137286601341,
+          "feeCreditThb": 1850.3074708790034,
+          "cashThb": 241742.65889257495,
+          "tradeCount": 17
+        },
+        "assets": [
+          {
+            "asset": "BTC",
+            "holding": 0.0,
+            "livePriceThb": 2400849.98,
+            "bidThb": 2400849.97,
+            "askThb": 2401986.35,
+            "spreadPct": 0.047310010733403546,
+            "pct24": -0.21,
+            "volumeThb24h": 74207798.73,
+            "baselinePriceThb": 2408734.42004258,
+            "baselineSource": "market_blend_vwap_ema_swing",
+            "baselineSourceLabel": "Market blend: VWAP + EMA + swing midpoint",
+            "moveFromBaselinePct": -0.32732708002074534,
+            "atrPct": 0.1396083228009534,
+            "dipTriggerPct": -2.0,
+            "jumpTriggerPct": 2.0,
+            "fastMoveTriggerPct": 1.25,
+            "swingLow24h": 2397558.84,
+            "swingHigh24h": 2418580.0,
+            "vwap24h": 2410089.900932114,
+            "ema20": 2406797.7708121086,
+            "ema50": 2408984.60919664
+          },
+          {
+            "asset": "ETH",
+            "holding": 0.0,
+            "livePriceThb": 65531.62,
+            "bidThb": 65499.37,
+            "askThb": 65544.75,
+            "spreadPct": 0.0692351408770304,
+            "pct24": -0.67,
+            "volumeThb24h": 16972748.66,
+            "baselinePriceThb": 65891.60472320057,
+            "baselineSource": "market_blend_vwap_ema_swing",
+            "baselineSourceLabel": "Market blend: VWAP + EMA + swing midpoint",
+            "moveFromBaselinePct": -0.546328663132121,
+            "atrPct": 0.18763243061681353,
+            "dipTriggerPct": -2.0,
+            "jumpTriggerPct": 2.0,
+            "fastMoveTriggerPct": 1.25,
+            "swingLow24h": 65415.43,
+            "swingHigh24h": 66301.68,
+            "vwap24h": 65947.02140638084,
+            "ema20": 65802.63541631629,
+            "ema50": 65925.32643622867
+          },
+          {
+            "asset": "ADA",
+            "holding": 3.5992499999999836,
+            "livePriceThb": 7.64,
+            "bidThb": 7.63,
+            "askThb": 7.64,
+            "spreadPct": 0.13089005235601817,
+            "pct24": -0.65,
+            "volumeThb24h": 5427622.23,
+            "baselinePriceThb": 7.7,
+            "baselineSource": "high_risk_last_ada_trade_reference",
+            "baselineSourceLabel": "Aggressive last ADA trade reference",
+            "moveFromBaselinePct": -0.7792207792207856,
+            "atrPct": 0.29917726252804816,
+            "dipTriggerPct": -1.5,
+            "jumpTriggerPct": 1.5,
+            "fastMoveTriggerPct": 1.0,
+            "swingLow24h": 7.62,
+            "swingHigh24h": 7.77,
+            "vwap24h": 7.721497277381655,
+            "ema20": 7.69867056586389,
+            "ema50": 7.714113268132768
+          },
+          {
+            "asset": "XRP",
+            "holding": 332.1520985040867,
+            "livePriceThb": 43.37,
+            "bidThb": 43.38,
+            "askThb": 43.4,
+            "spreadPct": 0.046082949308746596,
+            "pct24": -0.78,
+            "volumeThb24h": 19962299.7,
+            "baselinePriceThb": 43.36,
+            "baselineSource": "high_risk_last_xrp_trade_reference",
+            "baselineSourceLabel": "Aggressive last XRP trade reference",
+            "moveFromBaselinePct": 0.023062730627301686,
+            "atrPct": 0.24210283606179253,
+            "dipTriggerPct": -1.25,
+            "jumpTriggerPct": 1.25,
+            "fastMoveTriggerPct": 0.9,
+            "swingLow24h": 43.33,
+            "swingHigh24h": 44.09,
+            "vwap24h": 43.736017091590234,
+            "ema20": 43.610595149787386,
+            "ema50": 43.66528668252344
+          },
+          {
+            "asset": "KUB",
+            "holding": 0,
+            "livePriceThb": 26.29,
+            "bidThb": 26.12,
+            "askThb": 26.29,
+            "spreadPct": 0.6466337010269995,
+            "pct24": -0.42,
+            "volumeThb24h": 2637579.44,
+            "baselinePriceThb": 26.265954622106406,
+            "baselineSource": "market_blend_vwap_ema_swing",
+            "baselineSourceLabel": "Market blend: VWAP + EMA + swing midpoint",
+            "moveFromBaselinePct": 0.09154579850433256,
+            "atrPct": 0.6846709775580039,
+            "dipTriggerPct": -3.0,
+            "jumpTriggerPct": 3.0,
+            "fastMoveTriggerPct": 2.0,
+            "swingLow24h": 26.04,
+            "swingHigh24h": 26.45,
+            "vwap24h": 26.270000115545447,
+            "ema20": 26.26867160265806,
+            "ema50": 26.26235392875689
+          }
+        ],
+        "marketRead": {
+          "selectedSignal": "XRP 5m +0.00% | 15m -0.05% | 30m -0.05% | BTC 15m -0.10% | net edge -0.40%",
+          "xrpScore": 0,
+          "adaScore": 0,
+          "sentimentRegime": "neutral_unavailable",
+          "lastTrade": {
+            "ts": "2026-05-31T14:30:42+00:00",
+            "action": "SELL_XRP",
+            "amount_xrp": "21.889872",
+            "price_thb": "43.360000",
+            "fee_thb": "0.0000",
+            "reserve_xrp": "331.000000",
+            "active_xrp": "1.152099",
+            "thb_cash": "241742.66",
+            "score": "-4",
+            "reasons": "XRP 15m momentum negative (-0.58%) | Fast SMA below slow SMA | BTC 15m risk-off (-0.18%) | Volume spike confirms selloff (2.8x median) | Efficiency OK: edge 0.57% vs hurdle 0.44% = net 0.13% | X sentiment neutral: neutral_unavailable | fee credit used 2.37 THB"
+          },
+          "kubFeeCredit": {
+            "bonus_pct": 10.0,
+            "break_even_ask_thb": 32.91770573566085,
+            "conversion_price_thb": 30.0,
+            "current_fee_credit_thb": 1850.3074708790034,
+            "fee_credit_per_kub_thb": 33.0,
+            "kub_ask_thb": 26.29,
+            "kub_bid_thb": 26.11,
+            "kub_last_thb": 26.11,
+            "needed_fee_credit_thb": 71.05903455225098,
+            "projected_weekly_fees_thb": 1921.3665054312544,
+            "reason": "Expected near-term fee usage is too small to justify locking value into non-refundable fee credit.",
+            "status": "HOLD",
+            "ts": "2026-05-31T15:02:24+00:00"
+          }
+        },
+        "automation": {
+          "n8nWorkflow": "Bitkub price alerts → Mavis paper decision",
+          "n8nSchedule": "Every 1 minute, event-wake mode",
+          "n8nRecentExecutions": [
+            {
+              "id": 110,
+              "status": "success",
+              "startedAt": "2026-05-31 15:07:05.015",
+              "stoppedAt": "2026-05-31 15:07:07.622"
+            },
+            {
+              "id": 109,
+              "status": "success",
+              "startedAt": "2026-05-31 15:06:05.011",
+              "stoppedAt": "2026-05-31 15:06:07.866"
+            },
+            {
+              "id": 108,
+              "status": "success",
+              "startedAt": "2026-05-31 15:05:05.016",
+              "stoppedAt": "2026-05-31 15:05:07.317"
+            }
+          ],
+          "n8nLastCheckedIso": "2026-05-31T15:07:07+00:00"
+        },
+        "executiveNotes": [
+          "Paper-only. No real exchange orders are authorized or executed.",
+          "THB cash is high because the aggressive paper profile recently sold most XRP/ADA and is mostly waiting in cash.",
+          "XRP/ADA watch references now follow the latest aggressive paper trade levels, not only VWAP/EMA baselines.",
+          "BTC, ETH, and KUB remain market-baseline monitored unless a paper position is added."
+        ]
+      }
     }
   ],
   "subjects": [
