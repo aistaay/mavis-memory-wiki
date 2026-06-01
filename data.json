@@ -735,7 +735,7 @@
     {
       "date": "2026-06-01",
       "title": "Crypto Paper Trading Dashboard Update",
-      "summary": "V2 paper trading: portfolio 251,621.55 THB, daily P/L +0.20%, 3 paper trades (ADA→BTC/ETH/THB), 1 open position P0001 LONG XRP 100, HOLD.",
+      "summary": "V2 paper trading: portfolio 248,014.39 THB, daily P/L -1.24%, 7 paper trades (ADA→BTC/ETH/THB/KUB allocations), 1 open position P0001 LONG XRP 100, HOLD.",
       "subjects": [
         "crypto-paper-trading"
       ],
@@ -743,13 +743,13 @@
         "crypto-paper-trading"
       ],
       "highlights": [
-        "Paper portfolio: 251,621.55 THB · Daily P/L: +0.20% (+498.63 THB)",
-        "3 paper trades: manual treasury allocation 1500 ADA → BTC/ETH/THB at market",
-        "Open position: P0001 LONG XRP 100 @ 42.35 THB, target 42.858200000000004, stop 41.8418",
-        "Recommended: HOLD · Daily guard ACTIVE (target +3.0%, kill -2.5%)",
-        "Vs V2 buy-and-hold: -149.13 THB (-0.0592%)",
-        "V1 30k ADA churn archived; V2 small-increment planned positions active",
-        "Hermes cron: 3 watchdogs running, all last-ok at ~20:08-20:11 +07 today"
+        "Paper portfolio: 248,014.39 THB · Daily P/L: -1.24% (-3,108.53 THB)",
+        "7 paper trades: manual treasury allocations 1500 ADA → BTC/ETH/THB, then 10000 ADA → BTC/ETH/THB/KUB at market",
+        "Open position: P0001 LONG XRP 100 @ 42.35 THB, sell ≥ 42.86 THB or stop ≤ 41.84 THB",
+        "Current holdings include XRP, ADA, BTC, ETH, KUB, and THB cash.",
+        "Vs V2 buy-and-hold: -447.68 THB (-0.1802%)",
+        "Trade List now shows 10 rows first, with expandable older rows and filters for open/closed/week/month/year.",
+        "Hermes cron remains on 3-hour alert cadence."
       ]
     },
     {
