@@ -508,17 +508,19 @@ function cryptoDashboardHtml(d) {
       <h4 style="margin:12px 0 8px;">Current holdings</h4>
       <div class="dash-grid">${holdingTiles}</div>
 
-      <h4 style="margin:16px 0 8px;">Baselines, live prices, volume</h4>
-      <table class="asset-table">
-        <thead><tr><th>Asset</th><th>Live</th><th>Baseline</th><th>Baseline source</th><th>Move</th><th>24h volume</th><th>Spread</th><th>ATR</th><th>Dip / Jump triggers</th></tr></thead>
-        <tbody>${rows}</tbody>
-      </table>
+      <details style="margin:16px 0 12px; border:1px solid var(--border); border-radius:8px; padding:12px; background:rgba(13,17,23,0.35);">
+        <summary style="cursor:pointer; font-weight:600;">Baselines, live prices, volume</summary>
+        <table class="asset-table" style="margin-top:10px;">
+          <thead><tr><th>Asset</th><th>Live</th><th>Baseline</th><th>Baseline source</th><th>Move</th><th>24h volume</th><th>Spread</th><th>ATR</th><th>Dip / Jump triggers</th></tr></thead>
+          <tbody>${rows}</tbody>
+        </table>
 
-      <div class="dash-grid" style="margin-top:16px;">
-        <div class="dash-tile"><div class="label">Selected signal</div><div class="small">${m.selectedSignal || '—'}</div></div>
-        <div class="dash-tile"><div class="label">Scores / Sentiment</div><div class="small">XRP ${m.xrpScore ?? '—'} · ADA ${m.adaScore ?? '—'} · ${m.sentimentRegime || '—'}</div></div>
-        <div class="dash-tile"><div class="label">Fee credit</div><div class="small">${fmtThb(p.feeCreditThb)} available · ${m.kubFeeCredit?.status || 'KUB status —'}</div></div>
-      </div>
+        <div class="dash-grid" style="margin-top:16px;">
+          <div class="dash-tile"><div class="label">Selected signal</div><div class="small">${m.selectedSignal || '—'}</div></div>
+          <div class="dash-tile"><div class="label">Scores / Sentiment</div><div class="small">XRP ${m.xrpScore ?? '—'} · ADA ${m.adaScore ?? '—'} · ${m.sentimentRegime || '—'}</div></div>
+          <div class="dash-tile"><div class="label">Fee credit</div><div class="small">${fmtThb(p.feeCreditThb)} available · ${m.kubFeeCredit?.status || 'KUB status —'}</div></div>
+        </div>
+      </details>
 
       <h4 style="margin:16px 0 8px;">Trade List</h4>
       <div style="margin:0 0 8px;">${filterButtons}</div>
