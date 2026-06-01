@@ -473,6 +473,7 @@ function cryptoDashboardHtml(d) {
       <td>${fmtThb(t.priceThb)}</td>
       <td>${fmtThb(t.valueThb)}</td>
       <td class="${numClass(t.netEdgePct)}">${fmtPct(t.netEdgePct)}</td>
+      <td>${t.expectedAction ? `${t.expectedAction} ${fmtThb(t.expectedPriceThb)}` : fmtThb(t.expectedPriceThb)}</td>
     </tr>
   `).join('');
   const latestN8n = (auto.n8nRecentExecutions || [])[0];
@@ -506,8 +507,8 @@ function cryptoDashboardHtml(d) {
       <h4 style="margin:16px 0 8px;">Last 24hr Trades</h4>
       <div class="subtle">${last24.windowLocal || 'Last 24 hours'} · ${last24.count ?? 0} paper trades · Volume ${fmtThb(last24.totalVolumeThb)} · Net open ADA ${fmtAmount(last24.netAdaAmount, 'ADA')} · Net open XRP ${fmtAmount(last24.netXrpAmount, 'XRP')}</div>
       <table class="asset-table">
-        <thead><tr><th>Time</th><th>Action</th><th>Amount</th><th>Price</th><th>Value</th><th>Net edge</th></tr></thead>
-        <tbody>${last24Rows || '<tr><td colspan="6">No paper trades in the last 24 hours.</td></tr>'}</tbody>
+        <thead><tr><th>Time</th><th>Action</th><th>Amount</th><th>Price</th><th>Value</th><th>Net edge</th><th>Expected Price</th></tr></thead>
+        <tbody>${last24Rows || '<tr><td colspan="7">No paper trades in the last 24 hours.</td></tr>'}</tbody>
       </table>
 
       <ul class="note-list">${(d.executiveNotes || []).map(n => `<li>${n}</li>`).join('')}</ul>
