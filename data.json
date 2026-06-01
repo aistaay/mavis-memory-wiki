@@ -220,7 +220,7 @@
           },
           {
             "asset": "ADA",
-            "holding": 3.6250314246512403,
+            "holding": 28794.0,
             "livePriceThb": 7.5,
             "bidThb": 7.48,
             "askThb": 7.5,
@@ -244,7 +244,7 @@
           },
           {
             "asset": "XRP",
-            "holding": 331.6491587969867,
+            "holding": 831.0,
             "livePriceThb": 42.32,
             "bidThb": 42.32,
             "askThb": 42.36,
@@ -345,7 +345,7 @@
         ],
         "last24hrTrades": {
           "windowLocal": "V2 planned-position ledger · latest first",
-          "count": 0,
+          "count": 1,
           "totalVolumeThb": 0,
           "netAdaAmount": 0.0,
           "netXrpAmount": 0.0,
@@ -362,7 +362,7 @@
               "expectedAction": "Sell ≥",
               "expectedPriceThb": 42.858200000000004,
               "expectedPriceBasis": "planned_position_target",
-              "plannedExit": "INITIAL LONG XRP from starting holding: sell ≥ 42.8582 THB or stop ≤ 41.8418 THB",
+              "plannedExit": "LONG XRP: sell ≥ 42.8582 THB or stop ≤ 41.8418 THB",
               "status": "Open",
               "priceClosedThb": null,
               "positionId": "P0001",

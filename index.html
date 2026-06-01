@@ -512,6 +512,7 @@ function cryptoDashboardHtml(d) {
 
       <h4 style="margin:16px 0 8px;">Trade List</h4>
       <div class="subtle">Showing last 15 trades first · ${last24.windowLocal || 'Last 24 hours'} · ${last24.count ?? 0} paper trades · Volume ${fmtThb(last24.totalVolumeThb)} · Net open ADA ${fmtAmount(last24.netAdaAmount, 'ADA')} · Net open XRP ${fmtAmount(last24.netXrpAmount, 'XRP')}</div>
+      <div class="subtle">Net edge = estimated move minus fees, spread, and slippage buffer. Positive is useful; negative means the signal probably does not beat trading costs.</div>
       <table class="asset-table">
         <thead><tr><th>Time</th><th>Action</th><th>Amount</th><th>Price</th><th>Value</th><th>Net edge</th><th>Expected Price</th><th>Plan / Exit</th><th>Status</th><th>Price Closed</th></tr></thead>
         <tbody>${last24VisibleRows || '<tr><td colspan="10">No paper trades in the last 24 hours.</td></tr>'}</tbody>
