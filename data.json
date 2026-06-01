@@ -358,10 +358,12 @@
           "Paper-only. No real exchange orders are authorized or executed.",
           "Last 24hr Trades shows the aggressive paper profile activity so churn is visible, not hidden inside a summary.",
           "Negative net-edge rows mean the trade did not beat estimated fees/spread/noise at entry.",
-          "Expected Price uses the aggressive profile target: sell buys around +1.2%, or buy back sells around -1.2% from the paper trade price."
+          "Expected Price uses the aggressive profile target: sell buys around +1.2%, or buy back sells around -1.2% from the paper trade price.",
+          "Status marks a trade Closed only when later opposite paper trades fully offset its amount; partial offsets remain Open.",
+          "Price Closed is the weighted average opposite-side paper price that fully closed that row."
         ],
         "last24hrTrades": {
-          "windowLocal": "May 31 19:34 → Jun 1 19:34 TH",
+          "windowLocal": "May 31 19:51 → Jun 1 19:51 TH",
           "count": 64,
           "totalVolumeThb": 4824535.389214552,
           "netAdaAmount": -28790.374966000003,
@@ -380,7 +382,10 @@
               "reasons": "Fast SMA above slow SMA | Efficiency OK: edge 0.19% vs hurdle 0.39% = net -0.20% | X sentiment neutral: neutral_unavailable | fee credit used 47.64 THB",
               "expectedAction": "Sell ≥",
               "expectedPriceThb": 44.3762,
-              "expectedPriceBasis": "take_profit_1.2pct"
+              "expectedPriceBasis": "take_profit_1.2pct",
+              "status": "Closed",
+              "priceClosedThb": 43.85,
+              "priceClosedBasis": "self_closing_trade_or_immediate_offset"
             },
             {
               "ts": "2026-05-31T13:18:41+00:00",
@@ -395,7 +400,10 @@
               "reasons": "Fast SMA above slow SMA | Efficiency OK: edge 0.16% vs hurdle 0.42% = net -0.26% | X sentiment neutral: neutral_unavailable | fee credit used 2.38 THB",
               "expectedAction": "Sell ≥",
               "expectedPriceThb": 44.39644,
-              "expectedPriceBasis": "take_profit_1.2pct"
+              "expectedPriceBasis": "take_profit_1.2pct",
+              "status": "Closed",
+              "priceClosedThb": 43.87,
+              "priceClosedBasis": "self_closing_trade_or_immediate_offset"
             },
             {
               "ts": "2026-05-31T13:44:22+00:00",
@@ -410,7 +418,9 @@
               "reasons": "Fast SMA below slow SMA | Efficiency OK: edge 0.17% vs hurdle 0.50% = net -0.33% | X sentiment neutral: neutral_unavailable | fee credit used 527.94 THB",
               "expectedAction": "Buy back ≤",
               "expectedPriceThb": 7.62736,
-              "expectedPriceBasis": "buyback_1.2pct_below_sell"
+              "expectedPriceBasis": "buyback_1.2pct_below_sell",
+              "status": "Closed",
+              "priceClosedThb": 7.65
             },
             {
               "ts": "2026-05-31T13:49:31+00:00",
@@ -425,7 +435,9 @@
               "reasons": "Fast SMA below slow SMA | Efficiency OK: edge 0.19% vs hurdle 0.50% = net -0.31% | X sentiment neutral: neutral_unavailable | fee credit used 26.40 THB",
               "expectedAction": "Buy back ≤",
               "expectedPriceThb": 7.62736,
-              "expectedPriceBasis": "buyback_1.2pct_below_sell"
+              "expectedPriceBasis": "buyback_1.2pct_below_sell",
+              "status": "Closed",
+              "priceClosedThb": 7.65
             },
             {
               "ts": "2026-05-31T14:05:01+00:00",
@@ -440,7 +452,9 @@
               "reasons": "Fast SMA below slow SMA | Efficiency OK: edge 0.17% vs hurdle 0.50% = net -0.33% | X sentiment neutral: neutral_unavailable | fee credit used 1.32 THB",
               "expectedAction": "Buy back ≤",
               "expectedPriceThb": 7.6076,
-              "expectedPriceBasis": "buyback_1.2pct_below_sell"
+              "expectedPriceBasis": "buyback_1.2pct_below_sell",
+              "status": "Closed",
+              "priceClosedThb": 7.65
             },
             {
               "ts": "2026-05-31T14:25:34+00:00",
@@ -455,7 +469,9 @@
               "reasons": "XRP 15m momentum negative (-0.83%) | Fast SMA below slow SMA | BTC 15m risk-off (-0.37%) | Efficiency OK: edge 0.63% vs hurdle 0.46% = net 0.17% | X sentiment neutral: neutral_unavailable | fee credit used 47.50 THB",
               "expectedAction": "Buy back ≤",
               "expectedPriceThb": 42.8792,
-              "expectedPriceBasis": "buyback_1.2pct_below_sell"
+              "expectedPriceBasis": "buyback_1.2pct_below_sell",
+              "status": "Closed",
+              "priceClosedThb": 43.418046
             },
             {
               "ts": "2026-05-31T14:30:42+00:00",
@@ -470,7 +486,9 @@
               "reasons": "XRP 15m momentum negative (-0.58%) | Fast SMA below slow SMA | BTC 15m risk-off (-0.18%) | Volume spike confirms selloff (2.8x median) | Efficiency OK: edge 0.57% vs hurdle 0.44% = net 0.13% | X sentiment neutral: neutral_unavailable | fee credit used 2.37 THB",
               "expectedAction": "Buy back ≤",
               "expectedPriceThb": 42.83968,
-              "expectedPriceBasis": "buyback_1.2pct_below_sell"
+              "expectedPriceBasis": "buyback_1.2pct_below_sell",
+              "status": "Closed",
+              "priceClosedThb": 43.34
             },
             {
               "ts": "2026-05-31T15:22:58+00:00",
@@ -485,7 +503,9 @@
               "reasons": "ADA 5m momentum positive (0.26%) | Efficiency OK: edge 0.16% vs hurdle 0.50% = net -0.34% | X sentiment neutral: neutral_unavailable | fee credit used 574.14 THB",
               "expectedAction": "Sell ≥",
               "expectedPriceThb": 7.7418,
-              "expectedPriceBasis": "take_profit_1.2pct"
+              "expectedPriceBasis": "take_profit_1.2pct",
+              "status": "Closed",
+              "priceClosedThb": 7.63
             },
             {
               "ts": "2026-05-31T15:28:09+00:00",
@@ -500,7 +520,10 @@
               "reasons": "Fast SMA above slow SMA | Efficiency OK: edge 0.21% vs hurdle 0.42% = net -0.21% | X sentiment neutral: neutral_unavailable | fee credit used 27.48 THB",
               "expectedAction": "Sell ≥",
               "expectedPriceThb": 44.022,
-              "expectedPriceBasis": "take_profit_1.2pct"
+              "expectedPriceBasis": "take_profit_1.2pct",
+              "status": "Closed",
+              "priceClosedThb": 43.5,
+              "priceClosedBasis": "self_closing_trade_or_immediate_offset"
             },
             {
               "ts": "2026-05-31T15:33:18+00:00",
@@ -515,7 +538,9 @@
               "reasons": "Fast SMA above slow SMA | Efficiency OK: edge 0.21% vs hurdle 0.50% = net -0.29% | X sentiment neutral: neutral_unavailable | fee credit used 1.37 THB",
               "expectedAction": "Sell ≥",
               "expectedPriceThb": 7.75192,
-              "expectedPriceBasis": "take_profit_1.2pct"
+              "expectedPriceBasis": "take_profit_1.2pct",
+              "status": "Closed",
+              "priceClosedThb": 7.63
             },
             {
               "ts": "2026-05-31T15:44:06+00:00",
@@ -530,7 +555,9 @@
               "reasons": "ADA 5m momentum negative (-0.34%) | BTC 15m risk-off (-0.18%) | Efficiency OK: edge 0.26% vs hurdle 0.50% = net -0.24% | X sentiment neutral: neutral_unavailable | fee credit used 545.37 THB",
               "expectedAction": "Buy back ≤",
               "expectedPriceThb": 7.53844,
-              "expectedPriceBasis": "buyback_1.2pct_below_sell"
+              "expectedPriceBasis": "buyback_1.2pct_below_sell",
+              "status": "Closed",
+              "priceClosedThb": 7.628894
             },
             {
               "ts": "2026-05-31T15:49:15+00:00",
@@ -545,7 +572,9 @@
               "reasons": "Fast SMA below slow SMA | Efficiency OK: edge 0.19% vs hurdle 0.50% = net -0.31% | X sentiment neutral: neutral_unavailable | fee credit used 27.27 THB",
               "expectedAction": "Buy back ≤",
               "expectedPriceThb": 7.53844,
-              "expectedPriceBasis": "buyback_1.2pct_below_sell"
+              "expectedPriceBasis": "buyback_1.2pct_below_sell",
+              "status": "Closed",
+              "priceClosedThb": 7.63
             },
             {
               "ts": "2026-05-31T15:59:33+00:00",
@@ -560,7 +589,9 @@
               "reasons": "ADA 5m momentum negative (-0.26%) | Efficiency OK: edge 0.27% vs hurdle 0.50% = net -0.23% | X sentiment neutral: neutral_unavailable | fee credit used 1.36 THB",
               "expectedAction": "Buy back ≤",
               "expectedPriceThb": 7.52856,
-              "expectedPriceBasis": "buyback_1.2pct_below_sell"
+              "expectedPriceBasis": "buyback_1.2pct_below_sell",
+              "status": "Closed",
+              "priceClosedThb": 7.63
             },
             {
               "ts": "2026-05-31T16:09:51+00:00",
@@ -575,7 +606,9 @@
               "reasons": "Volume spike confirms selloff (2.0x median) | Efficiency OK: edge 0.15% vs hurdle 0.39% = net -0.25% | X sentiment neutral: neutral_unavailable | fee credit used 26.14 THB",
               "expectedAction": "Buy back ≤",
               "expectedPriceThb": 42.8298,
-              "expectedPriceBasis": "buyback_1.2pct_below_sell"
+              "expectedPriceBasis": "buyback_1.2pct_below_sell",
+              "status": "Closed",
+              "priceClosedThb": 43.34
             },
             {
               "ts": "2026-05-31T16:20:23+00:00",
@@ -590,7 +623,9 @@
               "reasons": "Fast SMA below slow SMA | BTC 15m risk-off (-0.15%) | Efficiency OK: edge 0.17% vs hurdle 0.42% = net -0.25% | X sentiment neutral: neutral_unavailable | fee credit used 1.31 THB",
               "expectedAction": "Buy back ≤",
               "expectedPriceThb": 42.79028,
-              "expectedPriceBasis": "buyback_1.2pct_below_sell"
+              "expectedPriceBasis": "buyback_1.2pct_below_sell",
+              "status": "Closed",
+              "priceClosedThb": 43.34
             },
             {
               "ts": "2026-05-31T16:30:40+00:00",
@@ -605,7 +640,9 @@
               "reasons": "XRP 5m momentum positive (0.26%) | Efficiency OK: edge 0.10% vs hurdle 0.42% = net -0.32% | X sentiment neutral: neutral_unavailable | fee credit used 570.37 THB",
               "expectedAction": "Sell ≥",
               "expectedPriceThb": 43.86008,
-              "expectedPriceBasis": "take_profit_1.2pct"
+              "expectedPriceBasis": "take_profit_1.2pct",
+              "status": "Closed",
+              "priceClosedThb": 43.14
             },
             {
               "ts": "2026-05-31T17:37:50+00:00",
@@ -620,7 +657,10 @@
               "reasons": "Fast SMA above slow SMA | BTC 15m supports risk-on (0.17%) | Efficiency OK: edge 0.22% vs hurdle 0.50% = net -0.28% | X sentiment neutral: neutral_unavailable | fee credit used 27.35 THB",
               "expectedAction": "Sell ≥",
               "expectedPriceThb": 7.70132,
-              "expectedPriceBasis": "take_profit_1.2pct"
+              "expectedPriceBasis": "take_profit_1.2pct",
+              "status": "Closed",
+              "priceClosedThb": 7.61,
+              "priceClosedBasis": "self_closing_trade_or_immediate_offset"
             },
             {
               "ts": "2026-05-31T17:43:00+00:00",
@@ -635,7 +675,10 @@
               "reasons": "Fast SMA above slow SMA | Efficiency OK: edge 0.20% vs hurdle 0.50% = net -0.30% | X sentiment neutral: neutral_unavailable | fee credit used 1.37 THB",
               "expectedAction": "Sell ≥",
               "expectedPriceThb": 7.70132,
-              "expectedPriceBasis": "take_profit_1.2pct"
+              "expectedPriceBasis": "take_profit_1.2pct",
+              "status": "Closed",
+              "priceClosedThb": 7.61,
+              "priceClosedBasis": "self_closing_trade_or_immediate_offset"
             },
             {
               "ts": "2026-05-31T19:16:02+00:00",
@@ -650,7 +693,9 @@
               "reasons": "Fast SMA below slow SMA | Efficiency OK: edge 0.28% vs hurdle 0.50% = net -0.22% | X sentiment neutral: neutral_unavailable | fee credit used 27.27 THB",
               "expectedAction": "Buy back ≤",
               "expectedPriceThb": 7.49892,
-              "expectedPriceBasis": "buyback_1.2pct_below_sell"
+              "expectedPriceBasis": "buyback_1.2pct_below_sell",
+              "status": "Closed",
+              "priceClosedThb": 7.639441
             },
             {
               "ts": "2026-05-31T19:26:18+00:00",
@@ -665,7 +710,9 @@
               "reasons": "BTC 15m risk-off (-0.17%) | Efficiency OK: edge 0.27% vs hurdle 0.50% = net -0.23% | X sentiment neutral: neutral_unavailable | fee credit used 1.36 THB",
               "expectedAction": "Buy back ≤",
               "expectedPriceThb": 7.47916,
-              "expectedPriceBasis": "buyback_1.2pct_below_sell"
+              "expectedPriceBasis": "buyback_1.2pct_below_sell",
+              "status": "Closed",
+              "priceClosedThb": 7.65
             },
             {
               "ts": "2026-05-31T19:36:34+00:00",
@@ -680,7 +727,9 @@
               "reasons": "Fast SMA below slow SMA | BTC 15m risk-off (-0.19%) | Efficiency OK: edge 0.15% vs hurdle 0.39% = net -0.24% | X sentiment neutral: neutral_unavailable | fee credit used 539.41 THB",
               "expectedAction": "Buy back ≤",
               "expectedPriceThb": 42.62232,
-              "expectedPriceBasis": "buyback_1.2pct_below_sell"
+              "expectedPriceBasis": "buyback_1.2pct_below_sell",
+              "status": "Closed",
+              "priceClosedThb": 43.35
             },
             {
               "ts": "2026-05-31T20:02:14+00:00",
@@ -695,7 +744,9 @@
               "reasons": "Fast SMA above slow SMA | BTC 15m supports risk-on (0.17%) | Efficiency OK: edge 0.28% vs hurdle 0.44% = net -0.16% | X sentiment neutral: neutral_unavailable | fee credit used 538.60 THB",
               "expectedAction": "Sell ≥",
               "expectedPriceThb": 43.8702,
-              "expectedPriceBasis": "take_profit_1.2pct"
+              "expectedPriceBasis": "take_profit_1.2pct",
+              "status": "Closed",
+              "priceClosedThb": 43.31
             },
             {
               "ts": "2026-05-31T20:07:23+00:00",
@@ -710,7 +761,9 @@
               "reasons": "Fast SMA above slow SMA | BTC 15m supports risk-on (0.18%) | Efficiency OK: edge 0.21% vs hurdle 0.46% = net -0.25% | X sentiment neutral: neutral_unavailable | fee credit used 25.92 THB",
               "expectedAction": "Sell ≥",
               "expectedPriceThb": 43.8702,
-              "expectedPriceBasis": "take_profit_1.2pct"
+              "expectedPriceBasis": "take_profit_1.2pct",
+              "status": "Closed",
+              "priceClosedThb": 43.31
             },
             {
               "ts": "2026-05-31T20:12:31+00:00",
@@ -725,7 +778,9 @@
               "reasons": "Fast SMA above slow SMA | Efficiency OK: edge 0.17% vs hurdle 0.42% = net -0.25% | X sentiment neutral: neutral_unavailable | fee credit used 1.30 THB",
               "expectedAction": "Sell ≥",
               "expectedPriceThb": 43.86008,
-              "expectedPriceBasis": "take_profit_1.2pct"
+              "expectedPriceBasis": "take_profit_1.2pct",
+              "status": "Closed",
+              "priceClosedThb": 43.31
             },
             {
               "ts": "2026-05-31T20:43:19+00:00",
@@ -740,7 +795,9 @@
               "reasons": "Volume spike confirms selloff (2.3x median) | Efficiency OK: edge 0.08% vs hurdle 0.39% = net -0.31% | X sentiment neutral: neutral_unavailable | fee credit used 564.11 THB",
               "expectedAction": "Buy back ≤",
               "expectedPriceThb": 42.79028,
-              "expectedPriceBasis": "buyback_1.2pct_below_sell"
+              "expectedPriceBasis": "buyback_1.2pct_below_sell",
+              "status": "Closed",
+              "priceClosedThb": 43.603183
             },
             {
               "ts": "2026-05-31T20:58:42+00:00",
@@ -755,7 +812,10 @@
               "reasons": "Volume spike confirms move (6.6x median) | Efficiency OK: edge 0.20% vs hurdle 0.50% = net -0.30% | X sentiment neutral: neutral_unavailable | fee credit used 534.86 THB",
               "expectedAction": "Sell ≥",
               "expectedPriceThb": 7.72156,
-              "expectedPriceBasis": "take_profit_1.2pct"
+              "expectedPriceBasis": "take_profit_1.2pct",
+              "status": "Closed",
+              "priceClosedThb": 7.63,
+              "priceClosedBasis": "self_closing_trade_or_immediate_offset"
             },
             {
               "ts": "2026-05-31T21:19:17+00:00",
@@ -770,7 +830,9 @@
               "reasons": "Fast SMA above slow SMA | Efficiency OK: edge 0.31% vs hurdle 0.50% = net -0.19% | X sentiment neutral: neutral_unavailable | fee credit used 25.74 THB",
               "expectedAction": "Sell ≥",
               "expectedPriceThb": 7.7418,
-              "expectedPriceBasis": "take_profit_1.2pct"
+              "expectedPriceBasis": "take_profit_1.2pct",
+              "status": "Closed",
+              "priceClosedThb": 7.66
             },
             {
               "ts": "2026-05-31T21:39:48+00:00",
@@ -785,7 +847,10 @@
               "reasons": "Fast SMA above slow SMA | Efficiency OK: edge 0.20% vs hurdle 0.49% = net -0.29% | X sentiment neutral: neutral_unavailable | fee credit used 1.29 THB",
               "expectedAction": "Sell ≥",
               "expectedPriceThb": 44.00176,
-              "expectedPriceBasis": "take_profit_1.2pct"
+              "expectedPriceBasis": "take_profit_1.2pct",
+              "status": "Closed",
+              "priceClosedThb": 43.48,
+              "priceClosedBasis": "self_closing_trade_or_immediate_offset"
             },
             {
               "ts": "2026-05-31T22:05:41+00:00",
@@ -800,7 +865,9 @@
               "reasons": "XRP 5m momentum negative (-0.25%) | Efficiency OK: edge 0.13% vs hurdle 0.42% = net -0.29% | X sentiment neutral: neutral_unavailable | fee credit used 29.50 THB",
               "expectedAction": "Buy back ≤",
               "expectedPriceThb": 42.89896,
-              "expectedPriceBasis": "buyback_1.2pct_below_sell"
+              "expectedPriceBasis": "buyback_1.2pct_below_sell",
+              "status": "Closed",
+              "priceClosedThb": 43.400332
             },
             {
               "ts": "2026-05-31T22:15:58+00:00",
@@ -815,7 +882,10 @@
               "reasons": "Fast SMA above slow SMA | Volume spike confirms move (5.5x median) | Efficiency OK: edge 0.20% vs hurdle 0.46% = net -0.27% | X sentiment neutral: neutral_unavailable | fee credit used 28.09 THB",
               "expectedAction": "Sell ≥",
               "expectedPriceThb": 44.13332,
-              "expectedPriceBasis": "take_profit_1.2pct"
+              "expectedPriceBasis": "take_profit_1.2pct",
+              "status": "Closed",
+              "priceClosedThb": 43.61,
+              "priceClosedBasis": "self_closing_trade_or_immediate_offset"
             },
             {
               "ts": "2026-05-31T22:21:07+00:00",
@@ -830,7 +900,10 @@
               "reasons": "Fast SMA above slow SMA | Efficiency OK: edge 0.18% vs hurdle 0.44% = net -0.26% | X sentiment neutral: neutral_unavailable | fee credit used 1.40 THB",
               "expectedAction": "Sell ≥",
               "expectedPriceThb": 44.05236,
-              "expectedPriceBasis": "take_profit_1.2pct"
+              "expectedPriceBasis": "take_profit_1.2pct",
+              "status": "Closed",
+              "priceClosedThb": 43.53,
+              "priceClosedBasis": "self_closing_trade_or_immediate_offset"
             },
             {
               "ts": "2026-05-31T23:17:30+00:00",
@@ -845,7 +918,9 @@
               "reasons": "BTC 15m risk-off (-0.18%) | Efficiency OK: edge 0.15% vs hurdle 0.39% = net -0.24% | X sentiment neutral: neutral_unavailable | fee credit used 29.43 THB",
               "expectedAction": "Buy back ≤",
               "expectedPriceThb": 42.978,
-              "expectedPriceBasis": "buyback_1.2pct_below_sell"
+              "expectedPriceBasis": "buyback_1.2pct_below_sell",
+              "status": "Closed",
+              "priceClosedThb": 43.35
             },
             {
               "ts": "2026-05-31T23:22:39+00:00",
@@ -860,7 +935,9 @@
               "reasons": "ADA 5m momentum negative (-0.30%) | BTC 15m risk-off (-0.31%) | Volume spike confirms selloff (5.7x median) | Efficiency OK: edge 0.35% vs hurdle 0.50% = net -0.15% | X sentiment neutral: neutral_unavailable | fee credit used 534.67 THB",
               "expectedAction": "Buy back ≤",
               "expectedPriceThb": 7.56808,
-              "expectedPriceBasis": "buyback_1.2pct_below_sell"
+              "expectedPriceBasis": "buyback_1.2pct_below_sell",
+              "status": "Closed",
+              "priceClosedThb": 7.69
             },
             {
               "ts": "2026-05-31T23:27:48+00:00",
@@ -875,7 +952,9 @@
               "reasons": "Fast SMA below slow SMA | BTC 15m risk-off (-0.17%) | Efficiency OK: edge 0.22% vs hurdle 0.50% = net -0.28% | X sentiment neutral: neutral_unavailable | fee credit used 26.70 THB",
               "expectedAction": "Buy back ≤",
               "expectedPriceThb": 7.5582,
-              "expectedPriceBasis": "buyback_1.2pct_below_sell"
+              "expectedPriceBasis": "buyback_1.2pct_below_sell",
+              "status": "Closed",
+              "priceClosedThb": 7.696307
             },
             {
               "ts": "2026-05-31T23:32:56+00:00",
@@ -890,7 +969,9 @@
               "reasons": "ADA 5m momentum negative (-0.25%) | ADA 15m momentum negative (-0.59%) | Fast SMA below slow SMA | BTC 15m risk-off (-0.33%) | Volume spike confirms selloff (3.1x median) | Efficiency OK: edge 0.57% vs hurdle 0.63% = net -0.06% | X sentiment neutral: neutral_unavailable | fee credit used 1.33 THB",
               "expectedAction": "Buy back ≤",
               "expectedPriceThb": 7.53844,
-              "expectedPriceBasis": "buyback_1.2pct_below_sell"
+              "expectedPriceBasis": "buyback_1.2pct_below_sell",
+              "status": "Closed",
+              "priceClosedThb": 7.7
             },
             {
               "ts": "2026-05-31T23:38:06+00:00",
@@ -905,7 +986,9 @@
               "reasons": "Fast SMA below slow SMA | BTC 15m risk-off (-0.29%) | Efficiency OK: edge 0.38% vs hurdle 0.42% = net -0.04% | X sentiment neutral: neutral_unavailable | fee credit used 1.46 THB",
               "expectedAction": "Buy back ≤",
               "expectedPriceThb": 42.75076,
-              "expectedPriceBasis": "buyback_1.2pct_below_sell"
+              "expectedPriceBasis": "buyback_1.2pct_below_sell",
+              "status": "Closed",
+              "priceClosedThb": 43.35
             },
             {
               "ts": "2026-05-31T23:53:30+00:00",
@@ -920,7 +1003,9 @@
               "reasons": "BTC 15m supports risk-on (0.18%) | Efficiency OK: edge 0.20% vs hurdle 0.39% = net -0.19% | X sentiment neutral: neutral_unavailable | fee credit used 562.74 THB",
               "expectedAction": "Sell ≥",
               "expectedPriceThb": 43.8702,
-              "expectedPriceBasis": "take_profit_1.2pct"
+              "expectedPriceBasis": "take_profit_1.2pct",
+              "status": "Closed",
+              "priceClosedThb": 43.34
             },
             {
               "ts": "2026-06-01T00:03:48+00:00",
@@ -935,7 +1020,10 @@
               "reasons": "ADA 15m momentum positive (0.55%) | Fast SMA above slow SMA | BTC 15m supports risk-on (0.21%) | Volume spike confirms move (3.4x median) | Efficiency OK: edge 0.54% vs hurdle 0.50% = net 0.04% | X sentiment neutral: neutral_unavailable | fee credit used 27.02 THB",
               "expectedAction": "Sell ≥",
               "expectedPriceThb": 7.78228,
-              "expectedPriceBasis": "take_profit_1.2pct"
+              "expectedPriceBasis": "take_profit_1.2pct",
+              "status": "Closed",
+              "priceClosedThb": 7.69,
+              "priceClosedBasis": "self_closing_trade_or_immediate_offset"
             },
             {
               "ts": "2026-06-01T00:08:58+00:00",
@@ -950,7 +1038,10 @@
               "reasons": "Fast SMA above slow SMA | Efficiency OK: edge 0.26% vs hurdle 0.50% = net -0.24% | X sentiment neutral: neutral_unavailable | fee credit used 1.35 THB",
               "expectedAction": "Sell ≥",
               "expectedPriceThb": 7.78228,
-              "expectedPriceBasis": "take_profit_1.2pct"
+              "expectedPriceBasis": "take_profit_1.2pct",
+              "status": "Closed",
+              "priceClosedThb": 7.69,
+              "priceClosedBasis": "self_closing_trade_or_immediate_offset"
             },
             {
               "ts": "2026-06-01T00:19:14+00:00",
@@ -965,7 +1056,9 @@
               "reasons": "XRP 15m momentum negative (-0.49%) | BTC 15m risk-off (-0.19%) | Efficiency OK: edge 0.34% vs hurdle 0.39% = net -0.05% | X sentiment neutral: neutral_unavailable | fee credit used 534.56 THB",
               "expectedAction": "Buy back ≤",
               "expectedPriceThb": 42.81992,
-              "expectedPriceBasis": "buyback_1.2pct_below_sell"
+              "expectedPriceBasis": "buyback_1.2pct_below_sell",
+              "status": "Open",
+              "priceClosedThb": null
             },
             {
               "ts": "2026-06-01T00:24:24+00:00",
@@ -980,7 +1073,10 @@
               "reasons": "ADA 5m momentum positive (0.25%) | Efficiency OK: edge 0.18% vs hurdle 0.50% = net -0.32% | X sentiment neutral: neutral_unavailable | fee credit used 506.85 THB",
               "expectedAction": "Sell ≥",
               "expectedPriceThb": 7.78228,
-              "expectedPriceBasis": "take_profit_1.2pct"
+              "expectedPriceBasis": "take_profit_1.2pct",
+              "status": "Closed",
+              "priceClosedThb": 7.69,
+              "priceClosedBasis": "self_closing_trade_or_immediate_offset"
             },
             {
               "ts": "2026-06-01T00:29:32+00:00",
@@ -995,7 +1091,9 @@
               "reasons": "Fast SMA above slow SMA | BTC 15m supports risk-on (0.18%) | Efficiency OK: edge 0.20% vs hurdle 0.50% = net -0.30% | X sentiment neutral: neutral_unavailable | fee credit used 24.39 THB",
               "expectedAction": "Sell ≥",
               "expectedPriceThb": 7.7924,
-              "expectedPriceBasis": "take_profit_1.2pct"
+              "expectedPriceBasis": "take_profit_1.2pct",
+              "status": "Closed",
+              "priceClosedThb": 7.69
             },
             {
               "ts": "2026-06-01T00:34:41+00:00",
@@ -1010,7 +1108,9 @@
               "reasons": "Fast SMA above slow SMA | BTC 15m supports risk-on (0.17%) | Efficiency OK: edge 0.19% vs hurdle 0.50% = net -0.31% | X sentiment neutral: neutral_unavailable | fee credit used 1.22 THB",
               "expectedAction": "Sell ≥",
               "expectedPriceThb": 7.7924,
-              "expectedPriceBasis": "take_profit_1.2pct"
+              "expectedPriceBasis": "take_profit_1.2pct",
+              "status": "Closed",
+              "priceClosedThb": 7.69
             },
             {
               "ts": "2026-06-01T01:05:41+00:00",
@@ -1025,7 +1125,9 @@
               "reasons": "Fast SMA below slow SMA | BTC 15m risk-off (-0.25%) | Volume spike confirms selloff (6.0x median) | Efficiency OK: edge 0.18% vs hurdle 0.50% = net -0.32% | X sentiment neutral: neutral_unavailable | fee credit used 532.83 THB",
               "expectedAction": "Buy back ≤",
               "expectedPriceThb": 7.59772,
-              "expectedPriceBasis": "buyback_1.2pct_below_sell"
+              "expectedPriceBasis": "buyback_1.2pct_below_sell",
+              "status": "Closed",
+              "priceClosedThb": 7.64
             },
             {
               "ts": "2026-06-01T01:10:49+00:00",
@@ -1040,7 +1142,9 @@
               "reasons": "ADA 5m momentum negative (-0.30%) | Fast SMA below slow SMA | BTC 15m risk-off (-0.42%) | Volume spike confirms selloff (1.9x median) | Efficiency OK: edge 0.41% vs hurdle 0.63% = net -0.22% | X sentiment neutral: neutral_unavailable | fee credit used 26.54 THB",
               "expectedAction": "Buy back ≤",
               "expectedPriceThb": 7.56808,
-              "expectedPriceBasis": "buyback_1.2pct_below_sell"
+              "expectedPriceBasis": "buyback_1.2pct_below_sell",
+              "status": "Closed",
+              "priceClosedThb": 7.64
             },
             {
               "ts": "2026-06-01T01:15:59+00:00",
@@ -1055,7 +1159,9 @@
               "reasons": "XRP 15m momentum negative (-0.49%) | Fast SMA below slow SMA | BTC 15m risk-off (-0.38%) | Efficiency OK: edge 0.39% vs hurdle 0.44% = net -0.05% | X sentiment neutral: neutral_unavailable | fee credit used 26.70 THB",
               "expectedAction": "Buy back ≤",
               "expectedPriceThb": 42.7804,
-              "expectedPriceBasis": "buyback_1.2pct_below_sell"
+              "expectedPriceBasis": "buyback_1.2pct_below_sell",
+              "status": "Open",
+              "priceClosedThb": null
             },
             {
               "ts": "2026-06-01T01:21:07+00:00",
@@ -1070,7 +1176,9 @@
               "reasons": "ADA 15m momentum negative (-0.47%) | Fast SMA below slow SMA | Efficiency OK: edge 0.46% vs hurdle 0.50% = net -0.04% | X sentiment neutral: neutral_unavailable | fee credit used 1.33 THB",
               "expectedAction": "Buy back ≤",
               "expectedPriceThb": 7.56808,
-              "expectedPriceBasis": "buyback_1.2pct_below_sell"
+              "expectedPriceBasis": "buyback_1.2pct_below_sell",
+              "status": "Closed",
+              "priceClosedThb": 7.64
             },
             {
               "ts": "2026-06-01T01:46:47+00:00",
@@ -1085,7 +1193,9 @@
               "reasons": "XRP 5m momentum negative (-0.29%) | BTC 15m risk-off (-0.20%) | Efficiency OK: edge 0.27% vs hurdle 0.39% = net -0.12% | X sentiment neutral: neutral_unavailable | fee credit used 1.33 THB",
               "expectedAction": "Buy back ≤",
               "expectedPriceThb": 42.64208,
-              "expectedPriceBasis": "buyback_1.2pct_below_sell"
+              "expectedPriceBasis": "buyback_1.2pct_below_sell",
+              "status": "Open",
+              "priceClosedThb": null
             },
             {
               "ts": "2026-06-01T02:12:28+00:00",
@@ -1100,7 +1210,9 @@
               "reasons": "ADA 5m momentum positive (0.26%) | Fast SMA above slow SMA | BTC 15m supports risk-on (0.28%) | Efficiency OK: edge 0.32% vs hurdle 0.50% = net -0.19% | X sentiment neutral: neutral_unavailable | fee credit used 558.31 THB",
               "expectedAction": "Sell ≥",
               "expectedPriceThb": 7.73168,
-              "expectedPriceBasis": "take_profit_1.2pct"
+              "expectedPriceBasis": "take_profit_1.2pct",
+              "status": "Closed",
+              "priceClosedThb": 7.7
             },
             {
               "ts": "2026-06-01T02:17:38+00:00",
@@ -1115,7 +1227,9 @@
               "reasons": "ADA 15m momentum positive (0.64%) | Fast SMA above slow SMA | BTC 15m supports risk-on (0.29%) | Efficiency OK: edge 0.39% vs hurdle 0.63% = net -0.24% | X sentiment neutral: neutral_unavailable | fee credit used 26.76 THB",
               "expectedAction": "Sell ≥",
               "expectedPriceThb": 7.7418,
-              "expectedPriceBasis": "take_profit_1.2pct"
+              "expectedPriceBasis": "take_profit_1.2pct",
+              "status": "Closed",
+              "priceClosedThb": 7.7
             },
             {
               "ts": "2026-06-01T02:43:50+00:00",
@@ -1130,7 +1244,9 @@
               "reasons": "ADA 5m momentum positive (0.68%) | ADA 15m momentum positive (0.68%) | Fast SMA above slow SMA | BTC 15m supports risk-on (0.43%) | Volume spike confirms move (6.3x median) | Efficiency OK: edge 0.83% vs hurdle 0.50% = net 0.33% | X sentiment neutral: neutral_unavailable | fee credit used 1.34 THB",
               "expectedAction": "Sell ≥",
               "expectedPriceThb": 7.7924,
-              "expectedPriceBasis": "take_profit_1.2pct"
+              "expectedPriceBasis": "take_profit_1.2pct",
+              "status": "Closed",
+              "priceClosedThb": 7.7
             },
             {
               "ts": "2026-06-01T03:45:38+00:00",
@@ -1145,7 +1261,9 @@
               "reasons": "Fast SMA below slow SMA | Efficiency OK: edge 0.18% vs hurdle 0.50% = net -0.32% | X sentiment neutral: neutral_unavailable | fee credit used 561.48 THB",
               "expectedAction": "Buy back ≤",
               "expectedPriceThb": 7.6076,
-              "expectedPriceBasis": "buyback_1.2pct_below_sell"
+              "expectedPriceBasis": "buyback_1.2pct_below_sell",
+              "status": "Closed",
+              "priceClosedThb": 7.72
             },
             {
               "ts": "2026-06-01T04:01:06+00:00",
@@ -1160,7 +1278,9 @@
               "reasons": "ADA 5m momentum positive (0.25%) | Efficiency OK: edge 0.17% vs hurdle 0.50% = net -0.33% | X sentiment neutral: neutral_unavailable | fee credit used 532.35 THB",
               "expectedAction": "Sell ≥",
               "expectedPriceThb": 7.81264,
-              "expectedPriceBasis": "take_profit_1.2pct"
+              "expectedPriceBasis": "take_profit_1.2pct",
+              "status": "Closed",
+              "priceClosedThb": 7.68
             },
             {
               "ts": "2026-06-01T04:11:38+00:00",
@@ -1175,7 +1295,9 @@
               "reasons": "ADA 5m momentum negative (-0.38%) | Fast SMA below slow SMA | BTC 15m risk-off (-0.22%) | Volume spike confirms selloff (2.1x median) | Efficiency OK: edge 0.34% vs hurdle 0.50% = net -0.16% | X sentiment neutral: neutral_unavailable | fee credit used 531.11 THB",
               "expectedAction": "Buy back ≤",
               "expectedPriceThb": 7.58784,
-              "expectedPriceBasis": "buyback_1.2pct_below_sell"
+              "expectedPriceBasis": "buyback_1.2pct_below_sell",
+              "status": "Closed",
+              "priceClosedThb": 7.64
             },
             {
               "ts": "2026-06-01T04:16:46+00:00",
@@ -1190,7 +1312,9 @@
               "reasons": "Fast SMA below slow SMA | BTC 15m risk-off (-0.29%) | Efficiency OK: edge 0.30% vs hurdle 0.50% = net -0.20% | X sentiment neutral: neutral_unavailable | fee credit used 26.56 THB",
               "expectedAction": "Buy back ≤",
               "expectedPriceThb": 7.58784,
-              "expectedPriceBasis": "buyback_1.2pct_below_sell"
+              "expectedPriceBasis": "buyback_1.2pct_below_sell",
+              "status": "Closed",
+              "priceClosedThb": 7.64
             },
             {
               "ts": "2026-06-01T04:21:57+00:00",
@@ -1205,7 +1329,9 @@
               "reasons": "ADA 5m momentum negative (-0.34%) | ADA 15m momentum negative (-0.59%) | Fast SMA below slow SMA | BTC 15m risk-off (-0.34%) | Efficiency OK: edge 0.55% vs hurdle 0.50% = net 0.05% | X sentiment neutral: neutral_unavailable | fee credit used 1.32 THB",
               "expectedAction": "Buy back ≤",
               "expectedPriceThb": 7.56808,
-              "expectedPriceBasis": "buyback_1.2pct_below_sell"
+              "expectedPriceBasis": "buyback_1.2pct_below_sell",
+              "status": "Closed",
+              "priceClosedThb": 7.64
             },
             {
               "ts": "2026-06-01T05:49:13+00:00",
@@ -1220,7 +1346,9 @@
               "reasons": "ADA 5m momentum positive (0.26%) | Fast SMA above slow SMA | Efficiency OK: edge 0.33% vs hurdle 0.63% = net -0.30% | X sentiment neutral: neutral_unavailable | fee credit used 555.68 THB",
               "expectedAction": "Sell ≥",
               "expectedPriceThb": 7.73168,
-              "expectedPriceBasis": "take_profit_1.2pct"
+              "expectedPriceBasis": "take_profit_1.2pct",
+              "status": "Closed",
+              "priceClosedThb": 7.58
             },
             {
               "ts": "2026-06-01T06:09:48+00:00",
@@ -1235,7 +1363,9 @@
               "reasons": "ADA 5m momentum negative (-0.30%) | ADA 15m momentum negative (-0.55%) | Fast SMA below slow SMA | BTC 15m risk-off (-0.21%) | Volume spike confirms selloff (11.2x median) | Efficiency OK: edge 0.52% vs hurdle 0.50% = net 0.02% | X sentiment neutral: neutral_unavailable | fee credit used 523.81 THB",
               "expectedAction": "Buy back ≤",
               "expectedPriceThb": 7.48904,
-              "expectedPriceBasis": "buyback_1.2pct_below_sell"
+              "expectedPriceBasis": "buyback_1.2pct_below_sell",
+              "status": "Closed",
+              "priceClosedThb": 7.58
             },
             {
               "ts": "2026-06-01T06:20:05+00:00",
@@ -1250,7 +1380,9 @@
               "reasons": "Fast SMA below slow SMA | Efficiency OK: edge 0.24% vs hurdle 0.50% = net -0.26% | X sentiment neutral: neutral_unavailable | fee credit used 26.19 THB",
               "expectedAction": "Buy back ≤",
               "expectedPriceThb": 7.48904,
-              "expectedPriceBasis": "buyback_1.2pct_below_sell"
+              "expectedPriceBasis": "buyback_1.2pct_below_sell",
+              "status": "Closed",
+              "priceClosedThb": 7.58
             },
             {
               "ts": "2026-06-01T06:25:17+00:00",
@@ -1265,7 +1397,9 @@
               "reasons": "Fast SMA below slow SMA | Efficiency OK: edge 0.28% vs hurdle 0.50% = net -0.22% | X sentiment neutral: neutral_unavailable | fee credit used 1.31 THB",
               "expectedAction": "Buy back ≤",
               "expectedPriceThb": 7.47916,
-              "expectedPriceBasis": "buyback_1.2pct_below_sell"
+              "expectedPriceBasis": "buyback_1.2pct_below_sell",
+              "status": "Closed",
+              "priceClosedThb": 7.58
             },
             {
               "ts": "2026-06-01T06:51:14+00:00",
@@ -1280,7 +1414,9 @@
               "reasons": "ADA 5m momentum positive (0.30%) | Efficiency OK: edge 0.19% vs hurdle 0.50% = net -0.32% | X sentiment neutral: neutral_unavailable | fee credit used 549.49 THB",
               "expectedAction": "Sell ≥",
               "expectedPriceThb": 7.67096,
-              "expectedPriceBasis": "take_profit_1.2pct"
+              "expectedPriceBasis": "take_profit_1.2pct",
+              "status": "Closed",
+              "priceClosedThb": 7.55
             },
             {
               "ts": "2026-06-01T07:32:45+00:00",
@@ -1295,7 +1431,9 @@
               "reasons": "ADA 5m momentum negative (-0.30%) | Fast SMA below slow SMA | Efficiency OK: edge 0.21% vs hurdle 0.50% = net -0.29% | X sentiment neutral: neutral_unavailable | fee credit used 520.01 THB",
               "expectedAction": "Buy back ≤",
               "expectedPriceThb": 7.4594,
-              "expectedPriceBasis": "buyback_1.2pct_below_sell"
+              "expectedPriceBasis": "buyback_1.2pct_below_sell",
+              "status": "Open",
+              "priceClosedThb": null
             },
             {
               "ts": "2026-06-01T07:43:04+00:00",
@@ -1310,7 +1448,9 @@
               "reasons": "ADA 5m momentum negative (-0.34%) | Fast SMA below slow SMA | Efficiency OK: edge 0.43% vs hurdle 0.50% = net -0.08% | X sentiment neutral: neutral_unavailable | fee credit used 25.97 THB",
               "expectedAction": "Buy back ≤",
               "expectedPriceThb": 7.44952,
-              "expectedPriceBasis": "buyback_1.2pct_below_sell"
+              "expectedPriceBasis": "buyback_1.2pct_below_sell",
+              "status": "Open",
+              "priceClosedThb": null
             },
             {
               "ts": "2026-06-01T07:48:09+00:00",
@@ -1325,7 +1465,9 @@
               "reasons": "Fast SMA below slow SMA | Volume spike confirms selloff (2.0x median) | Efficiency OK: edge 0.25% vs hurdle 0.50% = net -0.25% | X sentiment neutral: neutral_unavailable | fee credit used 1.29 THB",
               "expectedAction": "Buy back ≤",
               "expectedPriceThb": 7.42976,
-              "expectedPriceBasis": "buyback_1.2pct_below_sell"
+              "expectedPriceBasis": "buyback_1.2pct_below_sell",
+              "status": "Open",
+              "priceClosedThb": null
             }
           ]
         }
