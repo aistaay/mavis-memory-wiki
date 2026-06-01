@@ -141,14 +141,9 @@
         "dailyStatus": "ACTIVE",
         "holdings": [
           {
-            "asset": "XRP Reserve",
-            "amount": 331.0,
-            "valueThb": 14007.92
-          },
-          {
-            "asset": "XRP Active",
-            "amount": 500.0,
-            "valueThb": 21160.0
+            "asset": "XRP",
+            "amount": 831.0,
+            "valueThb": 35167.92
           },
           {
             "asset": "ADA",
@@ -156,7 +151,17 @@
             "valueThb": 215955.0
           },
           {
-            "asset": "THB Cash",
+            "asset": "BTC",
+            "amount": 0.0,
+            "valueThb": 0.0
+          },
+          {
+            "asset": "ETH",
+            "amount": 0.0,
+            "valueThb": 0.0
+          },
+          {
+            "asset": "THB",
             "amount": 0.0,
             "valueThb": 0.0
           }
