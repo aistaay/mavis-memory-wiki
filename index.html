@@ -334,6 +334,7 @@
 <script>
 let DATA = null;
 let prevPage = 'subjects';
+let TRADE_FILTER = 'all';
 
 fetch('data.json')
   .then(r => r.json())
@@ -465,7 +466,16 @@ function cryptoDashboardHtml(d) {
   `).join('');
   const lastTrade = m.lastTrade ? `${m.lastTrade.action} ${m.lastTrade.amount_xrp} @ ${m.lastTrade.price_thb} THB` : '—';
   const last24 = d.last24hrTrades || {};
-  const last24Trades = [...(last24.trades || [])].sort((a, b) => new Date(b.ts || 0) - new Date(a.ts || 0));
+  const allTrades = [...(last24.trades || [])].sort((a, b) => new Date(b.ts || 0) - new Date(a.ts || 0));
+  const last24Trades = filterTrades(allTrades, TRADE_FILTER);
+  const filterButtons = [
+    ['all', 'All trades'],
+    ['open', 'Open Position'],
+    ['closed', 'Closed Positions'],
+    ['week', 'Trades for Week'],
+    ['month', 'Month'],
+    ['year', 'Year']
+  ].map(([key, label]) => `<button class="back-btn" style="margin:0 6px 6px 0;${TRADE_FILTER === key ? 'border-color:var(--accent);color:var(--accent);' : ''}" onclick="setTradeFilter('${key}')">${label}</button>`).join('');
   const renderTradeRow = (t) => `
     <tr>
       <td>${t.timeLocal || t.ts || '—'}</td>
@@ -480,8 +490,8 @@ function cryptoDashboardHtml(d) {
       <td>${fmtThb(t.priceClosedThb)}</td>
     </tr>
   `;
-  const last24VisibleRows = last24Trades.slice(0, 15).map(renderTradeRow).join('');
-  const last24ExtraRows = last24Trades.slice(15).map(renderTradeRow).join('');
+  const last24VisibleRows = last24Trades.slice(0, 10).map(renderTradeRow).join('');
+  const last24ExtraRows = last24Trades.slice(10).map(renderTradeRow).join('');
   const latestN8n = (auto.n8nRecentExecutions || [])[0];
   return `
     <div class="dashboard">
@@ -511,17 +521,42 @@ function cryptoDashboardHtml(d) {
       </div>
 
       <h4 style="margin:16px 0 8px;">Trade List</h4>
-      <div class="subtle">Showing last 15 trades first · ${last24.windowLocal || 'Last 24 hours'} · ${last24.count ?? 0} paper trades · Volume ${fmtThb(last24.totalVolumeThb)} · Net open ADA ${fmtAmount(last24.netAdaAmount, 'ADA')} · Net open XRP ${fmtAmount(last24.netXrpAmount, 'XRP')}</div>
+      <div style="margin:0 0 8px;">${filterButtons}</div>
+      <div class="subtle">Showing latest 10 matching trades first · ${last24.windowLocal || 'V2 paper ledger'} · ${last24Trades.length}/${allTrades.length} shown · Volume ${fmtThb(last24.totalVolumeThb)} · Net open ADA ${fmtAmount(last24.netAdaAmount, 'ADA')} · Net open XRP ${fmtAmount(last24.netXrpAmount, 'XRP')}</div>
       <div class="subtle">Net edge = estimated move minus fees, spread, and slippage buffer. Positive is useful; negative means the signal probably does not beat trading costs.</div>
       <table class="asset-table">
         <thead><tr><th>Time</th><th>Action</th><th>Amount</th><th>Price</th><th>Value</th><th>Net edge</th><th>Expected Price</th><th>Plan / Exit</th><th>Status</th><th>Price Closed</th></tr></thead>
         <tbody>${last24VisibleRows || '<tr><td colspan="10">No paper trades in the last 24 hours.</td></tr>'}</tbody>
       </table>
-      ${last24ExtraRows ? `<details style="margin-top:8px;"><summary>Show older trades in this window (${Math.max(last24Trades.length - 15, 0)} more)</summary><table class="asset-table" style="margin-top:8px;"><tbody>${last24ExtraRows}</tbody></table></details>` : ''}
+      ${last24ExtraRows ? `<details style="margin-top:8px;"><summary>Show older matching trades (${Math.max(last24Trades.length - 10, 0)} more)</summary><table class="asset-table" style="margin-top:8px;"><tbody>${last24ExtraRows}</tbody></table></details>` : ''}
 
       <ul class="note-list">${(d.executiveNotes || []).map(n => `<li>${n}</li>`).join('')}</ul>
     </div>
   `;
+}
+
+function setTradeFilter(filter) {
+  TRADE_FILTER = filter;
+  showProjectDetail('crypto-paper-trading');
+}
+
+function filterTrades(trades, filter) {
+  const now = new Date();
+  const cutoffs = {
+    week: new Date(now.getTime() - 7 * 24 * 60 * 60 * 1000),
+    month: new Date(now.getTime() - 31 * 24 * 60 * 60 * 1000),
+    year: new Date(now.getTime() - 365 * 24 * 60 * 60 * 1000)
+  };
+  return trades.filter(t => {
+    const status = String(t.status || '').toLowerCase();
+    if (filter === 'open') return status === 'open';
+    if (filter === 'closed') return status === 'closed';
+    if (['week', 'month', 'year'].includes(filter)) {
+      const ts = new Date(t.ts || 0);
+      return !isNaN(ts) && ts >= cutoffs[filter];
+    }
+    return true;
+  });
 }
 
 function fmtThb(v) {
