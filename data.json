@@ -113,6 +113,24 @@
       ],
       "entries": [
         {
+          "date": "2026-06-01",
+          "title": "Crypto Paper Trading Status + Executive Dashboard",
+          "notes": [
+            "Paper-only status; no real trades are authorized or executed.",
+            "Current paper holdings: XRP 831.0, ADA 27294.0, BTC 0.0015853, ETH 0.05765972, THB 3720.68.",
+            "Portfolio value: 251,621.55 THB; daily P/L: +0.20% (+498.63 THB).",
+            "V2 mode: small planned positions. Open position: P0001 (LONG 100.0 XRP @ 42.35 THB, target 42.858200000000004).",
+            "Paper trades today: 3 (manual treasury allocation 1500 ADA → BTC/ETH/THB).",
+            "Benchmark (V2 start at live prices): 251,770.68 THB; vs hold: -149.13 THB (-0.0592%).",
+            "Recommended action: HOLD; paper status: OPEN_POSITION_WAIT.",
+            "Daily guard: ACTIVE (target +3.0%, kill -2.5%); daily start 251,122.92 THB.",
+            "V1 30k ADA churn archived; V2 small-increment planned positions in effect.",
+            "n8n status: last known execution #110 success (2026-05-31 15:07 UTC).",
+            "Hermes cron: Dip ladder (every 180m, last ok 2026-06-01 20:08 +07); Price-alert (every 180m, last ok 20:11 +07); Aggressive trader (every 180m, last ok 20:10 +07).",
+            "Trade counts: V2 3 paper trades + 1 planned position open; V1 17 aggressive rows archived."
+          ]
+        },
+        {
           "date": "2026-05-31",
           "title": "Crypto Paper Trading Status + Executive Dashboard",
           "notes": [
@@ -133,166 +151,164 @@
         }
       ],
       "cryptoDashboard": {
-        "lastUpdatedIso": "2026-06-01T14:03:42+00:00",
+        "lastUpdatedIso": "2026-06-01T21:00:45+07:00",
         "paperOnly": true,
         "mode": "paper_v2_planned_small_positions",
-        "recommendedAction": "MANUAL PAPER ALLOCATION",
-        "paperStatus": "ADA_ALLOCATED_TO_THB_BTC_ETH",
+        "recommendedAction": "HOLD",
+        "paperStatus": "OPEN_POSITION_WAIT",
         "dailyStatus": "ACTIVE",
         "holdings": [
           {
             "asset": "XRP",
             "amount": 831.0,
-            "valueThb": 34985.1
+            "valueThb": 34951.86
           },
           {
             "asset": "ADA",
             "amount": 27294.0,
-            "valueThb": 203886.18
+            "valueThb": 205523.82
           },
           {
             "asset": "BTC",
-            "amount": 0.0015852991168785876,
-            "valueThb": 3711.043094693954
+            "amount": 0.0015853,
+            "valueThb": 3713.18
           },
           {
             "asset": "ETH",
-            "amount": 0.05765971871692299,
-            "valueThb": 3712.6568178386387
+            "amount": 0.05765972,
+            "valueThb": 3712.01
           },
           {
             "asset": "THB",
-            "amount": 3720.675,
-            "valueThb": 3720.675
+            "amount": 3720.68,
+            "valueThb": 3720.68
           }
         ],
         "portfolio": {
-          "valueThb": 250015.65491253257,
-          "dailyPnlPct": 0.0,
-          "pnlThb": -1107.2650874674437,
-          "pnlPct": -0.4409255385639188,
-          "vsHoldThb": -60.625087467429694,
-          "vsHoldPct": -0.024242638073246336,
+          "valueThb": 251621.55,
+          "dailyPnlPct": 0.1986,
+          "pnlThb": 498.63,
+          "pnlPct": 0.2,
+          "vsHoldThb": -149.13,
+          "vsHoldPct": -0.0592,
           "feeCreditThb": 0.0,
           "tradeCount": 3
         },
         "assets": [
           {
             "asset": "BTC",
-            "holding": 0.0015852991168785876,
-            "livePriceThb": 2340910.34,
-            "bidThb": 2340323.41,
-            "askThb": 2341118.64,
-            "spreadPct": 0.016684050216696278,
-            "pct24": -2.69,
-            "volumeThb24h": 177334086.6,
-            "baselinePriceThb": 2408734.42004258,
+            "holding": 0.0015853,
+            "livePriceThb": 2342256.2,
+            "bidThb": 2337179.49,
+            "askThb": 2340234.42,
+            "spreadPct": 0.1304,
+            "pct24": -2.75,
+            "volumeThb24h": 178488791.79,
+            "baselinePriceThb": 2408734.42,
             "baselineSource": "market_blend_vwap_ema_swing",
             "baselineSourceLabel": "Market blend: VWAP + EMA + swing midpoint",
-            "moveFromBaselinePct": -0.32732708002074534,
-            "atrPct": 0.1396083228009534,
+            "moveFromBaselinePct": -2.7599,
+            "atrPct": 0.14,
             "dipTriggerPct": -2.0,
             "jumpTriggerPct": 2.0,
             "fastMoveTriggerPct": 1.25,
-            "swingLow24h": 2397558.84,
-            "swingHigh24h": 2418580.0,
-            "vwap24h": 2410089.900932114,
-            "ema20": 2406797.7708121086,
-            "ema50": 2408984.60919664
+            "swingLow24h": 2330544.92,
+            "swingHigh24h": 2353967.48,
+            "vwap24h": 2342256.2,
+            "ema20": 2342256.2,
+            "ema50": 2342256.2
           },
           {
             "asset": "ETH",
-            "holding": 0.05765971871692299,
-            "livePriceThb": 64389.09,
-            "bidThb": 64343.94,
-            "askThb": 64366.83,
-            "spreadPct": 0.0692351408770304,
-            "pct24": -2.14,
-            "volumeThb24h": 33036598.46,
-            "baselinePriceThb": 65891.60472320057,
+            "holding": 0.05765972,
+            "livePriceThb": 64377.93,
+            "bidThb": 64348.51,
+            "askThb": 64366.57,
+            "spreadPct": 0.0281,
+            "pct24": -2.17,
+            "volumeThb24h": 32971261.94,
+            "baselinePriceThb": 65891.6,
             "baselineSource": "market_blend_vwap_ema_swing",
             "baselineSourceLabel": "Market blend: VWAP + EMA + swing midpoint",
-            "moveFromBaselinePct": -0.546328663132121,
-            "atrPct": 0.18763243061681353,
+            "moveFromBaselinePct": -2.2972,
+            "atrPct": 0.14,
             "dipTriggerPct": -2.0,
             "jumpTriggerPct": 2.0,
             "fastMoveTriggerPct": 1.25,
-            "swingLow24h": 65415.43,
-            "swingHigh24h": 66301.68,
-            "vwap24h": 65947.02140638084,
-            "ema20": 65802.63541631629,
-            "ema50": 65925.32643622867
+            "swingLow24h": 64056.04,
+            "swingHigh24h": 64699.82,
+            "vwap24h": 64377.93,
+            "ema20": 64377.93,
+            "ema50": 64377.93
           },
           {
             "asset": "ADA",
             "holding": 27294.0,
-            "livePriceThb": 7.47,
+            "livePriceThb": 7.53,
             "bidThb": 7.46,
             "askThb": 7.47,
-            "spreadPct": 0.266666666666661,
-            "pct24": -3.11,
-            "volumeThb24h": 11060585.27,
+            "spreadPct": 0.1328,
+            "pct24": -2.33,
+            "volumeThb24h": 11060142.39,
             "baselinePriceThb": 7.7,
             "baselineSource": "high_risk_last_ada_trade_reference",
             "baselineSourceLabel": "Aggressive last ADA trade reference",
-            "moveFromBaselinePct": -0.7792207792207856,
-            "atrPct": 0.29917726252804816,
+            "moveFromBaselinePct": -2.2078,
+            "atrPct": 0.2992,
             "dipTriggerPct": -1.5,
             "jumpTriggerPct": 1.5,
             "fastMoveTriggerPct": 1.0,
-            "swingLow24h": 7.62,
-            "swingHigh24h": 7.77,
-            "vwap24h": 7.721497277381655,
-            "ema20": 7.69867056586389,
-            "ema50": 7.714113268132768,
-            "pct24h": -3.1
+            "swingLow24h": 7.49,
+            "swingHigh24h": 7.57,
+            "vwap24h": 7.53,
+            "ema20": 7.53,
+            "ema50": 7.53
           },
           {
             "asset": "XRP",
             "holding": 831.0,
-            "livePriceThb": 42.1,
-            "bidThb": 42.1,
-            "askThb": 42.11,
-            "spreadPct": 0.09451795841209629,
-            "pct24": -3.6,
-            "volumeThb24h": 27546550.55,
+            "livePriceThb": 42.06,
+            "bidThb": 42.08,
+            "askThb": 42.1,
+            "spreadPct": 0.0476,
+            "pct24": -3.77,
+            "volumeThb24h": 27547612.42,
             "baselinePriceThb": 43.36,
             "baselineSource": "high_risk_last_xrp_trade_reference",
             "baselineSourceLabel": "Aggressive last XRP trade reference",
-            "moveFromBaselinePct": 0.023062730627301686,
-            "atrPct": 0.24210283606179253,
+            "moveFromBaselinePct": -2.9982,
+            "atrPct": 0.2421,
             "dipTriggerPct": -1.25,
             "jumpTriggerPct": 1.25,
             "fastMoveTriggerPct": 0.9,
-            "swingLow24h": 43.33,
-            "swingHigh24h": 44.09,
-            "vwap24h": 43.736017091590234,
-            "ema20": 43.610595149787386,
-            "ema50": 43.66528668252344,
-            "pct24h": -3.66
+            "swingLow24h": 41.85,
+            "swingHigh24h": 42.27,
+            "vwap24h": 42.06,
+            "ema20": 42.06,
+            "ema50": 42.06
           },
           {
             "asset": "KUB",
             "holding": 0,
-            "livePriceThb": 25.88,
+            "livePriceThb": 25.9,
             "bidThb": 25.88,
-            "askThb": 26.05,
-            "spreadPct": 0.6525911708253425,
-            "pct24": -0.96,
-            "volumeThb24h": 2716541.95,
-            "baselinePriceThb": 26.265954622106406,
+            "askThb": 25.9,
+            "spreadPct": 0.0772,
+            "pct24": -1.63,
+            "volumeThb24h": 3104241.85,
+            "baselinePriceThb": 26.266,
             "baselineSource": "market_blend_vwap_ema_swing",
             "baselineSourceLabel": "Market blend: VWAP + EMA + swing midpoint",
-            "moveFromBaselinePct": 0.09154579850433256,
-            "atrPct": 0.6846709775580039,
-            "dipTriggerPct": -3.0,
-            "jumpTriggerPct": 3.0,
-            "fastMoveTriggerPct": 2.0,
-            "swingLow24h": 26.04,
-            "swingHigh24h": 26.45,
-            "vwap24h": 26.270000115545447,
-            "ema20": 26.26867160265806,
-            "ema50": 26.26235392875689
+            "moveFromBaselinePct": -1.3934,
+            "atrPct": 0.14,
+            "dipTriggerPct": -2.0,
+            "jumpTriggerPct": 2.0,
+            "fastMoveTriggerPct": 1.25,
+            "swingLow24h": 25.77,
+            "swingHigh24h": 26.03,
+            "vwap24h": 25.9,
+            "ema20": 25.9,
+            "ema50": 25.9
           }
         ],
         "marketRead": {
@@ -300,12 +316,7 @@
           "xrpScore": 0,
           "adaScore": 0,
           "sentimentRegime": "neutral_unavailable",
-          "lastTrade": {
-            "action": "SELL_ADA_BUY_ETH",
-            "amount_xrp": 500.0,
-            "price_thb": 7.46,
-            "asset": "ADA"
-          },
+          "lastTrade": null,
           "kubFeeCredit": {
             "bonus_pct": 10.0,
             "break_even_ask_thb": 32.91770573566085,
@@ -348,22 +359,23 @@
           "n8nLastCheckedIso": "2026-05-31T15:07:07+00:00"
         },
         "executiveNotes": [
-          "Manual paper allocation at market: sold 1,500 ADA total — 500 to THB, 500 to BTC, 500 to ETH. Real trading remains disabled.",
           "Paper-only. No real exchange orders are authorized or executed.",
           "Audit: the old V1 high-risk bot really did rotate ~30k ADA because it was configured to trade 95% of holdings/cash. That was too aggressive for the intended small-increment test.",
           "V1 state/trades were archived locally; V2 has restarted from initial paper holdings: 331 XRP reserve, 500 XRP active, 28,794 ADA, 0 THB cash.",
-          "V2 rule: only one planned position at a time, max 100 XRP or 500 ADA per new paper position, with target/stop shown in the Trade List."
+          "V2 rule: only one planned position at a time, max 100 XRP or 500 ADA per new paper position, with target/stop shown in the Trade List.",
+          "The 30k ADA V1 churn was real paper output from an overly broad 95% rotation setting. It has been archived and superseded by V2 small-increment planned positions.",
+          "Paper treasury allocation executed at 2026-06-01 14:03 UTC: 1500 ADA → BTC, ETH, THB (500 ADA each bucket) at market prices."
         ],
         "last24hrTrades": {
-          "windowLocal": "V2 planned-position ledger + manual paper allocations · latest first",
+          "windowLocal": "V2 paper ledger · latest first",
           "count": 4,
           "totalVolumeThb": 15425.0,
-          "netAdaAmount": 27294.0,
-          "netXrpAmount": 831.0,
+          "netAdaAmount": 1500.0,
+          "netXrpAmount": 0,
           "trades": [
             {
               "ts": "2026-06-01T14:03:42+00:00",
-              "timeLocal": "Jun 1 21:03",
+              "timeLocal": "Jun 01 14:03",
               "action": "SELL_ADA_TO_THB",
               "asset": "ADA",
               "amount": 500.0,
@@ -372,16 +384,16 @@
               "netEdgePct": null,
               "expectedAction": "—",
               "expectedPriceThb": null,
-              "expectedPriceBasis": "manual_market_allocation",
-              "plannedExit": "Manual paper allocation; no planned exit yet.",
-              "status": "Closed",
+              "expectedPriceBasis": null,
+              "plannedExit": "Manual paper treasury allocation",
+              "status": "CLOSED",
               "priceClosedThb": 7.46,
               "positionId": "",
-              "source": "manual_paper_allocation"
+              "source": "executed_trade"
             },
             {
               "ts": "2026-06-01T14:03:42+00:00",
-              "timeLocal": "Jun 1 21:03",
+              "timeLocal": "Jun 01 14:03",
               "action": "SELL_ADA_BUY_BTC",
               "asset": "ADA",
               "amount": 500.0,
@@ -390,16 +402,16 @@
               "netEdgePct": null,
               "expectedAction": "—",
               "expectedPriceThb": null,
-              "expectedPriceBasis": "manual_market_allocation",
-              "plannedExit": "Manual paper allocation; no planned exit yet.",
-              "status": "Closed",
+              "expectedPriceBasis": null,
+              "plannedExit": "Manual paper treasury allocation",
+              "status": "CLOSED",
               "priceClosedThb": 7.46,
               "positionId": "",
-              "source": "manual_paper_allocation"
+              "source": "executed_trade"
             },
             {
               "ts": "2026-06-01T14:03:42+00:00",
-              "timeLocal": "Jun 1 21:03",
+              "timeLocal": "Jun 01 14:03",
               "action": "SELL_ADA_BUY_ETH",
               "asset": "ADA",
               "amount": 500.0,
@@ -408,12 +420,12 @@
               "netEdgePct": null,
               "expectedAction": "—",
               "expectedPriceThb": null,
-              "expectedPriceBasis": "manual_market_allocation",
-              "plannedExit": "Manual paper allocation; no planned exit yet.",
-              "status": "Closed",
+              "expectedPriceBasis": null,
+              "plannedExit": "Manual paper treasury allocation",
+              "status": "CLOSED",
               "priceClosedThb": 7.46,
               "positionId": "",
-              "source": "manual_paper_allocation"
+              "source": "executed_trade"
             },
             {
               "ts": "2026-06-01T13:20:23+00:00",
@@ -610,6 +622,18 @@
       ],
       "entries": [
         {
+          "date": "2026-06-01",
+          "title": "Crypto Paper Trading Status",
+          "notes": [
+            "Paper-only; no real trades authorized.",
+            "Portfolio: 251,621.55 THB; daily P/L: +0.20%.",
+            "V2 open position: P0001 LONG XRP 100 @ 42.35 THB.",
+            "3 paper trades today (manual treasury allocation: 1500 ADA → BTC, ETH, THB).",
+            "HOLD recommendation; daily guard ACTIVE.",
+            "V1 30k ADA churn archived; V2 small-increment ledger active."
+          ]
+        },
+        {
           "date": "2026-05-31",
           "title": "Crypto Paper Trading Status",
           "notes": [
@@ -630,6 +654,26 @@
     }
   ],
   "dailyLogs": [
+    {
+      "date": "2026-06-01",
+      "title": "Crypto Paper Trading Dashboard Update",
+      "summary": "V2 paper trading: portfolio 251,621.55 THB, daily P/L +0.20%, 3 paper trades (ADA→BTC/ETH/THB), 1 open position P0001 LONG XRP 100, HOLD.",
+      "subjects": [
+        "crypto-paper-trading"
+      ],
+      "projects": [
+        "crypto-paper-trading"
+      ],
+      "highlights": [
+        "Paper portfolio: 251,621.55 THB · Daily P/L: +0.20% (+498.63 THB)",
+        "3 paper trades: manual treasury allocation 1500 ADA → BTC/ETH/THB at market",
+        "Open position: P0001 LONG XRP 100 @ 42.35 THB, target 42.858200000000004, stop 41.8418",
+        "Recommended: HOLD · Daily guard ACTIVE (target +3.0%, kill -2.5%)",
+        "Vs V2 buy-and-hold: -149.13 THB (-0.0592%)",
+        "V1 30k ADA churn archived; V2 small-increment planned positions active",
+        "Hermes cron: 3 watchdogs running, all last-ok at ~20:08-20:11 +07 today"
+      ]
+    },
     {
       "date": "2026-05-31",
       "title": "Crypto Paper Trading Status",
