@@ -122,6 +122,49 @@
   .mini-btn.danger:hover { border-color: var(--red); color: var(--red); }
   .project-toolbar { margin: 0 0 12px; display: flex; gap: 8px; flex-wrap: wrap; }
 
+  /* Inline trade action buttons */
+  .trade-action-btn {
+    background: rgba(63,185,80,0.15);
+    border: 1px solid var(--green);
+    color: var(--green);
+    padding: 2px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 11px;
+    white-space: nowrap;
+  }
+  .trade-action-btn:hover { background: rgba(63,185,80,0.30); }
+  .trade-action-btn.close-btn {
+    background: rgba(248,81,73,0.10);
+    border-color: var(--red);
+    color: var(--red);
+  }
+  .trade-action-btn.close-btn:hover { background: rgba(248,81,73,0.25); }
+  .trade-edit-input {
+    background: var(--bg);
+    border: 1px solid var(--accent);
+    color: var(--text);
+    padding: 3px 6px;
+    border-radius: 4px;
+    font-size: 12px;
+    width: 80px;
+    font-family: inherit;
+  }
+  .trade-edit-input:focus { outline: none; }
+  .trade-edit-row {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    flex-wrap: wrap;
+  }
+  .trade-override-reset {
+    font-size: 11px;
+    color: var(--text-dim);
+    cursor: pointer;
+    margin-left: 8px;
+  }
+  .trade-override-reset:hover { color: var(--red); }
+
   /* Detail view */
   .detail-header {
     display: flex;
@@ -546,7 +589,22 @@ function cryptoDashboardHtml(d) {
     ['month', 'Month'],
     ['year', 'Year']
   ].map(([key, label]) => `<button class="back-btn" style="margin:0 6px 6px 0;${TRADE_FILTER === key ? 'border-color:var(--accent);color:var(--accent);' : ''}" onclick="setTradeFilter('${key}')">${label}</button>`).join('');
-  const renderTradeRow = (t) => `
+  const tradeRowId = (t) => t.positionId || [t.ts, t.action, t.amount].join('|');
+  const renderTradeRow = (t) => {
+    const rid = tradeRowId(t);
+    const ov = getTradeOverride(rid);
+    const effStatus = ov?.status || t.status || 'Open';
+    const effClosed = ov?.priceClosedThb ?? t.priceClosedThb;
+    const effExpAction = ov?.expectedAction ?? t.expectedAction;
+    const effExpPrice = ov?.expectedPriceThb ?? t.expectedPriceThb;
+    const isOpen = String(effStatus).toLowerCase() === 'open';
+    const closeBtn = isOpen
+      ? `<button class="trade-action-btn close-btn" onclick="event.stopPropagation();setTradeClose('${rid.replace(/'/g,"\\'")}', prompt('Close price (THB)?', '${effExpPrice || ''}'))">✕ Close</button>`
+      : (ov?.status === 'CLOSED' ? `<span class="trade-override-reset" onclick="event.stopPropagation();clearTradeOverride('${rid.replace(/'/g,"\\'")}')" title="Revert manual close">↩</span>` : '');
+    const editBtn = isOpen
+      ? `<button class="trade-action-btn" onclick="event.stopPropagation();editExpectedPrice('${rid.replace(/'/g,"\\'")}')" title="Adjust expected price">✎</button>`
+      : '';
+    return `
     <tr>
       <td>${t.timeLocal || t.ts || '—'}</td>
       <td><strong>${t.action || '—'}</strong></td>
@@ -554,12 +612,12 @@ function cryptoDashboardHtml(d) {
       <td>${fmtThb(t.priceThb)}</td>
       <td>${fmtThb(t.valueThb)}</td>
       <td class="${numClass(t.netEdgePct)}">${fmtPct(t.netEdgePct)}</td>
-      <td>${t.expectedAction ? `${t.expectedAction} ${fmtThb(t.expectedPriceThb)}` : fmtThb(t.expectedPriceThb)}</td>
+      <td id="exp-cell-${rid.replace(/[^a-zA-Z0-9_-]/g,'_')}"><div class="trade-edit-row">${effExpAction ? `${effExpAction} ${fmtThb(effExpPrice)}` : fmtThb(effExpPrice)}${editBtn}</div></td>
       <td>${t.plannedExit || t.plan || '—'}</td>
-      <td class="${t.status === 'Closed' ? 'neutral' : 'positive'}">${t.status || 'Open'}</td>
-      <td>${fmtThb(t.priceClosedThb)}</td>
+      <td class="${effStatus === 'CLOSED' || effStatus === 'Closed' ? 'neutral' : 'positive'}">${effStatus}${closeBtn ? ' ' + closeBtn : ''}</td>
+      <td>${fmtThb(effClosed)}</td>
     </tr>
-  `;
+  `};
   const last24VisibleRows = last24Trades.slice(0, 10).map(renderTradeRow).join('');
   const last24ExtraRows = last24Trades.slice(10).map(renderTradeRow).join('');
   const latestN8n = (auto.n8nRecentExecutions || [])[0];
@@ -612,6 +670,44 @@ function cryptoDashboardHtml(d) {
 
 function setTradeFilter(filter) {
   TRADE_FILTER = filter;
+  showProjectDetail('crypto-paper-trading');
+}
+
+// ── Trade overrides (localStorage) ──
+function tradeOverrides() {
+  try { return JSON.parse(localStorage.getItem('mavisTradeOverrides') || '{}'); }
+  catch { return {}; }
+}
+function saveTradeOverrides(ov) {
+  localStorage.setItem('mavisTradeOverrides', JSON.stringify(ov));
+}
+function getTradeOverride(rowId) {
+  return tradeOverrides()[rowId] || null;
+}
+function setTradeClose(rowId, closePrice) {
+  if (!closePrice || isNaN(Number(closePrice))) return;
+  const ov = tradeOverrides();
+  ov[rowId] = { ...(ov[rowId] || {}), status: 'CLOSED', priceClosedThb: Number(closePrice) };
+  saveTradeOverrides(ov);
+  showProjectDetail('crypto-paper-trading');
+}
+function clearTradeOverride(rowId) {
+  const ov = tradeOverrides();
+  delete ov[rowId];
+  saveTradeOverrides(ov);
+  showProjectDetail('crypto-paper-trading');
+}
+function editExpectedPrice(rowId) {
+  const ov = tradeOverrides();
+  const current = ov[rowId] || {};
+  const curPrice = current.expectedPriceThb ?? '';
+  const curAction = current.expectedAction || '';
+  const newAction = prompt('Expected action (e.g. Sell ≥, Buy ≤, or leave blank):', curAction);
+  if (newAction === null) return;
+  const newPrice = prompt('Expected price (THB):', String(curPrice));
+  if (newPrice === null || isNaN(Number(newPrice)) || !newPrice.trim()) return;
+  ov[rowId] = { ...current, expectedAction: newAction.trim() || undefined, expectedPriceThb: Number(newPrice) };
+  saveTradeOverrides(ov);
   showProjectDetail('crypto-paper-trading');
 }
 
