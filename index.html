@@ -464,6 +464,17 @@ function cryptoDashboardHtml(d) {
     </tr>
   `).join('');
   const lastTrade = m.lastTrade ? `${m.lastTrade.action} ${m.lastTrade.amount_xrp} @ ${m.lastTrade.price_thb} THB` : '—';
+  const last24 = d.last24hrTrades || {};
+  const last24Rows = (last24.trades || []).map(t => `
+    <tr>
+      <td>${t.timeLocal || t.ts || '—'}</td>
+      <td><strong>${t.action || '—'}</strong></td>
+      <td>${fmtAmount(t.amount, t.asset || '')}</td>
+      <td>${fmtThb(t.priceThb)}</td>
+      <td>${fmtThb(t.valueThb)}</td>
+      <td class="${numClass(t.netEdgePct)}">${fmtPct(t.netEdgePct)}</td>
+    </tr>
+  `).join('');
   const latestN8n = (auto.n8nRecentExecutions || [])[0];
   return `
     <div class="dashboard">
@@ -491,6 +502,13 @@ function cryptoDashboardHtml(d) {
         <div class="dash-tile"><div class="label">Scores / Sentiment</div><div class="small">XRP ${m.xrpScore ?? '—'} · ADA ${m.adaScore ?? '—'} · ${m.sentimentRegime || '—'}</div></div>
         <div class="dash-tile"><div class="label">Fee credit</div><div class="small">${fmtThb(p.feeCreditThb)} available · ${m.kubFeeCredit?.status || 'KUB status —'}</div></div>
       </div>
+
+      <h4 style="margin:16px 0 8px;">Last 24hr Trades</h4>
+      <div class="subtle">${last24.windowLocal || 'Last 24 hours'} · ${last24.count ?? 0} paper trades · Volume ${fmtThb(last24.totalVolumeThb)} · Net open ADA ${fmtAmount(last24.netAdaAmount, 'ADA')} · Net open XRP ${fmtAmount(last24.netXrpAmount, 'XRP')}</div>
+      <table class="asset-table">
+        <thead><tr><th>Time</th><th>Action</th><th>Amount</th><th>Price</th><th>Value</th><th>Net edge</th></tr></thead>
+        <tbody>${last24Rows || '<tr><td colspan="6">No paper trades in the last 24 hours.</td></tr>'}</tbody>
+      </table>
 
       <ul class="note-list">${(d.executiveNotes || []).map(n => `<li>${n}</li>`).join('')}</ul>
     </div>
