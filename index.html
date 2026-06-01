@@ -465,7 +465,8 @@ function cryptoDashboardHtml(d) {
   `).join('');
   const lastTrade = m.lastTrade ? `${m.lastTrade.action} ${m.lastTrade.amount_xrp} @ ${m.lastTrade.price_thb} THB` : '—';
   const last24 = d.last24hrTrades || {};
-  const last24Rows = (last24.trades || []).map(t => `
+  const last24Trades = [...(last24.trades || [])].sort((a, b) => new Date(b.ts || 0) - new Date(a.ts || 0));
+  const last24Rows = last24Trades.map(t => `
     <tr>
       <td>${t.timeLocal || t.ts || '—'}</td>
       <td><strong>${t.action || '—'}</strong></td>
