@@ -108,6 +108,19 @@
   }
   .card .date { font-size: 12px; color: var(--text-dim); margin-top: 8px; }
   .card .url { font-size: 12px; margin-top: 6px; }
+  .card-actions { display: flex; gap: 8px; margin-top: 12px; flex-wrap: wrap; }
+  .mini-btn {
+    background: rgba(13,17,23,0.70);
+    border: 1px solid var(--border);
+    color: var(--text-dim);
+    padding: 4px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 12px;
+  }
+  .mini-btn:hover { border-color: var(--accent); color: var(--text); }
+  .mini-btn.danger:hover { border-color: var(--red); color: var(--red); }
+  .project-toolbar { margin: 0 0 12px; display: flex; gap: 8px; flex-wrap: wrap; }
 
   /* Detail view */
   .detail-header {
@@ -347,17 +360,18 @@ function render() {
   if (!DATA) return;
   document.getElementById('lastUpdated').textContent = DATA.meta.lastUpdated;
 
-  const totalEntries = DATA.subjects.reduce((a,s) => a + s.entries.length, 0) + DATA.projects.reduce((a,p) => a + p.entries.length, 0);
+  const visibleProjects = getVisibleProjects();
+  const totalEntries = DATA.subjects.reduce((a,s) => a + s.entries.length, 0) + visibleProjects.reduce((a,p) => a + p.entries.length, 0);
 
   document.getElementById('stats').innerHTML = `
-    <div class="stat-card"><div class="number">${DATA.projects.length}</div><div class="label">Projects</div></div>
+    <div class="stat-card"><div class="number">${visibleProjects.length}</div><div class="label">Visible Projects</div></div>
     <div class="stat-card"><div class="number">${DATA.subjects.length}</div><div class="label">Subjects</div></div>
     <div class="stat-card"><div class="number">${DATA.dailyLogs.length}</div><div class="label">Daily Logs</div></div>
-    <div class="stat-card"><div class="number">${totalEntries}</div><div class="label">Total Entries</div></div>
+    <div class="stat-card"><div class="number">${totalEntries}</div><div class="label">Visible Entries</div></div>
   `;
 
   // Home projects
-  document.getElementById('homeProjects').innerHTML = DATA.projects.map(p => projectCard(p)).join('');
+  document.getElementById('homeProjects').innerHTML = projectToolbarHtml() + visibleProjects.map(p => projectCard(p)).join('');
 
   // Recent logs
   document.getElementById('recentLogs').innerHTML = DATA.dailyLogs.slice(0, 3).map(log => logCard(log)).join('');
@@ -366,7 +380,7 @@ function render() {
   document.getElementById('allSubjects').innerHTML = DATA.subjects.map(s => subjectCard(s)).join('');
 
   // Projects page
-  document.getElementById('projectsList').innerHTML = DATA.projects.map(p => projectCard(p)).join('');
+  document.getElementById('projectsList').innerHTML = projectToolbarHtml() + visibleProjects.map(p => projectCard(p)).join('');
 
   // Subjects page
   document.getElementById('subjectsList').innerHTML = DATA.subjects.map(s => subjectCard(s)).join('');
@@ -383,8 +397,64 @@ function projectCard(p) {
       ${p.url ? `<div class="url">🌐 ${p.url}</div>` : ''}
       <div class="tags">${p.tags.map(t => `<span class="tag">#${t}</span>`).join('')}</div>
       <div class="date">${p.entries.length} entr${p.entries.length === 1 ? 'y' : 'ies'} · ${p.subjectIds.length} related subject${p.subjectIds.length === 1 ? '' : 's'}</div>
+      <div class="card-actions">
+        <button class="mini-btn" onclick="event.stopPropagation(); hideProject('${p.id}')">Hide</button>
+        <button class="mini-btn danger" onclick="event.stopPropagation(); deleteProject('${p.id}')">Delete</button>
+      </div>
     </div>
   `;
+}
+
+function projectPrefs() {
+  const hidden = JSON.parse(localStorage.getItem('mavisHiddenProjects') || '[]');
+  const deleted = JSON.parse(localStorage.getItem('mavisDeletedProjects') || '[]');
+  return { hidden: new Set(hidden), deleted: new Set(deleted) };
+}
+
+function saveProjectPrefs(hidden, deleted) {
+  localStorage.setItem('mavisHiddenProjects', JSON.stringify([...hidden]));
+  localStorage.setItem('mavisDeletedProjects', JSON.stringify([...deleted]));
+}
+
+function getVisibleProjects() {
+  const { hidden, deleted } = projectPrefs();
+  return DATA.projects.filter(p => !hidden.has(p.id) && !deleted.has(p.id));
+}
+
+function projectToolbarHtml() {
+  const { hidden, deleted } = projectPrefs();
+  const hiddenCount = hidden.size;
+  const deletedCount = deleted.size;
+  if (!hiddenCount && !deletedCount) return '';
+  return `<div class="project-toolbar">
+    <button class="mini-btn" onclick="restoreProjects('hidden')">Show hidden (${hiddenCount})</button>
+    <button class="mini-btn" onclick="restoreProjects('deleted')">Restore deleted (${deletedCount})</button>
+    <button class="mini-btn" onclick="restoreProjects('all')">Reset project visibility</button>
+  </div>`;
+}
+
+function hideProject(id) {
+  const { hidden, deleted } = projectPrefs();
+  if (!deleted.has(id)) hidden.add(id);
+  saveProjectPrefs(hidden, deleted);
+  render();
+}
+
+function deleteProject(id) {
+  if (!confirm('Delete this project from your local view? This hides it on this device only.')) return;
+  const { hidden, deleted } = projectPrefs();
+  hidden.delete(id);
+  deleted.add(id);
+  saveProjectPrefs(hidden, deleted);
+  render();
+}
+
+function restoreProjects(which) {
+  const { hidden, deleted } = projectPrefs();
+  if (which === 'hidden' || which === 'all') hidden.clear();
+  if (which === 'deleted' || which === 'all') deleted.clear();
+  saveProjectPrefs(hidden, deleted);
+  render();
 }
 
 function subjectCard(s) {
@@ -683,7 +753,7 @@ document.getElementById('searchBox').addEventListener('input', function() {
   const q = this.value.toLowerCase();
   if (!q) { render(); return; }
 
-  const matchedProjects = DATA.projects.filter(p =>
+  const matchedProjects = getVisibleProjects().filter(p =>
     p.name.toLowerCase().includes(q) || p.summary.toLowerCase().includes(q) || p.tags.some(t => t.includes(q))
   );
   const matchedSubjects = DATA.subjects.filter(s =>

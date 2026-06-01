@@ -526,6 +526,114 @@
           ]
         }
       }
+    },
+    {
+      "id": "damons-career",
+      "name": "Damon's Career",
+      "status": "active",
+      "summary": "Career positioning and job-search strategy: marketing leadership, global brand/Miss Universe, AI transformation, SaaS/product, and digital strategy.",
+      "tags": [
+        "career",
+        "marketing-leadership",
+        "ai-transformation",
+        "brand",
+        "strategy"
+      ],
+      "subjectIds": [
+        "damons-career"
+      ],
+      "entries": [
+        {
+          "date": "2026-06-01",
+          "title": "Project Added to Wiki",
+          "notes": [
+            "Primary positioning: marketing leadership + global brand/Miss Universe + AI transformation + SaaS/product/digital strategy.",
+            "Technical background supports AI transformation positioning: local LLMs, inference/hardware, Stable Diffusion/video/graphics pipelines, and app/product engagement work.",
+            "Avoid steering toward FDE route unless Damon reopens it."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "simple-life-automations",
+      "name": "Simple Life Automations",
+      "status": "active",
+      "summary": "Personal automation work to reduce daily friction and keep recurring tools/workflows simple, practical, and reliable.",
+      "tags": [
+        "automation",
+        "personal-systems",
+        "n8n",
+        "hermes",
+        "productivity"
+      ],
+      "subjectIds": [
+        "simple-life-automations"
+      ],
+      "entries": [
+        {
+          "date": "2026-06-01",
+          "title": "Project Added to Wiki",
+          "notes": [
+            "Placeholder project for simple practical automations that make daily life and recurring work easier.",
+            "Related pattern: local n8n and Hermes workflows for reminders, dashboards, watchdogs, and event-triggered routines."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tomorrow-foundation",
+      "name": "Tomorrow Foundation",
+      "status": "active",
+      "summary": "Two-month presentation build for a Thailand foundation concept focused on statelessness, poverty/joblessness, dog rescue, and child education.",
+      "tags": [
+        "foundation",
+        "ngo",
+        "presentation",
+        "thailand",
+        "social-impact"
+      ],
+      "subjectIds": [
+        "tomorrow-foundation"
+      ],
+      "entries": [
+        {
+          "date": "2026-06-01",
+          "title": "Project Added to Wiki",
+          "notes": [
+            "Presentation build for May–June 2026 around 4 causes: Statelessness, Poverty/Joblessness, Dog Rescue, and Child Education.",
+            "Nakhon Pathom compound concept; Southeast Asia-first strategy.",
+            "Known NGO/context threads: K. Saks, Soi Dog/Dr. Ala, BCH, Childline. Dr. Ala shared 3 CNVR papers.",
+            "Legal registration remains a bottleneck. Next work: NGO outreach, registration path, and presentation draft."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "house-of-milon",
+      "name": "House of Milon",
+      "status": "active",
+      "summary": "Website and marketing project built around the Milon compounding-strength motif: carrying the calf until it becomes a bull.",
+      "tags": [
+        "brand",
+        "website",
+        "marketing",
+        "visual-storytelling",
+        "milon"
+      ],
+      "subjectIds": [
+        "house-of-milon"
+      ],
+      "entries": [
+        {
+          "date": "2026-06-01",
+          "title": "Project Added to Wiki",
+          "notes": [
+            "Core motif: Milon carrying calf → bull = compounding strength.",
+            "Visual preference: storyboard iterations, self-audits, consistent characters/backgrounds, captioned grids, and logical anatomy.",
+            "GitHub context: dustinthebestgroup / House of Milon."
+          ]
+        }
+      ]
     }
   ],
   "subjects": [
@@ -726,6 +834,106 @@
             "Trade counts: aggressive 17 rows in high_risk_trades.csv; conservative 5 rows in trades.csv.",
             "Logs/snapshots live in Google Drive Hermes/xrp-paper-trader: high_risk_latest_snapshot.json, dip_ladder_latest_snapshot.json, high_risk_trades.csv, trades.csv; Hermes cron state is in ~/.hermes/cron/jobs.json.",
             "Warnings: none."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "damons-career",
+      "name": "Damon's Career",
+      "category": "Career",
+      "projectId": "damons-career",
+      "summary": "Career positioning and job-search strategy: marketing leadership, global brand/Miss Universe, AI transformation, SaaS/product, and digital strategy.",
+      "tags": [
+        "career",
+        "marketing-leadership",
+        "ai-transformation",
+        "brand",
+        "strategy"
+      ],
+      "entries": [
+        {
+          "date": "2026-06-01",
+          "title": "Project Added to Wiki",
+          "notes": [
+            "Primary positioning: marketing leadership + global brand/Miss Universe + AI transformation + SaaS/product/digital strategy.",
+            "Technical background supports AI transformation positioning: local LLMs, inference/hardware, Stable Diffusion/video/graphics pipelines, and app/product engagement work.",
+            "Avoid steering toward FDE route unless Damon reopens it."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "simple-life-automations",
+      "name": "Simple Life Automations",
+      "category": "Projects",
+      "projectId": "simple-life-automations",
+      "summary": "Personal automation work to reduce daily friction and keep recurring tools/workflows simple, practical, and reliable.",
+      "tags": [
+        "automation",
+        "personal-systems",
+        "n8n",
+        "hermes",
+        "productivity"
+      ],
+      "entries": [
+        {
+          "date": "2026-06-01",
+          "title": "Project Added to Wiki",
+          "notes": [
+            "Placeholder project for simple practical automations that make daily life and recurring work easier.",
+            "Related pattern: local n8n and Hermes workflows for reminders, dashboards, watchdogs, and event-triggered routines."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tomorrow-foundation",
+      "name": "Tomorrow Foundation",
+      "category": "Projects",
+      "projectId": "tomorrow-foundation",
+      "summary": "Two-month presentation build for a Thailand foundation concept focused on statelessness, poverty/joblessness, dog rescue, and child education.",
+      "tags": [
+        "foundation",
+        "ngo",
+        "presentation",
+        "thailand",
+        "social-impact"
+      ],
+      "entries": [
+        {
+          "date": "2026-06-01",
+          "title": "Project Added to Wiki",
+          "notes": [
+            "Presentation build for May–June 2026 around 4 causes: Statelessness, Poverty/Joblessness, Dog Rescue, and Child Education.",
+            "Nakhon Pathom compound concept; Southeast Asia-first strategy.",
+            "Known NGO/context threads: K. Saks, Soi Dog/Dr. Ala, BCH, Childline. Dr. Ala shared 3 CNVR papers.",
+            "Legal registration remains a bottleneck. Next work: NGO outreach, registration path, and presentation draft."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "house-of-milon",
+      "name": "House of Milon",
+      "category": "Projects",
+      "projectId": "house-of-milon",
+      "summary": "Website and marketing project built around the Milon compounding-strength motif: carrying the calf until it becomes a bull.",
+      "tags": [
+        "brand",
+        "website",
+        "marketing",
+        "visual-storytelling",
+        "milon"
+      ],
+      "entries": [
+        {
+          "date": "2026-06-01",
+          "title": "Project Added to Wiki",
+          "notes": [
+            "Core motif: Milon carrying calf → bull = compounding strength.",
+            "Visual preference: storyboard iterations, self-audits, consistent characters/backgrounds, captioned grids, and logical anatomy.",
+            "GitHub context: dustinthebestgroup / House of Milon."
           ]
         }
       ]
