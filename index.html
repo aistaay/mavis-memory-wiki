@@ -714,7 +714,7 @@ function cryptoDashboardHtml(d) {
       <td>${fmtPct(a.dipTriggerPct)} / ${fmtPct(a.jumpTriggerPct)}</td>
     </tr>
   `).join('');
-  const lastTrade = m.lastTrade ? `${m.lastTrade.action} ${m.lastTrade.amount_xrp} @ ${m.lastTrade.price_thb} THB` : '—';
+  const lastTrade = m.lastTrade ? `${m.lastTrade.action} ${fmtAmount(m.lastTrade.amount ?? m.lastTrade.amount_xrp, m.lastTrade.asset || '')} @ ${fmtThb(m.lastTrade.priceThb ?? m.lastTrade.price_thb)}` : '—';
   const last24Trades = filterTrades(allTrades, TRADE_FILTER);
   const filterButtons = [
     ['all', 'All trades'],
