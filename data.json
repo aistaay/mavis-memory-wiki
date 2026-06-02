@@ -118,8 +118,8 @@
           "notes": [
             "Paper-only status; no real trades are authorized or executed.",
             "Current paper holdings: XRP 531, ADA 17294, BTC 0.00948542, ETH 0.34473028, KUB 707.03838823, THB 33198.08.",
-            "Portfolio value: 242,552.81 THB; P/L vs V2 start: -8,570.11 THB (-3.41%).",
-            "Vs V2 buy-and-hold benchmark: -391.03 THB (-0.16%).",
+            "Portfolio value: 242,800.95 THB; P/L vs V2 start: -8,321.97 THB (-3.31%).",
+            "Vs V2 buy-and-hold benchmark: -480.69 THB (-0.20%).",
             "Current open position: P0003 SHORT XRP 100.0 @ 41.16 THB; buy back ≤ 40.67 THB or stop ≥ 41.65 THB.",
             "Trade count: 10 V2 rows; latest trade SELL_XRP 100.0 XRP @ 41.16 THB."
           ]
@@ -145,7 +145,7 @@
         }
       ],
       "cryptoDashboard": {
-        "lastUpdatedIso": "2026-06-02T20:02:01+07:00",
+        "lastUpdatedIso": "2026-06-02T20:04:12+07:00",
         "paperOnly": true,
         "mode": "paper_v2_planned_small_positions",
         "recommendedAction": "HOLD",
@@ -155,22 +155,22 @@
           {
             "asset": "XRP",
             "amount": 531.0,
-            "valueThb": 21845.34
+            "valueThb": 21877.2
           },
           {
             "asset": "ADA",
             "amount": 17294.0,
-            "valueThb": 125381.5
+            "valueThb": 125554.44
           },
           {
             "asset": "BTC",
             "amount": 0.009485424704722481,
-            "valueThb": 21311.5974480629
+            "valueThb": 21323.234736216138
           },
           {
             "asset": "ETH",
             "amount": 0.34473028120652727,
-            "valueThb": 22157.55261376079
+            "valueThb": 22189.25401042054
           },
           {
             "asset": "KUB",
@@ -184,12 +184,12 @@
           }
         ],
         "portfolio": {
-          "valueThb": 242552.81,
+          "valueThb": 242800.95,
           "dailyPnlPct": -1.9236711593640488,
-          "pnlThb": -8570.11,
-          "pnlPct": -3.412715421015832,
-          "vsHoldThb": -391.03,
-          "vsHoldPct": -0.16095514771859817,
+          "pnlThb": -8321.97,
+          "pnlPct": -3.3139037773741475,
+          "vsHoldThb": -480.69,
+          "vsHoldPct": -0.1975866044524613,
           "feeCreditThb": 1821.138824642338,
           "tradeCount": 10
         },
@@ -197,16 +197,16 @@
           {
             "asset": "BTC",
             "holding": 0.009485424704722481,
-            "livePriceThb": 2246773.14,
-            "bidThb": 2243674.51,
-            "askThb": 2244894.68,
-            "spreadPct": 0.05436788198425393,
-            "pct24": -4.39,
-            "volumeThb24h": 299920749.82,
+            "livePriceThb": 2248000.0,
+            "bidThb": 2249999.99,
+            "askThb": 2250200.67,
+            "spreadPct": 0.008918713415756976,
+            "pct24": -4.0,
+            "volumeThb24h": 300856059.54,
             "baselinePriceThb": 2408734.42,
             "baselineSource": "market_blend_vwap_ema_swing",
             "baselineSourceLabel": "Market blend: VWAP + EMA + swing midpoint",
-            "moveFromBaselinePct": -6.723916038863255,
+            "moveFromBaselinePct": -6.672982237701404,
             "atrPct": 0.14,
             "dipTriggerPct": -2.0,
             "jumpTriggerPct": 2.0,
@@ -220,16 +220,16 @@
           {
             "asset": "ETH",
             "holding": 0.34473028120652727,
-            "livePriceThb": 64275.04,
-            "bidThb": 64285.88,
-            "askThb": 64329.66,
-            "spreadPct": 0.06807886512004087,
-            "pct24": -0.51,
-            "volumeThb24h": 38532761.6,
+            "livePriceThb": 64367.0,
+            "bidThb": 64283.55,
+            "askThb": 64322.23,
+            "spreadPct": 0.06015281739281126,
+            "pct24": -0.21,
+            "volumeThb24h": 38532861.36,
             "baselinePriceThb": 65891.6,
             "baselineSource": "market_blend_vwap_ema_swing",
             "baselineSourceLabel": "Market blend: VWAP + EMA + swing midpoint",
-            "moveFromBaselinePct": -2.453362795864731,
+            "moveFromBaselinePct": -2.3138002416089543,
             "atrPct": 0.14,
             "dipTriggerPct": -2.0,
             "jumpTriggerPct": 2.0,
@@ -243,16 +243,16 @@
           {
             "asset": "ADA",
             "holding": 17294.0,
-            "livePriceThb": 7.25,
+            "livePriceThb": 7.26,
             "bidThb": 7.25,
-            "askThb": 7.26,
-            "spreadPct": 0.13783597518952154,
-            "pct24": -3.2,
-            "volumeThb24h": 19719269.95,
+            "askThb": 7.27,
+            "spreadPct": 0.275482093663906,
+            "pct24": -2.94,
+            "volumeThb24h": 19672594.64,
             "baselinePriceThb": 7.7,
             "baselineSource": "high_risk_last_ada_trade_reference",
             "baselineSourceLabel": "Aggressive last ADA trade reference",
-            "moveFromBaselinePct": -5.844155844155846,
+            "moveFromBaselinePct": -5.714285714285719,
             "atrPct": 0.2992,
             "dipTriggerPct": -1.5,
             "jumpTriggerPct": 1.5,
@@ -266,16 +266,16 @@
           {
             "asset": "XRP",
             "holding": 531.0,
-            "livePriceThb": 41.14,
-            "bidThb": 41.11,
-            "askThb": 41.16,
-            "spreadPct": 0.12155099064056682,
-            "pct24": -2.72,
-            "volumeThb24h": 44196515.06,
+            "livePriceThb": 41.2,
+            "bidThb": 41.15,
+            "askThb": 41.19,
+            "spreadPct": 0.09715812484818835,
+            "pct24": -2.53,
+            "volumeThb24h": 44011256.38,
             "baselinePriceThb": 43.36,
             "baselineSource": "high_risk_last_xrp_trade_reference",
             "baselineSourceLabel": "Aggressive last XRP trade reference",
-            "moveFromBaselinePct": -5.1199261992619896,
+            "moveFromBaselinePct": -4.9815498154981475,
             "atrPct": 0.2421,
             "dipTriggerPct": -1.25,
             "jumpTriggerPct": 1.25,
@@ -294,7 +294,7 @@
             "askThb": 26.39,
             "spreadPct": 0.9135896459840198,
             "pct24": 1.5,
-            "volumeThb24h": 7504227.31,
+            "volumeThb24h": 7504217.34,
             "baselinePriceThb": 26.266,
             "baselineSource": "market_blend_vwap_ema_swing",
             "baselineSourceLabel": "Market blend: VWAP + EMA + swing midpoint",
@@ -1346,6 +1346,18 @@
     }
   ],
   "dailyLogs": [
+    {
+      "date": "2026-06-02",
+      "title": "Crypto Paper Trading Dashboard Update",
+      "projectId": "crypto-paper-trading",
+      "summary": "V2 paper trading refreshed: portfolio 242,800.95 THB, holdings XRP 531, ADA 17294, BTC 0.00948542, ETH 0.34473028, KUB 707.03838823, THB 33198.08; open position P0003.",
+      "highlights": [
+        "Portfolio value: 242,800.95 THB · P/L vs V2 start: -8,321.97 THB (-3.31%)",
+        "Vs buy-and-hold: -480.69 THB (-0.20%)",
+        "Current open position: P0003 SHORT XRP 100.0 @ 41.16 THB; buy back ≤ 40.67 THB or stop ≥ 41.65 THB.",
+        "Trade list refreshed from high_risk_trades.csv: 10 rows, latest first."
+      ]
+    },
     {
       "date": "2026-06-02",
       "title": "Tomorrow Foundation Knowledge Dashboard",

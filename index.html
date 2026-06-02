@@ -532,7 +532,7 @@ function showProjectDetail(id) {
   if (!p) return;
   document.getElementById('projectDetailTitle').innerHTML = `${p.name} <span class="status ${p.status}">${p.status}</span>`;
   document.getElementById('projectDetailMeta').textContent = `${p.entries.length} entries · ${p.subjectIds.length} related subjects`;
-  const dashboard = p.cryptoDashboard ? cryptoDashboardHtml(p.cryptoDashboard) : '';
+  const dashboard = p.tomorrowDashboard ? tomorrowDashboardHtml(p.tomorrowDashboard) : (p.cryptoDashboard ? cryptoDashboardHtml(p.cryptoDashboard) : '');
   document.getElementById('projectDetailEntries').innerHTML = dashboard + p.entries.map(e => `
     <div class="entry">
       <h4>${e.title}</h4>
@@ -549,6 +549,83 @@ function showProjectDetail(id) {
     : '<p style="color:var(--text-dim)">No related subjects yet.</p>';
 
   showPage('project-detail');
+}
+
+function tomorrowDashboardHtml(d) {
+  const overviewTiles = (d.overview || []).map(o => `
+    <div class="dash-tile"><div class="label">${o.label}</div><div class="value">${o.value}</div><div class="small">${o.detail || ''}</div></div>
+  `).join('');
+  const causeCards = (d.causes || []).map(c => `
+    <details open style="margin:12px 0; border:1px solid var(--border); border-radius:8px; padding:12px; background:rgba(13,17,23,0.35);">
+      <summary style="cursor:pointer; font-weight:700;">${c.icon || ''} ${c.name}</summary>
+      <p style="color:var(--text-dim); font-size:13px; margin:10px 0;">${c.summary}</p>
+      <div class="dash-grid">${(c.metrics || []).map(m => `<div class="dash-tile"><div class="small">${m}</div></div>`).join('')}</div>
+      <ul class="note-list">${(c.notes || []).map(n => `<li>${n}</li>`).join('')}</ul>
+    </details>
+  `).join('');
+  const meetings = (d.meetings || []).map(m => `
+    <tr><td><strong>${m.name}</strong><div class="small">${m.date} · ${m.status}</div></td><td>${m.connectedThrough || '—'}</td><td><ul class="note-list">${(m.takeaways || []).map(t => `<li>${t}</li>`).join('')}</ul><div class="small">${m.doc || ''}</div></td></tr>
+  `).join('');
+  const roadmap = (d.roadmap || []).map(r => `
+    <div class="dash-tile"><div class="label">${r.phase}</div><div class="value">${r.title}</div><ul class="note-list">${(r.items || []).map(i => `<li>${i}</li>`).join('')}</ul></div>
+  `).join('');
+  const researchRows = (d.researchFiles || []).map(f => `<tr><td><strong>${f.file}</strong></td><td>${f.purpose}</td></tr>`).join('');
+  const strategyCards = (d.strategy || []).map(s => `<div class="entry"><h4>${s.title}</h4><p style="color:var(--text-dim); font-size:13px;">${s.body}</p></div>`).join('');
+  const list = arr => `<ul class="note-list">${(arr || []).map(x => `<li>${x}</li>`).join('')}</ul>`;
+  return `
+    <div class="dashboard">
+      <h3>Tomorrow Foundation Knowledge Dashboard</h3>
+      <div class="subtle">Compiled ${d.compiledDate || '—'} · ${d.subtitle || ''}</div>
+      <div class="dash-grid">${overviewTiles}</div>
+
+      <h4 style="margin:16px 0 8px;">3-Month Roadmap</h4>
+      <div class="dash-grid">${roadmap}</div>
+
+      <h4 style="margin:16px 0 8px;">The 4 Cause Areas</h4>
+      ${causeCards}
+
+      <details open style="margin:16px 0 12px; border:1px solid var(--border); border-radius:8px; padding:12px; background:rgba(13,17,23,0.35);">
+        <summary style="cursor:pointer; font-weight:700;">Meetings Conducted (${(d.meetings || []).length})</summary>
+        <table class="asset-table" style="margin-top:10px;"><thead><tr><th>Meeting</th><th>Contact</th><th>Takeaways / Needed Data</th></tr></thead><tbody>${meetings}</tbody></table>
+      </details>
+
+      <details style="margin:16px 0 12px; border:1px solid var(--border); border-radius:8px; padding:12px; background:rgba(13,17,23,0.35);">
+        <summary style="cursor:pointer; font-weight:700;">Research Library</summary>
+        <table class="asset-table" style="margin-top:10px;"><thead><tr><th>File</th><th>Purpose</th></tr></thead><tbody>${researchRows}</tbody></table>
+      </details>
+
+      <h4 style="margin:16px 0 8px;">Strategy</h4>
+      ${strategyCards}
+
+      <div class="dash-grid">
+        <div class="dash-tile"><div class="label">Active contacts</div>${list(d.contacts?.active)}</div>
+        <div class="dash-tile"><div class="label">Next contacts</div>${list(d.contacts?.next)}</div>
+      </div>
+
+      <details open style="margin:16px 0 12px; border:1px solid var(--border); border-radius:8px; padding:12px; background:rgba(13,17,23,0.35);">
+        <summary style="cursor:pointer; font-weight:700;">Registration, Legal, and Financial Plan</summary>
+        <div class="dash-grid" style="margin-top:12px;">
+          <div class="dash-tile"><div class="label">Registration status</div><div class="small">${d.registration?.status || ''}</div><h4 style="margin-top:10px;">Options</h4>${list(d.registration?.options)}<h4>Warnings</h4>${list(d.registration?.warnings)}</div>
+          <div class="dash-tile"><div class="label">Cost benchmarks</div>${list(d.registration?.benchmarks)}</div>
+          <div class="dash-tile"><div class="label">Org benchmarks</div>${list(d.financial?.benchmarks)}</div>
+          <div class="dash-tile"><div class="label">Revenue streams</div>${list(d.financial?.revenueStreams)}</div>
+        </div>
+      </details>
+
+      <div class="dash-grid">
+        <div class="dash-tile"><div class="label">Critical next actions</div>${list(d.actions?.critical)}</div>
+        <div class="dash-tile"><div class="label">Presentation tasks</div>${list(d.actions?.presentation)}</div>
+      </div>
+
+      <details open style="margin:16px 0 12px; border:1px solid var(--border); border-radius:8px; padding:12px; background:rgba(13,17,23,0.35);">
+        <summary style="cursor:pointer; font-weight:700;">Hero Numbers + Data Quality Flags</summary>
+        <div class="dash-grid" style="margin-top:12px;">
+          <div class="dash-tile"><div class="label">10 hero numbers</div>${list(d.heroNumbers)}</div>
+          <div class="dash-tile"><div class="label">Data quality flags</div>${list(d.dataQualityFlags)}</div>
+        </div>
+      </details>
+    </div>
+  `;
 }
 
 function cryptoDashboardHtml(d) {
