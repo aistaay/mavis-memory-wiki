@@ -740,8 +740,8 @@ function cryptoDashboardHtml(d) {
       <td>${fmtThb(effClosed)}</td>
     </tr>
   `};
-  const last24VisibleRows = last24Trades.slice(0, 10).map(renderTradeRow).join('');
-  const last24ExtraRows = last24Trades.slice(10).map(renderTradeRow).join('');
+  const last24VisibleRows = last24Trades.slice(0, 15).map(renderTradeRow).join('');
+  const last24ExtraRows = last24Trades.slice(15).map(renderTradeRow).join('');
   const latestN8n = (auto.n8nRecentExecutions || [])[0];
   return `
     <div class="dashboard">
@@ -778,13 +778,13 @@ function cryptoDashboardHtml(d) {
 
       <h4 style="margin:16px 0 8px;">Trade List</h4>
       <div style="margin:0 0 8px;">${filterButtons}</div>
-      <div class="subtle">Showing latest 10 matching trades first · ${last24.windowLocal || 'V2 paper ledger'} · ${last24Trades.length}/${allTrades.length} shown · Volume ${fmtThb(last24.totalVolumeThb)} · Open ADA ${fmtSignedAmount(exposureByAsset.ADA || 0, 'ADA')} · Open XRP ${fmtSignedAmount(exposureByAsset.XRP || 0, 'XRP')} · Open THB ${fmtSignedThb(exposureByAsset.THB || 0)}</div>
+      <div class="subtle">Showing latest 15 matching trades first · ${last24.windowLocal || 'V2 paper ledger'} · ${last24Trades.length}/${allTrades.length} shown · Volume ${fmtThb(last24.totalVolumeThb)} · Open ADA ${fmtSignedAmount(exposureByAsset.ADA || 0, 'ADA')} · Open XRP ${fmtSignedAmount(exposureByAsset.XRP || 0, 'XRP')} · Open THB ${fmtSignedThb(exposureByAsset.THB || 0)}</div>
       <div class="subtle">Net edge = estimated move minus fees, spread, and slippage buffer. Positive is useful; negative means the signal probably does not beat trading costs.</div>
       <table class="asset-table">
         <thead><tr><th>Time</th><th>Action</th><th>Amount</th><th>Price</th><th>Value</th><th>Net edge</th><th>Expected Price</th><th>Plan / Exit</th><th>Status</th><th>Price Closed</th></tr></thead>
         <tbody>${last24VisibleRows || '<tr><td colspan="10">No paper trades in the last 24 hours.</td></tr>'}</tbody>
       </table>
-      ${last24ExtraRows ? `<details style="margin-top:8px;"><summary>Show older matching trades (${Math.max(last24Trades.length - 10, 0)} more)</summary><table class="asset-table" style="margin-top:8px;"><tbody>${last24ExtraRows}</tbody></table></details>` : ''}
+      ${last24ExtraRows ? `<details style="margin-top:8px;"><summary>Show older matching trades (${Math.max(last24Trades.length - 15, 0)} more)</summary><table class="asset-table" style="margin-top:8px;"><tbody>${last24ExtraRows}</tbody></table></details>` : ''}
 
       <ul class="note-list">${(d.executiveNotes || []).map(n => `<li>${n}</li>`).join('')}</ul>
     </div>
