@@ -403,6 +403,7 @@ fetch('data.json')
   });
 
 function openInitialRoute() {
+  if (!DATA) return;
   const params = new URLSearchParams(window.location.search);
   const projectId = params.get('project');
   const subjectId = params.get('subject');
@@ -419,6 +420,7 @@ function openInitialRoute() {
     showLogDetail(logDate);
   }
 }
+window.addEventListener('load', () => setTimeout(openInitialRoute, 300));
 
 function render() {
   if (!DATA) return;
