@@ -912,9 +912,9 @@ function shortenExpectedAction(action) {
 function shortenPlanExit(plan) {
   if (!plan || plan === '—') return plan || '—';
   return String(plan)
-    .replace(/buy back/ig, 'buy')
-    .replace(/ THB/g, '')
-    .replace(/;\s*HODL[^;]*?\s+stop/ig, '; stop');
+    .replace(/INITIAL LONG XRP from starting holding\s*[:\-–—]?\s*/ig, '')
+    .replace(/;\s*HODL[^;]*?\s+stop/ig, '; stop')
+    .trim();
 }
 function numClass(v) {
   if (v === null || v === undefined || isNaN(Number(v))) return 'neutral';
