@@ -399,6 +399,7 @@ fetch('data.json')
     DATA = d;
     render();
     openInitialRoute();
+    setTimeout(openInitialRoute, 150);
   });
 
 function openInitialRoute() {
