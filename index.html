@@ -269,6 +269,7 @@
   .dash-tile .value { font-size: clamp(16px, 4.6vw, 18px); font-weight: 700; margin-top: 4px; white-space: nowrap; }
   .dash-tile .small { color: var(--text-dim); font-size: 12px; margin-top: 2px; }
   .exposure-line { font-size: 12px; margin-top: 6px; font-weight: 600; }
+  .delta-line { font-size: 12px; margin-top: 4px; font-weight: 700; }
   .positive { color: var(--green); }
   .negative { color: var(--red); }
   .neutral { color: var(--text-dim); }
@@ -660,6 +661,10 @@ function cryptoDashboardHtml(d) {
   const last24 = d.last24hrTrades || {};
   const allTrades = [...(last24.trades || [])].sort((a, b) => new Date(b.ts || 0) - new Date(a.ts || 0));
   const openTrades = allTrades.filter(t => String(t.status || '').toLowerCase() === 'open');
+  const rawInitialHoldings = d.initialHoldings || d.startingHoldings || {};
+  const initialHoldings = Array.isArray(rawInitialHoldings)
+    ? rawInitialHoldings.reduce((acc, h) => ({ ...acc, [h.asset]: Number(h.amount ?? h.initialAmount ?? h.startingAmount) }), {})
+    : rawInitialHoldings;
   const exposureByAsset = {};
   openTrades.forEach(t => {
     const action = String(t.action || '');
@@ -680,11 +685,19 @@ function cryptoDashboardHtml(d) {
     const exposureHtml = exposureAmount
       ? `<div class="exposure-line ${numClass(exposureAmount)}">Open: ${fmtSignedAmount(exposureAmount, h.asset)}${h.asset !== 'THB' ? ` · ≈ ${fmtSignedThb(exposureValue)}` : ''}</div>`
       : `<div class="small neutral">Open: —</div>`;
+    const initialAmount = Number(h.initialAmount ?? h.startingAmount ?? initialHoldings[h.asset]);
+    const currentAmount = Number(h.amount || 0);
+    const hasInitial = Number.isFinite(initialAmount);
+    const deltaAmount = hasInitial ? currentAmount - initialAmount : null;
+    const deltaHtml = hasInitial
+      ? `<div class="delta-line ${numClass(deltaAmount)}">Vs start: ${fmtSignedAmount(deltaAmount, h.asset)}</div>`
+      : '';
     return `
     <div class="dash-tile">
       <div class="label">${h.asset}</div>
       <div class="value">${fmtAmount(h.amount, h.asset)}</div>
       <div class="small">≈ ${fmtThb(h.valueThb)}</div>
+      ${deltaHtml}
       ${exposureHtml}
     </div>
   `}).join('');

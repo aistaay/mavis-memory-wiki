@@ -364,6 +364,7 @@
           ]
         },
         "executiveNotes": [
+          "Current holdings now show asset delta vs starting amount (green above start, red below start).",
           "Paper-only. No real exchange orders are authorized or executed.",
           "V1 30k ADA churn was real paper output from an overly broad 95% rotation setting; it is archived, not deleted, and superseded by V2 small-increment planned positions.",
           "V2 rule: one open planned position at a time, max 100 XRP or 500 ADA per new paper position.",
@@ -577,6 +578,12 @@
               "source": "executed_trade"
             }
           ]
+        },
+        "initialHoldings": {
+          "XRP": 731.0,
+          "ADA": 17294.0,
+          "BTC": 0.009485424704722481,
+          "ETH": 0.34473028120652727
         }
       }
     },
