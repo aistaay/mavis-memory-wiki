@@ -2,7 +2,7 @@
   "meta": {
     "title": "Mavis Memory Wiki",
     "description": "A living record of conversations, subjects, and daily work between Damon and Mavis.",
-    "lastUpdated": "2026-06-01"
+    "lastUpdated": "2026-06-02"
   },
   "projects": [
     {
@@ -113,21 +113,15 @@
       ],
       "entries": [
         {
-          "date": "2026-06-01",
+          "date": "2026-06-02",
           "title": "Crypto Paper Trading Status + Executive Dashboard",
           "notes": [
             "Paper-only status; no real trades are authorized or executed.",
-            "Current paper holdings: XRP 831.0, ADA 17294.0, BTC 0.00948542, ETH 0.34473028, KUB 707.03838823, THB 22199.36.",
-            "Portfolio value: 248,014.39 THB; daily P/L: -1.24% (-3,108.53 THB).",
-            "V2 mode: small planned positions. Open position: P0001 (LONG 100.0 XRP @ 42.35 THB, target 42.86, stop 41.84).",
-            "Paper trades today: 7 (manual treasury allocations: 1500 ADA → BTC/ETH/THB, then 10000 ADA → BTC/ETH/THB/KUB).",
-            "Benchmark (V2 start hold): 248,462.07 THB; vs hold: -447.68 THB (-0.1802%).",
-            "Recommended action: HOLD; paper status: OPEN_POSITION_WAIT.",
-            "Daily guard: ACTIVE (target +3.0%, kill -2.5%); daily start 251,122.92 THB.",
-            "V1 30k ADA churn archived; V2 small-increment planned positions in effect.",
-            "n8n status: last known execution #110 success (2026-05-31 15:07 UTC).",
-            "Hermes cron: Dip ladder (every 180m, last ok 2026-06-01 20:08 +07); Price-alert (every 180m, last ok 20:11 +07); Aggressive trader (every 180m, last ok 20:10 +07).",
-            "Trade counts: V2 3 paper trades + 1 planned position open; V1 17 aggressive rows archived."
+            "Current paper holdings: XRP 531, ADA 17294, BTC 0.00948542, ETH 0.34473028, KUB 707.03838823, THB 33198.08.",
+            "Portfolio value: 242,552.81 THB; P/L vs V2 start: -8,570.11 THB (-3.41%).",
+            "Vs V2 buy-and-hold benchmark: -391.03 THB (-0.16%).",
+            "Current open position: P0003 SHORT XRP 100.0 @ 41.16 THB; buy back ≤ 40.67 THB or stop ≥ 41.65 THB.",
+            "Trade count: 10 V2 rows; latest trade SELL_XRP 100.0 XRP @ 41.16 THB."
           ]
         },
         {
@@ -151,68 +145,68 @@
         }
       ],
       "cryptoDashboard": {
-        "lastUpdatedIso": "2026-06-01T21:28:57+07:00",
+        "lastUpdatedIso": "2026-06-02T20:02:01+07:00",
         "paperOnly": true,
         "mode": "paper_v2_planned_small_positions",
         "recommendedAction": "HOLD",
-        "paperStatus": "MANUAL_ADA_ALLOCATED_TO_BTC_ETH_THB_KUB",
+        "paperStatus": "OPEN_POSITION_WAIT",
         "dailyStatus": "ACTIVE",
         "holdings": [
           {
             "asset": "XRP",
-            "amount": 831.0,
-            "valueThb": 34810.590000000004
+            "amount": 531.0,
+            "valueThb": 21845.34
           },
           {
             "asset": "ADA",
             "amount": 17294.0,
-            "valueThb": 128321.48
+            "valueThb": 125381.5
           },
           {
             "asset": "BTC",
             "amount": 0.009485424704722481,
-            "valueThb": 22131.293703516083
+            "valueThb": 21311.5974480629
           },
           {
             "asset": "ETH",
             "amount": 0.34473028120652727,
-            "valueThb": 22119.173791554065
+            "valueThb": 22157.55261376079
           },
           {
             "asset": "KUB",
             "amount": 707.038388233602,
-            "valueThb": 18432.490781250002
+            "valueThb": 18658.743065484756
           },
           {
             "asset": "THB",
-            "amount": 22199.3625,
-            "valueThb": 22199.3625
+            "amount": 33198.07625614634,
+            "valueThb": 33198.07625614634
           }
         ],
         "portfolio": {
-          "valueThb": 248014.39,
-          "dailyPnlPct": -1.2379,
-          "pnlThb": -3108.53,
-          "pnlPct": -1.2379,
-          "vsHoldThb": -447.68,
-          "vsHoldPct": -0.1802,
-          "feeCreditThb": 0.0,
-          "tradeCount": 7
+          "valueThb": 242552.81,
+          "dailyPnlPct": -1.9236711593640488,
+          "pnlThb": -8570.11,
+          "pnlPct": -3.412715421015832,
+          "vsHoldThb": -391.03,
+          "vsHoldPct": -0.16095514771859817,
+          "feeCreditThb": 1821.138824642338,
+          "tradeCount": 10
         },
         "assets": [
           {
             "asset": "BTC",
             "holding": 0.009485424704722481,
-            "livePriceThb": 2333189.54,
-            "bidThb": 2331110.0,
-            "askThb": 2333189.59,
-            "spreadPct": 0.1304,
-            "pct24": -2.78,
-            "volumeThb24h": 175070021.03,
+            "livePriceThb": 2246773.14,
+            "bidThb": 2243674.51,
+            "askThb": 2244894.68,
+            "spreadPct": 0.05436788198425393,
+            "pct24": -4.39,
+            "volumeThb24h": 299920749.82,
             "baselinePriceThb": 2408734.42,
             "baselineSource": "market_blend_vwap_ema_swing",
             "baselineSourceLabel": "Market blend: VWAP + EMA + swing midpoint",
-            "moveFromBaselinePct": -2.7599,
+            "moveFromBaselinePct": -6.723916038863255,
             "atrPct": 0.14,
             "dipTriggerPct": -2.0,
             "jumpTriggerPct": 2.0,
@@ -226,16 +220,16 @@
           {
             "asset": "ETH",
             "holding": 0.34473028120652727,
-            "livePriceThb": 64163.71,
-            "bidThb": 64164.97,
-            "askThb": 64208.92,
-            "spreadPct": 0.0281,
-            "pct24": -2.13,
-            "volumeThb24h": 31103849.59,
+            "livePriceThb": 64275.04,
+            "bidThb": 64285.88,
+            "askThb": 64329.66,
+            "spreadPct": 0.06807886512004087,
+            "pct24": -0.51,
+            "volumeThb24h": 38532761.6,
             "baselinePriceThb": 65891.6,
             "baselineSource": "market_blend_vwap_ema_swing",
             "baselineSourceLabel": "Market blend: VWAP + EMA + swing midpoint",
-            "moveFromBaselinePct": -2.2972,
+            "moveFromBaselinePct": -2.453362795864731,
             "atrPct": 0.14,
             "dipTriggerPct": -2.0,
             "jumpTriggerPct": 2.0,
@@ -249,16 +243,16 @@
           {
             "asset": "ADA",
             "holding": 17294.0,
-            "livePriceThb": 7.42,
-            "bidThb": 7.41,
-            "askThb": 7.43,
-            "spreadPct": 0.1328,
-            "pct24": -3.01,
-            "volumeThb24h": 11109548.5,
+            "livePriceThb": 7.25,
+            "bidThb": 7.25,
+            "askThb": 7.26,
+            "spreadPct": 0.13783597518952154,
+            "pct24": -3.2,
+            "volumeThb24h": 19719269.95,
             "baselinePriceThb": 7.7,
             "baselineSource": "high_risk_last_ada_trade_reference",
             "baselineSourceLabel": "Aggressive last ADA trade reference",
-            "moveFromBaselinePct": -2.2078,
+            "moveFromBaselinePct": -5.844155844155846,
             "atrPct": 0.2992,
             "dipTriggerPct": -1.5,
             "jumpTriggerPct": 1.5,
@@ -271,17 +265,17 @@
           },
           {
             "asset": "XRP",
-            "holding": 831.0,
-            "livePriceThb": 41.89,
-            "bidThb": 41.88,
-            "askThb": 41.91,
-            "spreadPct": 0.0476,
-            "pct24": -3.43,
-            "volumeThb24h": 28668941.17,
+            "holding": 531.0,
+            "livePriceThb": 41.14,
+            "bidThb": 41.11,
+            "askThb": 41.16,
+            "spreadPct": 0.12155099064056682,
+            "pct24": -2.72,
+            "volumeThb24h": 44196515.06,
             "baselinePriceThb": 43.36,
             "baselineSource": "high_risk_last_xrp_trade_reference",
             "baselineSourceLabel": "Aggressive last XRP trade reference",
-            "moveFromBaselinePct": -2.9982,
+            "moveFromBaselinePct": -5.1199261992619896,
             "atrPct": 0.2421,
             "dipTriggerPct": -1.25,
             "jumpTriggerPct": 1.25,
@@ -295,16 +289,16 @@
           {
             "asset": "KUB",
             "holding": 707.038388233602,
-            "livePriceThb": 26.07,
-            "bidThb": 26.0,
-            "askThb": 26.07,
-            "spreadPct": 0.0772,
-            "pct24": -0.91,
-            "volumeThb24h": 3099036.61,
+            "livePriceThb": 26.39,
+            "bidThb": 26.15,
+            "askThb": 26.39,
+            "spreadPct": 0.9135896459840198,
+            "pct24": 1.5,
+            "volumeThb24h": 7504227.31,
             "baselinePriceThb": 26.266,
             "baselineSource": "market_blend_vwap_ema_swing",
             "baselineSourceLabel": "Market blend: VWAP + EMA + swing midpoint",
-            "moveFromBaselinePct": -1.3934,
+            "moveFromBaselinePct": 0.4720932003350428,
             "atrPct": 0.14,
             "dipTriggerPct": -2.0,
             "jumpTriggerPct": 2.0,
@@ -318,24 +312,28 @@
         ],
         "marketRead": {
           "selectedSignal": "HOLD",
-          "xrpScore": 0,
-          "adaScore": 0,
+          "xrpScore": null,
+          "adaScore": null,
           "sentimentRegime": "neutral_unavailable",
-          "lastTrade": null,
+          "lastTrade": {
+            "action": "SELL_XRP",
+            "amount_xrp": 100.0,
+            "price_thb": 41.16
+          },
           "kubFeeCredit": {
             "bonus_pct": 10.0,
             "break_even_ask_thb": 32.91770573566085,
             "conversion_price_thb": 30.0,
-            "current_fee_credit_thb": 0.0,
+            "current_fee_credit_thb": 1821.138824642338,
             "fee_credit_per_kub_thb": 33.0,
-            "kub_ask_thb": 26.1,
-            "kub_bid_thb": 25.92,
-            "kub_last_thb": 25.91,
-            "needed_fee_credit_thb": 1883.4219,
-            "projected_weekly_fees_thb": 1883.4219,
-            "reason": "Not enough THB cash available for a sensible KUB fee-credit purchase.",
+            "kub_ask_thb": 26.39,
+            "kub_bid_thb": 26.15,
+            "kub_last_thb": 26.15,
+            "needed_fee_credit_thb": 0.0,
+            "projected_weekly_fees_thb": 1819.289283724741,
+            "reason": "Expected near-term fee usage is too small to justify locking value into non-refundable fee credit.",
             "status": "HOLD",
-            "ts": "2026-06-01T13:20:35+00:00"
+            "ts": "2026-06-02T12:59:09+00:00"
           }
         },
         "automation": {
@@ -365,42 +363,80 @@
         },
         "executiveNotes": [
           "Paper-only. No real exchange orders are authorized or executed.",
+          "Current paper holdings: XRP 531, ADA 17294, BTC 0.00948542, ETH 0.34473028, KUB 707.03838823, THB 33198.08.",
+          "Current open position: P0003 SHORT XRP 100.0 @ 41.16 THB; buy back ≤ 40.67 THB or stop ≥ 41.65 THB.",
+          "V2 rule: only one planned position at a time, max 100 XRP or 500 ADA per new paper position, with target/stop shown in the Trade List.",
           "Audit: the old V1 high-risk bot really did rotate ~30k ADA because it was configured to trade 95% of holdings/cash. That was too aggressive for the intended small-increment test.",
           "V1 state/trades were archived locally; V2 has restarted from initial paper holdings: 331 XRP reserve, 500 XRP active, 28,794 ADA, 0 THB cash.",
-          "V2 rule: only one planned position at a time, max 100 XRP or 500 ADA per new paper position, with target/stop shown in the Trade List.",
           "The 30k ADA V1 churn was real paper output from an overly broad 95% rotation setting. It has been archived and superseded by V2 small-increment planned positions.",
           "Paper treasury allocation executed at 2026-06-01 14:03 UTC: 1500 ADA → BTC, ETH, THB (500 ADA each bucket) at market prices.",
           "Paper treasury allocation executed at 2026-06-01T14:28:57+00:00: 10000 ADA → BTC, ETH, THB, KUB (2500 ADA each bucket). Gains: 0.00790013 BTC, 0.28707056 ETH, 707.03838823 KUB, 18478.69 THB."
         ],
         "last24hrTrades": {
           "windowLocal": "V2 paper ledger · latest first",
-          "count": 8,
-          "totalVolumeThb": 85290.0,
+          "count": 10,
+          "totalVolumeThb": 97754.0,
           "netAdaAmount": 11500.0,
-          "netXrpAmount": 0,
+          "netXrpAmount": 100.0,
           "trades": [
             {
-              "ts": "2026-06-01T14:28:57+00:00",
-              "timeLocal": "Jun 01 21:28",
-              "action": "SELL_ADA_BUY_KUB",
-              "asset": "ADA",
-              "amount": 2500.0,
-              "priceThb": 7.41,
-              "valueThb": 18525.0,
+              "ts": "2026-06-02T06:19:11+00:00",
+              "timeLocal": "Jun 02 13:19",
+              "action": "SELL_XRP",
+              "asset": "XRP",
+              "amount": 100.0,
+              "priceThb": 41.16,
+              "valueThb": 4116.0,
               "netEdgePct": null,
-              "expectedAction": "—",
-              "expectedPriceThb": null,
-              "expectedPriceBasis": null,
-              "plannedExit": "Manual + 707.03838823 KUB",
+              "expectedAction": "Buy back ≤",
+              "expectedPriceThb": 40.67,
+              "expectedPriceBasis": "planned_position_target",
+              "plannedExit": "buy back ≤ 40.67 THB or stop ≥ 41.65 THB",
+              "status": "Open",
+              "priceClosedThb": null,
+              "positionId": "P0003",
+              "source": "executed_trade"
+            },
+            {
+              "ts": "2026-06-01T16:09:10+00:00",
+              "timeLocal": "Jun 01 23:09",
+              "action": "SELL_XRP",
+              "asset": "XRP",
+              "amount": 100.0,
+              "priceThb": 41.73,
+              "valueThb": 4173.0,
+              "netEdgePct": null,
+              "expectedAction": "Buy back ≤",
+              "expectedPriceThb": 41.23,
+              "expectedPriceBasis": "planned_position_target",
+              "plannedExit": "buy back ≤ 41.23 THB or stop ≥ 42.23 THB",
               "status": "CLOSED",
-              "priceClosedThb": 7.41,
-              "positionId": "",
+              "priceClosedThb": 41.73,
+              "positionId": "P0002",
+              "source": "executed_trade"
+            },
+            {
+              "ts": "2026-06-01T15:18:11+00:00",
+              "timeLocal": "Jun 01 22:18",
+              "action": "SELL_XRP",
+              "asset": "XRP",
+              "amount": 100.0,
+              "priceThb": 41.75,
+              "valueThb": 4175.0,
+              "netEdgePct": null,
+              "expectedAction": "Sell ≥",
+              "expectedPriceThb": 42.86,
+              "expectedPriceBasis": "planned_position_target",
+              "plannedExit": "sell ≥ 42.86 THB or stop ≤ 41.84 THB",
+              "status": "CLOSED",
+              "priceClosedThb": 41.75,
+              "positionId": "P0001",
               "source": "executed_trade"
             },
             {
               "ts": "2026-06-01T14:28:57+00:00",
               "timeLocal": "Jun 01 21:28",
-              "action": "SELL_ADA_BUY_ETH",
+              "action": "SELL_ADA_TO_THB",
               "asset": "ADA",
               "amount": 2500.0,
               "priceThb": 7.41,
@@ -409,7 +445,7 @@
               "expectedAction": "—",
               "expectedPriceThb": null,
               "expectedPriceBasis": null,
-              "plannedExit": "Manual + 0.28707056 ETH",
+              "plannedExit": "Manual + 18478.69 THB",
               "status": "CLOSED",
               "priceClosedThb": 7.41,
               "positionId": "",
@@ -436,7 +472,7 @@
             {
               "ts": "2026-06-01T14:28:57+00:00",
               "timeLocal": "Jun 01 21:28",
-              "action": "SELL_ADA_TO_THB",
+              "action": "SELL_ADA_BUY_ETH",
               "asset": "ADA",
               "amount": 2500.0,
               "priceThb": 7.41,
@@ -445,7 +481,25 @@
               "expectedAction": "—",
               "expectedPriceThb": null,
               "expectedPriceBasis": null,
-              "plannedExit": "Manual + 18,478.69 THB",
+              "plannedExit": "Manual + 0.28707056 ETH",
+              "status": "CLOSED",
+              "priceClosedThb": 7.41,
+              "positionId": "",
+              "source": "executed_trade"
+            },
+            {
+              "ts": "2026-06-01T14:28:57+00:00",
+              "timeLocal": "Jun 01 21:28",
+              "action": "SELL_ADA_BUY_KUB",
+              "asset": "ADA",
+              "amount": 2500.0,
+              "priceThb": 7.41,
+              "valueThb": 18525.0,
+              "netEdgePct": null,
+              "expectedAction": "—",
+              "expectedPriceThb": null,
+              "expectedPriceBasis": null,
+              "plannedExit": "Manual + 707.03838823 KUB",
               "status": "CLOSED",
               "priceClosedThb": 7.41,
               "positionId": "",
@@ -453,7 +507,7 @@
             },
             {
               "ts": "2026-06-01T14:03:42+00:00",
-              "timeLocal": "Jun 01 14:03",
+              "timeLocal": "Jun 01 21:03",
               "action": "SELL_ADA_TO_THB",
               "asset": "ADA",
               "amount": 500.0,
@@ -471,7 +525,7 @@
             },
             {
               "ts": "2026-06-01T14:03:42+00:00",
-              "timeLocal": "Jun 01 14:03",
+              "timeLocal": "Jun 01 21:03",
               "action": "SELL_ADA_BUY_BTC",
               "asset": "ADA",
               "amount": 500.0,
@@ -489,7 +543,7 @@
             },
             {
               "ts": "2026-06-01T14:03:42+00:00",
-              "timeLocal": "Jun 01 14:03",
+              "timeLocal": "Jun 01 21:03",
               "action": "SELL_ADA_BUY_ETH",
               "asset": "ADA",
               "amount": 500.0,
@@ -504,24 +558,6 @@
               "priceClosedThb": 7.46,
               "positionId": "",
               "source": "executed_trade"
-            },
-            {
-              "ts": "2026-06-01T13:20:23+00:00",
-              "timeLocal": "Jun 1 20:20",
-              "action": "INITIAL_LONG_XRP",
-              "asset": "XRP",
-              "amount": 100.0,
-              "priceThb": 42.35,
-              "valueThb": 4235.0,
-              "netEdgePct": null,
-              "expectedAction": "Sell ≥",
-              "expectedPriceThb": 42.86,
-              "expectedPriceBasis": "planned_position_target",
-              "plannedExit": "sell ≥ 42.86 THB or stop ≤ 41.84 THB",
-              "status": "Open",
-              "priceClosedThb": null,
-              "positionId": "P0001",
-              "source": "initial_holding_position_not_trade"
             }
           ]
         }
@@ -584,7 +620,7 @@
       "id": "tomorrow-foundation",
       "name": "Tomorrow Foundation",
       "status": "active",
-      "summary": "Two-month presentation build for a Thailand foundation concept focused on statelessness, poverty/joblessness, dog rescue, and child education.",
+      "summary": "Knowledge dashboard for the Tomorrow Foundation presentation build: statelessness, poverty/joblessness, dog rescue, child education, NGO meetings, research, registration, finance, and next actions.",
       "tags": [
         "foundation",
         "ngo",
@@ -605,8 +641,369 @@
             "Known NGO/context threads: K. Saks, Soi Dog/Dr. Ala, BCH, Childline. Dr. Ala shared 3 CNVR papers.",
             "Legal registration remains a bottleneck. Next work: NGO outreach, registration path, and presentation draft."
           ]
+        },
+        {
+          "date": "2026-06-02",
+          "title": "Knowledge Dashboard Built",
+          "notes": [
+            "Added a full Tomorrow Foundation dashboard to Mavis Memory Wiki, sourced from 6 meeting summaries, 10 data/research files, 3 CNVR papers, the verification report, and session history.",
+            "Dashboard is broken into overview, roadmap, 4 causes, meetings, research library, contacts, strategy, registration/legal, financial benchmarks, action items, hero numbers, and data-quality flags.",
+            "Primary bottlenecks remain legal registration and direct verification of partner statistics/quotes."
+          ]
         }
-      ]
+      ],
+      "tomorrowDashboard": {
+        "compiledDate": "2026-06-02",
+        "subtitle": "Everything Mavis knows from the Tomorrow Foundation meetings, Google Drive files, research data, verification report, and session history.",
+        "overview": [
+          {
+            "label": "Project",
+            "value": "Tomorrow Foundation",
+            "detail": "4-cause Thailand NGO / social enterprise presentation build"
+          },
+          {
+            "label": "Tagline",
+            "value": "Because Everyone Deserves a Tomorrow",
+            "detail": "Working narrative spine for donor presentation"
+          },
+          {
+            "label": "Timeline",
+            "value": "May–June 2026",
+            "detail": "2-month build; 3-month roadmap exists for research → pilot planning"
+          },
+          {
+            "label": "Location",
+            "value": "Nakhon Pathom compound",
+            "detail": "Property acquired; high dog ownership validates location"
+          },
+          {
+            "label": "Strategy",
+            "value": "Southeast Asia-first",
+            "detail": "Compound ecosystem model, not a generic charity"
+          },
+          {
+            "label": "Bottleneck",
+            "value": "Legal registration",
+            "detail": "Foundation / SE structure and tax treatment need specialist design"
+          }
+        ],
+        "roadmap": [
+          {
+            "phase": "Month 1",
+            "title": "Problem Definition & Landscape Mapping",
+            "items": [
+              "Internal alignment",
+              "Cause scoring",
+              "Desk research",
+              "Choose focus area"
+            ]
+          },
+          {
+            "phase": "Month 2",
+            "title": "Field Research & Beneficiary Insights",
+            "items": [
+              "NGO outreach",
+              "Primary data collection",
+              "Beneficiary interviews",
+              "Partner quotes"
+            ]
+          },
+          {
+            "phase": "Month 3",
+            "title": "Conceptual Design & Pilot Planning",
+            "items": [
+              "Compound design",
+              "Pilot program",
+              "Registration path",
+              "Presentation draft"
+            ]
+          }
+        ],
+        "causes": [
+          {
+            "name": "Statelessness",
+            "icon": "🌍",
+            "summary": "Thailand has one of the world’s largest registered stateless populations; the opportunity is integration, legal identity, education-to-work continuity, and family support.",
+            "metrics": [
+              "~600,000 registered stateless people (UNHCR)",
+              "169,241 stateless children (UNICEF, Jun 2024)",
+              "335,000 long-term residents + 142,000 children covered by accelerated pathway",
+              "42,000 working-age refugees eligible for work permits in Oct 2025 pilot",
+              "G Code allows school access, but vocational/university often require national ID"
+            ],
+            "notes": [
+              "Pilot must be legally careful, screened case-by-case, and should not promise citizenship.",
+              "Mirror Foundation warned statelessness has ~600–700 cases across ~7 categories; define segment before program design."
+            ]
+          },
+          {
+            "name": "Dog Rescue",
+            "icon": "🐾",
+            "summary": "Dog rescue is the emotional donor engine and the operational SE opportunity; CNVR works but owned-dog abandonment keeps replenishing the street population.",
+            "metrics": [
+              "1.3M owned dogs in Greater Bangkok; 66% roam freely",
+              "Nakhon Pathom dog ownership: 30.5%, highest in Greater Bangkok",
+              "400,000+ CNVR operations → 24.7% street-dog density reduction",
+              "64% of residents in 3-round CNVR areas report fewer dogs vs. 25% control",
+              "Owned dog sterilization: 53% vs. vaccination: 84% = 31-point gap"
+            ],
+            "notes": [
+              "Dr. Ala shared 3 peer-reviewed CNVR papers.",
+              "Soi Dog insight: rescue stories move donors more than CNVR stories.",
+              "Verify current Soi Dog totals directly; 1.177M April 2024 is confirmed, later 1.6M+/21 teams needs direct confirmation."
+            ]
+          },
+          {
+            "name": "Homelessness & Poverty / Joblessness",
+            "icon": "🏠",
+            "summary": "Official homeless numbers understate reality; Center of Dreams/BCH offers a concrete benchmark for meals, rehab beds, 90-day stays, and funding fragility.",
+            "metrics": [
+              "Official homeless count: 4,500 national (2022)",
+              "Bangkok one-night count: 1,274",
+              "Real estimate: 20,000–40,000+ (NGO/academic estimate)",
+              "Center of Dreams: ~700 meals/day, ~20 rehab beds, 90-day stays",
+              "Myanmar migrant workers: 2–3M registered, 1–2M unregistered"
+            ],
+            "notes": [
+              "Need resident outcomes data and successor funding status from BCH.",
+              "Elderly homeless is an under-visible segment."
+            ]
+          },
+          {
+            "name": "Child Education",
+            "icon": "📚",
+            "summary": "Stateless and migrant children can enter school but often hit a documentation cliff at vocational/university level; mental-health support is also thin.",
+            "metrics": [
+              "169,241 registered stateless children",
+              "Primary enrollment protected through G Code since 2018",
+              "Upper secondary / vocational / university blocked by documentation friction",
+              "Childline: ~70,000 contacts/year, ~900 cases, ~10% full resolution — needs direct verification",
+              "Children’s mental health waitlists: attribute as Childline observation unless verified"
+            ],
+            "notes": [
+              "Need Childline stats from Saidek and a safe attribution approach.",
+              "Education support is politically/socially sensitive, especially for migrant/stateless children."
+            ]
+          }
+        ],
+        "meetings": [
+          {
+            "name": "Childline Thailand",
+            "date": "~May 2026",
+            "status": "held / data pending",
+            "connectedThrough": "Saidek",
+            "takeaways": [
+              "Hotline and FREC network context for stateless children",
+              "Need call volume for stateless children, resolution rates by case type, and endorsement quote"
+            ],
+            "doc": "01 Childline_Meeting_Summary_CrossChecked.gdoc"
+          },
+          {
+            "name": "K. Saks — Stateless / Refugee Network",
+            "date": "~May 2026",
+            "status": "held + Q&A answered",
+            "connectedThrough": "K. Saks",
+            "takeaways": [
+              "Work permit pilot, legal timelines, and family profiles are key",
+              "Need applications/approvals, skills profiles, anonymized family stories"
+            ],
+            "doc": "02 KSaks_Meeting_Summary_CrossChecked.gdoc; 02b answered questions"
+          },
+          {
+            "name": "Center of Dreams / BCH",
+            "date": "2026-05-27",
+            "status": "held / outcomes pending",
+            "connectedThrough": "Katie",
+            "takeaways": [
+              "~700 meals/day, 20 rehab beds, 90-day stays",
+              "Need resident outcomes data, BCH quote, and successor funding status"
+            ],
+            "doc": "03 CenterOfDreams_Meeting_Summary_CrossChecked.gdoc"
+          },
+          {
+            "name": "Soi Dog Foundation",
+            "date": "2026-05-28",
+            "status": "held / official numbers pending",
+            "connectedThrough": "Khun Nui; Dr. Ala",
+            "takeaways": [
+              "~300 adopted last year vs. ~1,800 rescued annually",
+              "Monthly funding target mentioned: 10M THB; Thailand operating cost 42M THB needs monthly vs annual clarification",
+              "Donor messaging: emotional rescue stories outperform CNVR process stories"
+            ],
+            "doc": "04 SoiDog_Meeting_Summary_CrossChecked.gdoc + 3 CNVR papers"
+          },
+          {
+            "name": "UN ESCAP Statelessness",
+            "date": "2026-05-27",
+            "status": "held",
+            "connectedThrough": "—",
+            "takeaways": [
+              "International framework, Thailand obligations, and regional statelessness context"
+            ],
+            "doc": "05 UN_ESCAP_Statelessness_Meeting_Summary_CrossChecked_v4.gdoc"
+          },
+          {
+            "name": "Mirror Foundation",
+            "date": "2026-05-28",
+            "status": "held / lessons incorporated",
+            "connectedThrough": "Thai comms/fundraising rep",
+            "takeaways": [
+              "Start from lived evidence, not abstract charity themes",
+              "Every project must eventually fund itself",
+              "Data is strategic infrastructure from day one",
+              "Statelessness is legally slow and sensitive; support may continue after documents",
+              "Useful next contacts: Ajarn Tueanchai Deetes and LPN Foundation"
+            ],
+            "doc": "06 Mirror Foundation Meeting Summary CrossChecked.gdoc"
+          }
+        ],
+        "researchFiles": [
+          {
+            "file": "DATA_STRATEGY.md",
+            "purpose": "Action plan, tiered data sources, outreach templates, checklist"
+          },
+          {
+            "file": "statelessness_data.md",
+            "purpose": "Stats, policy timeline, org directory"
+          },
+          {
+            "file": "demographics_data.md",
+            "purpose": "Birth-rate collapse, population projections, demographic argument"
+          },
+          {
+            "file": "dog_rescue_data.md",
+            "purpose": "Stray population, CNVR data, major orgs, Nakhon Pathom angle"
+          },
+          {
+            "file": "homelessness_data.md",
+            "purpose": "Official vs real counts, BCH insights, migrant overlap"
+          },
+          {
+            "file": "education_data.md",
+            "purpose": "Stateless children education cliff, G Code, mental-health gap"
+          },
+          {
+            "file": "nakhon_pathom_data.md",
+            "purpose": "Local gap analysis, primary research proposal, contacts"
+          },
+          {
+            "file": "financial_benchmarks.md",
+            "purpose": "Cost benchmarks, comparable org budgets, SE revenue model"
+          },
+          {
+            "file": "hero_numbers.md",
+            "purpose": "Presentation-ready numbers and exact slide language"
+          },
+          {
+            "file": "VERIFICATION_REPORT.md",
+            "purpose": "Cross-checks and caveats; corrected 3 critical errors"
+          }
+        ],
+        "contacts": {
+          "active": [
+            "Soi Dog / Dr. Ala — CNVR research papers shared",
+            "Soi Dog / Khun Nui — funding and donor messaging interview",
+            "BCH / Center of Dreams / Katie — homeless services benchmark",
+            "Childline / Saidek — stateless child data pathway",
+            "K. Saks — stateless/refugee network and Q&A",
+            "Mirror Foundation — NGO operating model lessons",
+            "UN ESCAP — regional statelessness framework"
+          ],
+          "next": [
+            "Ajarn Tueanchai Deetes — northern statelessness networks",
+            "LPN Foundation — Samut Sakhon migrant children/families",
+            "Mahidol University Salaya — Nakhon Pathom research partner",
+            "Nakhon Pathom Provincial Office — registration/welfare data",
+            "Salaya Dog Shelter — intake/adoption rates"
+          ]
+        },
+        "strategy": [
+          {
+            "title": "Core argument",
+            "body": "Thailand’s fertility rate fell from 6.1 in 1960 to 1.0 in 2024. The working-age population may shrink by 8–10M by 2050. Stateless people already in Thailand are a demographic lifeline if legal identity, education, and work pathways are unlocked."
+          },
+          {
+            "title": "Compound model",
+            "body": "No known Thailand organization combines stateless family integration with dog rescue in one physical compound. The model turns two problems into one system: families receive identity/housing/work/community; dogs receive rehabilitation/adoption; SE dog services help fund human services."
+          },
+          {
+            "title": "Differentiators",
+            "body": "Property acquired; 4+ engaged NGO threads; policy window around work permits; Nakhon Pathom dog-ownership data supports location; dog rescue gives emotionally legible donor narrative."
+          },
+          {
+            "title": "Mirror lessons",
+            "body": "Start narrow, build from cases/data, use legally safe pilots, separate care from citizenship promises, make projects economically sustainable, and design data capture from day one."
+          }
+        ],
+        "registration": {
+          "status": "Legal registration is the current bottleneck.",
+          "options": [
+            "Private foundation / family-funded route",
+            "Public foundation / fundraising route",
+            "Social Enterprise Promotion Act route or complement — 70% profit reinvestment requirement"
+          ],
+          "benchmarks": [
+            "Foundation registration: 50,000–200,000 THB",
+            "SE registration: 50,000–150,000 THB",
+            "Legal advisor annual: 100,000–500,000 THB",
+            "Audit annual: 30,000–100,000 THB"
+          ],
+          "warnings": [
+            "Tax-deductibility must be designed up front with a specialist.",
+            "Do not build a donor deck that implies legal outcomes TF cannot guarantee."
+          ]
+        },
+        "financial": {
+          "benchmarks": [
+            "Childline Thailand: ~30M THB/year — needs direct verification",
+            "Center of Dreams/BCH: ~16.5M THB Citi Foundation grant",
+            "Soi Dog: donation-based; official annual budget still needed"
+          ],
+          "revenueStreams": [
+            "Founder/family contribution",
+            "Thai + international grants",
+            "Dog services SE revenue: grooming, training, boarding, vet clinic, cafe/retail, adoption fees",
+            "Corporate sponsorships",
+            "Individual donations",
+            "Government grants in 100K–500K THB range"
+          ]
+        },
+        "actions": {
+          "critical": [
+            "Verify Soi Dog current sterilization total and mobile team count",
+            "Get Childline stateless child call volumes, resolution rates, quote",
+            "Get K. Saks work-permit pilot numbers and family stories",
+            "Get BCH resident outcomes, quote, and successor funding answer",
+            "Confirm Mirror tax-deductibility status, office count, and statelessness case stats"
+          ],
+          "presentation": [
+            "Define exact target population segment for pilot",
+            "Design legally safe pilot model",
+            "Build donor narrative: emotionally clear, legally precise",
+            "Finalize registration path and SE relationship",
+            "Draft presentation",
+            "Request endorsements/quotes from NGO partners"
+          ]
+        },
+        "heroNumbers": [
+          "600,000 registered stateless people",
+          "1.0 Thailand fertility rate in 2024",
+          "1.3M owned dogs in Greater Bangkok; 66% roam freely",
+          "24.7% street-dog density reduction from 400,000+ CNVR operations",
+          "169,241 stateless children",
+          "8–10M projected working-age population decline by 2050",
+          "42,000 working-age refugees newly eligible for legal work permits",
+          "30.5% Nakhon Pathom dog ownership rate",
+          "64% residents reported fewer dogs after sustained CNVR vs. 25% control",
+          "53% owned dogs sterilized vs. 84% vaccinated = 31-point gap"
+        ],
+        "dataQualityFlags": [
+          "Thailand population corrected to ~65.95M, not 71–72M.",
+          "CNVR coverage should not be stated as 2%; use 12–15% for Soi Dog alone with caveat.",
+          "TFR is 1.0 in 2024, not 1.1.",
+          "Attribute unverified Childline and mental-health figures as meeting observations until confirmed."
+        ]
+      }
     },
     {
       "id": "house-of-milon",
@@ -892,7 +1289,7 @@
       "name": "Tomorrow Foundation",
       "category": "Projects",
       "projectId": "tomorrow-foundation",
-      "summary": "Two-month presentation build for a Thailand foundation concept focused on statelessness, poverty/joblessness, dog rescue, and child education.",
+      "summary": "Knowledge dashboard for the Tomorrow Foundation presentation build: statelessness, poverty/joblessness, dog rescue, child education, NGO meetings, research, registration, finance, and next actions.",
       "tags": [
         "foundation",
         "ngo",
@@ -909,6 +1306,15 @@
             "Nakhon Pathom compound concept; Southeast Asia-first strategy.",
             "Known NGO/context threads: K. Saks, Soi Dog/Dr. Ala, BCH, Childline. Dr. Ala shared 3 CNVR papers.",
             "Legal registration remains a bottleneck. Next work: NGO outreach, registration path, and presentation draft."
+          ]
+        },
+        {
+          "date": "2026-06-02",
+          "title": "Meeting Knowledge Dashboard",
+          "notes": [
+            "Created structured dashboard view inside the Tomorrow Foundation project detail page.",
+            "Meetings covered: Childline, K. Saks, Center of Dreams/BCH, Soi Dog, UN ESCAP, Mirror Foundation.",
+            "Research covered: DATA_STRATEGY, statelessness, demographics, dog rescue, homelessness, education, Nakhon Pathom, financial benchmarks, hero numbers, verification report."
           ]
         }
       ]
@@ -940,6 +1346,37 @@
     }
   ],
   "dailyLogs": [
+    {
+      "date": "2026-06-02",
+      "title": "Tomorrow Foundation Knowledge Dashboard",
+      "summary": "Added a full dashboard in Mavis Memory Wiki covering all known Tomorrow Foundation meetings, research files, strategic plan sections, bottlenecks, and next actions.",
+      "subjects": [
+        "tomorrow-foundation",
+        "memory-wiki"
+      ],
+      "projects": [
+        "tomorrow-foundation",
+        "memory-wiki"
+      ],
+      "highlights": [
+        "Full project dashboard added to Tomorrow Foundation detail page.",
+        "Sections: overview, roadmap, 4 causes, meetings, research library, contacts, strategy, registration/legal, financials, actions, hero numbers, data-quality flags.",
+        "Grounded in Google Drive Tomorrow Foundation files, 6 meeting summaries, 10 data/research files, 3 CNVR papers, and verification report.",
+        "Next decisions: pilot population, legal structure, NGO follow-up for verified stats/quotes."
+      ]
+    },
+    {
+      "date": "2026-06-02",
+      "title": "Crypto Paper Trading Dashboard Update",
+      "projectId": "crypto-paper-trading",
+      "summary": "V2 paper trading refreshed: portfolio 242,552.81 THB, holdings XRP 531, ADA 17294, BTC 0.00948542, ETH 0.34473028, KUB 707.03838823, THB 33198.08; open position P0003.",
+      "highlights": [
+        "Portfolio value: 242,552.81 THB · P/L vs V2 start: -8,570.11 THB (-3.41%)",
+        "Vs buy-and-hold: -391.03 THB (-0.16%)",
+        "Current open position: P0003 SHORT XRP 100.0 @ 41.16 THB; buy back ≤ 40.67 THB or stop ≥ 41.65 THB.",
+        "Trade list refreshed from high_risk_trades.csv: 10 rows, latest first."
+      ]
+    },
     {
       "date": "2026-06-01",
       "title": "Crypto Paper Trading Dashboard Update",
