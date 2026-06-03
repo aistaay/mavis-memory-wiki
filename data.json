@@ -117,12 +117,12 @@
           "title": "Crypto Paper Trading Status + Executive Dashboard",
           "notes": [
             "Paper-only status; no real trades are authorized or executed.",
-            "Current paper holdings: XRP 731, ADA 16,544, BTC 0.00948542, ETH 0.34473028, THB 30,283.58; KUB 707.03838823 tracked separately for fee-credit status.",
-            "Portfolio value: 237,241.59 THB; P/L vs V2 start: -13,881.33 THB (-5.5277%).",
-            "Daily status KILL_SWITCH: -4.0788% (-10,088.13 THB) vs today's start.",
-            "Vs buy-and-hold benchmark (831 XRP + 28,794 ADA): 403.08 THB (0.1702%).",
-            "Selected signal HOLD; XRP score 0, ADA score 0; sentiment neutral_unavailable; regime RANGE.",
-            "Open planned position P0005: SHORT ADA: buy back ≤ 6.9612 THB; stop ≥ 7.2278 THB",
+            "Current paper holdings: XRP 731, ADA 17,294, BTC 0.00948542, ETH 0.34473028, THB 24,294.9; KUB 707.03838823 tracked separately for fee-credit status.",
+            "Portfolio value: 237,760.96 THB; P/L vs V2 start: -13,361.96 THB (-5.3209%).",
+            "Daily status ACTIVE: 1.3645% (3,200.52 THB) vs today's start.",
+            "Vs buy-and-hold benchmark (831 XRP + 28,794 ADA): -827.63 THB (-0.3469%).",
+            "Selected signal SELL_ADA; XRP score 2; ADA score 2; sentiment neutral_unavailable; regime BULL.",
+            "No open planned position; latest saved paper trade closed.",
             "V1 30k ADA churn was real paper output from an overly broad 95% rotation setting; archived and superseded by V2 small-increment planned positions."
           ]
         },
@@ -161,60 +161,60 @@
         }
       ],
       "cryptoDashboard": {
-        "lastUpdatedIso": "2026-06-03T05:28:29+07:00",
+        "lastUpdatedIso": "2026-06-03T14:22:48+07:00",
         "paperOnly": true,
         "mode": "paper_v2_planned_small_positions",
-        "recommendedAction": "HOLD",
-        "paperStatus": "OPEN_POSITION_WAIT",
-        "dailyStatus": "KILL_SWITCH",
+        "recommendedAction": "SELL_ADA",
+        "paperStatus": "EXECUTED_SELL_ADA",
+        "dailyStatus": "ACTIVE",
         "holdings": [
           {
             "asset": "XRP",
             "amount": 731.0,
-            "valueThb": 29261.93
+            "valueThb": 29788.25
           },
           {
             "asset": "ADA",
-            "amount": 16544.0,
-            "valueThb": 116966.08
+            "amount": 17294.0,
+            "valueThb": 122960.34
           },
           {
             "asset": "BTC",
-            "amount": 0.009485424704722481,
-            "valueThb": 20928.94
+            "amount": 0.00948542,
+            "valueThb": 20846.88
           },
           {
             "asset": "ETH",
-            "amount": 0.34473028120652727,
-            "valueThb": 21517.04
+            "amount": 0.34473028,
+            "valueThb": 21168.97
           },
           {
             "asset": "THB",
-            "amount": 30283.58,
-            "valueThb": 30283.58
+            "amount": 24294.9027764,
+            "valueThb": 24294.9
           }
         ],
         "portfolio": {
-          "valueThb": 237241.59,
-          "dailyPnlPct": -4.0788,
-          "dailyPnlThb": -10088.13,
-          "pnlThb": -13881.33,
-          "pnlPct": -5.5277,
-          "vsHoldThb": 403.08,
-          "vsHoldPct": 0.1702,
-          "feeCreditThb": 1760.9651,
-          "tradeCount": 15
+          "valueThb": 237760.96,
+          "dailyPnlPct": 1.3645,
+          "dailyPnlThb": 3200.52,
+          "pnlThb": -13361.96,
+          "pnlPct": -5.3209,
+          "vsHoldThb": -827.63,
+          "vsHoldPct": -0.3469,
+          "feeCreditThb": 2269.3326,
+          "tradeCount": 28
         },
         "assets": [
           {
             "asset": "XRP",
-            "livePriceThb": 40.03,
-            "bidThb": 40.05,
-            "askThb": 40.07,
-            "spreadPct": 0.05,
-            "pct24": -5.16,
-            "volumeThb24h": 66491674.34,
-            "baselinePriceThb": 40.03,
+            "livePriceThb": 40.75,
+            "bidThb": 40.75,
+            "askThb": 40.76,
+            "spreadPct": 0.024536866642124924,
+            "pct24": -1.12,
+            "volumeThb24h": 70904467.93,
+            "baselinePriceThb": 40.75,
             "baselineSource": "live_bitkub_public_ticker",
             "baselineSourceLabel": "Live Bitkub public ticker",
             "moveFromBaselinePct": 0.0,
@@ -226,13 +226,13 @@
           },
           {
             "asset": "ADA",
-            "livePriceThb": 7.07,
-            "bidThb": 7.07,
-            "askThb": 7.08,
-            "spreadPct": 0.141,
-            "pct24": -5.73,
-            "volumeThb24h": 24082737.09,
-            "baselinePriceThb": 7.07,
+            "livePriceThb": 7.11,
+            "bidThb": 7.11,
+            "askThb": 7.12,
+            "spreadPct": 0.14054813773717198,
+            "pct24": -2.2,
+            "volumeThb24h": 24591858.0,
+            "baselinePriceThb": 7.11,
             "baselineSource": "live_bitkub_public_ticker",
             "baselineSourceLabel": "Live Bitkub public ticker",
             "moveFromBaselinePct": 0.0,
@@ -240,17 +240,17 @@
             "dipTriggerPct": null,
             "jumpTriggerPct": null,
             "fastMoveTriggerPct": null,
-            "holding": 16544.0
+            "holding": 17294.0
           },
           {
             "asset": "BTC",
-            "livePriceThb": 2206431.52,
-            "bidThb": 2204713.9,
-            "askThb": 2205815.03,
-            "spreadPct": 0.05,
-            "pct24": -5.06,
-            "volumeThb24h": 394480710.86,
-            "baselinePriceThb": 2206431.52,
+            "livePriceThb": 2197780.14,
+            "bidThb": 2195848.39,
+            "askThb": 2197780.14,
+            "spreadPct": 0.08793415223020687,
+            "pct24": -3.55,
+            "volumeThb24h": 493272783.34,
+            "baselinePriceThb": 2197780.14,
             "baselineSource": "live_bitkub_public_ticker",
             "baselineSourceLabel": "Live Bitkub public ticker",
             "moveFromBaselinePct": 0.0,
@@ -258,17 +258,17 @@
             "dipTriggerPct": null,
             "jumpTriggerPct": null,
             "fastMoveTriggerPct": null,
-            "holding": 0.009485424704722481
+            "holding": 0.00948542
           },
           {
             "asset": "ETH",
-            "livePriceThb": 62417.04,
-            "bidThb": 62356.42,
-            "askThb": 62400.63,
-            "spreadPct": 0.071,
-            "pct24": -4.19,
-            "volumeThb24h": 58171255.05,
-            "baselinePriceThb": 62417.04,
+            "livePriceThb": 61407.33,
+            "bidThb": 61346.74,
+            "askThb": 61392.17,
+            "spreadPct": 0.07402705466424672,
+            "pct24": -4.87,
+            "volumeThb24h": 105744129.2,
+            "baselinePriceThb": 61407.33,
             "baselineSource": "live_bitkub_public_ticker",
             "baselineSourceLabel": "Live Bitkub public ticker",
             "moveFromBaselinePct": 0.0,
@@ -276,11 +276,11 @@
             "dipTriggerPct": null,
             "jumpTriggerPct": null,
             "fastMoveTriggerPct": null,
-            "holding": 0.34473028120652727
+            "holding": 0.34473028
           },
           {
             "asset": "THB",
-            "holding": 30283.58,
+            "holding": 24294.9027764,
             "livePriceThb": 1,
             "bidThb": 1,
             "askThb": 1,
@@ -298,51 +298,51 @@
           }
         ],
         "marketRead": {
-          "selectedSignal": "HOLD",
-          "xrpScore": 0,
-          "adaScore": 0,
+          "selectedSignal": "SELL_ADA",
+          "xrpScore": 2,
+          "adaScore": 2,
           "sentimentRegime": "neutral_unavailable",
-          "regime": "RANGE",
+          "regime": "BULL",
           "lastTrade": {
-            "ts": "2026-06-02T21:53:13+00:00",
-            "timeLocal": "Jun 03 04:53",
+            "ts": "2026-06-03T07:19:16+00:00",
+            "timeLocal": "Jun 03 14:19",
             "action": "SELL_ADA",
             "asset": "ADA",
             "amount": 750.0,
-            "priceThb": 7.1,
-            "valueThb": 5325.0,
-            "netEdgePct": -0.37,
-            "expectedAction": "Buy back ≤",
-            "expectedPriceThb": 6.9612,
+            "priceThb": 7.13,
+            "valueThb": 5347.5,
+            "netEdgePct": null,
+            "expectedAction": "Sell ≥",
+            "expectedPriceThb": 7.10355,
             "expectedPriceBasis": "planned_position_target",
-            "plannedExit": "SHORT ADA: buy back ≤ 6.9612 THB; stop ≥ 7.2278 THB",
-            "status": "OPEN",
-            "priceClosedThb": null,
-            "positionId": "P0005",
-            "source": "executed_trade_current_open_position"
+            "plannedExit": "LONG ADA: sell ≥ 7.1035 THB or stop ≤ 7.0574 THB",
+            "status": "CLOSED",
+            "priceClosedThb": 7.13,
+            "positionId": "P0011",
+            "source": "executed_trade"
           },
           "kubFeeCredit": {
             "bonus_pct": 10.0,
             "break_even_ask_thb": 32.91770573566085,
             "conversion_price_thb": 30.0,
-            "current_fee_credit_thb": 1760.96505,
+            "current_fee_credit_thb": 2269.3325784957606,
             "fee_credit_per_kub_thb": 33.0,
-            "kub_ask_thb": 26.0,
-            "kub_bid_thb": 25.86,
-            "kub_last_thb": 25.87,
-            "needed_fee_credit_thb": 15.29688475559351,
-            "projected_weekly_fees_thb": 1776.2619347555935,
-            "reason": "Expected near-term fee usage is too small to justify locking value into non-refundable fee credit.",
+            "kub_ask_thb": 25.84,
+            "kub_bid_thb": 25.82,
+            "kub_last_thb": 25.84,
+            "needed_fee_credit_thb": 108.27701781512178,
+            "projected_weekly_fees_thb": 2377.6095963108824,
+            "reason": "Calculated KUB purchase was too small or not net-positive after fees.",
             "status": "HOLD",
-            "ts": "2026-06-02T22:24:13+00:00"
+            "ts": "2026-06-03T07:19:16+00:00"
           },
           "kubStatus": {
             "status": "HOLD",
-            "reason": "Expected near-term fee usage is too small to justify locking value into non-refundable fee credit.",
-            "lastThb": 25.86,
-            "holding": 707.038388233602,
-            "valueThb": 18284.01,
-            "pricePct24": -0.12
+            "reason": "Calculated KUB purchase was too small or not net-positive after fees.",
+            "lastThb": 25.84,
+            "holding": 707.03838823,
+            "valueThb": 18269.87,
+            "pricePct24": -2.67
           }
         },
         "automation": {
@@ -358,27 +358,262 @@
           ],
           "n8nLastCheckedIso": "2026-05-31T11:29:33+00:00",
           "hermesCronStatus": [
-            "Crypto multi-asset dip ladder watchdog: every 180m, last ok at 2026-06-03T05:16:40.856223+07:00, next 2026-06-03T08:16:40.856223+07:00",
-            "Bitkub dynamic baseline price-alert watchdog: every 180m, last ok at 2026-06-03T05:16:41.852390+07:00, next 2026-06-03T08:16:41.852390+07:00",
-            "Aggressive 3pct daily-target paper trader: every 180m, last ok at 2026-06-03T05:17:49.467555+07:00, next 2026-06-03T08:17:49.467555+07:00",
-            "Update Mavis Memory Wiki crypto paper trading log: 0 21 * * *, last ok at 2026-06-03T02:22:25.094473+07:00, next 2026-06-03T21:00:00+07:00"
+            "Crypto multi-asset dip ladder watchdog: every 180m, last error at 2026-06-03T14:18:09.476332+07:00, next 2026-06-03T17:18:09.476332+07:00",
+            "Bitkub dynamic baseline price-alert watchdog: every 180m, last ok at 2026-06-03T14:17:57.937000+07:00, next 2026-06-03T17:17:57.937000+07:00",
+            "Aggressive 3pct daily-target paper trader: every 180m, last ok at 2026-06-03T14:19:19.551722+07:00, next 2026-06-03T17:19:19.551722+07:00",
+            "Update Mavis Memory Wiki crypto paper trading log: 0 21 * * *, last ok at 2026-06-03T05:29:30.052017+07:00, next 2026-06-03T21:00:00+07:00"
           ]
         },
         "executiveNotes": [
           "Paper-only. No real exchange orders are authorized or executed.",
           "V1 30k ADA churn was real paper output from an overly broad 95% rotation setting; it is archived, not deleted, and superseded by V2 small-increment planned positions.",
           "V2 rule: paper-only, small increments only, one open planned position at a time, max 100 XRP or 500 ADA per new paper position.",
-          "Reconciled V2 holdings from current state/current V2 ledger only: XRP 731, ADA 16,544, BTC 0.00948542, ETH 0.34473028, THB 30,283.58; KUB held separately for fee-credit tracking 707.03838823.",
-          "Open planned position P0005: SHORT ADA: buy back ≤ 6.9612 THB; stop ≥ 7.2278 THB",
+          "Current state ledger shows later paper rows at 150 XRP / 750 ADA sizing; dashboard reports them as paper-only ledger history, but the stated V2 guardrail remains 100 XRP / 500 ADA for new paper positions.",
+          "Reconciled V2 holdings from current state/current V2 ledger only: XRP 731, ADA 17,294, BTC 0.00948542, ETH 0.34473028, THB 24,294.9; KUB held separately for fee-credit tracking 707.03838823.",
+          "No open planned position; latest saved paper trade closed.",
           "Net edge = estimated move minus fees, spread, and slippage buffer. Positive is useful; negative means the signal probably does not beat trading costs."
         ],
         "last24hrTrades": {
           "windowLocal": "V2 paper ledger · latest first",
-          "count": 15,
-          "totalVolumeThb": 121823.5,
+          "count": 28,
+          "totalVolumeThb": 194716.0,
           "netAdaAmount": null,
           "netXrpAmount": null,
           "trades": [
+            {
+              "ts": "2026-06-03T07:19:16+00:00",
+              "timeLocal": "Jun 03 14:19",
+              "action": "SELL_ADA",
+              "asset": "ADA",
+              "amount": 750.0,
+              "priceThb": 7.13,
+              "valueThb": 5347.5,
+              "netEdgePct": null,
+              "expectedAction": "Sell ≥",
+              "expectedPriceThb": 7.10355,
+              "expectedPriceBasis": "planned_position_target",
+              "plannedExit": "LONG ADA: sell ≥ 7.1035 THB or stop ≤ 7.0574 THB",
+              "status": "CLOSED",
+              "priceClosedThb": 7.13,
+              "positionId": "P0011",
+              "source": "executed_trade"
+            },
+            {
+              "ts": "2026-06-03T07:12:16+00:00",
+              "timeLocal": "Jun 03 14:12",
+              "action": "BUY_ADA",
+              "asset": "ADA",
+              "amount": 750.0,
+              "priceThb": 7.1,
+              "valueThb": 5325.0,
+              "netEdgePct": -0.26,
+              "expectedAction": "Sell ≥",
+              "expectedPriceThb": 7.10355,
+              "expectedPriceBasis": "planned_position_target",
+              "plannedExit": "LONG ADA: sell ≥ 7.1035 THB or stop ≤ 7.0574 THB",
+              "status": "CLOSED",
+              "priceClosedThb": 7.13,
+              "positionId": "P0011",
+              "source": "executed_trade"
+            },
+            {
+              "ts": "2026-06-03T07:01:15+00:00",
+              "timeLocal": "Jun 03 14:01",
+              "action": "BUY_XRP",
+              "asset": "XRP",
+              "amount": 150.0,
+              "priceThb": 40.52,
+              "valueThb": 6078.0,
+              "netEdgePct": null,
+              "expectedAction": "Buy back ≤",
+              "expectedPriceThb": 40.689645,
+              "expectedPriceBasis": "planned_position_target",
+              "plannedExit": "SHORT XRP: buy back ≤ 40.6896 THB or stop ≥ 40.9543 THB",
+              "status": "CLOSED",
+              "priceClosedThb": 40.52,
+              "positionId": "P0010",
+              "source": "executed_trade"
+            },
+            {
+              "ts": "2026-06-03T06:42:13+00:00",
+              "timeLocal": "Jun 03 13:42",
+              "action": "SELL_XRP",
+              "asset": "XRP",
+              "amount": 150.0,
+              "priceThb": 40.71,
+              "valueThb": 6106.5,
+              "netEdgePct": null,
+              "expectedAction": "Buy back ≤",
+              "expectedPriceThb": 40.689645,
+              "expectedPriceBasis": "planned_position_target",
+              "plannedExit": "SHORT XRP: buy back ≤ 40.6896 THB or stop ≥ 40.9543 THB",
+              "status": "CLOSED",
+              "priceClosedThb": 40.52,
+              "positionId": "P0010",
+              "source": "executed_trade"
+            },
+            {
+              "ts": "2026-06-03T06:36:14+00:00",
+              "timeLocal": "Jun 03 13:36",
+              "action": "BUY_XRP",
+              "asset": "XRP",
+              "amount": 150.0,
+              "priceThb": 40.66,
+              "valueThb": 6099.0,
+              "netEdgePct": null,
+              "expectedAction": "Buy back ≤",
+              "expectedPriceThb": 40.269855,
+              "expectedPriceBasis": "planned_position_target",
+              "plannedExit": "SHORT XRP: buy back ≤ 40.2699 THB or stop ≥ 40.5317 THB",
+              "status": "CLOSED",
+              "priceClosedThb": 40.66,
+              "positionId": "P0009",
+              "source": "executed_trade"
+            },
+            {
+              "ts": "2026-06-03T06:10:28+00:00",
+              "timeLocal": "Jun 03 13:10",
+              "action": "SELL_XRP",
+              "asset": "XRP",
+              "amount": 150.0,
+              "priceThb": 40.29,
+              "valueThb": 6043.5,
+              "netEdgePct": -0.24,
+              "expectedAction": "Buy back ≤",
+              "expectedPriceThb": 40.269855,
+              "expectedPriceBasis": "planned_position_target",
+              "plannedExit": "SHORT XRP: buy back ≤ 40.2699 THB or stop ≥ 40.5317 THB",
+              "status": "CLOSED",
+              "priceClosedThb": 40.66,
+              "positionId": "P0009",
+              "source": "executed_trade"
+            },
+            {
+              "ts": "2026-06-03T06:10:13+00:00",
+              "timeLocal": "Jun 03 13:10",
+              "action": "SELL_ADA",
+              "asset": "ADA",
+              "amount": 750.0,
+              "priceThb": 7.02,
+              "valueThb": 5265.0,
+              "netEdgePct": null,
+              "expectedAction": "Sell ≥",
+              "expectedPriceThb": 7.013505,
+              "expectedPriceBasis": "planned_position_target",
+              "plannedExit": "LONG ADA: sell ≥ 7.0135 THB or stop ≤ 6.9679 THB",
+              "status": "CLOSED",
+              "priceClosedThb": 7.02,
+              "positionId": "P0008",
+              "source": "executed_trade"
+            },
+            {
+              "ts": "2026-06-03T05:23:13+00:00",
+              "timeLocal": "Jun 03 12:23",
+              "action": "BUY_ADA",
+              "asset": "ADA",
+              "amount": 750.0,
+              "priceThb": 7.01,
+              "valueThb": 5257.5,
+              "netEdgePct": -0.02,
+              "expectedAction": "Sell ≥",
+              "expectedPriceThb": 7.13618,
+              "expectedPriceBasis": "planned_position_target",
+              "plannedExit": "LONG ADA: sell ≥ 7.1362 THB or stop ≤ 6.8838 THB",
+              "status": "CLOSED",
+              "priceClosedThb": 7.02,
+              "positionId": "P0008",
+              "source": "executed_trade"
+            },
+            {
+              "ts": "2026-06-03T05:07:14+00:00",
+              "timeLocal": "Jun 03 12:07",
+              "action": "BUY_XRP",
+              "asset": "XRP",
+              "amount": 150.0,
+              "priceThb": 40.14,
+              "valueThb": 6021.0,
+              "netEdgePct": null,
+              "expectedAction": "Buy back ≤",
+              "expectedPriceThb": 38.37656,
+              "expectedPriceBasis": "planned_position_target",
+              "plannedExit": "SHORT XRP: buy back ≤ 38.3766 THB or stop ≥ 39.7834 THB",
+              "status": "CLOSED",
+              "priceClosedThb": 40.14,
+              "positionId": "P0007",
+              "source": "executed_trade"
+            },
+            {
+              "ts": "2026-06-03T04:00:17+00:00",
+              "timeLocal": "Jun 03 11:00",
+              "action": "SELL_XRP",
+              "asset": "XRP",
+              "amount": 150.0,
+              "priceThb": 39.08,
+              "valueThb": 5862.0,
+              "netEdgePct": null,
+              "expectedAction": "Buy back ≤",
+              "expectedPriceThb": 38.37656,
+              "expectedPriceBasis": "planned_position_target",
+              "plannedExit": "SHORT XRP: buy back ≤ 38.3766 THB or stop ≥ 39.7834 THB",
+              "status": "CLOSED",
+              "priceClosedThb": 40.14,
+              "positionId": "P0007",
+              "source": "executed_trade"
+            },
+            {
+              "ts": "2026-06-03T03:51:16+00:00",
+              "timeLocal": "Jun 03 10:51",
+              "action": "SELL_ADA",
+              "asset": "ADA",
+              "amount": 750.0,
+              "priceThb": 6.79,
+              "valueThb": 5092.5,
+              "netEdgePct": null,
+              "expectedAction": "Sell ≥",
+              "expectedPriceThb": 7.09546,
+              "expectedPriceBasis": "planned_position_target",
+              "plannedExit": "LONG ADA: sell ≥ 7.0955 THB or stop ≤ 6.8445 THB",
+              "status": "CLOSED",
+              "priceClosedThb": 6.79,
+              "positionId": "P0006",
+              "source": "executed_trade"
+            },
+            {
+              "ts": "2026-06-03T00:06:14+00:00",
+              "timeLocal": "Jun 03 07:06",
+              "action": "BUY_ADA",
+              "asset": "ADA",
+              "amount": 750.0,
+              "priceThb": 6.97,
+              "valueThb": 5227.5,
+              "netEdgePct": -0.21,
+              "expectedAction": "Sell ≥",
+              "expectedPriceThb": 7.09546,
+              "expectedPriceBasis": "planned_position_target",
+              "plannedExit": "LONG ADA: sell ≥ 7.0955 THB or stop ≤ 6.8445 THB",
+              "status": "CLOSED",
+              "priceClosedThb": 6.79,
+              "positionId": "P0006",
+              "source": "executed_trade"
+            },
+            {
+              "ts": "2026-06-02T23:26:13+00:00",
+              "timeLocal": "Jun 03 06:26",
+              "action": "BUY_ADA",
+              "asset": "ADA",
+              "amount": 750.0,
+              "priceThb": 6.89,
+              "valueThb": 5167.5,
+              "netEdgePct": null,
+              "expectedAction": "Buy back ≤",
+              "expectedPriceThb": 6.939183,
+              "expectedPriceBasis": "planned_position_target",
+              "plannedExit": "SHORT ADA: buy back ≤ 6.9392 THB or stop ≥ 7.2278 THB",
+              "status": "CLOSED",
+              "priceClosedThb": 6.89,
+              "positionId": "P0005",
+              "source": "executed_trade"
+            },
             {
               "ts": "2026-06-02T21:53:13+00:00",
               "timeLocal": "Jun 03 04:53",
@@ -389,13 +624,13 @@
               "valueThb": 5325.0,
               "netEdgePct": -0.37,
               "expectedAction": "Buy back ≤",
-              "expectedPriceThb": 6.9612,
+              "expectedPriceThb": 6.9722,
               "expectedPriceBasis": "planned_position_target",
-              "plannedExit": "SHORT ADA: buy back ≤ 6.9612 THB; stop ≥ 7.2278 THB",
-              "status": "OPEN",
-              "priceClosedThb": null,
+              "plannedExit": "SHORT ADA: buy back ≤ 6.9722 THB or stop ≥ 7.2278 THB",
+              "status": "CLOSED",
+              "priceClosedThb": 6.89,
               "positionId": "P0005",
-              "source": "executed_trade_current_open_position"
+              "source": "executed_trade"
             },
             {
               "ts": "2026-06-02T21:37:13+00:00",
@@ -407,9 +642,9 @@
               "valueThb": 5355.0,
               "netEdgePct": null,
               "expectedAction": "Buy back ≤",
-              "expectedPriceThb": 6.8838,
+              "expectedPriceThb": 6.88382,
               "expectedPriceBasis": "planned_position_target",
-              "plannedExit": "SHORT ADA: buy back ≤ 6.8838 THB; stop ≥ 7.1362 THB",
+              "plannedExit": "SHORT ADA: buy back ≤ 6.8838 THB or stop ≥ 7.1362 THB",
               "status": "CLOSED",
               "priceClosedThb": 7.14,
               "positionId": "P0004",
@@ -425,9 +660,9 @@
               "valueThb": 5257.5,
               "netEdgePct": 0.61,
               "expectedAction": "Buy back ≤",
-              "expectedPriceThb": 6.8838,
+              "expectedPriceThb": 6.88382,
               "expectedPriceBasis": "planned_position_target",
-              "plannedExit": "SHORT ADA: buy back ≤ 6.8838 THB; stop ≥ 7.1362 THB",
+              "plannedExit": "SHORT ADA: buy back ≤ 6.8838 THB or stop ≥ 7.1362 THB",
               "status": "CLOSED",
               "priceClosedThb": 7.14,
               "positionId": "P0004",
@@ -443,9 +678,9 @@
               "valueThb": 4016.0,
               "netEdgePct": null,
               "expectedAction": "Buy back ≤",
-              "expectedPriceThb": 40.1953,
+              "expectedPriceThb": 40.195281,
               "expectedPriceBasis": "planned_position_target",
-              "plannedExit": "SHORT XRP: buy back ≤ 40.1953 THB; stop ≥ 41.8500 THB",
+              "plannedExit": "SHORT XRP: buy back ≤ 40.1953 THB or stop ≥ 41.8500 THB",
               "status": "CLOSED",
               "priceClosedThb": 40.16,
               "positionId": "P0003",
@@ -461,7 +696,7 @@
               "valueThb": 4111.0,
               "netEdgePct": -0.3,
               "expectedAction": "Buy back ≤",
-              "expectedPriceThb": 40.6167,
+              "expectedPriceThb": 40.61668,
               "expectedPriceBasis": "planned_position_target",
               "plannedExit": "SHORT XRP: buy back ≤ 40.6167 THB or stop ≥ 41.6033 THB",
               "status": "CLOSED",
@@ -479,7 +714,7 @@
               "valueThb": 4121.0,
               "netEdgePct": null,
               "expectedAction": "Buy back ≤",
-              "expectedPriceThb": 41.2292,
+              "expectedPriceThb": 41.22924,
               "expectedPriceBasis": "planned_position_target",
               "plannedExit": "SHORT XRP: buy back ≤ 41.2292 THB or stop ≥ 42.2308 THB",
               "status": "CLOSED",
@@ -497,7 +732,7 @@
               "valueThb": 4173.0,
               "netEdgePct": -0.07,
               "expectedAction": "Buy back ≤",
-              "expectedPriceThb": 41.2292,
+              "expectedPriceThb": 41.22924,
               "expectedPriceBasis": "planned_position_target",
               "plannedExit": "SHORT XRP: buy back ≤ 41.2292 THB or stop ≥ 42.2308 THB",
               "status": "CLOSED",
@@ -539,7 +774,7 @@
               "status": "CLOSED",
               "priceClosedThb": 7.41,
               "positionId": "",
-              "source": "executed_trade"
+              "source": "executed_trade_manual_allocation"
             },
             {
               "ts": "2026-06-01T14:28:57+00:00",
@@ -557,7 +792,7 @@
               "status": "CLOSED",
               "priceClosedThb": 7.41,
               "positionId": "",
-              "source": "executed_trade"
+              "source": "executed_trade_manual_allocation"
             },
             {
               "ts": "2026-06-01T14:28:57+00:00",
@@ -575,7 +810,7 @@
               "status": "CLOSED",
               "priceClosedThb": 7.41,
               "positionId": "",
-              "source": "executed_trade"
+              "source": "executed_trade_manual_allocation"
             },
             {
               "ts": "2026-06-01T14:28:57+00:00",
@@ -593,7 +828,7 @@
               "status": "CLOSED",
               "priceClosedThb": 7.41,
               "positionId": "",
-              "source": "executed_trade"
+              "source": "executed_trade_manual_allocation"
             },
             {
               "ts": "2026-06-01T14:03:42+00:00",
@@ -611,7 +846,7 @@
               "status": "CLOSED",
               "priceClosedThb": 7.46,
               "positionId": "",
-              "source": "executed_trade"
+              "source": "executed_trade_manual_allocation"
             },
             {
               "ts": "2026-06-01T14:03:42+00:00",
@@ -629,7 +864,7 @@
               "status": "CLOSED",
               "priceClosedThb": 7.46,
               "positionId": "",
-              "source": "executed_trade"
+              "source": "executed_trade_manual_allocation"
             },
             {
               "ts": "2026-06-01T14:03:42+00:00",
@@ -647,7 +882,7 @@
               "status": "CLOSED",
               "priceClosedThb": 7.46,
               "positionId": "",
-              "source": "executed_trade"
+              "source": "executed_trade_manual_allocation"
             }
           ]
         },
@@ -663,11 +898,12 @@
           "reserveXrp": 331.0,
           "activeXrp": 400.0,
           "v1ArchivesPreserved": [
-            "high_risk_latest_snapshot.json.archived_v1_churn_20260601T131929Z",
             "high_risk_state.json.archived_v1_churn_20260601T131929Z",
-            "high_risk_trades.csv.archived_v1_churn_20260601T131929Z"
+            "high_risk_trades.csv.archived_v1_churn_20260601T131929Z",
+            "high_risk_latest_snapshot.json.archived_v1_churn_20260601T131929Z"
           ],
-          "balancesToState": true
+          "balancesToState": true,
+          "currentV2CsvRows": 28
         }
       }
     },
@@ -1317,12 +1553,12 @@
           "title": "Crypto Paper Trading Status",
           "notes": [
             "Paper-only status; no real trades are authorized or executed.",
-            "Current paper holdings: XRP 731, ADA 16,544, BTC 0.00948542, ETH 0.34473028, THB 30,283.58; KUB 707.03838823 tracked separately for fee-credit status.",
-            "Portfolio value: 237,241.59 THB; P/L vs V2 start: -13,881.33 THB (-5.5277%).",
-            "Daily status KILL_SWITCH: -4.0788% (-10,088.13 THB) vs today's start.",
-            "Vs buy-and-hold benchmark (831 XRP + 28,794 ADA): 403.08 THB (0.1702%).",
-            "Selected signal HOLD; XRP score 0, ADA score 0; sentiment neutral_unavailable; regime RANGE.",
-            "Open planned position P0005: SHORT ADA: buy back ≤ 6.9612 THB; stop ≥ 7.2278 THB",
+            "Current paper holdings: XRP 731, ADA 17,294, BTC 0.00948542, ETH 0.34473028, THB 24,294.9; KUB 707.03838823 tracked separately for fee-credit status.",
+            "Portfolio value: 237,760.96 THB; P/L vs V2 start: -13,361.96 THB (-5.3209%).",
+            "Daily status ACTIVE: 1.3645% (3,200.52 THB) vs today's start.",
+            "Vs buy-and-hold benchmark (831 XRP + 28,794 ADA): -827.63 THB (-0.3469%).",
+            "Selected signal SELL_ADA; XRP score 2; ADA score 2; sentiment neutral_unavailable; regime BULL.",
+            "No open planned position; latest saved paper trade closed.",
             "V1 30k ADA churn was real paper output from an overly broad 95% rotation setting; archived and superseded by V2 small-increment planned positions."
           ]
         },
@@ -1492,13 +1728,13 @@
       "projects": [
         "crypto-paper-trading"
       ],
-      "summary": "Portfolio 237,241.59 THB; KILL_SWITCH -4.0788% daily; Open planned position P0005: SHORT ADA: buy back ≤ 6.9612 THB; stop ≥ 7.2278 THB",
+      "summary": "Portfolio 237,760.96 THB; ACTIVE 1.3645% daily; No open planned position; latest saved paper trade closed.",
       "highlights": [
         "Paper-only; no real trades authorized.",
-        "Portfolio 237,241.59 THB; daily KILL_SWITCH (-4.0788% daily P/L).",
-        "Vs buy-and-hold +403.08 THB (0.1702%).",
-        "Open planned position P0005: SHORT ADA: buy back ≤ 6.9612 THB; stop ≥ 7.2278 THB",
-        "Rendered trade/position rows: 15 latest-first."
+        "Portfolio 237,760.96 THB; daily ACTIVE (1.3645% daily P/L).",
+        "Vs buy-and-hold -827.63 THB (-0.3469%).",
+        "No open planned position; latest saved paper trade closed.",
+        "Rendered trade/position rows: 28 latest-first; first 15 shown by default."
       ]
     },
     {
