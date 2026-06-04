@@ -2,7 +2,7 @@
   "meta": {
     "title": "Mavis Memory Wiki",
     "description": "A living record of conversations, subjects, and daily work between Damon and Mavis.",
-    "lastUpdated": "2026-06-04"
+    "lastUpdated": "2026-06-05"
   },
   "projects": [
     {
@@ -97,7 +97,7 @@
       "id": "crypto-paper-trading",
       "name": "Crypto Paper Trading",
       "status": "active",
-      "summary": "Paper-only crypto trading status and executive dashboard.",
+      "summary": "Paper-only V2 dashboard: HOLD · portfolio 197,132.74 THB · daily -12.00% · vs hold -13,491.59 THB.",
       "tags": [
         "crypto",
         "paper-trading",
@@ -113,6 +113,17 @@
         "crypto-paper-trading"
       ],
       "entries": [
+        {
+          "date": "2026-06-05",
+          "title": "Crypto paper-trading executive dashboard",
+          "notes": [
+            "Paper-only V2 status: HOLD / KILL_SWITCH.",
+            "Reconciled holdings: 431.000000 XRP, 17,294.000000 ADA, 0.00948542 BTC, 0.34473028 ETH, 33,316.92 THB.",
+            "Portfolio 197,132.74 THB; daily -12.00% (-26,882.54 THB); vs buy-and-hold -13,491.59 THB (-6.41%).",
+            "Trade list has 164 V2 ledger/planned-position rows, latest first; frontend shows 15 by default with older rows expandable.",
+            "Current state shows 2 open ledger rows and latest XRP size 150; this is outside the stated V2 guardrail and should be treated as paper-only status review, not authorization for real trades."
+          ]
+        },
         {
           "date": "2026-06-04",
           "title": "Crypto Paper Trading Status",
@@ -173,55 +184,55 @@
         }
       ],
       "cryptoDashboard": {
-        "lastUpdatedIso": "2026-06-04T23:31:34+07:00",
+        "lastUpdatedIso": "2026-06-05T02:32:05+07:00",
         "mode": "paper-only V2 small-increment planned positions",
-        "paperStatus": "EXECUTED_BUY_XRP",
-        "recommendedAction": "BUY_XRP",
+        "paperStatus": "HOLD",
+        "recommendedAction": "HOLD",
         "dailyStatus": "KILL_SWITCH",
         "portfolio": {
-          "valueThb": 213117.87,
-          "dailyPnlPct": -4.8646,
-          "dailyPnlThb": -10897.41,
-          "pnlThb": -38005.05,
-          "pnlPct": -15.134,
-          "vsHoldThb": 6522.21,
-          "vsHoldPct": 3.157,
-          "feeCreditThb": 2025.98,
-          "tradeCount": 156
+          "valueThb": 197132.74,
+          "dailyPnlPct": -12.0003,
+          "dailyPnlThb": -26882.54,
+          "pnlThb": -53990.18,
+          "pnlPct": -21.4995,
+          "vsHoldThb": -13491.59,
+          "vsHoldPct": -6.4055,
+          "feeCreditThb": 2059.2,
+          "tradeCount": 164
         },
         "holdings": [
           {
             "asset": "XRP",
-            "amount": 581.0,
-            "valueThb": 22043.14,
+            "amount": 431.0,
+            "valueThb": 16649.530000000002,
             "initialAmount": 831.0,
             "source": "reconciled_v2_state"
           },
           {
             "asset": "ADA",
-            "amount": 16544.0,
-            "valueThb": 100587.52,
+            "amount": 17294.0,
+            "valueThb": 107222.8,
             "initialAmount": 28794.0,
             "source": "reconciled_v2_state"
           },
           {
             "asset": "BTC",
-            "amount": 0.00948542,
-            "valueThb": 19700.8,
+            "amount": 0.009485424704722481,
+            "valueThb": 19853.29212873687,
             "initialAmount": 0.00790013,
             "source": "reconciled_v2_state"
           },
           {
             "asset": "ETH",
-            "amount": 0.34473028,
-            "valueThb": 19895.35,
+            "amount": 0.34473028120652727,
+            "valueThb": 20090.201670062434,
             "initialAmount": 0.28707056,
             "source": "reconciled_v2_state"
           },
           {
             "asset": "THB",
-            "amount": 32472.71,
-            "valueThb": 32472.71,
+            "amount": 33316.9193570798,
+            "valueThb": 33316.9193570798,
             "initialAmount": 18478.69,
             "source": "reconciled_v2_state"
           }
@@ -229,75 +240,75 @@
         "assets": [
           {
             "asset": "XRP",
-            "holding": 581.0,
-            "livePriceThb": 37.94,
-            "bidThb": 37.92,
-            "askThb": 37.93,
-            "baselinePriceThb": 38.0,
+            "holding": 431.0,
+            "livePriceThb": 38.63,
+            "bidThb": 38.63,
+            "askThb": 38.65,
+            "baselinePriceThb": 38.65,
             "baselineSource": "latest_snapshot_or_live_bitkub",
             "baselineSourceLabel": "snapshot/live Bitkub",
-            "moveFromBaselinePct": -0.15789473684211125,
-            "volumeThb24h": 80890425.76,
-            "spreadPct": 0.026367831245874784,
+            "moveFromBaselinePct": -0.0517464424320725,
+            "volumeThb24h": 77942778.55,
+            "spreadPct": 0.051759834368519726,
             "atrPct": null,
             "dipTriggerPct": null,
             "jumpTriggerPct": null,
-            "pct24h": -4.31
+            "pct24h": -1.95
           },
           {
             "asset": "ADA",
-            "holding": 16544.0,
-            "livePriceThb": 6.08,
-            "bidThb": 6.08,
-            "askThb": 6.1,
-            "baselinePriceThb": 6.1,
+            "holding": 17294.0,
+            "livePriceThb": 6.2,
+            "bidThb": 6.16,
+            "askThb": 6.18,
+            "baselinePriceThb": 6.18,
             "baselineSource": "latest_snapshot_or_live_bitkub",
             "baselineSourceLabel": "snapshot/live Bitkub",
-            "moveFromBaselinePct": -0.32786885245900943,
-            "volumeThb24h": 33720526.36,
-            "spreadPct": 0.3284072249589421,
+            "moveFromBaselinePct": 0.32362459546926314,
+            "volumeThb24h": 32672691.61,
+            "spreadPct": 0.32414910858994445,
             "atrPct": null,
             "dipTriggerPct": null,
             "jumpTriggerPct": null,
-            "pct24h": -10.98
+            "pct24h": -7.88
           },
           {
             "asset": "BTC",
-            "holding": 0.00948542,
-            "livePriceThb": 2076954.99,
-            "bidThb": 2077513.79,
-            "askThb": 2079126.0,
-            "baselinePriceThb": 2076954.99,
+            "holding": 0.009485424704722481,
+            "livePriceThb": 2093031.44,
+            "bidThb": 2091887.31,
+            "askThb": 2093031.52,
+            "baselinePriceThb": 2093031.44,
             "baselineSource": "latest_snapshot_or_live_bitkub",
             "baselineSourceLabel": "snapshot/live Bitkub",
             "moveFromBaselinePct": 0.0,
-            "volumeThb24h": 563147817.24,
-            "spreadPct": 0.07757275498726643,
+            "volumeThb24h": 573076667.36,
+            "spreadPct": 0.05468254207453589,
             "atrPct": null,
             "dipTriggerPct": null,
             "jumpTriggerPct": null,
-            "pct24h": -3.26
+            "pct24h": -2.52
           },
           {
             "asset": "ETH",
-            "holding": 0.34473028,
-            "livePriceThb": 57712.81,
-            "bidThb": 57752.0,
-            "askThb": 57763.55,
-            "baselinePriceThb": 57712.81,
+            "holding": 0.34473028120652727,
+            "livePriceThb": 58278.03,
+            "bidThb": 58278.73,
+            "askThb": 58322.82,
+            "baselinePriceThb": 58278.03,
             "baselineSource": "latest_snapshot_or_live_bitkub",
             "baselineSourceLabel": "snapshot/live Bitkub",
             "moveFromBaselinePct": 0.0,
-            "volumeThb24h": 141792147.06,
-            "spreadPct": 0.019997307721779295,
+            "volumeThb24h": 138723549.89,
+            "spreadPct": 0.0756250667336695,
             "atrPct": null,
             "dipTriggerPct": null,
             "jumpTriggerPct": null,
-            "pct24h": -3.03
+            "pct24h": -1.87
           },
           {
             "asset": "THB",
-            "holding": 32472.71,
+            "holding": 33316.9193570798,
             "livePriceThb": 1,
             "baselinePriceThb": 1,
             "baselineSource": "cash_unit",
@@ -318,178 +329,197 @@
           "THB": 18478.69
         },
         "marketRead": {
-          "selectedSignal": "BUY_XRP",
-          "xrpScore": 1,
-          "adaScore": 0,
+          "selectedSignal": "ADA",
+          "xrpScore": 3,
+          "adaScore": 4,
           "sentimentRegime": "neutral_unavailable",
-          "regime": "RANGE",
+          "regime": "BULL",
           "xrpAction": "BUY_XRP",
-          "adaAction": "HOLD",
+          "adaAction": "BUY_ADA",
+          "netEdgePct": 0.20474637851669586,
           "lastTrade": {
-            "ts": "2026-06-04T16:27:47+00:00",
-            "timeLocal": "2026-06-04 23:27",
-            "action": "BUY_XRP",
+            "ts": "2026-06-04T19:06:13+00:00",
+            "timeLocal": "2026-06-05 02:06",
+            "action": "SELL_XRP",
             "asset": "XRP",
             "amount": 150.0,
-            "priceThb": 38.0,
-            "valueThb": 5700.0,
-            "netEdgePct": null,
+            "priceThb": 38.46,
+            "valueThb": 5769.0,
+            "netEdgePct": -0.01,
             "expectedAction": "Buy ≤",
-            "expectedPriceThb": 37.90956,
-            "plannedExit": "SHORT XRP: buy ≤ 37.9096 THB or stop ≥ 38.6002 THB",
-            "plan": "SHORT XRP: buy ≤ 37.9096 THB or stop ≥ 38.6002 THB",
-            "status": "Closed",
-            "priceClosedThb": 38.0,
-            "positionId": "P0074",
-            "source": "high_risk_trades.csv",
-            "sourceDetail": "executed V2 paper row",
-            "score": 1,
-            "reasons": "Churn mode: close profitable SHORT P0074 on opposite buy signal (38.0000 < entry 38.3700) | fee credit used 14.25 THB"
+            "expectedPriceThb": 37.99848,
+            "plannedExit": "SHORT XRP: buy ≤ 37.9985 THB or stop ≥ 38.6908 THB",
+            "status": "Open",
+            "priceClosedThb": null,
+            "positionId": "P0080",
+            "source": "v2_paper_trade_ledger"
           },
           "kubFeeCredit": {
-            "bonus_pct": 10.0,
-            "break_even_ask_thb": 32.91770573566085,
-            "conversion_price_thb": 30.0,
-            "current_fee_credit_thb": 2040.2326727014283,
-            "fee_credit_per_kub_thb": 33.0,
-            "kub_ask_thb": 26.17,
-            "kub_bid_thb": 26.06,
-            "kub_last_thb": 26.17,
-            "needed_fee_credit_thb": 96.34558693188137,
-            "projected_weekly_fees_thb": 2136.5782596333097,
-            "reason": "Expected near-term fee usage is too small to justify locking value into non-refundable fee credit.",
             "status": "HOLD",
-            "ts": "2026-06-04T16:27:47+00:00"
-          },
-          "kubStatus": {
-            "holdingKub": 707.03838823,
-            "valueThb": 18418.35,
-            "livePriceThb": 26.05,
-            "feeCreditStatus": "HOLD",
-            "note": "KUB is tracked for fee-credit status, not shown as a current holdings tile."
-          },
-          "prices": {
-            "BTC": {
-              "asset": "BTC",
-              "symbol": "THB_BTC",
-              "livePriceThb": 2076954.99,
-              "bidThb": 2077513.79,
-              "askThb": 2079126.0,
-              "volumeThb24h": 563147817.24,
-              "baseVolume24h": 270.40301013,
-              "pct24h": -3.26,
-              "high24h": 2162423.94,
-              "low24h": 2010054.92,
-              "spreadPct": 0.07757275498726643
-            },
-            "ETH": {
-              "asset": "ETH",
-              "symbol": "THB_ETH",
-              "livePriceThb": 57712.81,
-              "bidThb": 57752.0,
-              "askThb": 57763.55,
-              "volumeThb24h": 141792147.06,
-              "baseVolume24h": 2437.69729227,
-              "pct24h": -3.03,
-              "high24h": 60511.7,
-              "low24h": 56212.35,
-              "spreadPct": 0.019997307721779295
-            },
-            "ADA": {
-              "asset": "ADA",
-              "symbol": "THB_ADA",
-              "livePriceThb": 6.08,
-              "bidThb": 6.08,
-              "askThb": 6.1,
-              "volumeThb24h": 33720526.36,
-              "baseVolume24h": 5262757.04058673,
-              "pct24h": -10.98,
-              "high24h": 6.88,
-              "low24h": 6.08,
-              "spreadPct": 0.3284072249589421
-            },
-            "XRP": {
-              "asset": "XRP",
-              "symbol": "THB_XRP",
-              "livePriceThb": 37.94,
-              "bidThb": 37.92,
-              "askThb": 37.93,
-              "volumeThb24h": 80890425.76,
-              "baseVolume24h": 2102037.31189933,
-              "pct24h": -4.31,
-              "high24h": 40.1,
-              "low24h": 37.29,
-              "spreadPct": 0.026367831245874784
-            },
-            "KUB": {
-              "asset": "KUB",
-              "symbol": "THB_KUB",
-              "livePriceThb": 26.05,
-              "bidThb": 26.06,
-              "askThb": 26.17,
-              "volumeThb24h": 8222047.06,
-              "baseVolume24h": 324489.48832383,
-              "pct24h": 2.72,
-              "high24h": 26.22,
-              "low24h": 25,
-              "spreadPct": 0.42121386176528036
-            }
+            "currentFeeCreditThb": 2059.2041729996376,
+            "reason": "Expected near-term fee usage is too small to justify locking value into non-refundable fee credit.",
+            "kubLastThb": 25.61
           }
         },
         "automation": {
-          "n8nStatus": "available",
-          "n8nSchedule": "price alert state file found",
+          "n8nStatus": "state file found",
+          "n8nSchedule": "external n8n status unavailable; local alert state only",
           "n8nLastCheckedIso": "2026-05-31T11:29:33+00:00",
           "n8nRecentExecutions": [
             {
-              "status": "state_file",
-              "detail": "last_checked_at 2026-05-31T11:29:33+00:00; watch_assets XRP, ADA, BTC, ETH, KUB"
-            }
-          ],
-          "hermesCron": [
-            {
-              "name": "Crypto multi-asset dip ladder watchdog",
-              "schedule": "every 180m",
-              "enabled": true,
-              "state": "scheduled",
-              "lastRunAt": "2026-06-04T20:24:36.174573+07:00",
-              "lastStatus": "ok",
-              "nextRunAt": "2026-06-04T23:24:36.174573+07:00"
-            },
-            {
-              "name": "Bitkub dynamic baseline price-alert watchdog",
-              "schedule": "every 180m",
-              "enabled": true,
-              "state": "scheduled",
-              "lastRunAt": "2026-06-04T20:24:37.129010+07:00",
-              "lastStatus": "ok",
-              "nextRunAt": "2026-06-04T23:24:37.129010+07:00"
-            },
-            {
-              "name": "Aggressive 3pct daily-target paper trader",
-              "schedule": "every 180m",
-              "enabled": true,
-              "state": "scheduled",
-              "lastRunAt": "2026-06-04T20:26:47.028390+07:00",
-              "lastStatus": "ok",
-              "nextRunAt": "2026-06-04T23:26:47.028390+07:00"
-            },
-            {
-              "name": "Update Mavis Memory Wiki crypto paper trading log",
-              "schedule": "0 21 * * *",
-              "enabled": true,
-              "state": "scheduled",
-              "lastRunAt": "2026-06-04T17:30:18.788921+07:00",
-              "lastStatus": "ok",
-              "nextRunAt": "2026-06-04T21:00:00+07:00"
+              "status": "state file found",
+              "checkedAt": "2026-05-31T11:29:33+00:00",
+              "watchAssets": [
+                "XRP",
+                "ADA",
+                "BTC",
+                "ETH",
+                "KUB"
+              ]
             }
           ]
         },
         "last24hrTrades": {
-          "count": 156,
-          "windowLocal": "Current V2 paper ledger (newest first)",
-          "totalVolumeThb": 881099.5,
+          "windowLocal": "Full V2 paper ledger, latest first",
+          "count": 164,
+          "totalVolumeThb": 921416.5,
           "trades": [
+            {
+              "ts": "2026-06-04T19:06:13+00:00",
+              "timeLocal": "2026-06-05 02:06",
+              "action": "SELL_XRP",
+              "asset": "XRP",
+              "amount": 150.0,
+              "priceThb": 38.46,
+              "valueThb": 5769.0,
+              "netEdgePct": -0.01,
+              "expectedAction": "Buy ≤",
+              "expectedPriceThb": 37.99848,
+              "plannedExit": "SHORT XRP: buy ≤ 37.9985 THB or stop ≥ 38.6908 THB",
+              "status": "Open",
+              "priceClosedThb": null,
+              "positionId": "P0080",
+              "source": "v2_paper_trade_ledger"
+            },
+            {
+              "ts": "2026-06-04T18:48:16+00:00",
+              "timeLocal": "2026-06-05 01:48",
+              "action": "BUY_ADA",
+              "asset": "ADA",
+              "amount": 750.0,
+              "priceThb": 6.22,
+              "valueThb": 4665.0,
+              "netEdgePct": null,
+              "expectedAction": "Buy ≤",
+              "expectedPriceThb": 6.03668,
+              "plannedExit": "SHORT ADA: buy ≤ 6.0367 THB or stop ≥ 6.1467 THB",
+              "status": "Closed",
+              "priceClosedThb": 6.22,
+              "positionId": "P0078",
+              "source": "v2_paper_trade_ledger"
+            },
+            {
+              "ts": "2026-06-04T18:39:14+00:00",
+              "timeLocal": "2026-06-05 01:39",
+              "action": "BUY_ADA",
+              "asset": "ADA",
+              "amount": 750.0,
+              "priceThb": 6.21,
+              "valueThb": 4657.5,
+              "netEdgePct": null,
+              "expectedAction": "Buy ≤",
+              "expectedPriceThb": 6.03668,
+              "plannedExit": "SHORT ADA: buy ≤ 6.0367 THB or stop ≥ 6.1467 THB",
+              "status": "Closed",
+              "priceClosedThb": 6.21,
+              "positionId": "P0077",
+              "source": "v2_paper_trade_ledger"
+            },
+            {
+              "ts": "2026-06-04T18:30:14+00:00",
+              "timeLocal": "2026-06-05 01:30",
+              "action": "BUY_XRP",
+              "asset": "XRP",
+              "amount": 150.0,
+              "priceThb": 38.57,
+              "valueThb": 5785.5,
+              "netEdgePct": null,
+              "expectedAction": "Buy ≤",
+              "expectedPriceThb": 37.60328,
+              "plannedExit": "SHORT XRP: buy ≤ 37.6033 THB or stop ≥ 38.2884 THB",
+              "status": "Closed",
+              "priceClosedThb": 38.57,
+              "positionId": "P0076",
+              "source": "v2_paper_trade_ledger"
+            },
+            {
+              "ts": "2026-06-04T17:47:14+00:00",
+              "timeLocal": "2026-06-05 00:47",
+              "action": "SELL_XRP",
+              "asset": "XRP",
+              "amount": 150.0,
+              "priceThb": 38.0,
+              "valueThb": 5700.0,
+              "netEdgePct": -0.06,
+              "expectedAction": "Buy ≤",
+              "expectedPriceThb": 37.544,
+              "plannedExit": "SHORT XRP: buy ≤ 37.5440 THB or stop ≥ 38.2280 THB",
+              "status": "Open",
+              "priceClosedThb": null,
+              "positionId": "P0079",
+              "source": "v2_paper_trade_ledger"
+            },
+            {
+              "ts": "2026-06-04T17:07:14+00:00",
+              "timeLocal": "2026-06-05 00:07",
+              "action": "SELL_ADA",
+              "asset": "ADA",
+              "amount": 750.0,
+              "priceThb": 6.11,
+              "valueThb": 4582.5,
+              "netEdgePct": -0.41,
+              "expectedAction": "Buy ≤",
+              "expectedPriceThb": 6.03668,
+              "plannedExit": "SHORT ADA: buy ≤ 6.0367 THB or stop ≥ 6.1467 THB",
+              "status": "Closed",
+              "priceClosedThb": 6.22,
+              "positionId": "P0078",
+              "source": "v2_paper_trade_ledger"
+            },
+            {
+              "ts": "2026-06-04T17:06:14+00:00",
+              "timeLocal": "2026-06-05 00:06",
+              "action": "SELL_ADA",
+              "asset": "ADA",
+              "amount": 750.0,
+              "priceThb": 6.11,
+              "valueThb": 4582.5,
+              "netEdgePct": -0.47,
+              "expectedAction": "Buy ≤",
+              "expectedPriceThb": 6.03668,
+              "plannedExit": "SHORT ADA: buy ≤ 6.0367 THB or stop ≥ 6.1467 THB",
+              "status": "Closed",
+              "priceClosedThb": 6.21,
+              "positionId": "P0077",
+              "source": "v2_paper_trade_ledger"
+            },
+            {
+              "ts": "2026-06-04T16:35:14+00:00",
+              "timeLocal": "2026-06-04 23:35",
+              "action": "BUY_ADA",
+              "asset": "ADA",
+              "amount": 750.0,
+              "priceThb": 6.1,
+              "valueThb": 4575.0,
+              "netEdgePct": null,
+              "expectedAction": "Buy ≤",
+              "expectedPriceThb": 6.13548,
+              "plannedExit": "SHORT ADA: buy ≤ 6.1355 THB or stop ≥ 6.2473 THB",
+              "status": "Closed",
+              "priceClosedThb": 6.1,
+              "positionId": "P0075",
+              "source": "v2_paper_trade_ledger"
+            },
             {
               "ts": "2026-06-04T16:27:47+00:00",
               "timeLocal": "2026-06-04 23:27",
@@ -502,14 +532,10 @@
               "expectedAction": "Buy ≤",
               "expectedPriceThb": 37.90956,
               "plannedExit": "SHORT XRP: buy ≤ 37.9096 THB or stop ≥ 38.6002 THB",
-              "plan": "SHORT XRP: buy ≤ 37.9096 THB or stop ≥ 38.6002 THB",
               "status": "Closed",
               "priceClosedThb": 38.0,
               "positionId": "P0074",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": 1,
-              "reasons": "Churn mode: close profitable SHORT P0074 on opposite buy signal (38.0000 < entry 38.3700) | fee credit used 14.25 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-04T16:15:15+00:00",
@@ -523,14 +549,10 @@
               "expectedAction": "Buy ≤",
               "expectedPriceThb": 6.14536,
               "plannedExit": "SHORT ADA: buy ≤ 6.1454 THB or stop ≥ 6.2573 THB",
-              "plan": "SHORT ADA: buy ≤ 6.1454 THB or stop ≥ 6.2573 THB",
               "status": "Closed",
               "priceClosedThb": 6.13,
               "positionId": "P0073",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": 0,
-              "reasons": "Buy-low target hit for P0073 (6.1300 ≤ 6.1454); held target 1.20% | fee credit used 11.49 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-04T16:05:16+00:00",
@@ -542,16 +564,12 @@
               "valueThb": 5709.0,
               "netEdgePct": null,
               "expectedAction": "Buy ≤",
-              "expectedPriceThb": 37.603280000000005,
+              "expectedPriceThb": 37.60328,
               "plannedExit": "SHORT XRP: buy ≤ 37.6033 THB or stop ≥ 38.2884 THB",
-              "plan": "SHORT XRP: buy ≤ 37.6033 THB or stop ≥ 38.2884 THB",
-              "status": "Open",
-              "priceClosedThb": null,
+              "status": "Closed",
+              "priceClosedThb": 38.57,
               "positionId": "P0076",
-              "source": "high_risk_state.json",
-              "sourceDetail": "current open planned position from state; not an executed duplicate",
-              "score": null,
-              "reasons": "XRP 5m momentum negative (-0.27%) | Fast SMA below slow SMA | Buy-low setup: XRP near 24h low (27% of range) without bear confirmation | Stop-loss protection active sleeve (-0.68%)"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-04T15:45:15+00:00",
@@ -565,14 +583,10 @@
               "expectedAction": "Buy ≤",
               "expectedPriceThb": 6.13548,
               "plannedExit": "SHORT ADA: buy ≤ 6.1355 THB or stop ≥ 6.2473 THB",
-              "plan": "SHORT ADA: buy ≤ 6.1355 THB or stop ≥ 6.2473 THB",
-              "status": "Open",
-              "priceClosedThb": null,
+              "status": "Closed",
+              "priceClosedThb": 6.1,
               "positionId": "P0075",
-              "source": "high_risk_state.json",
-              "sourceDetail": "current open planned position from state; not an executed duplicate",
-              "score": null,
-              "reasons": "Fast SMA below slow SMA | BTC 15m risk-off (-0.28%) | Efficiency OK: edge 0.29% vs hurdle 0.46% = net -0.17% | X sentiment neutral: neutral_unavailable"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-04T15:35:14+00:00",
@@ -586,14 +600,10 @@
               "expectedAction": "Buy ≤",
               "expectedPriceThb": 37.90956,
               "plannedExit": "SHORT XRP: buy ≤ 37.9096 THB or stop ≥ 38.6002 THB",
-              "plan": "SHORT XRP: buy ≤ 37.9096 THB or stop ≥ 38.6002 THB",
               "status": "Closed",
               "priceClosedThb": 38.0,
               "positionId": "P0074",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": -1,
-              "reasons": "Fast SMA below slow SMA | Efficiency OK: edge 0.11% vs hurdle 0.35% = net -0.24% | X sentiment neutral: neutral_unavailable | fee credit used 14.39 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-04T15:34:17+00:00",
@@ -607,14 +617,10 @@
               "expectedAction": "Buy ≤",
               "expectedPriceThb": 6.14536,
               "plannedExit": "SHORT ADA: buy ≤ 6.1454 THB or stop ≥ 6.2573 THB",
-              "plan": "SHORT ADA: buy ≤ 6.1454 THB or stop ≥ 6.2573 THB",
               "status": "Closed",
               "priceClosedThb": 6.13,
               "positionId": "P0073",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": -2,
-              "reasons": "Fast SMA below slow SMA | BTC 15m risk-off (-0.32%) | Efficiency OK: edge 0.29% vs hurdle 0.46% = net -0.17% | X sentiment neutral: neutral_unavailable | fee credit used 11.66 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-04T15:14:19+00:00",
@@ -628,14 +634,10 @@
               "expectedAction": "Buy ≤",
               "expectedPriceThb": 6.0762,
               "plannedExit": "SHORT ADA: buy ≤ 6.0762 THB or stop ≥ 6.1869 THB",
-              "plan": "SHORT ADA: buy ≤ 6.0762 THB or stop ≥ 6.1869 THB",
               "status": "Closed",
               "priceClosedThb": 6.27,
               "positionId": "P0071",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": 4,
-              "reasons": "Bull market detected; close SHORT P0071 at protective stop (6.2700 ≥ 6.1869) | fee credit used 11.76 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-04T13:43:18+00:00",
@@ -649,14 +651,10 @@
               "expectedAction": "Buy ≤",
               "expectedPriceThb": 6.03668,
               "plannedExit": "SHORT ADA: buy ≤ 6.0367 THB or stop ≥ 6.1467 THB",
-              "plan": "SHORT ADA: buy ≤ 6.0367 THB or stop ≥ 6.1467 THB",
               "status": "Closed",
               "priceClosedThb": 6.18,
               "positionId": "P0072",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": 4,
-              "reasons": "Bull market detected; close SHORT P0072 at protective stop (6.1800 ≥ 6.1467) | fee credit used 11.59 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-04T13:26:45+00:00",
@@ -670,14 +668,10 @@
               "expectedAction": "Buy ≤",
               "expectedPriceThb": 6.03668,
               "plannedExit": "SHORT ADA: buy ≤ 6.0367 THB or stop ≥ 6.1467 THB",
-              "plan": "SHORT ADA: buy ≤ 6.0367 THB or stop ≥ 6.1467 THB",
               "status": "Closed",
               "priceClosedThb": 6.18,
               "positionId": "P0072",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": -5,
-              "reasons": "ADA 5m momentum negative (-0.27%) | ADA 15m momentum negative (-1.68%) | Fast SMA below slow SMA | BTC 15m risk-off (-0.68%) | Bear regime confirmed — defensive sells/buy-backs allowed | Efficiency OK: edge 1.45% vs hurdle 0.46% = net 0.99% | X sentiment neutral: neutral_unavailable | fee credit used 11.46 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-04T13:20:16+00:00",
@@ -691,14 +685,10 @@
               "expectedAction": "Sell ≥",
               "expectedPriceThb": 6.34524,
               "plannedExit": "LONG ADA: sell ≥ 6.3452 THB or stop ≤ 6.2324 THB",
-              "plan": "LONG ADA: sell ≥ 6.3452 THB or stop ≤ 6.2324 THB",
               "status": "Closed",
               "priceClosedThb": 6.15,
               "positionId": "P0070",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": -5,
-              "reasons": "Bear market detected; unload LONG P0070 at protective stop (6.1500 ≤ 6.2324) | fee credit used 11.53 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-04T13:19:15+00:00",
@@ -712,14 +702,10 @@
               "expectedAction": "Buy ≤",
               "expectedPriceThb": 6.0762,
               "plannedExit": "SHORT ADA: buy ≤ 6.0762 THB or stop ≥ 6.1869 THB",
-              "plan": "SHORT ADA: buy ≤ 6.0762 THB or stop ≥ 6.1869 THB",
               "status": "Closed",
               "priceClosedThb": 6.27,
               "positionId": "P0071",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": -1,
-              "reasons": "ADA 5m momentum negative (-0.58%) | ADA 15m momentum negative (-1.36%) | Fast SMA below slow SMA | BTC 15m risk-off (-0.57%) | Buy-low setup: ADA near 24h low (7% of range) without bear confirmation | Dip without bear confirmation — prefer HODL over unloading low | Efficiency OK: edge 1.23% vs hurdle 0.62% = net 0.61% | X sentiment neutral: neutral_unavailable | fee credit used 11.53 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-04T12:42:16+00:00",
@@ -733,14 +719,10 @@
               "expectedAction": "Sell ≥",
               "expectedPriceThb": 6.34524,
               "plannedExit": "LONG ADA: sell ≥ 6.3452 THB or stop ≤ 6.2324 THB",
-              "plan": "LONG ADA: sell ≥ 6.3452 THB or stop ≤ 6.2324 THB",
               "status": "Closed",
               "priceClosedThb": 6.15,
               "positionId": "P0070",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": 3,
-              "reasons": "ADA 15m momentum positive (1.16%) | Fast SMA above slow SMA | BTC 15m supports risk-on (0.61%) | Bull regime confirmed — willing to hold for higher target | Efficiency OK: edge 1.00% vs hurdle 0.62% = net 0.38% | X sentiment neutral: neutral_unavailable | fee credit used 11.76 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-04T12:32:15+00:00",
@@ -754,14 +736,10 @@
               "expectedAction": "Buy ≤",
               "expectedPriceThb": 36.9512,
               "plannedExit": "SHORT XRP: buy ≤ 36.9512 THB or stop ≥ 37.6244 THB",
-              "plan": "SHORT XRP: buy ≤ 36.9512 THB or stop ≥ 37.6244 THB",
               "status": "Closed",
               "priceClosedThb": 38.32,
               "positionId": "P0069",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": 4,
-              "reasons": "Bull market detected; close SHORT P0069 at protective stop (38.3200 ≥ 37.6244) | fee credit used 14.37 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-04T12:02:14+00:00",
@@ -775,14 +753,10 @@
               "expectedAction": "Buy ≤",
               "expectedPriceThb": 36.96108,
               "plannedExit": "SHORT XRP: buy ≤ 36.9611 THB or stop ≥ 37.6345 THB",
-              "plan": "SHORT XRP: buy ≤ 36.9611 THB or stop ≥ 37.6345 THB",
               "status": "Closed",
               "priceClosedThb": 37.72,
               "positionId": "P0068",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": 3,
-              "reasons": "Bull market detected; close SHORT P0068 at protective stop (37.7200 ≥ 37.6345) | fee credit used 14.14 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-04T11:41:15+00:00",
@@ -796,14 +770,10 @@
               "expectedAction": "Buy ≤",
               "expectedPriceThb": 36.9512,
               "plannedExit": "SHORT XRP: buy ≤ 36.9512 THB or stop ≥ 37.6244 THB",
-              "plan": "SHORT XRP: buy ≤ 36.9512 THB or stop ≥ 37.6244 THB",
               "status": "Closed",
               "priceClosedThb": 38.32,
               "positionId": "P0069",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": -1,
-              "reasons": "XRP 5m momentum negative (-0.32%) | XRP 15m momentum negative (-0.55%) | Fast SMA below slow SMA | BTC 15m risk-off (-0.49%) | Buy-low setup: XRP near 24h low (5% of range) without bear confirmation | Dip without bear confirmation — prefer HODL over unloading low | Efficiency OK: edge 0.43% vs hurdle 0.35% = net 0.08% | X sentiment neutral: neutral_unavailable | fee credit used 14.03 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-04T11:31:14+00:00",
@@ -817,14 +787,10 @@
               "expectedAction": "Buy ≤",
               "expectedPriceThb": 6.06632,
               "plannedExit": "SHORT ADA: buy ≤ 6.0663 THB or stop ≥ 6.1768 THB",
-              "plan": "SHORT ADA: buy ≤ 6.0663 THB or stop ≥ 6.1768 THB",
               "status": "Closed",
               "priceClosedThb": 6.2,
               "positionId": "P0066",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": 3,
-              "reasons": "Bull market detected; close SHORT P0066 at protective stop (6.2000 ≥ 6.1768) | fee credit used 11.62 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-04T11:10:15+00:00",
@@ -838,14 +804,10 @@
               "expectedAction": "Buy ≤",
               "expectedPriceThb": 37.22784,
               "plannedExit": "SHORT XRP: buy ≤ 37.2278 THB or stop ≥ 37.9061 THB",
-              "plan": "SHORT XRP: buy ≤ 37.2278 THB or stop ≥ 37.9061 THB",
               "status": "Closed",
               "priceClosedThb": 37.39,
               "positionId": "P0067",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": 1,
-              "reasons": "Churn mode: close profitable SHORT P0067 on opposite buy signal (37.3900 < entry 37.6800) | fee credit used 14.02 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-04T11:01:15+00:00",
@@ -859,14 +821,10 @@
               "expectedAction": "Buy ≤",
               "expectedPriceThb": 36.96108,
               "plannedExit": "SHORT XRP: buy ≤ 36.9611 THB or stop ≥ 37.6345 THB",
-              "plan": "SHORT XRP: buy ≤ 36.9611 THB or stop ≥ 37.6345 THB",
               "status": "Closed",
               "priceClosedThb": 37.72,
               "positionId": "P0068",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": -3,
-              "reasons": "XRP 15m momentum negative (-0.52%) | Fast SMA below slow SMA | BTC 15m risk-off (-0.18%) | Efficiency OK: edge 0.46% vs hurdle 0.43% = net 0.03% | X sentiment neutral: neutral_unavailable | Stop-loss protection active sleeve (-0.80%) | fee credit used 14.03 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-04T10:32:15+00:00",
@@ -880,14 +838,10 @@
               "expectedAction": "Buy ≤",
               "expectedPriceThb": 37.22784,
               "plannedExit": "SHORT XRP: buy ≤ 37.2278 THB or stop ≥ 37.9061 THB",
-              "plan": "SHORT XRP: buy ≤ 37.2278 THB or stop ≥ 37.9061 THB",
               "status": "Closed",
               "priceClosedThb": 37.39,
               "positionId": "P0067",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": -1,
-              "reasons": "BTC 15m risk-off (-0.51%) | Efficiency OK: edge 0.16% vs hurdle 0.35% = net -0.19% | X sentiment neutral: neutral_unavailable | fee credit used 14.13 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-04T10:10:15+00:00",
@@ -901,14 +855,10 @@
               "expectedAction": "Buy ≤",
               "expectedPriceThb": 6.06632,
               "plannedExit": "SHORT ADA: buy ≤ 6.0663 THB or stop ≥ 6.1768 THB",
-              "plan": "SHORT ADA: buy ≤ 6.0663 THB or stop ≥ 6.1768 THB",
               "status": "Closed",
               "priceClosedThb": 6.2,
               "positionId": "P0066",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": -2,
-              "reasons": "Fast SMA below slow SMA | BTC 15m risk-off (-0.29%) | Efficiency OK: edge 0.35% vs hurdle 0.62% = net -0.28% | X sentiment neutral: neutral_unavailable | fee credit used 11.51 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-04T09:30:15+00:00",
@@ -922,14 +872,10 @@
               "expectedAction": "Sell ≥",
               "expectedPriceThb": 38.45922,
               "plannedExit": "LONG XRP: sell ≥ 38.4592 THB or stop ≤ 38.2094 THB",
-              "plan": "LONG XRP: sell ≥ 38.4592 THB or stop ≤ 38.2094 THB",
               "status": "Closed",
               "priceClosedThb": 37.45,
               "positionId": "P0062",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": -4,
-              "reasons": "Bear market detected; unload LONG P0062 at protective stop (37.4500 ≤ 38.2094) | fee credit used 14.04 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-04T09:29:15+00:00",
@@ -943,14 +889,10 @@
               "expectedAction": "Sell ≥",
               "expectedPriceThb": 6.493245,
               "plannedExit": "LONG ADA: sell ≥ 6.4932 THB or stop ≤ 6.4511 THB",
-              "plan": "LONG ADA: sell ≥ 6.4932 THB or stop ≤ 6.4511 THB",
               "status": "Closed",
               "priceClosedThb": 6.16,
               "positionId": "P0059",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": -5,
-              "reasons": "Bear market detected; unload LONG P0059 at protective stop (6.1600 ≤ 6.4511) | fee credit used 11.55 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-04T09:16:14+00:00",
@@ -964,14 +906,10 @@
               "expectedAction": "Buy ≤",
               "expectedPriceThb": 37.7811,
               "plannedExit": "SHORT XRP: buy ≤ 37.7811 THB or stop ≥ 38.0268 THB",
-              "plan": "SHORT XRP: buy ≤ 37.7811 THB or stop ≥ 38.0268 THB",
               "status": "Closed",
               "priceClosedThb": 37.71,
               "positionId": "P0065",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": -1,
-              "reasons": "Buy-low target hit for P0065 (37.7100 ≤ 37.7811); held target 0.05% | fee credit used 14.14 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-04T09:09:14+00:00",
@@ -985,14 +923,10 @@
               "expectedAction": "Buy ≤",
               "expectedPriceThb": 37.7811,
               "plannedExit": "SHORT XRP: buy ≤ 37.7811 THB or stop ≥ 38.0268 THB",
-              "plan": "SHORT XRP: buy ≤ 37.7811 THB or stop ≥ 38.0268 THB",
               "status": "Closed",
               "priceClosedThb": 37.71,
               "positionId": "P0065",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": 0,
-              "reasons": "XRP 15m momentum negative (-1.04%) | Fast SMA below slow SMA | BTC 15m risk-off (-0.43%) | Buy-low setup: XRP near 24h low (11% of range) without bear confirmation | Dip without bear confirmation — prefer HODL over unloading low | Stop-loss protection active sleeve (-0.84%) | fee credit used 14.18 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-04T08:58:18+00:00",
@@ -1006,14 +940,10 @@
               "expectedAction": "Sell ≥",
               "expectedPriceThb": 38.13906,
               "plannedExit": "LONG XRP: sell ≥ 38.1391 THB or stop ≤ 37.8913 THB",
-              "plan": "LONG XRP: sell ≥ 38.1391 THB or stop ≤ 37.8913 THB",
               "status": "Closed",
               "priceClosedThb": 38.19,
               "positionId": "P0064",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": 3,
-              "reasons": "Sell-high target hit for P0064 (38.1900 ≥ 38.1391); held target 0.05% | fee credit used 14.32 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-04T08:38:15+00:00",
@@ -1027,14 +957,10 @@
               "expectedAction": "Sell ≥",
               "expectedPriceThb": 38.13906,
               "plannedExit": "LONG XRP: sell ≥ 38.1391 THB or stop ≤ 37.8913 THB",
-              "plan": "LONG XRP: sell ≥ 38.1391 THB or stop ≤ 37.8913 THB",
               "status": "Closed",
               "priceClosedThb": 38.19,
               "positionId": "P0064",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": 2,
-              "reasons": "Fast SMA above slow SMA | BTC 15m supports risk-on (0.19%) | Efficiency OK: edge 0.15% vs hurdle 0.33% = net -0.17% | X sentiment neutral: neutral_unavailable | fee credit used 14.29 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-04T08:28:15+00:00",
@@ -1048,14 +974,10 @@
               "expectedAction": "Buy ≤",
               "expectedPriceThb": 6.35682,
               "plannedExit": "SHORT ADA: buy ≤ 6.3568 THB or stop ≥ 6.3982 THB",
-              "plan": "SHORT ADA: buy ≤ 6.3568 THB or stop ≥ 6.3982 THB",
               "status": "Closed",
               "priceClosedThb": 6.34,
               "positionId": "P0063",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": 2,
-              "reasons": "Buy-low target hit for P0063 (6.3400 ≤ 6.3568); held target 0.05% | fee credit used 11.89 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-04T08:08:16+00:00",
@@ -1069,14 +991,10 @@
               "expectedAction": "Buy ≤",
               "expectedPriceThb": 6.35682,
               "plannedExit": "SHORT ADA: buy ≤ 6.3568 THB or stop ≥ 6.3982 THB",
-              "plan": "SHORT ADA: buy ≤ 6.3568 THB or stop ≥ 6.3982 THB",
               "status": "Closed",
               "priceClosedThb": 6.34,
               "positionId": "P0063",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": -1,
-              "reasons": "ADA 5m momentum negative (-0.41%) | ADA 15m momentum negative (-0.56%) | Fast SMA below slow SMA | BTC 15m risk-off (-0.31%) | Buy-low setup: ADA near 24h low (21% of range) without bear confirmation | Dip without bear confirmation — prefer HODL over unloading low | Efficiency OK: edge 0.61% vs hurdle 0.46% = net 0.16% | X sentiment neutral: neutral_unavailable | fee credit used 11.93 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-04T07:58:16+00:00",
@@ -1090,14 +1008,10 @@
               "expectedAction": "Buy ≤",
               "expectedPriceThb": 38.290845,
               "plannedExit": "SHORT XRP: buy ≤ 38.2908 THB or stop ≥ 38.5399 THB",
-              "plan": "SHORT XRP: buy ≤ 38.2908 THB or stop ≥ 38.5399 THB",
               "status": "Closed",
               "priceClosedThb": 38.21,
               "positionId": "P0061",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": -1,
-              "reasons": "Buy-low target hit for P0061 (38.2100 ≤ 38.2908); held target 0.05% | fee credit used 14.33 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-04T07:37:17+00:00",
@@ -1111,14 +1025,10 @@
               "expectedAction": "Sell ≥",
               "expectedPriceThb": 38.45922,
               "plannedExit": "LONG XRP: sell ≥ 38.4592 THB or stop ≤ 38.2094 THB",
-              "plan": "LONG XRP: sell ≥ 38.4592 THB or stop ≤ 38.2094 THB",
               "status": "Closed",
               "priceClosedThb": 37.45,
               "positionId": "P0062",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": 4,
-              "reasons": "Fast SMA above slow SMA | BTC 15m supports risk-on (0.49%) | Buy-low setup: XRP near 24h low (30% of range) without bear confirmation | Efficiency OK: edge 0.30% vs hurdle 0.33% = net -0.03% | X sentiment neutral: neutral_unavailable | fee credit used 14.42 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-04T07:27:17+00:00",
@@ -1132,14 +1042,10 @@
               "expectedAction": "Buy ≤",
               "expectedPriceThb": 38.290845,
               "plannedExit": "SHORT XRP: buy ≤ 38.2908 THB or stop ≥ 38.5399 THB",
-              "plan": "SHORT XRP: buy ≤ 38.2908 THB or stop ≥ 38.5399 THB",
               "status": "Closed",
               "priceClosedThb": 38.21,
               "positionId": "P0061",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": -3,
-              "reasons": "XRP 15m momentum negative (-0.53%) | Fast SMA below slow SMA | BTC 15m risk-off (-0.24%) | Efficiency OK: edge 0.56% vs hurdle 0.35% = net 0.21% | X sentiment neutral: neutral_unavailable | fee credit used 14.37 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-04T07:25:09+00:00",
@@ -1153,14 +1059,10 @@
               "expectedAction": "Buy ≤",
               "expectedPriceThb": 38.74062,
               "plannedExit": "SHORT XRP: buy ≤ 38.7406 THB or stop ≥ 38.9926 THB",
-              "plan": "SHORT XRP: buy ≤ 38.7406 THB or stop ≥ 38.9926 THB",
               "status": "Closed",
               "priceClosedThb": 38.32,
               "positionId": "P0060",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": -2,
-              "reasons": "Buy-low target hit for P0060 (38.3200 ≤ 38.7406); held target 0.05% | fee credit used 14.37 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-04T07:18:16+00:00",
@@ -1174,14 +1076,10 @@
               "expectedAction": "Buy ≤",
               "expectedPriceThb": 6.41679,
               "plannedExit": "SHORT ADA: buy ≤ 6.4168 THB or stop ≥ 6.4585 THB",
-              "plan": "SHORT ADA: buy ≤ 6.4168 THB or stop ≥ 6.4585 THB",
               "status": "Closed",
               "priceClosedThb": 6.4,
               "positionId": "P0058",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": -3,
-              "reasons": "Buy-low target hit for P0058 (6.4000 ≤ 6.4168); held target 0.05% | fee credit used 12.00 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-04T07:06:17+00:00",
@@ -1195,14 +1093,10 @@
               "expectedAction": "Buy ≤",
               "expectedPriceThb": 38.76061,
               "plannedExit": "SHORT XRP: buy ≤ 38.7606 THB or stop ≥ 39.0127 THB",
-              "plan": "SHORT XRP: buy ≤ 38.7606 THB or stop ≥ 39.0127 THB",
               "status": "Closed",
               "priceClosedThb": 38.62,
               "positionId": "P0056",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": -5,
-              "reasons": "Buy-low target hit for P0056 (38.6200 ≤ 38.7606); held target 0.05% | fee credit used 14.48 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-04T06:57:16+00:00",
@@ -1216,14 +1110,10 @@
               "expectedAction": "Buy ≤",
               "expectedPriceThb": 38.74062,
               "plannedExit": "SHORT XRP: buy ≤ 38.7406 THB or stop ≥ 38.9926 THB",
-              "plan": "SHORT XRP: buy ≤ 38.7406 THB or stop ≥ 38.9926 THB",
               "status": "Closed",
               "priceClosedThb": 38.32,
               "positionId": "P0060",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": 0,
-              "reasons": "XRP 15m momentum negative (-0.65%) | Fast SMA below slow SMA | BTC 15m risk-off (-0.48%) | Buy-low setup: XRP near 24h low (40% of range) without bear confirmation | Dip without bear confirmation — prefer HODL over unloading low | Stop-loss protection active sleeve (-0.87%) | fee credit used 14.54 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-04T06:27:15+00:00",
@@ -1237,14 +1127,10 @@
               "expectedAction": "Sell ≥",
               "expectedPriceThb": 6.493245,
               "plannedExit": "LONG ADA: sell ≥ 6.4932 THB or stop ≤ 6.4511 THB",
-              "plan": "LONG ADA: sell ≥ 6.4932 THB or stop ≤ 6.4511 THB",
               "status": "Closed",
               "priceClosedThb": 6.16,
               "positionId": "P0059",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": 1,
-              "reasons": "Fast SMA above slow SMA | Efficiency OK: edge 0.44% vs hurdle 0.45% = net -0.02% | X sentiment neutral: neutral_unavailable | fee credit used 12.17 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-04T06:26:16+00:00",
@@ -1258,14 +1144,10 @@
               "expectedAction": "Sell ≥",
               "expectedPriceThb": 6.453225,
               "plannedExit": "LONG ADA: sell ≥ 6.4532 THB or stop ≤ 6.4113 THB",
-              "plan": "LONG ADA: sell ≥ 6.4532 THB or stop ≤ 6.4113 THB",
               "status": "Closed",
               "priceClosedThb": 6.48,
               "positionId": "P0057",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": 3,
-              "reasons": "Sell-high target hit for P0057 (6.4800 ≥ 6.4532); held target 0.05% | fee credit used 12.15 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-04T05:55:18+00:00",
@@ -1279,14 +1161,10 @@
               "expectedAction": "Buy ≤",
               "expectedPriceThb": 6.41679,
               "plannedExit": "SHORT ADA: buy ≤ 6.4168 THB or stop ≥ 6.4585 THB",
-              "plan": "SHORT ADA: buy ≤ 6.4168 THB or stop ≥ 6.4585 THB",
               "status": "Closed",
               "priceClosedThb": 6.4,
               "positionId": "P0058",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": -2,
-              "reasons": "Fast SMA below slow SMA | BTC 15m risk-off (-0.23%) | Efficiency OK: edge 0.13% vs hurdle 0.46% = net -0.32% | X sentiment neutral: neutral_unavailable | fee credit used 12.04 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-04T05:34:18+00:00",
@@ -1300,14 +1178,10 @@
               "expectedAction": "Sell ≥",
               "expectedPriceThb": 6.453225,
               "plannedExit": "LONG ADA: sell ≥ 6.4532 THB or stop ≤ 6.4113 THB",
-              "plan": "LONG ADA: sell ≥ 6.4532 THB or stop ≤ 6.4113 THB",
               "status": "Closed",
               "priceClosedThb": 6.48,
               "positionId": "P0057",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": 3,
-              "reasons": "ADA 5m momentum positive (0.61%) | ADA 15m momentum positive (0.56%) | BTC 15m supports risk-on (0.57%) | Efficiency OK: edge 0.47% vs hurdle 0.46% = net 0.02% | X sentiment neutral: neutral_unavailable | fee credit used 12.09 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-04T05:25:16+00:00",
@@ -1321,14 +1195,10 @@
               "expectedAction": "Buy ≤",
               "expectedPriceThb": 38.76061,
               "plannedExit": "SHORT XRP: buy ≤ 38.7606 THB or stop ≥ 39.0127 THB",
-              "plan": "SHORT XRP: buy ≤ 38.7606 THB or stop ≥ 39.0127 THB",
               "status": "Closed",
               "priceClosedThb": 38.62,
               "positionId": "P0056",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": -1,
-              "reasons": "Fast SMA below slow SMA | Efficiency OK: edge 0.26% vs hurdle 0.38% = net -0.12% | X sentiment neutral: neutral_unavailable | Stop-loss protection active sleeve (-0.82%) | fee credit used 14.54 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-04T05:07:20+00:00",
@@ -1342,14 +1212,10 @@
               "expectedAction": "Sell ≥",
               "expectedPriceThb": 6.553275,
               "plannedExit": "LONG ADA: sell ≥ 6.5533 THB or stop ≤ 6.5107 THB",
-              "plan": "LONG ADA: sell ≥ 6.5533 THB or stop ≤ 6.5107 THB",
               "status": "Closed",
               "priceClosedThb": 6.42,
               "positionId": "P0054",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": -5,
-              "reasons": "Bear market detected; unload LONG P0054 at protective stop (6.4200 ≤ 6.5107) | fee credit used 12.04 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-04T05:06:19+00:00",
@@ -1363,14 +1229,10 @@
               "expectedAction": "Sell ≥",
               "expectedPriceThb": 6.54327,
               "plannedExit": "LONG ADA: sell ≥ 6.5433 THB or stop ≤ 6.5008 THB",
-              "plan": "LONG ADA: sell ≥ 6.5433 THB or stop ≤ 6.5008 THB",
               "status": "Closed",
               "priceClosedThb": 6.43,
               "positionId": "P0053",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": -5,
-              "reasons": "Bear market detected; unload LONG P0053 at protective stop (6.4300 ≤ 6.5008) | fee credit used 12.06 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-04T05:04:17+00:00",
@@ -1384,14 +1246,10 @@
               "expectedAction": "Buy ≤",
               "expectedPriceThb": 39.230375,
               "plannedExit": "SHORT XRP: buy ≤ 39.2304 THB or stop ≥ 39.4855 THB",
-              "plan": "SHORT XRP: buy ≤ 39.2304 THB or stop ≥ 39.4855 THB",
               "status": "Closed",
               "priceClosedThb": 39.1,
               "positionId": "P0051",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": -3,
-              "reasons": "Buy-low target hit for P0051 (39.1000 ≤ 39.2304); held target 0.05% | fee credit used 14.66 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-04T04:54:15+00:00",
@@ -1405,14 +1263,10 @@
               "expectedAction": "Buy ≤",
               "expectedPriceThb": 39.28035,
               "plannedExit": "SHORT XRP: buy ≤ 39.2803 THB or stop ≥ 39.5358 THB",
-              "plan": "SHORT XRP: buy ≤ 39.2803 THB or stop ≥ 39.5358 THB",
               "status": "Closed",
               "priceClosedThb": 39.26,
               "positionId": "P0055",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": 0,
-              "reasons": "Buy-low target hit for P0055 (39.2600 ≤ 39.2803); held target 0.05% | fee credit used 14.72 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-04T04:33:16+00:00",
@@ -1426,14 +1280,10 @@
               "expectedAction": "Buy ≤",
               "expectedPriceThb": 39.28035,
               "plannedExit": "SHORT XRP: buy ≤ 39.2803 THB or stop ≥ 39.5358 THB",
-              "plan": "SHORT XRP: buy ≤ 39.2803 THB or stop ≥ 39.5358 THB",
               "status": "Closed",
               "priceClosedThb": 39.26,
               "positionId": "P0055",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": -2,
-              "reasons": "XRP 5m momentum negative (-0.39%) | Fast SMA below slow SMA | BTC 15m risk-off (-0.36%) | Dip without bear confirmation — prefer HODL over unloading low | Efficiency OK: edge 0.40% vs hurdle 0.40% = net -0.01% | X sentiment neutral: neutral_unavailable | Take-profit because momentum faded (0.43%) | fee credit used 14.74 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-04T04:02:17+00:00",
@@ -1447,14 +1297,10 @@
               "expectedAction": "Sell ≥",
               "expectedPriceThb": 6.553275,
               "plannedExit": "LONG ADA: sell ≥ 6.5533 THB or stop ≤ 6.5107 THB",
-              "plan": "LONG ADA: sell ≥ 6.5533 THB or stop ≤ 6.5107 THB",
               "status": "Closed",
               "priceClosedThb": 6.42,
               "positionId": "P0054",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": 3,
-              "reasons": "ADA 5m momentum positive (0.25%) | ADA 15m momentum positive (0.50%) | Fast SMA above slow SMA | Efficiency OK: edge 0.51% vs hurdle 0.45% = net 0.06% | X sentiment neutral: neutral_unavailable | fee credit used 12.28 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-04T03:55:16+00:00",
@@ -1468,14 +1314,10 @@
               "expectedAction": "Sell ≥",
               "expectedPriceThb": 6.54327,
               "plannedExit": "LONG ADA: sell ≥ 6.5433 THB or stop ≤ 6.5008 THB",
-              "plan": "LONG ADA: sell ≥ 6.5433 THB or stop ≤ 6.5008 THB",
               "status": "Closed",
               "priceClosedThb": 6.43,
               "positionId": "P0053",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": 1,
-              "reasons": "ADA 15m momentum positive (0.60%) | Fast SMA above slow SMA | BTC 15m risk-off (-0.21%) | Efficiency OK: edge 0.55% vs hurdle 0.45% = net 0.10% | X sentiment neutral: neutral_unavailable | fee credit used 12.26 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-04T03:54:16+00:00",
@@ -1489,14 +1331,10 @@
               "expectedAction": "Sell ≥",
               "expectedPriceThb": 6.493245,
               "plannedExit": "LONG ADA: sell ≥ 6.4932 THB or stop ≤ 6.4511 THB",
-              "plan": "LONG ADA: sell ≥ 6.4932 THB or stop ≤ 6.4511 THB",
               "status": "Closed",
               "priceClosedThb": 6.53,
               "positionId": "P0052",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": 2,
-              "reasons": "Sell-high target hit for P0052 (6.5300 ≥ 6.4932); held target 0.05% | fee credit used 12.24 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-04T03:32:16+00:00",
@@ -1510,14 +1348,10 @@
               "expectedAction": "Sell ≥",
               "expectedPriceThb": 6.493245,
               "plannedExit": "LONG ADA: sell ≥ 6.4932 THB or stop ≤ 6.4511 THB",
-              "plan": "LONG ADA: sell ≥ 6.4932 THB or stop ≤ 6.4511 THB",
               "status": "Closed",
               "priceClosedThb": 6.53,
               "positionId": "P0052",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": 2,
-              "reasons": "BTC 15m supports risk-on (0.37%) | Volume spike confirms move (2.1x median) | Bull regime confirmed — willing to hold for higher target | Efficiency OK: edge 0.30% vs hurdle 0.61% = net -0.31% | X sentiment neutral: neutral_unavailable | fee credit used 12.17 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-04T03:23:27+00:00",
@@ -1531,14 +1365,10 @@
               "expectedAction": "Buy ≤",
               "expectedPriceThb": 39.230375,
               "plannedExit": "SHORT XRP: buy ≤ 39.2304 THB or stop ≥ 39.4855 THB",
-              "plan": "SHORT XRP: buy ≤ 39.2304 THB or stop ≥ 39.4855 THB",
               "status": "Closed",
               "priceClosedThb": 39.1,
               "positionId": "P0051",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": 0,
-              "reasons": "Fast SMA above slow SMA | XRP 5m momentum negative (-0.26%) | Take-profit because momentum faded (0.31%) | fee credit used 14.72 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-04T03:08:15+00:00",
@@ -1552,14 +1382,10 @@
               "expectedAction": "Buy ≤",
               "expectedPriceThb": 38.610685,
               "plannedExit": "SHORT XRP: buy ≤ 38.6107 THB or stop ≥ 38.8618 THB",
-              "plan": "SHORT XRP: buy ≤ 38.6107 THB or stop ≥ 38.8618 THB",
               "status": "Closed",
               "priceClosedThb": 39.13,
               "positionId": "P0050",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": 4,
-              "reasons": "Bull market detected; close SHORT P0050 at protective stop (39.1300 ≥ 38.8618) | fee credit used 14.67 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-04T03:07:16+00:00",
@@ -1573,14 +1399,10 @@
               "expectedAction": "Sell ≥",
               "expectedPriceThb": 6.4032,
               "plannedExit": "LONG ADA: sell ≥ 6.4032 THB or stop ≤ 6.3616 THB",
-              "plan": "LONG ADA: sell ≥ 6.4032 THB or stop ≤ 6.3616 THB",
               "status": "Closed",
               "priceClosedThb": 6.45,
               "positionId": "P0049",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": 4,
-              "reasons": "Sell-high target hit for P0049 (6.4500 ≥ 6.4032); held target 0.05% | fee credit used 12.09 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-04T03:01:15+00:00",
@@ -1594,14 +1416,10 @@
               "expectedAction": "Buy ≤",
               "expectedPriceThb": 38.610685,
               "plannedExit": "SHORT XRP: buy ≤ 38.6107 THB or stop ≥ 38.8618 THB",
-              "plan": "SHORT XRP: buy ≤ 38.6107 THB or stop ≥ 38.8618 THB",
               "status": "Closed",
               "priceClosedThb": 39.13,
               "positionId": "P0050",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": 0,
-              "reasons": "BTC 15m risk-off (-0.17%) | Dip without bear confirmation — prefer HODL over unloading low | Take-profit because momentum faded (0.08%) | fee credit used 14.49 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-04T02:53:15+00:00",
@@ -1615,14 +1433,10 @@
               "expectedAction": "Sell ≥",
               "expectedPriceThb": 6.4032,
               "plannedExit": "LONG ADA: sell ≥ 6.4032 THB or stop ≤ 6.3616 THB",
-              "plan": "LONG ADA: sell ≥ 6.4032 THB or stop ≤ 6.3616 THB",
               "status": "Closed",
               "priceClosedThb": 6.45,
               "positionId": "P0049",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": 2,
-              "reasons": "Buy-low setup: ADA near 24h low (26% of range) without bear confirmation | Efficiency OK: edge 0.21% vs hurdle 0.46% = net -0.24% | X sentiment neutral: neutral_unavailable | fee credit used 12.00 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-04T02:31:17+00:00",
@@ -1636,14 +1450,10 @@
               "expectedAction": "Buy ≤",
               "expectedPriceThb": 37.74112,
               "plannedExit": "SHORT XRP: buy ≤ 37.7411 THB or stop ≥ 37.9866 THB",
-              "plan": "SHORT XRP: buy ≤ 37.7411 THB or stop ≥ 37.9866 THB",
               "status": "Closed",
               "priceClosedThb": 38.6,
               "positionId": "P0048",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": 5,
-              "reasons": "Bull market detected; close SHORT P0048 at protective stop (38.6000 ≥ 37.9866) | fee credit used 14.47 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-04T02:23:14+00:00",
@@ -1657,14 +1467,10 @@
               "expectedAction": "Buy ≤",
               "expectedPriceThb": 6.15692,
               "plannedExit": "SHORT ADA: buy ≤ 6.1569 THB or stop ≥ 6.1970 THB",
-              "plan": "SHORT ADA: buy ≤ 6.1569 THB or stop ≥ 6.1970 THB",
               "status": "Closed",
               "priceClosedThb": 6.35,
               "positionId": "P0047",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": 4,
-              "reasons": "Bull market detected; close SHORT P0047 at protective stop (6.3500 ≥ 6.1970) | fee credit used 11.91 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-04T02:06:18+00:00",
@@ -1678,14 +1484,10 @@
               "expectedAction": "Buy ≤",
               "expectedPriceThb": 37.74112,
               "plannedExit": "SHORT XRP: buy ≤ 37.7411 THB or stop ≥ 37.9866 THB",
-              "plan": "SHORT XRP: buy ≤ 37.7411 THB or stop ≥ 37.9866 THB",
               "status": "Closed",
               "priceClosedThb": 38.6,
               "positionId": "P0048",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": -2,
-              "reasons": "Fast SMA below slow SMA | BTC 15m risk-off (-0.43%) | Efficiency OK: edge 0.53% vs hurdle 0.33% = net 0.21% | X sentiment neutral: neutral_unavailable | Stop-loss protection active sleeve (-2.76%) | fee credit used 14.16 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-04T02:05:16+00:00",
@@ -1699,14 +1501,10 @@
               "expectedAction": "Buy ≤",
               "expectedPriceThb": 6.15692,
               "plannedExit": "SHORT ADA: buy ≤ 6.1569 THB or stop ≥ 6.1970 THB",
-              "plan": "SHORT ADA: buy ≤ 6.1569 THB or stop ≥ 6.1970 THB",
               "status": "Closed",
               "priceClosedThb": 6.35,
               "positionId": "P0047",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": -6,
-              "reasons": "ADA 5m momentum negative (-1.87%) | ADA 15m momentum negative (-2.33%) | Fast SMA below slow SMA | BTC 15m risk-off (-1.45%) | Volume spike confirms selloff (7.6x median) | Bear regime confirmed — defensive sells/buy-backs allowed | Efficiency OK: edge 2.81% vs hurdle 0.62% = net 2.19% | X sentiment neutral: neutral_unavailable | fee credit used 11.55 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-04T02:01:15+00:00",
@@ -1720,14 +1518,10 @@
               "expectedAction": "Buy ≤",
               "expectedPriceThb": 6.286855,
               "plannedExit": "SHORT ADA: buy ≤ 6.2869 THB or stop ≥ 6.3277 THB",
-              "plan": "SHORT ADA: buy ≤ 6.2869 THB or stop ≥ 6.3277 THB",
               "status": "Closed",
               "priceClosedThb": 6.28,
               "positionId": "P0046",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": -3,
-              "reasons": "Buy-low target hit for P0046 (6.2800 ≤ 6.2869); held target 0.05% | fee credit used 11.78 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-04T02:00:14+00:00",
@@ -1741,14 +1535,10 @@
               "expectedAction": "Buy ≤",
               "expectedPriceThb": 6.286855,
               "plannedExit": "SHORT ADA: buy ≤ 6.2869 THB or stop ≥ 6.3277 THB",
-              "plan": "SHORT ADA: buy ≤ 6.2869 THB or stop ≥ 6.3277 THB",
               "status": "Closed",
               "priceClosedThb": 6.28,
               "positionId": "P0046",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": -3,
-              "reasons": "ADA 5m momentum positive (0.36%) | ADA 15m momentum negative (-1.08%) | Fast SMA below slow SMA | BTC 15m risk-off (-0.95%) | Bear regime confirmed — defensive sells/buy-backs allowed | Efficiency OK: edge 0.81% vs hurdle 0.62% = net 0.19% | X sentiment neutral: neutral_unavailable | fee credit used 11.79 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-04T01:52:13+00:00",
@@ -1762,14 +1552,10 @@
               "expectedAction": "Buy ≤",
               "expectedPriceThb": 6.31684,
               "plannedExit": "SHORT ADA: buy ≤ 6.3168 THB or stop ≥ 6.3579 THB",
-              "plan": "SHORT ADA: buy ≤ 6.3168 THB or stop ≥ 6.3579 THB",
               "status": "Closed",
               "priceClosedThb": 6.31,
               "positionId": "P0045",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": -5,
-              "reasons": "Buy-low target hit for P0045 (6.3100 ≤ 6.3168); held target 0.05% | fee credit used 11.83 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-04T01:30:16+00:00",
@@ -1783,14 +1569,10 @@
               "expectedAction": "Buy ≤",
               "expectedPriceThb": 6.31684,
               "plannedExit": "SHORT ADA: buy ≤ 6.3168 THB or stop ≥ 6.3579 THB",
-              "plan": "SHORT ADA: buy ≤ 6.3168 THB or stop ≥ 6.3579 THB",
               "status": "Closed",
               "priceClosedThb": 6.31,
               "positionId": "P0045",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": -1,
-              "reasons": "ADA 5m momentum negative (-0.41%) | ADA 15m momentum negative (-1.88%) | Fast SMA below slow SMA | BTC 15m risk-off (-0.48%) | Buy-low setup: ADA near 24h low (0% of range) without bear confirmation | Dip without bear confirmation — prefer HODL over unloading low | Efficiency OK: edge 1.62% vs hurdle 0.46% = net 1.16% | X sentiment neutral: neutral_unavailable | fee credit used 11.85 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-04T01:29:14+00:00",
@@ -1804,14 +1586,10 @@
               "expectedAction": "Buy ≤",
               "expectedPriceThb": 6.346825,
               "plannedExit": "SHORT ADA: buy ≤ 6.3468 THB or stop ≥ 6.3881 THB",
-              "plan": "SHORT ADA: buy ≤ 6.3468 THB or stop ≥ 6.3881 THB",
               "status": "Closed",
               "priceClosedThb": 6.34,
               "positionId": "P0044",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": -3,
-              "reasons": "Buy-low target hit for P0044 (6.3400 ≤ 6.3468); held target 0.05% | fee credit used 11.89 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-04T01:24:13+00:00",
@@ -1825,14 +1603,10 @@
               "expectedAction": "Buy ≤",
               "expectedPriceThb": 6.346825,
               "plannedExit": "SHORT ADA: buy ≤ 6.3468 THB or stop ≥ 6.3881 THB",
-              "plan": "SHORT ADA: buy ≤ 6.3468 THB or stop ≥ 6.3881 THB",
               "status": "Closed",
               "priceClosedThb": 6.34,
               "positionId": "P0044",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": -5,
-              "reasons": "ADA 5m momentum negative (-0.56%) | ADA 15m momentum negative (-1.72%) | Fast SMA below slow SMA | BTC 15m risk-off (-0.83%) | Bear regime confirmed — defensive sells/buy-backs allowed | Efficiency OK: edge 1.36% vs hurdle 0.46% = net 0.90% | X sentiment neutral: neutral_unavailable | fee credit used 11.91 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-04T01:23:37+00:00",
@@ -1846,14 +1620,10 @@
               "expectedAction": "Sell ≥",
               "expectedPriceThb": 6.46323,
               "plannedExit": "LONG ADA: sell ≥ 6.4632 THB or stop ≤ 6.4212 THB",
-              "plan": "LONG ADA: sell ≥ 6.4632 THB or stop ≤ 6.4212 THB",
               "status": "Closed",
               "priceClosedThb": 6.34,
               "positionId": "P0042",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": -6,
-              "reasons": "Bear market detected; unload LONG P0042 at protective stop (6.3400 ≤ 6.4212) | fee credit used 11.89 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-04T01:15:14+00:00",
@@ -1867,14 +1637,10 @@
               "expectedAction": "Buy ≤",
               "expectedPriceThb": 38.96051,
               "plannedExit": "SHORT XRP: buy ≤ 38.9605 THB or stop ≥ 39.2139 THB",
-              "plan": "SHORT XRP: buy ≤ 38.9605 THB or stop ≥ 39.2139 THB",
               "status": "Closed",
               "priceClosedThb": 38.83,
               "positionId": "P0043",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": -1,
-              "reasons": "Buy-low target hit for P0043 (38.8300 ≤ 38.9605); held target 0.05% | fee credit used 14.56 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-04T00:59:26+00:00",
@@ -1888,14 +1654,10 @@
               "expectedAction": "Buy ≤",
               "expectedPriceThb": 38.96051,
               "plannedExit": "SHORT XRP: buy ≤ 38.9605 THB or stop ≥ 39.2139 THB",
-              "plan": "SHORT XRP: buy ≤ 38.9605 THB or stop ≥ 39.2139 THB",
               "status": "Closed",
               "priceClosedThb": 38.83,
               "positionId": "P0043",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": -1,
-              "reasons": "BTC 15m risk-off (-0.51%) | Efficiency OK: edge 0.37% vs hurdle 0.33% = net 0.04% | X sentiment neutral: neutral_unavailable | Stop-loss protection active sleeve (-0.92%) | fee credit used 14.62 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-04T00:56:14+00:00",
@@ -1909,14 +1671,10 @@
               "expectedAction": "Sell ≥",
               "expectedPriceThb": 6.46323,
               "plannedExit": "LONG ADA: sell ≥ 6.4632 THB or stop ≤ 6.4212 THB",
-              "plan": "LONG ADA: sell ≥ 6.4632 THB or stop ≤ 6.4212 THB",
               "status": "Closed",
               "priceClosedThb": 6.34,
               "positionId": "P0042",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": 2,
-              "reasons": "Buy-low setup: ADA near 24h low (7% of range) without bear confirmation | Efficiency OK: edge 0.37% vs hurdle 0.45% = net -0.08% | X sentiment neutral: neutral_unavailable | fee credit used 12.11 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-04T00:29:28+00:00",
@@ -1930,14 +1688,10 @@
               "expectedAction": "Buy ≤",
               "expectedPriceThb": 6.506745,
               "plannedExit": "SHORT ADA: buy ≤ 6.5067 THB or stop ≥ 6.5491 THB",
-              "plan": "SHORT ADA: buy ≤ 6.5067 THB or stop ≥ 6.5491 THB",
               "status": "Closed",
               "priceClosedThb": 6.49,
               "positionId": "P0041",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": -6,
-              "reasons": "Buy-low target hit for P0041 (6.4900 ≤ 6.5067); held target 0.05% | fee credit used 12.17 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-04T00:28:14+00:00",
@@ -1951,14 +1705,10 @@
               "expectedAction": "Buy ≤",
               "expectedPriceThb": 6.506745,
               "plannedExit": "SHORT ADA: buy ≤ 6.5067 THB or stop ≥ 6.5491 THB",
-              "plan": "SHORT ADA: buy ≤ 6.5067 THB or stop ≥ 6.5491 THB",
               "status": "Closed",
               "priceClosedThb": 6.49,
               "positionId": "P0041",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": -5,
-              "reasons": "ADA 5m momentum negative (-0.90%) | ADA 15m momentum negative (-1.34%) | Fast SMA below slow SMA | BTC 15m risk-off (-0.93%) | Bear regime confirmed — defensive sells/buy-backs allowed | Efficiency OK: edge 1.12% vs hurdle 0.45% = net 0.67% | X sentiment neutral: neutral_unavailable | fee credit used 12.21 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-03T23:54:13+00:00",
@@ -1972,14 +1722,10 @@
               "expectedAction": "Buy ≤",
               "expectedPriceThb": 39.390295,
               "plannedExit": "SHORT XRP: buy ≤ 39.3903 THB or stop ≥ 39.6465 THB",
-              "plan": "SHORT XRP: buy ≤ 39.3903 THB or stop ≥ 39.6465 THB",
               "status": "Closed",
               "priceClosedThb": 39.34,
               "positionId": "P0040",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": 0,
-              "reasons": "Buy-low target hit for P0040 (39.3400 ≤ 39.3903); held target 0.05% | fee credit used 14.75 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-03T23:24:14+00:00",
@@ -1993,14 +1739,10 @@
               "expectedAction": "Buy ≤",
               "expectedPriceThb": 6.606695,
               "plannedExit": "SHORT ADA: buy ≤ 6.6067 THB or stop ≥ 6.6497 THB",
-              "plan": "SHORT ADA: buy ≤ 6.6067 THB or stop ≥ 6.6497 THB",
               "status": "Closed",
               "priceClosedThb": 6.57,
               "positionId": "P0038",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": -1,
-              "reasons": "Buy-low target hit for P0038 (6.5700 ≤ 6.6067); held target 0.05% | fee credit used 12.32 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-03T22:56:13+00:00",
@@ -2014,14 +1756,10 @@
               "expectedAction": "Buy ≤",
               "expectedPriceThb": 39.390295,
               "plannedExit": "SHORT XRP: buy ≤ 39.3903 THB or stop ≥ 39.6465 THB",
-              "plan": "SHORT XRP: buy ≤ 39.3903 THB or stop ≥ 39.6465 THB",
               "status": "Closed",
               "priceClosedThb": 39.34,
               "positionId": "P0040",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": -1,
-              "reasons": "XRP 5m momentum negative (-0.31%) | XRP 15m momentum negative (-0.59%) | Fast SMA below slow SMA | BTC 15m risk-off (-0.47%) | Buy-low setup: XRP near 24h low (29% of range) without bear confirmation | Dip without bear confirmation — prefer HODL over unloading low | Efficiency OK: edge 0.55% vs hurdle 0.38% = net 0.18% | X sentiment neutral: neutral_unavailable | fee credit used 14.78 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-03T22:53:14+00:00",
@@ -2035,14 +1773,10 @@
               "expectedAction": "Buy ≤",
               "expectedPriceThb": 6.646675,
               "plannedExit": "SHORT ADA: buy ≤ 6.6467 THB or stop ≥ 6.6899 THB",
-              "plan": "SHORT ADA: buy ≤ 6.6467 THB or stop ≥ 6.6899 THB",
               "status": "Closed",
               "priceClosedThb": 6.64,
               "positionId": "P0039",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": 0,
-              "reasons": "Buy-low target hit for P0039 (6.6400 ≤ 6.6467); held target 0.05% | fee credit used 12.45 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-03T22:22:13+00:00",
@@ -2056,14 +1790,10 @@
               "expectedAction": "Buy ≤",
               "expectedPriceThb": 6.646675,
               "plannedExit": "SHORT ADA: buy ≤ 6.6467 THB or stop ≥ 6.6899 THB",
-              "plan": "SHORT ADA: buy ≤ 6.6467 THB or stop ≥ 6.6899 THB",
               "status": "Closed",
               "priceClosedThb": 6.64,
               "positionId": "P0039",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": -4,
-              "reasons": "ADA 15m momentum negative (-0.73%) | Fast SMA below slow SMA | BTC 15m risk-off (-0.63%) | Bear regime confirmed — defensive sells/buy-backs allowed | Efficiency OK: edge 0.57% vs hurdle 0.45% = net 0.12% | X sentiment neutral: neutral_unavailable | fee credit used 12.47 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-03T21:55:13+00:00",
@@ -2077,14 +1807,10 @@
               "expectedAction": "Buy ≤",
               "expectedPriceThb": 6.606695,
               "plannedExit": "SHORT ADA: buy ≤ 6.6067 THB or stop ≥ 6.6497 THB",
-              "plan": "SHORT ADA: buy ≤ 6.6067 THB or stop ≥ 6.6497 THB",
               "status": "Closed",
               "priceClosedThb": 6.71,
               "positionId": "P0037",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": 4,
-              "reasons": "Bull market detected; close SHORT P0037 at protective stop (6.7100 ≥ 6.6497) | fee credit used 12.58 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-03T21:52:14+00:00",
@@ -2098,14 +1824,10 @@
               "expectedAction": "Sell ≥",
               "expectedPriceThb": 39.53976,
               "plannedExit": "LONG XRP: sell ≥ 39.5398 THB or stop ≤ 39.2829 THB",
-              "plan": "LONG XRP: sell ≥ 39.5398 THB or stop ≤ 39.2829 THB",
               "status": "Closed",
               "priceClosedThb": 39.86,
               "positionId": "P0035",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": 3,
-              "reasons": "Sell-high target hit for P0035 (39.8600 ≥ 39.5398); held target 0.05% | fee credit used 14.95 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-03T20:55:13+00:00",
@@ -2119,14 +1841,10 @@
               "expectedAction": "Sell ≥",
               "expectedPriceThb": 39.59979,
               "plannedExit": "LONG XRP: sell ≥ 39.5998 THB or stop ≤ 39.3425 THB",
-              "plan": "LONG XRP: sell ≥ 39.5998 THB or stop ≤ 39.3425 THB",
               "status": "Closed",
               "priceClosedThb": 38.92,
               "positionId": "P0034",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": -6,
-              "reasons": "Bear market detected; unload LONG P0034 at protective stop (38.9200 ≤ 39.3425) | fee credit used 14.60 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-03T20:52:13+00:00",
@@ -2140,14 +1858,10 @@
               "expectedAction": "Buy ≤",
               "expectedPriceThb": 6.606695,
               "plannedExit": "SHORT ADA: buy ≤ 6.6067 THB or stop ≥ 6.6497 THB",
-              "plan": "SHORT ADA: buy ≤ 6.6067 THB or stop ≥ 6.6497 THB",
               "status": "Closed",
               "priceClosedThb": 6.57,
               "positionId": "P0038",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": -1,
-              "reasons": "ADA 5m momentum negative (-0.30%) | ADA 15m momentum negative (-0.79%) | Fast SMA below slow SMA | BTC 15m risk-off (-0.35%) | Buy-low setup: ADA near 24h low (0% of range) without bear confirmation | Dip without bear confirmation — prefer HODL over unloading low | Efficiency OK: edge 0.70% vs hurdle 0.45% = net 0.25% | X sentiment neutral: neutral_unavailable | fee credit used 12.39 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-03T20:51:13+00:00",
@@ -2161,14 +1875,10 @@
               "expectedAction": "Buy ≤",
               "expectedPriceThb": 6.606695,
               "plannedExit": "SHORT ADA: buy ≤ 6.6067 THB or stop ≥ 6.6497 THB",
-              "plan": "SHORT ADA: buy ≤ 6.6067 THB or stop ≥ 6.6497 THB",
               "status": "Closed",
               "priceClosedThb": 6.71,
               "positionId": "P0037",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": -1,
-              "reasons": "ADA 5m momentum negative (-0.30%) | ADA 15m momentum negative (-0.74%) | Fast SMA below slow SMA | BTC 15m risk-off (-0.55%) | Buy-low setup: ADA near 24h low (6% of range) without bear confirmation | Dip without bear confirmation — prefer HODL over unloading low | Efficiency OK: edge 0.65% vs hurdle 0.45% = net 0.19% | X sentiment neutral: neutral_unavailable | fee credit used 12.39 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-03T20:21:14+00:00",
@@ -2181,15 +1891,11 @@
               "netEdgePct": null,
               "expectedAction": "Buy ≤",
               "expectedPriceThb": 6.69665,
-              "plannedExit": "SHORT ADA: buy ≤ 6.6967 THB or stop ≥ 6.7402 THB",
-              "plan": "SHORT ADA: buy ≤ 6.6967 THB or stop ≥ 6.7402 THB",
+              "plannedExit": "SHORT ADA: buy ≤ 6.6966 THB or stop ≥ 6.7402 THB",
               "status": "Closed",
               "priceClosedThb": 6.69,
               "positionId": "P0036",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": -1,
-              "reasons": "Buy-low target hit for P0036 (6.6900 ≤ 6.6967); held target 0.05% | fee credit used 12.54 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-03T19:54:14+00:00",
@@ -2202,15 +1908,11 @@
               "netEdgePct": 0.05,
               "expectedAction": "Buy ≤",
               "expectedPriceThb": 6.69665,
-              "plannedExit": "SHORT ADA: buy ≤ 6.6967 THB or stop ≥ 6.7402 THB",
-              "plan": "SHORT ADA: buy ≤ 6.6967 THB or stop ≥ 6.7402 THB",
+              "plannedExit": "SHORT ADA: buy ≤ 6.6966 THB or stop ≥ 6.7402 THB",
               "status": "Closed",
               "priceClosedThb": 6.69,
               "positionId": "P0036",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": -1,
-              "reasons": "ADA 5m momentum negative (-0.63%) | ADA 15m momentum negative (-0.68%) | Fast SMA below slow SMA | BTC 15m risk-off (-0.59%) | Buy-low setup: ADA near 24h low (2% of range) without bear confirmation | Dip without bear confirmation — prefer HODL over unloading low | Efficiency OK: edge 0.65% vs hurdle 0.60% = net 0.05% | X sentiment neutral: neutral_unavailable | fee credit used 12.56 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-03T19:51:13+00:00",
@@ -2224,14 +1926,10 @@
               "expectedAction": "Sell ≥",
               "expectedPriceThb": 39.53976,
               "plannedExit": "LONG XRP: sell ≥ 39.5398 THB or stop ≤ 39.2829 THB",
-              "plan": "LONG XRP: sell ≥ 39.5398 THB or stop ≤ 39.2829 THB",
               "status": "Closed",
               "priceClosedThb": 39.86,
               "positionId": "P0035",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": 2,
-              "reasons": "Fast SMA above slow SMA | XRP 5m momentum negative (-0.26%) | Buy-low setup: XRP near 24h low (35% of range) without bear confirmation | Efficiency OK: edge 0.23% vs hurdle 0.35% = net -0.12% | X sentiment neutral: neutral_unavailable | fee credit used 14.82 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-03T19:50:13+00:00",
@@ -2245,14 +1943,10 @@
               "expectedAction": "Sell ≥",
               "expectedPriceThb": 39.59979,
               "plannedExit": "LONG XRP: sell ≥ 39.5998 THB or stop ≤ 39.3425 THB",
-              "plan": "LONG XRP: sell ≥ 39.5998 THB or stop ≤ 39.3425 THB",
               "status": "Closed",
               "priceClosedThb": 38.92,
               "positionId": "P0034",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": 2,
-              "reasons": "Fast SMA above slow SMA | Volume spike confirms selloff (5.1x median) | Buy-low setup: XRP near 24h low (41% of range) without bear confirmation | Efficiency OK: edge 0.28% vs hurdle 0.38% = net -0.09% | X sentiment neutral: neutral_unavailable | fee credit used 14.84 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-03T19:23:13+00:00",
@@ -2266,14 +1960,10 @@
               "expectedAction": "Sell ≥",
               "expectedPriceThb": 6.82341,
               "plannedExit": "LONG ADA: sell ≥ 6.8234 THB or stop ≤ 6.7791 THB",
-              "plan": "LONG ADA: sell ≥ 6.8234 THB or stop ≤ 6.7791 THB",
               "status": "Closed",
               "priceClosedThb": 6.75,
               "positionId": "P0033",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": -1,
-              "reasons": "ADA 5m momentum negative (-0.34%) | ADA 15m momentum negative (-0.67%) | Fast SMA below slow SMA | BTC 15m risk-off (-0.33%) | Buy-low setup: ADA near 24h low (0% of range) without bear confirmation | Dip without bear confirmation — prefer HODL over unloading low | Efficiency OK: edge 0.61% vs hurdle 0.45% = net 0.16% | X sentiment neutral: neutral_unavailable | fee credit used 12.66 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-03T19:22:30+00:00",
@@ -2287,14 +1977,10 @@
               "expectedAction": "Sell ≥",
               "expectedPriceThb": 6.82341,
               "plannedExit": "LONG ADA: sell ≥ 6.8234 THB or stop ≤ 6.7791 THB",
-              "plan": "LONG ADA: sell ≥ 6.8234 THB or stop ≤ 6.7791 THB",
               "status": "Closed",
               "priceClosedThb": 6.74,
               "positionId": "P0032",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": -2,
-              "reasons": "ADA 5m momentum negative (-0.63%) | ADA 15m momentum negative (-0.91%) | Fast SMA below slow SMA | BTC 15m risk-off (-0.40%) | Volume spike confirms selloff (10.2x median) | Buy-low setup: ADA near 24h low (0% of range) without bear confirmation | Dip without bear confirmation — prefer HODL over unloading low | Efficiency OK: edge 0.98% vs hurdle 0.45% = net 0.53% | X sentiment neutral: neutral_unavailable | fee credit used 12.64 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-03T18:49:15+00:00",
@@ -2308,14 +1994,10 @@
               "expectedAction": "Sell ≥",
               "expectedPriceThb": 6.82341,
               "plannedExit": "LONG ADA: sell ≥ 6.8234 THB or stop ≤ 6.7791 THB",
-              "plan": "LONG ADA: sell ≥ 6.8234 THB or stop ≤ 6.7791 THB",
               "status": "Closed",
               "priceClosedThb": 6.75,
               "positionId": "P0033",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": 2,
-              "reasons": "Fast SMA above slow SMA | BTC 15m supports risk-on (0.28%) | Efficiency OK: edge 0.33% vs hurdle 0.59% = net -0.26% | X sentiment neutral: neutral_unavailable | fee credit used 12.79 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-03T18:48:14+00:00",
@@ -2329,14 +2011,10 @@
               "expectedAction": "Sell ≥",
               "expectedPriceThb": 6.82341,
               "plannedExit": "LONG ADA: sell ≥ 6.8234 THB or stop ≤ 6.7791 THB",
-              "plan": "LONG ADA: sell ≥ 6.8234 THB or stop ≤ 6.7791 THB",
               "status": "Closed",
               "priceClosedThb": 6.74,
               "positionId": "P0032",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": 2,
-              "reasons": "Fast SMA above slow SMA | BTC 15m supports risk-on (0.21%) | Efficiency OK: edge 0.17% vs hurdle 0.59% = net -0.43% | X sentiment neutral: neutral_unavailable | fee credit used 12.79 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-03T18:19:14+00:00",
@@ -2350,14 +2028,10 @@
               "expectedAction": "Buy ≤",
               "expectedPriceThb": 39.94002,
               "plannedExit": "SHORT XRP: buy ≤ 39.9400 THB or stop ≥ 40.1998 THB",
-              "plan": "SHORT XRP: buy ≤ 39.9400 THB or stop ≥ 40.1998 THB",
               "status": "Closed",
               "priceClosedThb": 39.7,
               "positionId": "P0031",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": -1,
-              "reasons": "Buy-low target hit for P0031 (39.7000 ≤ 39.9400); held target 0.05% | fee credit used 14.89 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-03T18:18:16+00:00",
@@ -2371,14 +2045,10 @@
               "expectedAction": "Buy ≤",
               "expectedPriceThb": 39.730125,
               "plannedExit": "SHORT XRP: buy ≤ 39.7301 THB or stop ≥ 39.9885 THB",
-              "plan": "SHORT XRP: buy ≤ 39.7301 THB or stop ≥ 39.9885 THB",
               "status": "Closed",
               "priceClosedThb": 39.68,
               "positionId": "P0030",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": -1,
-              "reasons": "Buy-low target hit for P0030 (39.6800 ≤ 39.7301); held target 0.05% | fee credit used 14.88 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-03T17:48:15+00:00",
@@ -2392,14 +2062,10 @@
               "expectedAction": "Buy ≤",
               "expectedPriceThb": 39.94002,
               "plannedExit": "SHORT XRP: buy ≤ 39.9400 THB or stop ≥ 40.1998 THB",
-              "plan": "SHORT XRP: buy ≤ 39.9400 THB or stop ≥ 40.1998 THB",
               "status": "Closed",
               "priceClosedThb": 39.7,
               "positionId": "P0031",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": 0,
-              "reasons": "Take-profit because momentum faded (0.28%) | fee credit used 14.98 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-03T17:18:14+00:00",
@@ -2413,14 +2079,10 @@
               "expectedAction": "Buy ≤",
               "expectedPriceThb": 39.730125,
               "plannedExit": "SHORT XRP: buy ≤ 39.7301 THB or stop ≥ 39.9885 THB",
-              "plan": "SHORT XRP: buy ≤ 39.7301 THB or stop ≥ 39.9885 THB",
               "status": "Closed",
               "priceClosedThb": 39.68,
               "positionId": "P0030",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": -2,
-              "reasons": "Fast SMA below slow SMA | BTC 15m risk-off (-0.19%) | Efficiency OK: edge 0.13% vs hurdle 0.38% = net -0.24% | X sentiment neutral: neutral_unavailable | fee credit used 14.91 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-03T17:17:15+00:00",
@@ -2434,14 +2096,10 @@
               "expectedAction": "Sell ≥",
               "expectedPriceThb": 39.869925,
               "plannedExit": "LONG XRP: sell ≥ 39.8699 THB or stop ≤ 39.6109 THB",
-              "plan": "LONG XRP: sell ≥ 39.8699 THB or stop ≤ 39.6109 THB",
               "status": "Closed",
               "priceClosedThb": 39.73,
               "positionId": "P0029",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": -2,
-              "reasons": "Fast SMA below slow SMA | BTC 15m risk-off (-0.35%) | Efficiency OK: edge 0.25% vs hurdle 0.35% = net -0.10% | X sentiment neutral: neutral_unavailable | fee credit used 14.90 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-03T16:47:14+00:00",
@@ -2455,14 +2113,10 @@
               "expectedAction": "Sell ≥",
               "expectedPriceThb": 39.869925,
               "plannedExit": "LONG XRP: sell ≥ 39.8699 THB or stop ≤ 39.6109 THB",
-              "plan": "LONG XRP: sell ≥ 39.8699 THB or stop ≤ 39.6109 THB",
               "status": "Closed",
               "priceClosedThb": 39.73,
               "positionId": "P0029",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": 3,
-              "reasons": "XRP 15m momentum positive (0.52%) | Fast SMA above slow SMA | BTC 15m supports risk-on (0.56%) | Bull regime confirmed — willing to hold for higher target | Efficiency OK: edge 0.40% vs hurdle 0.35% = net 0.05% | X sentiment neutral: neutral_unavailable | fee credit used 14.94 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-03T16:46:16+00:00",
@@ -2476,14 +2130,10 @@
               "expectedAction": "Buy ≤",
               "expectedPriceThb": 39.630175,
               "plannedExit": "SHORT XRP: buy ≤ 39.6302 THB or stop ≥ 39.8879 THB",
-              "plan": "SHORT XRP: buy ≤ 39.6302 THB or stop ≥ 39.8879 THB",
               "status": "Closed",
               "priceClosedThb": 39.79,
               "positionId": "P0028",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": 3,
-              "reasons": "XRP 15m momentum positive (0.56%) | Fast SMA above slow SMA | BTC 15m supports risk-on (0.49%) | Efficiency OK: edge 0.43% vs hurdle 0.35% = net 0.08% | X sentiment neutral: neutral_unavailable | fee credit used 14.92 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-03T16:25:15+00:00",
@@ -2497,14 +2147,10 @@
               "expectedAction": "Buy ≤",
               "expectedPriceThb": 6.826585,
               "plannedExit": "SHORT ADA: buy ≤ 6.8266 THB or stop ≥ 6.8710 THB",
-              "plan": "SHORT ADA: buy ≤ 6.8266 THB or stop ≥ 6.8710 THB",
               "status": "Closed",
               "priceClosedThb": 6.81,
               "positionId": "P0027",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": -5,
-              "reasons": "Buy-low target hit for P0027 (6.8100 ≤ 6.8266); held target 0.05% | fee credit used 12.77 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-03T16:22:15+00:00",
@@ -2518,14 +2164,10 @@
               "expectedAction": "Buy ≤",
               "expectedPriceThb": 39.630175,
               "plannedExit": "SHORT XRP: buy ≤ 39.6302 THB or stop ≥ 39.8879 THB",
-              "plan": "SHORT XRP: buy ≤ 39.6302 THB or stop ≥ 39.8879 THB",
               "status": "Closed",
               "priceClosedThb": 39.79,
               "positionId": "P0028",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": -3,
-              "reasons": "XRP 5m momentum negative (-0.73%) | XRP 15m momentum negative (-0.70%) | Fast SMA below slow SMA | BTC 15m risk-off (-0.28%) | Dip without bear confirmation — prefer HODL over unloading low | Efficiency OK: edge 0.75% vs hurdle 0.40% = net 0.35% | X sentiment neutral: neutral_unavailable | Stop-loss protection active sleeve (-1.07%) | fee credit used 14.87 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-03T16:21:37+00:00",
@@ -2539,14 +2181,10 @@
               "expectedAction": "Buy ≤",
               "expectedPriceThb": 6.826585,
               "plannedExit": "SHORT ADA: buy ≤ 6.8266 THB or stop ≥ 6.8710 THB",
-              "plan": "SHORT ADA: buy ≤ 6.8266 THB or stop ≥ 6.8710 THB",
               "status": "Closed",
               "priceClosedThb": 6.81,
               "positionId": "P0027",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": -6,
-              "reasons": "ADA 5m momentum negative (-0.85%) | ADA 15m momentum negative (-1.23%) | Fast SMA below slow SMA | BTC 15m risk-off (-0.67%) | Volume spike confirms selloff (2.9x median) | Bear regime confirmed — defensive sells/buy-backs allowed | Efficiency OK: edge 1.31% vs hurdle 0.59% = net 0.72% | X sentiment neutral: neutral_unavailable | fee credit used 12.81 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-03T16:16:15+00:00",
@@ -2560,14 +2198,10 @@
               "expectedAction": "Buy ≤",
               "expectedPriceThb": 6.926535,
               "plannedExit": "SHORT ADA: buy ≤ 6.9265 THB or stop ≥ 6.9716 THB",
-              "plan": "SHORT ADA: buy ≤ 6.9265 THB or stop ≥ 6.9716 THB",
               "status": "Closed",
               "priceClosedThb": 6.9,
               "positionId": "P0026",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": 2,
-              "reasons": "Buy-low target hit for P0026 (6.9000 ≤ 6.9265); held target 0.05% | fee credit used 12.94 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-03T16:15:15+00:00",
@@ -2581,14 +2215,10 @@
               "expectedAction": "Buy ≤",
               "expectedPriceThb": 6.93653,
               "plannedExit": "SHORT ADA: buy ≤ 6.9365 THB or stop ≥ 6.9816 THB",
-              "plan": "SHORT ADA: buy ≤ 6.9365 THB or stop ≥ 6.9816 THB",
               "status": "Closed",
               "priceClosedThb": 6.89,
               "positionId": "P0025",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": 0,
-              "reasons": "Buy-low target hit for P0025 (6.8900 ≤ 6.9365); held target 0.05% | fee credit used 12.92 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-03T15:45:15+00:00",
@@ -2602,14 +2232,10 @@
               "expectedAction": "Buy ≤",
               "expectedPriceThb": 6.926535,
               "plannedExit": "SHORT ADA: buy ≤ 6.9265 THB or stop ≥ 6.9716 THB",
-              "plan": "SHORT ADA: buy ≤ 6.9265 THB or stop ≥ 6.9716 THB",
               "status": "Closed",
               "priceClosedThb": 6.9,
               "positionId": "P0026",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": -3,
-              "reasons": "ADA 15m momentum negative (-0.79%) | Fast SMA below slow SMA | BTC 15m risk-off (-0.56%) | Efficiency OK: edge 0.59% vs hurdle 0.59% = net 0.00% | X sentiment neutral: neutral_unavailable | fee credit used 12.99 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-03T15:44:14+00:00",
@@ -2623,14 +2249,10 @@
               "expectedAction": "Buy ≤",
               "expectedPriceThb": 6.93653,
               "plannedExit": "SHORT ADA: buy ≤ 6.9365 THB or stop ≥ 6.9816 THB",
-              "plan": "SHORT ADA: buy ≤ 6.9365 THB or stop ≥ 6.9816 THB",
               "status": "Closed",
               "priceClosedThb": 6.89,
               "positionId": "P0025",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": -3,
-              "reasons": "ADA 15m momentum negative (-0.51%) | Fast SMA below slow SMA | BTC 15m risk-off (-0.38%) | Efficiency OK: edge 0.43% vs hurdle 0.44% = net -0.02% | X sentiment neutral: neutral_unavailable | fee credit used 13.01 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-03T15:14:16+00:00",
@@ -2644,14 +2266,10 @@
               "expectedAction": "Buy ≤",
               "expectedPriceThb": 7.026485,
               "plannedExit": "SHORT ADA: buy ≤ 7.0265 THB or stop ≥ 7.0722 THB",
-              "plan": "SHORT ADA: buy ≤ 7.0265 THB or stop ≥ 7.0722 THB",
               "status": "Closed",
               "priceClosedThb": 6.99,
               "positionId": "P0024",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": -1,
-              "reasons": "Buy-low target hit for P0024 (6.9900 ≤ 7.0265); held target 0.05% | fee credit used 13.11 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-03T15:13:15+00:00",
@@ -2665,14 +2283,10 @@
               "expectedAction": "Buy ≤",
               "expectedPriceThb": 40.15991,
               "plannedExit": "SHORT XRP: buy ≤ 40.1599 THB or stop ≥ 40.4211 THB",
-              "plan": "SHORT XRP: buy ≤ 40.1599 THB or stop ≥ 40.4211 THB",
               "status": "Closed",
               "priceClosedThb": 40.08,
               "positionId": "P0022",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": -1,
-              "reasons": "Buy-low target hit for P0022 (40.0800 ≤ 40.1599); held target 0.05% | fee credit used 15.03 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-03T14:44:16+00:00",
@@ -2686,14 +2300,10 @@
               "expectedAction": "Buy ≤",
               "expectedPriceThb": 7.026485,
               "plannedExit": "SHORT ADA: buy ≤ 7.0265 THB or stop ≥ 7.0722 THB",
-              "plan": "SHORT ADA: buy ≤ 7.0265 THB or stop ≥ 7.0722 THB",
               "status": "Closed",
               "priceClosedThb": 7.0,
               "positionId": "P0023",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": 0,
-              "reasons": "Buy-low target hit for P0023 (7.0000 ≤ 7.0265); held target 0.05% | fee credit used 13.12 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-03T14:43:18+00:00",
@@ -2707,14 +2317,10 @@
               "expectedAction": "Buy ≤",
               "expectedPriceThb": 40.089945,
               "plannedExit": "SHORT XRP: buy ≤ 40.0899 THB or stop ≥ 40.3507 THB",
-              "plan": "SHORT XRP: buy ≤ 40.0899 THB or stop ≥ 40.3507 THB",
               "status": "Closed",
               "priceClosedThb": 40.15,
               "positionId": "P0021",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": 2,
-              "reasons": "Buy-low target hit for P0022 (40.1500 ≤ 40.1599); held target 0.05% | fee credit used 15.06 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-03T14:15:15+00:00",
@@ -2728,14 +2334,10 @@
               "expectedAction": "Buy ≤",
               "expectedPriceThb": 7.026485,
               "plannedExit": "SHORT ADA: buy ≤ 7.0265 THB or stop ≥ 7.0722 THB",
-              "plan": "SHORT ADA: buy ≤ 7.0265 THB or stop ≥ 7.0722 THB",
               "status": "Closed",
               "priceClosedThb": 6.99,
               "positionId": "P0024",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": -2,
-              "reasons": "Sell-high setup: ADA near 24h high (56% of range) after a rip | Efficiency OK: edge 0.27% vs hurdle 0.58% = net -0.31% | X sentiment neutral: neutral_unavailable | fee credit used 13.18 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-03T14:14:15+00:00",
@@ -2749,14 +2351,10 @@
               "expectedAction": "Buy ≤",
               "expectedPriceThb": 7.026485,
               "plannedExit": "SHORT ADA: buy ≤ 7.0265 THB or stop ≥ 7.0722 THB",
-              "plan": "SHORT ADA: buy ≤ 7.0265 THB or stop ≥ 7.0722 THB",
               "status": "Closed",
               "priceClosedThb": 7.0,
               "positionId": "P0023",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": -2,
-              "reasons": "Sell-high setup: ADA near 24h high (56% of range) after a rip | Efficiency OK: edge 0.13% vs hurdle 0.44% = net -0.32% | X sentiment neutral: neutral_unavailable | fee credit used 13.18 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-03T14:12:17+00:00",
@@ -2770,14 +2368,10 @@
               "expectedAction": "Buy ≤",
               "expectedPriceThb": 40.15991,
               "plannedExit": "SHORT XRP: buy ≤ 40.1599 THB or stop ≥ 40.4211 THB",
-              "plan": "SHORT XRP: buy ≤ 40.1599 THB or stop ≥ 40.4211 THB",
               "status": "Closed",
               "priceClosedThb": 40.08,
               "positionId": "P0022",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": -2,
-              "reasons": "Sell-high setup: XRP near 24h high (63% of range) after a rip | Efficiency OK: edge 0.15% vs hurdle 0.35% = net -0.20% | X sentiment neutral: neutral_unavailable | fee credit used 15.07 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-03T13:43:15+00:00",
@@ -2791,14 +2385,10 @@
               "expectedAction": "Buy ≤",
               "expectedPriceThb": 40.089945,
               "plannedExit": "SHORT XRP: buy ≤ 40.0899 THB or stop ≥ 40.3507 THB",
-              "plan": "SHORT XRP: buy ≤ 40.0899 THB or stop ≥ 40.3507 THB",
               "status": "Closed",
               "priceClosedThb": 40.15,
               "positionId": "P0021",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": -1,
-              "reasons": "XRP 5m momentum negative (-0.31%) | Fast SMA below slow SMA | Dip without bear confirmation — prefer HODL over unloading low | Efficiency OK: edge 0.25% vs hurdle 0.32% = net -0.08% | X sentiment neutral: neutral_unavailable | fee credit used 15.04 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-03T13:41:15+00:00",
@@ -2811,15 +2401,11 @@
               "netEdgePct": null,
               "expectedAction": "Buy ≤",
               "expectedPriceThb": 40.27985,
-              "plannedExit": "SHORT XRP: buy ≤ 40.2798 THB or stop ≥ 40.5418 THB",
-              "plan": "SHORT XRP: buy ≤ 40.2798 THB or stop ≥ 40.5418 THB",
+              "plannedExit": "SHORT XRP: buy ≤ 40.2799 THB or stop ≥ 40.5418 THB",
               "status": "Closed",
               "priceClosedThb": 40.26,
               "positionId": "P0020",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": 0,
-              "reasons": "Buy-low target hit for P0020 (40.2600 ≤ 40.2798); held target 0.05% | fee credit used 15.10 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-03T13:20:35+00:00",
@@ -2833,14 +2419,10 @@
               "expectedAction": "Buy ≤",
               "expectedPriceThb": 7.026485,
               "plannedExit": "SHORT ADA: buy ≤ 7.0265 THB or stop ≥ 7.0722 THB",
-              "plan": "SHORT ADA: buy ≤ 7.0265 THB or stop ≥ 7.0722 THB",
               "status": "Closed",
               "priceClosedThb": 7.07,
               "positionId": "P0019",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": 1,
-              "reasons": "ADA 15m momentum positive (0.46%) | Fast SMA above slow SMA | BTC 15m supports risk-on (0.27%) | Sell-high setup: ADA near 24h high (57% of range) after a rip | Efficiency OK: edge 0.38% vs hurdle 0.44% = net -0.07% | X sentiment neutral: neutral_unavailable | fee credit used 13.26 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-03T13:13:20+00:00",
@@ -2853,15 +2435,11 @@
               "netEdgePct": -0.25,
               "expectedAction": "Buy ≤",
               "expectedPriceThb": 40.27985,
-              "plannedExit": "SHORT XRP: buy ≤ 40.2798 THB or stop ≥ 40.5418 THB",
-              "plan": "SHORT XRP: buy ≤ 40.2798 THB or stop ≥ 40.5418 THB",
+              "plannedExit": "SHORT XRP: buy ≤ 40.2799 THB or stop ≥ 40.5418 THB",
               "status": "Closed",
               "priceClosedThb": 40.26,
               "positionId": "P0020",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": -3,
-              "reasons": "Fast SMA below slow SMA | Sell-high setup: XRP near 24h high (61% of range) after a rip | Efficiency OK: edge 0.12% vs hurdle 0.37% = net -0.25% | X sentiment neutral: neutral_unavailable | fee credit used 15.11 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-03T13:10:15+00:00",
@@ -2875,14 +2453,10 @@
               "expectedAction": "Buy ≤",
               "expectedPriceThb": 7.026485,
               "plannedExit": "SHORT ADA: buy ≤ 7.0265 THB or stop ≥ 7.0722 THB",
-              "plan": "SHORT ADA: buy ≤ 7.0265 THB or stop ≥ 7.0722 THB",
               "status": "Closed",
               "priceClosedThb": 7.07,
               "positionId": "P0019",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": -1,
-              "reasons": "Fast SMA below slow SMA | Efficiency OK: edge 0.04% vs hurdle 0.44% = net -0.40% | X sentiment neutral: neutral_unavailable | fee credit used 13.18 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-03T12:10:14+00:00",
@@ -2896,14 +2470,10 @@
               "expectedAction": "Buy ≤",
               "expectedPriceThb": 40.529725,
               "plannedExit": "SHORT XRP: buy ≤ 40.5297 THB or stop ≥ 40.7933 THB",
-              "plan": "SHORT XRP: buy ≤ 40.5297 THB or stop ≥ 40.7933 THB",
               "status": "Closed",
               "priceClosedThb": 40.43,
               "positionId": "P0017",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": -2,
-              "reasons": "Buy-low target hit for P0017 (40.4300 ≤ 40.5297); held target 0.05% | fee credit used 15.16 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-03T11:41:14+00:00",
@@ -2917,14 +2487,10 @@
               "expectedAction": "Sell ≥",
               "expectedPriceThb": 7.133565,
               "plannedExit": "LONG ADA: sell ≥ 7.1336 THB or stop ≤ 7.0872 THB",
-              "plan": "LONG ADA: sell ≥ 7.1336 THB or stop ≤ 7.0872 THB",
               "status": "Closed",
               "priceClosedThb": 7.09,
               "positionId": "P0018",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": -3,
-              "reasons": "ADA 15m momentum negative (-0.50%) | Fast SMA below slow SMA | BTC 15m risk-off (-0.35%) | Efficiency OK: edge 0.33% vs hurdle 0.44% = net -0.11% | X sentiment neutral: neutral_unavailable | fee credit used 13.29 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-03T11:40:26+00:00",
@@ -2938,14 +2504,10 @@
               "expectedAction": "Sell ≥",
               "expectedPriceThb": 7.12356,
               "plannedExit": "LONG ADA: sell ≥ 7.1236 THB or stop ≤ 7.0773 THB",
-              "plan": "LONG ADA: sell ≥ 7.1236 THB or stop ≤ 7.0773 THB",
               "status": "Closed",
               "priceClosedThb": 7.09,
               "positionId": "P0016",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": -2,
-              "reasons": "ADA 15m momentum negative (-0.60%) | Fast SMA below slow SMA | BTC 15m risk-off (-0.34%) | Dip without bear confirmation — prefer HODL over unloading low | Efficiency OK: edge 0.41% vs hurdle 0.58% = net -0.17% | X sentiment neutral: neutral_unavailable | fee credit used 13.29 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-03T11:08:15+00:00",
@@ -2959,14 +2521,10 @@
               "expectedAction": "Sell ≥",
               "expectedPriceThb": 7.133565,
               "plannedExit": "LONG ADA: sell ≥ 7.1336 THB or stop ≤ 7.0872 THB",
-              "plan": "LONG ADA: sell ≥ 7.1336 THB or stop ≤ 7.0872 THB",
               "status": "Closed",
               "priceClosedThb": 7.09,
               "positionId": "P0018",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": 1,
-              "reasons": "Fast SMA above slow SMA | Efficiency OK: edge 0.21% vs hurdle 0.44% = net -0.23% | X sentiment neutral: neutral_unavailable | fee credit used 13.37 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-03T10:37:15+00:00",
@@ -2980,14 +2538,10 @@
               "expectedAction": "Buy ≤",
               "expectedPriceThb": 40.529725,
               "plannedExit": "SHORT XRP: buy ≤ 40.5297 THB or stop ≥ 40.7933 THB",
-              "plan": "SHORT XRP: buy ≤ 40.5297 THB or stop ≥ 40.7933 THB",
               "status": "Closed",
               "priceClosedThb": 40.43,
               "positionId": "P0017",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": 0,
-              "reasons": "Take-profit because momentum faded (0.25%) | fee credit used 15.21 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-03T10:19:27+00:00",
@@ -3001,14 +2555,10 @@
               "expectedAction": "Sell ≥",
               "expectedPriceThb": 7.12356,
               "plannedExit": "LONG ADA: sell ≥ 7.1236 THB or stop ≤ 7.0773 THB",
-              "plan": "LONG ADA: sell ≥ 7.1236 THB or stop ≤ 7.0773 THB",
               "status": "Closed",
               "priceClosedThb": 7.09,
               "positionId": "P0016",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": 1,
-              "reasons": "Fast SMA above slow SMA | Efficiency OK: edge 0.35% vs hurdle 0.58% = net -0.23% | X sentiment neutral: neutral_unavailable | fee credit used 13.35 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-03T10:15:14+00:00",
@@ -3022,14 +2572,10 @@
               "expectedAction": "Buy ≤",
               "expectedPriceThb": 7.086455,
               "plannedExit": "SHORT ADA: buy ≤ 7.0865 THB or stop ≥ 7.1325 THB",
-              "plan": "SHORT ADA: buy ≤ 7.0865 THB or stop ≥ 7.1325 THB",
               "status": "Closed",
               "priceClosedThb": 7.13,
               "positionId": "P0015",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": 3,
-              "reasons": "ADA 15m momentum positive (0.60%) | Fast SMA above slow SMA | BTC 15m supports risk-on (0.30%) | Bull regime confirmed — willing to hold for higher target | Efficiency OK: edge 0.53% vs hurdle 0.58% = net -0.05% | X sentiment neutral: neutral_unavailable | fee credit used 13.37 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-03T10:06:15+00:00",
@@ -3043,14 +2589,10 @@
               "expectedAction": "Buy ≤",
               "expectedPriceThb": 7.086455,
               "plannedExit": "SHORT ADA: buy ≤ 7.0865 THB or stop ≥ 7.1325 THB",
-              "plan": "SHORT ADA: buy ≤ 7.0865 THB or stop ≥ 7.1325 THB",
               "status": "Closed",
               "priceClosedThb": 7.13,
               "positionId": "P0015",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": -1,
-              "reasons": "ADA 5m momentum positive (0.28%) | Sell-high setup: ADA near 24h high (58% of range) after a rip | Efficiency OK: edge 0.21% vs hurdle 0.44% = net -0.23% | X sentiment neutral: neutral_unavailable | fee credit used 13.29 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-03T09:45:14+00:00",
@@ -3064,14 +2606,10 @@
               "expectedAction": "Buy ≤",
               "expectedPriceThb": 40.61968,
               "plannedExit": "SHORT XRP: buy ≤ 40.6197 THB or stop ≥ 40.8838 THB",
-              "plan": "SHORT XRP: buy ≤ 40.6197 THB or stop ≥ 40.8838 THB",
               "status": "Closed",
               "priceClosedThb": 40.45,
               "positionId": "P0014",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": 0,
-              "reasons": "Buy-low target hit for P0014 (40.4500 ≤ 40.6197); held target 0.05% | fee credit used 15.17 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-03T09:35:15+00:00",
@@ -3085,14 +2623,10 @@
               "expectedAction": "Buy ≤",
               "expectedPriceThb": 40.51973,
               "plannedExit": "SHORT XRP: buy ≤ 40.5197 THB or stop ≥ 40.7832 THB",
-              "plan": "SHORT XRP: buy ≤ 40.5197 THB or stop ≥ 40.7832 THB",
               "status": "Closed",
               "priceClosedThb": 40.52,
               "positionId": "P0013",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": 0,
-              "reasons": "Buy-low target hit for P0014 (40.5200 ≤ 40.6197); held target 0.05% | fee credit used 15.20 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-03T09:12:51+00:00",
@@ -3106,14 +2640,10 @@
               "expectedAction": "Buy ≤",
               "expectedPriceThb": 40.61968,
               "plannedExit": "SHORT XRP: buy ≤ 40.6197 THB or stop ≥ 40.8838 THB",
-              "plan": "SHORT XRP: buy ≤ 40.6197 THB or stop ≥ 40.8838 THB",
               "status": "Closed",
               "priceClosedThb": 40.45,
               "positionId": "P0014",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": -2,
-              "reasons": "Sell-high setup: XRP near 24h high (76% of range) after a rip | Efficiency OK: edge 0.13% vs hurdle 0.37% = net -0.25% | X sentiment neutral: neutral_unavailable | Take-profit because momentum faded (0.12%) | fee credit used 15.24 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-03T08:14:14+00:00",
@@ -3127,14 +2657,10 @@
               "expectedAction": "Buy ≤",
               "expectedPriceThb": 40.51973,
               "plannedExit": "SHORT XRP: buy ≤ 40.5197 THB or stop ≥ 40.7832 THB",
-              "plan": "SHORT XRP: buy ≤ 40.5197 THB or stop ≥ 40.7832 THB",
               "status": "Closed",
               "priceClosedThb": 40.52,
               "positionId": "P0013",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": -1,
-              "reasons": "Fast SMA below slow SMA | Efficiency OK: edge 0.25% vs hurdle 0.37% = net -0.12% | X sentiment neutral: neutral_unavailable | fee credit used 15.20 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-03T08:03:14+00:00",
@@ -3148,14 +2674,10 @@
               "expectedAction": "Buy ≤",
               "expectedPriceThb": 40.67965,
               "plannedExit": "SHORT XRP: buy ≤ 40.6797 THB or stop ≥ 40.9442 THB",
-              "plan": "SHORT XRP: buy ≤ 40.6797 THB or stop ≥ 40.9442 THB",
               "status": "Closed",
               "priceClosedThb": 40.59,
               "positionId": "P0012",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": 0,
-              "reasons": "Buy-low target hit for P0012 (40.5900 ≤ 40.6797); held target 0.05% | fee credit used 15.22 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-03T07:43:14+00:00",
@@ -3169,14 +2691,10 @@
               "expectedAction": "Buy ≤",
               "expectedPriceThb": 40.67965,
               "plannedExit": "SHORT XRP: buy ≤ 40.6797 THB or stop ≥ 40.9442 THB",
-              "plan": "SHORT XRP: buy ≤ 40.6797 THB or stop ≥ 40.9442 THB",
               "status": "Closed",
               "priceClosedThb": 40.59,
               "positionId": "P0012",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": 0,
-              "reasons": "Take-profit because momentum faded (0.44%) | fee credit used 15.26 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-03T07:19:16+00:00",
@@ -3189,15 +2707,11 @@
               "netEdgePct": null,
               "expectedAction": "Sell ≥",
               "expectedPriceThb": 7.10355,
-              "plannedExit": "LONG ADA: sell ≥ 7.1035 THB or stop ≤ 7.0574 THB",
-              "plan": "LONG ADA: sell ≥ 7.1035 THB or stop ≤ 7.0574 THB",
+              "plannedExit": "LONG ADA: sell ≥ 7.1036 THB or stop ≤ 7.0574 THB",
               "status": "Closed",
               "priceClosedThb": 7.13,
               "positionId": "P0011",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": 2,
-              "reasons": "Sell-high target hit for P0011 (7.1300 ≥ 7.1035); held target 0.05% | fee credit used 13.37 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-03T07:12:16+00:00",
@@ -3210,15 +2724,11 @@
               "netEdgePct": -0.26,
               "expectedAction": "Sell ≥",
               "expectedPriceThb": 7.10355,
-              "plannedExit": "LONG ADA: sell ≥ 7.1035 THB or stop ≤ 7.0574 THB",
-              "plan": "LONG ADA: sell ≥ 7.1035 THB or stop ≤ 7.0574 THB",
+              "plannedExit": "LONG ADA: sell ≥ 7.1036 THB or stop ≤ 7.0574 THB",
               "status": "Closed",
               "priceClosedThb": 7.13,
               "positionId": "P0011",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": 1,
-              "reasons": "ADA 15m momentum positive (0.51%) | Fast SMA above slow SMA | BTC 15m supports risk-on (0.23%) | Sell-high setup: ADA near 24h high (58% of range) after a rip | Efficiency OK: edge 0.33% vs hurdle 0.58% = net -0.26% | X sentiment neutral: neutral_unavailable | fee credit used 13.31 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-03T07:01:15+00:00",
@@ -3232,14 +2742,10 @@
               "expectedAction": "Buy ≤",
               "expectedPriceThb": 40.689645,
               "plannedExit": "SHORT XRP: buy ≤ 40.6896 THB or stop ≥ 40.9543 THB",
-              "plan": "SHORT XRP: buy ≤ 40.6896 THB or stop ≥ 40.9543 THB",
               "status": "Closed",
               "priceClosedThb": 40.52,
               "positionId": "P0010",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": -1,
-              "reasons": "Buy-low target hit for P0010 (40.5200 ≤ 40.6896); held target 0.05% | fee credit used 15.20 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-03T06:42:13+00:00",
@@ -3253,14 +2759,10 @@
               "expectedAction": "Buy ≤",
               "expectedPriceThb": 40.689645,
               "plannedExit": "SHORT XRP: buy ≤ 40.6896 THB or stop ≥ 40.9543 THB",
-              "plan": "SHORT XRP: buy ≤ 40.6896 THB or stop ≥ 40.9543 THB",
               "status": "Closed",
               "priceClosedThb": 40.52,
               "positionId": "P0010",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": 0,
-              "reasons": "Fast SMA above slow SMA | BTC 15m supports risk-on (0.15%) | Sell-high setup: XRP near 24h high (74% of range) after a rip | Take-profit because momentum faded (0.12%) | fee credit used 15.27 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-03T06:36:14+00:00",
@@ -3274,14 +2776,10 @@
               "expectedAction": "Buy ≤",
               "expectedPriceThb": 40.269855,
               "plannedExit": "SHORT XRP: buy ≤ 40.2699 THB or stop ≥ 40.5317 THB",
-              "plan": "SHORT XRP: buy ≤ 40.2699 THB or stop ≥ 40.5317 THB",
               "status": "Closed",
               "priceClosedThb": 40.66,
               "positionId": "P0009",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": 2,
-              "reasons": "Bull market detected; close SHORT P0009 at protective stop (40.6600 ≥ 40.5317) | fee credit used 15.25 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-03T06:10:28+00:00",
@@ -3295,14 +2793,10 @@
               "expectedAction": "Buy ≤",
               "expectedPriceThb": 40.269855,
               "plannedExit": "SHORT XRP: buy ≤ 40.2699 THB or stop ≥ 40.5317 THB",
-              "plan": "SHORT XRP: buy ≤ 40.2699 THB or stop ≥ 40.5317 THB",
               "status": "Closed",
               "priceClosedThb": 40.66,
               "positionId": "P0009",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": -1,
-              "reasons": "BTC 15m risk-off (-0.19%) | Efficiency OK: edge 0.09% vs hurdle 0.32% = net -0.24% | X sentiment neutral: neutral_unavailable | Take-profit because momentum faded (0.37%) | fee credit used 15.11 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-03T06:10:13+00:00",
@@ -3316,14 +2810,10 @@
               "expectedAction": "Sell ≥",
               "expectedPriceThb": 7.013505,
               "plannedExit": "LONG ADA: sell ≥ 7.0135 THB or stop ≤ 6.9679 THB",
-              "plan": "LONG ADA: sell ≥ 7.0135 THB or stop ≤ 6.9679 THB",
               "status": "Closed",
               "priceClosedThb": 7.02,
               "positionId": "P0008",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": 0,
-              "reasons": "Sell-high target hit for P0008 (7.0200 ≥ 7.0135); held target 0.05% | fee credit used 13.16 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-03T05:23:13+00:00",
@@ -3337,14 +2827,10 @@
               "expectedAction": "Sell ≥",
               "expectedPriceThb": 7.13618,
               "plannedExit": "LONG ADA: sell ≥ 7.1362 THB or stop ≤ 6.8838 THB",
-              "plan": "LONG ADA: sell ≥ 7.1362 THB or stop ≤ 6.8838 THB",
               "status": "Closed",
               "priceClosedThb": 7.02,
               "positionId": "P0008",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": 1,
-              "reasons": "Fast SMA above slow SMA | Efficiency OK: edge 0.48% vs hurdle 0.49% = net -0.02% | X sentiment neutral: neutral_unavailable | fee credit used 13.14 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-03T05:07:14+00:00",
@@ -3358,14 +2844,10 @@
               "expectedAction": "Buy ≤",
               "expectedPriceThb": 38.37656,
               "plannedExit": "SHORT XRP: buy ≤ 38.3766 THB or stop ≥ 39.7834 THB",
-              "plan": "SHORT XRP: buy ≤ 38.3766 THB or stop ≥ 39.7834 THB",
               "status": "Closed",
               "priceClosedThb": 40.14,
               "positionId": "P0007",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": 4,
-              "reasons": "Bull market detected; close SHORT P0007 at protective stop (40.1400 ≥ 39.7834) | fee credit used 15.05 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-03T04:00:17+00:00",
@@ -3379,14 +2861,10 @@
               "expectedAction": "Buy ≤",
               "expectedPriceThb": 38.37656,
               "plannedExit": "SHORT XRP: buy ≤ 38.3766 THB or stop ≥ 39.7834 THB",
-              "plan": "SHORT XRP: buy ≤ 38.3766 THB or stop ≥ 39.7834 THB",
               "status": "Closed",
               "priceClosedThb": 40.14,
               "positionId": "P0007",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": 0,
-              "reasons": "Stop-loss protection active sleeve (-2.69%) | fee credit used 14.66 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-03T03:51:16+00:00",
@@ -3400,14 +2878,10 @@
               "expectedAction": "Sell ≥",
               "expectedPriceThb": 7.09546,
               "plannedExit": "LONG ADA: sell ≥ 7.0955 THB or stop ≤ 6.8445 THB",
-              "plan": "LONG ADA: sell ≥ 7.0955 THB or stop ≤ 6.8445 THB",
               "status": "Closed",
               "priceClosedThb": 6.79,
               "positionId": "P0006",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": -4,
-              "reasons": "Bear market detected; unload LONG P0006 at protective stop (6.7900 ≤ 6.8445) | fee credit used 12.73 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-03T00:06:14+00:00",
@@ -3421,14 +2895,10 @@
               "expectedAction": "Sell ≥",
               "expectedPriceThb": 7.09546,
               "plannedExit": "LONG ADA: sell ≥ 7.0955 THB or stop ≤ 6.8445 THB",
-              "plan": "LONG ADA: sell ≥ 7.0955 THB or stop ≤ 6.8445 THB",
               "status": "Closed",
               "priceClosedThb": 6.79,
               "positionId": "P0006",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": 3,
-              "reasons": "Fast SMA above slow SMA | Buy-low setup: ADA near 24h low (17% of range) without bear confirmation | Efficiency OK: edge 0.29% vs hurdle 0.49% = net -0.21% | X sentiment neutral: neutral_unavailable | fee credit used 13.07 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-02T23:26:13+00:00",
@@ -3442,14 +2912,10 @@
               "expectedAction": "Buy ≤",
               "expectedPriceThb": 6.939183,
               "plannedExit": "SHORT ADA: buy ≤ 6.9392 THB or stop ≥ 7.2278 THB",
-              "plan": "SHORT ADA: buy ≤ 6.9392 THB or stop ≥ 7.2278 THB",
               "status": "Closed",
               "priceClosedThb": 6.89,
               "positionId": "P0005",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": -6,
-              "reasons": "Buy-low target hit for P0005 (6.8900 ≤ 6.9392); held target 2.27% | fee credit used 12.92 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-02T21:53:13+00:00",
@@ -3463,14 +2929,10 @@
               "expectedAction": "Buy ≤",
               "expectedPriceThb": 6.9722,
               "plannedExit": "SHORT ADA: buy ≤ 6.9722 THB or stop ≥ 7.2278 THB",
-              "plan": "SHORT ADA: buy ≤ 6.9722 THB or stop ≥ 7.2278 THB",
               "status": "Closed",
               "priceClosedThb": 6.89,
               "positionId": "P0005",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": -1,
-              "reasons": "Fast SMA below slow SMA | BTC 15m risk-off (-0.44%) | Dip without bear confirmation — prefer HODL over unloading low | Efficiency OK: edge 0.12% vs hurdle 0.49% = net -0.37% | X sentiment neutral: neutral_unavailable | fee credit used 13.31 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-02T21:37:13+00:00",
@@ -3484,14 +2946,10 @@
               "expectedAction": "Buy ≤",
               "expectedPriceThb": 6.88382,
               "plannedExit": "SHORT ADA: buy ≤ 6.8838 THB or stop ≥ 7.1362 THB",
-              "plan": "SHORT ADA: buy ≤ 6.8838 THB or stop ≥ 7.1362 THB",
               "status": "Closed",
               "priceClosedThb": 7.14,
               "positionId": "P0004",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": 3,
-              "reasons": "Bull market detected; close SHORT P0004 at protective stop (7.1400 ≥ 7.1362) | fee credit used 13.39 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-02T15:31:10+00:00",
@@ -3505,14 +2963,10 @@
               "expectedAction": "Buy ≤",
               "expectedPriceThb": 6.88382,
               "plannedExit": "SHORT ADA: buy ≤ 6.8838 THB or stop ≥ 7.1362 THB",
-              "plan": "SHORT ADA: buy ≤ 6.8838 THB or stop ≥ 7.1362 THB",
               "status": "Closed",
               "priceClosedThb": 7.14,
               "positionId": "P0004",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": -6,
-              "reasons": "ADA 5m momentum negative (-0.65%) | ADA 15m momentum negative (-1.10%) | Fast SMA below slow SMA | BTC 15m risk-off (-0.65%) | Volume spike confirms selloff (7.1x median) | Bear regime confirmed — defensive sells/buy-backs allowed | Efficiency OK: edge 1.24% vs hurdle 0.64% = net 0.61% | X sentiment neutral: neutral_unavailable | fee credit used 13.14 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-02T15:02:09+00:00",
@@ -3526,14 +2980,10 @@
               "expectedAction": "Buy ≤",
               "expectedPriceThb": 40.195281,
               "plannedExit": "SHORT XRP: buy ≤ 40.1953 THB or stop ≥ 41.8500 THB",
-              "plan": "SHORT XRP: buy ≤ 40.1953 THB or stop ≥ 41.8500 THB",
               "status": "Closed",
               "priceClosedThb": 40.16,
               "positionId": "P0003",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": -1,
-              "reasons": "Buy-low target hit for P0003 (40.1600 ≤ 40.1953); held target 2.23% | fee credit used 10.04 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-02T13:37:09+00:00",
@@ -3547,14 +2997,10 @@
               "expectedAction": "Buy ≤",
               "expectedPriceThb": 40.61668,
               "plannedExit": "SHORT XRP: buy ≤ 40.6167 THB or stop ≥ 41.6033 THB",
-              "plan": "SHORT XRP: buy ≤ 40.6167 THB or stop ≥ 41.6033 THB",
               "status": "Closed",
               "priceClosedThb": 40.16,
               "positionId": "P0003",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": -2,
-              "reasons": "Fast SMA below slow SMA | BTC 15m risk-off (-0.20%) | Efficiency OK: edge 0.19% vs hurdle 0.49% = net -0.30% | X sentiment neutral: neutral_unavailable | fee credit used 10.28 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-02T06:19:11+00:00",
@@ -3568,14 +3014,10 @@
               "expectedAction": "Buy ≤",
               "expectedPriceThb": 41.22924,
               "plannedExit": "SHORT XRP: buy ≤ 41.2292 THB or stop ≥ 42.2308 THB",
-              "plan": "SHORT XRP: buy ≤ 41.2292 THB or stop ≥ 42.2308 THB",
               "status": "Closed",
               "priceClosedThb": 41.21,
               "positionId": "P0002",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": 0,
-              "reasons": "Ledger correction: planned buy-back target hit for P0002 (41.2100 <= 41.2292); corrected bot bug that emitted SELL_XRP/P0003 instead of BUY_XRP close | fee credit used 10.30 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-01T16:09:10+00:00",
@@ -3589,14 +3031,10 @@
               "expectedAction": "Buy ≤",
               "expectedPriceThb": 41.22924,
               "plannedExit": "SHORT XRP: buy ≤ 41.2292 THB or stop ≥ 42.2308 THB",
-              "plan": "SHORT XRP: buy ≤ 41.2292 THB or stop ≥ 42.2308 THB",
               "status": "Closed",
               "priceClosedThb": 41.21,
               "positionId": "P0002",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": -2,
-              "reasons": "XRP 5m momentum negative (-0.35%) | BTC 15m risk-off (-0.24%) | Efficiency OK: edge 0.32% vs hurdle 0.39% = net -0.07% | X sentiment neutral: neutral_unavailable | Stop-loss protection active sleeve (-1.39%) | fee credit used 10.43 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-01T15:18:11+00:00",
@@ -3609,15 +3047,11 @@
               "netEdgePct": null,
               "expectedAction": "Sell ≥",
               "expectedPriceThb": 42.8582,
-              "plannedExit": "sell ≥ 42.86 THB or stop ≤ 41.84 THB",
-              "plan": "sell ≥ 42.86 THB or stop ≤ 41.84 THB",
+              "plannedExit": "LONG XRP: sell ≥ 42.8582 THB or stop ≤ 41.8418 THB",
               "status": "Closed",
               "priceClosedThb": 41.75,
               "positionId": "P0001",
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": -3,
-              "reasons": "Planned stop hit for P0001 (41.7500 ≤ 41.8418) | Stop-loss protection active sleeve (-1.35%) | fee credit used 10.44 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-01T14:28:57+00:00",
@@ -3630,15 +3064,11 @@
               "netEdgePct": null,
               "expectedAction": "Buy ≤",
               "expectedPriceThb": null,
-              "plannedExit": "Manual + 18478.69 THB",
-              "plan": "Manual + 18478.69 THB",
+              "plannedExit": "",
               "status": "Closed",
-              "priceClosedThb": 7.41,
+              "priceClosedThb": null,
               "positionId": null,
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": 0,
-              "reasons": "Manual paper allocation: converted 2500 ADA to THB at market bid; gained 18478.69 THB; fee 46.31 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-01T14:28:57+00:00",
@@ -3651,15 +3081,11 @@
               "netEdgePct": null,
               "expectedAction": "Buy ≤",
               "expectedPriceThb": null,
-              "plannedExit": "Manual + 0.00790013 BTC",
-              "plan": "Manual + 0.00790013 BTC",
+              "plannedExit": "",
               "status": "Closed",
-              "priceClosedThb": 7.41,
+              "priceClosedThb": null,
               "positionId": null,
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": 0,
-              "reasons": "Manual paper allocation: converted 2500 ADA to 0.00790013 BTC using ADA bid and BTC ask; total fees 92.51 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-01T14:28:57+00:00",
@@ -3672,15 +3098,11 @@
               "netEdgePct": null,
               "expectedAction": "Buy ≤",
               "expectedPriceThb": null,
-              "plannedExit": "Manual + 0.28707056 ETH",
-              "plan": "Manual + 0.28707056 ETH",
+              "plannedExit": "",
               "status": "Closed",
-              "priceClosedThb": 7.41,
+              "priceClosedThb": null,
               "positionId": null,
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": 0,
-              "reasons": "Manual paper allocation: converted 2500 ADA to 0.28707056 ETH using ADA bid and ETH ask; total fees 92.51 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-01T14:28:57+00:00",
@@ -3693,15 +3115,11 @@
               "netEdgePct": null,
               "expectedAction": "Buy ≤",
               "expectedPriceThb": null,
-              "plannedExit": "Manual + 707.03838823 KUB",
-              "plan": "Manual + 707.03838823 KUB",
+              "plannedExit": "",
               "status": "Closed",
-              "priceClosedThb": 7.41,
+              "priceClosedThb": null,
               "positionId": null,
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": 0,
-              "reasons": "Manual paper allocation: converted 2500 ADA to 707.03838823 KUB using ADA bid and KUB ask; total fees 92.51 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-01T14:03:42+00:00",
@@ -3714,15 +3132,11 @@
               "netEdgePct": null,
               "expectedAction": "Buy ≤",
               "expectedPriceThb": null,
-              "plannedExit": "Manual paper treasury allocation; no planned exit yet.",
-              "plan": "Manual paper treasury allocation; no planned exit yet.",
+              "plannedExit": "",
               "status": "Closed",
-              "priceClosedThb": 7.46,
+              "priceClosedThb": null,
               "positionId": null,
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": 0,
-              "reasons": "Manual paper allocation: converted 500 ADA to THB at market bid; fee 9.33 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-01T14:03:42+00:00",
@@ -3735,15 +3149,11 @@
               "netEdgePct": null,
               "expectedAction": "Buy ≤",
               "expectedPriceThb": null,
-              "plannedExit": "Manual paper treasury allocation; no planned exit yet.",
-              "plan": "Manual paper treasury allocation; no planned exit yet.",
+              "plannedExit": "",
               "status": "Closed",
-              "priceClosedThb": 7.46,
+              "priceClosedThb": null,
               "positionId": null,
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": 0,
-              "reasons": "Manual paper allocation: converted 500 ADA to 0.00158530 BTC using ADA bid and BTC ask; total fees 18.63 THB"
+              "source": "v2_paper_trade_ledger"
             },
             {
               "ts": "2026-06-01T14:03:42+00:00",
@@ -3756,40 +3166,27 @@
               "netEdgePct": null,
               "expectedAction": "Buy ≤",
               "expectedPriceThb": null,
-              "plannedExit": "Manual paper treasury allocation; no planned exit yet.",
-              "plan": "Manual paper treasury allocation; no planned exit yet.",
+              "plannedExit": "",
               "status": "Closed",
-              "priceClosedThb": 7.46,
+              "priceClosedThb": null,
               "positionId": null,
-              "source": "high_risk_trades.csv",
-              "sourceDetail": "executed V2 paper row",
-              "score": 0,
-              "reasons": "Manual paper allocation: converted 500 ADA to 0.05765972 ETH using ADA bid and ETH ask; total fees 18.63 THB"
+              "source": "v2_paper_trade_ledger"
             }
           ]
         },
         "executiveNotes": [
-          "Paper-only status: no real trades are authorized or implied.",
-          "Portfolio is 213,117.87 THB; daily guard is KILL_SWITCH with daily P/L -4.86%.",
-          "Current signal: BUY_XRP (XRP score 1, ADA score 0, sentiment neutral_unavailable).",
-          "Vs buy-and-hold benchmark (831 XRP + 28,794 ADA): 6,522.21 THB (3.16%).",
-          "KUB status: HOLD fee-credit check; 707.0384 KUB marked separately from the five holdings tiles.",
+          "Paper-only status dashboard; no real trades are authorized or implied.",
+          "V2 guardrail: paper-only, small increments only, one open planned position at a time, max 100 XRP or 500 ADA per new paper position.",
+          "Current state shows 2 open ledger rows and latest XRP size 150; this is outside the stated V2 guardrail and should be treated as paper-only status review, not authorization for real trades.",
+          "Asset holdings are reconciled from current V2 state and checked against the latest V2 ledger row only; archived V1 churn files were not mixed into current holdings.",
           "V1 30k ADA churn was real paper output from an overly broad 95% rotation setting; it is archived and superseded by V2 small-increment planned positions.",
-          "Requested V2 guardrail remains: small increments only, one open planned position at a time, max 100 XRP or 500 ADA per new paper position."
+          "KUB fee-credit status: HOLD — Expected near-term fee usage is too small to justify locking value into non-refundable fee credit."
         ],
-        "rules": {
-          "paperOnly": true,
-          "smallIncrementsOnly": true,
-          "oneOpenPlannedPositionAtATime": true,
-          "maxXrpPerNewPaperPosition": 100,
-          "maxAdaPerNewPaperPosition": 500,
-          "doNotDeleteV1ChurnArchives": true
-        },
-        "benchmark": {
-          "assets": "831 XRP + 28,794 ADA",
-          "valueThb": 206595.66,
-          "vsHoldThb": 6522.21,
-          "vsHoldPct": 3.157
+        "sourceFiles": {
+          "snapshot": "high_risk_latest_snapshot.json",
+          "state": "high_risk_state.json",
+          "trades": "high_risk_trades.csv",
+          "n8n": "n8n_price_alert_state.json"
         }
       }
     },
@@ -4423,7 +3820,7 @@
       "name": "Crypto Paper Trading",
       "category": "Trading",
       "projectId": "crypto-paper-trading",
-      "summary": "Paper-only crypto trading ledger and dashboard.",
+      "summary": "Paper-only V2 dashboard: HOLD · portfolio 197,132.74 THB · daily -12.00% · vs hold -13,491.59 THB.",
       "tags": [
         "crypto",
         "paper-trading",
@@ -4431,9 +3828,21 @@
         "ada",
         "bitkub",
         "n8n",
-        "automation"
+        "automation",
+        "v2"
       ],
       "entries": [
+        {
+          "date": "2026-06-05",
+          "title": "Crypto paper-trading executive dashboard",
+          "notes": [
+            "Paper-only V2 status: HOLD / KILL_SWITCH.",
+            "Reconciled holdings: 431.000000 XRP, 17,294.000000 ADA, 0.00948542 BTC, 0.34473028 ETH, 33,316.92 THB.",
+            "Portfolio 197,132.74 THB; daily -12.00% (-26,882.54 THB); vs buy-and-hold -13,491.59 THB (-6.41%).",
+            "Trade list has 164 V2 ledger/planned-position rows, latest first; frontend shows 15 by default with older rows expandable.",
+            "Current state shows 2 open ledger rows and latest XRP size 150; this is outside the stated V2 guardrail and should be treated as paper-only status review, not authorization for real trades."
+          ]
+        },
         {
           "date": "2026-06-04",
           "title": "Crypto Paper Trading Status",
@@ -4612,6 +4021,23 @@
     }
   ],
   "dailyLogs": [
+    {
+      "date": "2026-06-05",
+      "title": "Crypto Paper Trading Status",
+      "summary": "Paper-only V2: HOLD · portfolio 197,132.74 THB · daily -12.00% · vs hold -13,491.59 THB.",
+      "projects": [
+        "crypto-paper-trading"
+      ],
+      "subjects": [
+        "crypto-paper-trading"
+      ],
+      "highlights": [
+        "Holdings reconciled from V2 state/ledger: XRP 431.00, ADA 17,294.00, BTC 0.00948542, ETH 0.34473028, THB 33,316.92.",
+        "Daily status KILL_SWITCH; fee credit 2,059.20 THB; trade rows 164.",
+        "Latest signal ADA; XRP score 3, ADA score 4, sentiment neutral_unavailable.",
+        "V1 30k ADA churn remains archived and superseded by V2 small-increment planned positions."
+      ]
+    },
     {
       "date": "2026-06-04",
       "title": "Crypto Paper Trading Status",
