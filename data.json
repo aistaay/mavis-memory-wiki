@@ -2,7 +2,7 @@
   "meta": {
     "title": "Mavis Memory Wiki",
     "description": "A living record of conversations, subjects, and daily work between Damon and Mavis.",
-    "lastUpdated": "2026-09-29"
+    "lastUpdated": "2026-09-30"
   },
   "projects": [
     {
@@ -113,11 +113,11 @@
         "crypto-paper-trading"
       ],
       "cryptoDashboard": {
-        "lastUpdatedIso": "2026-09-29 21:00:59 +07 (+0700)",
+        "lastUpdatedIso": "2026-09-30 21:03:31 +07 (+0700)",
         "mode": "paper-only V2 small-increment planned positions",
         "paperStatus": "PAPER_ONLY",
         "recommendedAction": "SELL_ADA",
-        "dailyStatus": "UPDATED",
+        "dailyStatus": "UPDATED_WITH_DRIVE_READ_WARNING",
         "reconciliation": "Current Drive V2 files unreadable due to macOS/CloudStorage Resource deadlock; used last reconciled V2 dashboard holdings/trades and refreshed public Bitkub marks. Archived V1 churn excluded.",
         "reconciliationDetail": {
           "rowCount": 225,
@@ -135,48 +135,48 @@
             "THB": 34865.906733379
           },
           "fileReadErrors": [
-            "high_risk_latest_snapshot.json OSError: [Errno 11] Resource deadlock avoided",
             "high_risk_state.json OSError: [Errno 11] Resource deadlock avoided",
-            "n8n_price_alert_state.json OSError: [Errno 11] Resource deadlock avoided",
-            "high_risk_trades.csv OSError: [Errno 11] Resource deadlock avoided"
+            "high_risk_latest_snapshot.json OSError: [Errno 11] Resource deadlock avoided",
+            "high_risk_trades.csv OSError: [Errno 11] Resource deadlock avoided",
+            "n8n_price_alert_state.json OSError: [Errno 11] Resource deadlock avoided"
           ]
         },
         "v2Rule": "Paper-only; small increments only; intended one open planned position at a time; max 100 XRP or 500 ADA per new paper position. No real trades authorized.",
         "portfolio": {
-          "valueThb": 256267.3103634118,
+          "valueThb": 255241.3562661428,
           "dailyPnlPct": null,
           "dailyPnlThb": null,
-          "vsHoldThb": -29368.521636588208,
-          "vsHoldPct": -10.281805833306029,
-          "benchmarkValueThb": 285635.832,
+          "vsHoldThb": -29065.667733857234,
+          "vsHoldPct": -10.223337898910732,
+          "benchmarkValueThb": 284307.02400000003,
           "feeCreditThb": 0.0,
           "tradeCount": 225,
           "kubHoldingAmount": 707.038388233602,
-          "kubHoldingValueThb": 14388.2312005538
+          "kubHoldingValueThb": 14487.216574906503
         },
         "holdings": [
           {
             "asset": "XRP",
             "amount": 581.0,
-            "valueThb": 30136.469999999998,
+            "valueThb": 29549.66,
             "initialAmount": 831.0
           },
           {
             "asset": "ADA",
             "amount": 15794.0,
-            "valueThb": 133032.862,
+            "valueThb": 132764.364,
             "initialAmount": 28794.0
           },
           {
             "asset": "BTC",
             "amount": 0.009485424704722481,
-            "valueThb": 26728.60530853809,
+            "valueThb": 26815.362417640375,
             "initialAmount": 0.0
           },
           {
             "asset": "ETH",
             "amount": 0.34473028120652727,
-            "valueThb": 31503.466321494707,
+            "valueThb": 31246.06311512342,
             "initialAmount": 0.0
           },
           {
@@ -189,80 +189,80 @@
         "assets": [
           {
             "asset": "XRP",
-            "livePriceThb": 51.87,
-            "bidThb": 51.88,
-            "askThb": 51.89,
-            "pct24": 2.09,
-            "high24": 52.2,
-            "low24": 49.27,
-            "volumeThb24h": 71997751.64,
+            "livePriceThb": 50.86,
+            "bidThb": 50.84,
+            "askThb": 50.89,
+            "pct24": -1.95,
+            "high24": 52.25,
+            "low24": 49.57,
+            "volumeThb24h": 67743276.08,
+            "spreadPct": 0.09829942003341621,
             "source": "Bitkub public ticker",
-            "spreadPct": 0.019273393080848047,
             "holding": 581.0,
-            "holdingValueThb": 30136.469999999998,
+            "holdingValueThb": 29549.66,
             "baselinePriceThb": null,
             "baselineSourceLabel": "V2 live mark",
-            "moveFromBaselinePct": 2.09,
+            "moveFromBaselinePct": -1.95,
             "atrPct": null,
             "dipTriggerPct": null,
             "jumpTriggerPct": null
           },
           {
             "asset": "ADA",
-            "livePriceThb": 8.423,
-            "bidThb": 8.425,
-            "askThb": 8.43,
-            "pct24": 1.48,
-            "high24": 8.55,
-            "low24": 8.02,
-            "volumeThb24h": 23004525.9,
+            "livePriceThb": 8.406,
+            "bidThb": 8.41,
+            "askThb": 8.425,
+            "pct24": -0.23,
+            "high24": 8.609,
+            "low24": 8.06,
+            "volumeThb24h": 17975428.14,
+            "spreadPct": 0.17820017820018494,
             "source": "Bitkub public ticker",
-            "spreadPct": 0.05932957579352127,
             "holding": 15794.0,
-            "holdingValueThb": 133032.862,
+            "holdingValueThb": 132764.364,
             "baselinePriceThb": null,
             "baselineSourceLabel": "V2 live mark",
-            "moveFromBaselinePct": 1.48,
+            "moveFromBaselinePct": -0.23,
             "atrPct": null,
             "dipTriggerPct": null,
             "jumpTriggerPct": null
           },
           {
             "asset": "BTC",
-            "livePriceThb": 2817860.68,
-            "bidThb": 2817498.78,
-            "askThb": 2818661.16,
-            "pct24": 0.61,
-            "high24": 2834167.38,
-            "low24": 2775850.1,
-            "volumeThb24h": 148058310.83,
+            "livePriceThb": 2827007.04,
+            "bidThb": 2828030.91,
+            "askThb": 2829191.24,
+            "pct24": 0.27,
+            "high24": 2868999.99,
+            "low24": 2782739.33,
+            "volumeThb24h": 233711305.83,
+            "spreadPct": 0.04102119270674476,
             "source": "Bitkub public ticker",
-            "spreadPct": 0.041247232597176935,
             "holding": 0.009485424704722481,
-            "holdingValueThb": 26728.60530853809,
+            "holdingValueThb": 26815.362417640375,
             "baselinePriceThb": null,
             "baselineSourceLabel": "V2 live mark",
-            "moveFromBaselinePct": 0.61,
+            "moveFromBaselinePct": 0.27,
             "atrPct": null,
             "dipTriggerPct": null,
             "jumpTriggerPct": null
           },
           {
             "asset": "ETH",
-            "livePriceThb": 91385.84,
-            "bidThb": 91291.78,
-            "askThb": 91342.63,
-            "pct24": 1.54,
-            "high24": 92000.0,
-            "low24": 89100.0,
-            "volumeThb24h": 69604914.61,
+            "livePriceThb": 90639.16,
+            "bidThb": 90573.93,
+            "askThb": 90669.42,
+            "pct24": -0.74,
+            "high24": 91727.89,
+            "low24": 89208.58,
+            "volumeThb24h": 65324226.67,
+            "spreadPct": 0.10537214192962695,
             "source": "Bitkub public ticker",
-            "spreadPct": 0.055685015764560274,
             "holding": 0.34473028120652727,
-            "holdingValueThb": 31503.466321494707,
+            "holdingValueThb": 31246.06311512342,
             "baselinePriceThb": null,
             "baselineSourceLabel": "V2 live mark",
-            "moveFromBaselinePct": 1.54,
+            "moveFromBaselinePct": -0.74,
             "atrPct": null,
             "dipTriggerPct": null,
             "jumpTriggerPct": null
@@ -333,21 +333,21 @@
           },
           "kubFeeCredit": {
             "status": "HOLD",
-            "kub_last_thb": 20.35,
-            "kub_bid_thb": 20.35,
-            "kub_ask_thb": 20.39,
-            "ts": "2026-09-29 21:00:59 +07 (+0700)"
+            "kub_last_thb": 20.49,
+            "kub_bid_thb": 20.38,
+            "kub_ask_thb": 20.49,
+            "ts": "2026-09-30 21:03:31 +07 (+0700)"
           },
           "kubStatus": "HOLD"
         },
         "automation": {
           "n8nStatus": "OK",
-          "n8nLastCheckedIso": "2026-09-29 21:00:59 +07 (+0700)",
+          "n8nLastCheckedIso": "2026-09-30 21:03:31 +07 (+0700)",
           "n8nSchedule": "local health endpoint checked; workflow execution history not queried",
           "n8nRecentExecutions": [
             {
               "status": "OK",
-              "ts": "2026-09-29 21:00:59 +07 (+0700)",
+              "ts": "2026-09-30 21:03:31 +07 (+0700)",
               "detail": "Local n8n health endpoint returned {\"status\":\"ok\"}"
             }
           ]
@@ -4410,10 +4410,10 @@
           ]
         },
         "executiveNotes": [
-          "All figures are paper-only; no real Bitkub trades are authorized.",
-          "V1 30k ADA churn was real paper output from an overly broad 95% rotation setting, archived, and superseded by V2 small-increment planned positions.",
-          "Dashboard holdings are restricted to XRP, ADA, BTC, ETH, and THB, reconciled from V2 state when readable; archived V1 churn files are not mixed into current holdings.",
-          "Net edge = estimated move minus fees, spread, and slippage buffer. Positive is useful; negative means the signal probably does not beat trading costs."
+          "Paper-only status: no real trades are authorized or implied.",
+          "V2 rule remains small-increment planned positions only: one open planned position at a time, max 100 XRP or 500 ADA per new paper position.",
+          "The earlier V1 30k ADA churn was real paper output from an overly broad 95% rotation setting; it is archived and superseded by V2 small-increment planned positions.",
+          "Net edge = estimated move minus fees, spread, and slippage buffer; negative edge should be treated as not beating costs."
         ]
       },
       "entries": [
@@ -4530,6 +4530,16 @@
             "Portfolio marked at 261,704.34 THB vs buy-and-hold -34,809.27 THB (-11.74%).",
             "Recommended/selected signal: SELL_ADA; KUB fee-credit status: HOLD.",
             "Rendered trade/position rows: 225; archived V1 churn excluded."
+          ]
+        },
+        {
+          "date": "2026-09-30",
+          "title": "Crypto Paper Trading Status Update",
+          "notes": [
+            "Paper-only portfolio refreshed at 255,241.36 THB; vs buy-and-hold -29,065.67 THB (-10.22%).",
+            "Action/status: SELL_ADA · UPDATED_WITH_DRIVE_READ_WARNING · n8n OK.",
+            "Holdings: XRP 581.000000, ADA 15794.000000, BTC 0.009485, ETH 0.344730, THB 34865.91.",
+            "V1 churn archives preserved/excluded; V2 remains paper-only."
           ]
         }
       ]
@@ -5296,6 +5306,16 @@
             "Recommended/selected signal: SELL_ADA; KUB fee-credit status: HOLD.",
             "Rendered trade/position rows: 225; archived V1 churn excluded."
           ]
+        },
+        {
+          "date": "2026-09-30",
+          "title": "Crypto Paper Trading Status Update",
+          "notes": [
+            "Paper-only portfolio refreshed at 255,241.36 THB; vs buy-and-hold -29,065.67 THB (-10.22%).",
+            "Action/status: SELL_ADA · UPDATED_WITH_DRIVE_READ_WARNING · n8n OK.",
+            "Holdings: XRP 581.000000, ADA 15794.000000, BTC 0.009485, ETH 0.344730, THB 34865.91.",
+            "V1 churn archives preserved/excluded; V2 remains paper-only."
+          ]
         }
       ]
     },
@@ -5410,6 +5430,23 @@
     }
   ],
   "dailyLogs": [
+    {
+      "date": "2026-09-30",
+      "title": "Crypto Paper Trading Dashboard Updated",
+      "summary": "Paper-only portfolio refreshed at 255,241.36 THB; vs buy-and-hold -29,065.67 THB (-10.22%).",
+      "projects": [
+        "crypto-paper-trading"
+      ],
+      "subjects": [
+        "crypto-paper-trading"
+      ],
+      "highlights": [
+        "Paper-only portfolio refreshed at 255,241.36 THB; vs buy-and-hold -29,065.67 THB (-10.22%).",
+        "Action/status: SELL_ADA · UPDATED_WITH_DRIVE_READ_WARNING · n8n OK.",
+        "Holdings: XRP 581.000000, ADA 15794.000000, BTC 0.009485, ETH 0.344730, THB 34865.91.",
+        "V1 churn archives preserved/excluded; V2 remains paper-only."
+      ]
+    },
     {
       "date": "2026-09-29",
       "title": "Crypto Paper Trading Status",
