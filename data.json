@@ -2,7 +2,7 @@
   "meta": {
     "title": "Mavis Memory Wiki",
     "description": "A living record of conversations, subjects, and daily work between Damon and Mavis.",
-    "lastUpdated": "2026-09-30"
+    "lastUpdated": "2026-10-01"
   },
   "projects": [
     {
@@ -113,7 +113,7 @@
         "crypto-paper-trading"
       ],
       "cryptoDashboard": {
-        "lastUpdatedIso": "2026-09-30 21:03:31 +07 (+0700)",
+        "lastUpdatedIso": "2026-10-01 21:00:56 +07 (+0700)",
         "mode": "paper-only V2 small-increment planned positions",
         "paperStatus": "PAPER_ONLY",
         "recommendedAction": "SELL_ADA",
@@ -143,12 +143,12 @@
         },
         "v2Rule": "Paper-only; small increments only; intended one open planned position at a time; max 100 XRP or 500 ADA per new paper position. No real trades authorized.",
         "portfolio": {
-          "valueThb": 255241.3562661428,
+          "valueThb": 252203.62985918456,
           "dailyPnlPct": null,
           "dailyPnlThb": null,
-          "vsHoldThb": -29065.667733857234,
-          "vsHoldPct": -10.223337898910732,
-          "benchmarkValueThb": 284307.02400000003,
+          "vsHoldThb": -27309.832140815444,
+          "vsHoldPct": -9.770489029546434,
+          "benchmarkValueThb": 279513.462,
           "feeCreditThb": 0.0,
           "tradeCount": 225,
           "kubHoldingAmount": 707.038388233602,
@@ -158,25 +158,25 @@
           {
             "asset": "XRP",
             "amount": 581.0,
-            "valueThb": 29549.66,
+            "valueThb": 28875.7,
             "initialAmount": 831.0
           },
           {
             "asset": "ADA",
             "amount": 15794.0,
-            "valueThb": 132764.364,
+            "valueThb": 130663.76199999999,
             "initialAmount": 28794.0
           },
           {
             "asset": "BTC",
             "amount": 0.009485424704722481,
-            "valueThb": 26815.362417640375,
+            "valueThb": 26680.958218015578,
             "initialAmount": 0.0
           },
           {
             "asset": "ETH",
             "amount": 0.34473028120652727,
-            "valueThb": 31246.06311512342,
+            "valueThb": 31117.302907789966,
             "initialAmount": 0.0
           },
           {
@@ -189,80 +189,80 @@
         "assets": [
           {
             "asset": "XRP",
-            "livePriceThb": 50.86,
-            "bidThb": 50.84,
-            "askThb": 50.89,
-            "pct24": -1.95,
-            "high24": 52.25,
-            "low24": 49.57,
-            "volumeThb24h": 67743276.08,
-            "spreadPct": 0.09829942003341621,
+            "livePriceThb": 49.7,
+            "bidThb": 49.75,
+            "askThb": 49.78,
+            "pct24": -2.45,
+            "high24": 50.97,
+            "low24": 49.66,
+            "volumeThb24h": 46652352.03,
+            "spreadPct": 0.06028333165879863,
             "source": "Bitkub public ticker",
             "holding": 581.0,
-            "holdingValueThb": 29549.66,
+            "holdingValueThb": 28875.7,
             "baselinePriceThb": null,
             "baselineSourceLabel": "V2 live mark",
-            "moveFromBaselinePct": -1.95,
+            "moveFromBaselinePct": -2.45,
             "atrPct": null,
             "dipTriggerPct": null,
             "jumpTriggerPct": null
           },
           {
             "asset": "ADA",
-            "livePriceThb": 8.406,
-            "bidThb": 8.41,
-            "askThb": 8.425,
-            "pct24": -0.23,
-            "high24": 8.609,
-            "low24": 8.06,
-            "volumeThb24h": 17975428.14,
-            "spreadPct": 0.17820017820018494,
+            "livePriceThb": 8.273,
+            "bidThb": 8.243,
+            "askThb": 8.254,
+            "pct24": -2.21,
+            "high24": 8.54,
+            "low24": 8.11,
+            "volumeThb24h": 16822219.71,
+            "spreadPct": 0.1333575801660815,
             "source": "Bitkub public ticker",
             "holding": 15794.0,
-            "holdingValueThb": 132764.364,
+            "holdingValueThb": 130663.76199999999,
             "baselinePriceThb": null,
             "baselineSourceLabel": "V2 live mark",
-            "moveFromBaselinePct": -0.23,
+            "moveFromBaselinePct": -2.21,
             "atrPct": null,
             "dipTriggerPct": null,
             "jumpTriggerPct": null
           },
           {
             "asset": "BTC",
-            "livePriceThb": 2827007.04,
-            "bidThb": 2828030.91,
-            "askThb": 2829191.24,
-            "pct24": 0.27,
-            "high24": 2868999.99,
-            "low24": 2782739.33,
-            "volumeThb24h": 233711305.83,
-            "spreadPct": 0.04102119270674476,
+            "livePriceThb": 2812837.49,
+            "bidThb": 2811784.29,
+            "askThb": 2813163.61,
+            "pct24": -0.67,
+            "high24": 2836084.09,
+            "low24": 2795112.81,
+            "volumeThb24h": 153635951.7,
+            "spreadPct": 0.04904294313552068,
             "source": "Bitkub public ticker",
             "holding": 0.009485424704722481,
-            "holdingValueThb": 26815.362417640375,
+            "holdingValueThb": 26680.958218015578,
             "baselinePriceThb": null,
             "baselineSourceLabel": "V2 live mark",
-            "moveFromBaselinePct": 0.27,
+            "moveFromBaselinePct": -0.67,
             "atrPct": null,
             "dipTriggerPct": null,
             "jumpTriggerPct": null
           },
           {
             "asset": "ETH",
-            "livePriceThb": 90639.16,
-            "bidThb": 90573.93,
-            "askThb": 90669.42,
-            "pct24": -0.74,
-            "high24": 91727.89,
-            "low24": 89208.58,
-            "volumeThb24h": 65324226.67,
-            "spreadPct": 0.10537214192962695,
+            "livePriceThb": 90265.65,
+            "bidThb": 90271.93,
+            "askThb": 90322.44,
+            "pct24": -0.37,
+            "high24": 91396.37,
+            "low24": 89419.4,
+            "volumeThb24h": 54700061.11,
+            "spreadPct": 0.055937513445196894,
             "source": "Bitkub public ticker",
             "holding": 0.34473028120652727,
-            "holdingValueThb": 31246.06311512342,
+            "holdingValueThb": 31117.302907789966,
             "baselinePriceThb": null,
             "baselineSourceLabel": "V2 live mark",
-            "moveFromBaselinePct": -0.74,
+            "moveFromBaselinePct": -0.37,
             "atrPct": null,
             "dipTriggerPct": null,
             "jumpTriggerPct": null
@@ -333,24 +333,27 @@
           },
           "kubFeeCredit": {
             "status": "HOLD",
-            "kub_last_thb": 20.49,
-            "kub_bid_thb": 20.38,
-            "kub_ask_thb": 20.49,
-            "ts": "2026-09-30 21:03:31 +07 (+0700)"
+            "kub_last_thb": 20.43,
+            "kub_bid_thb": 20.33,
+            "kub_ask_thb": 20.43,
+            "ts": "2026-10-01 21:00:56 +07 (+0700)"
           },
           "kubStatus": "HOLD"
         },
         "automation": {
           "n8nStatus": "OK",
-          "n8nLastCheckedIso": "2026-09-30 21:03:31 +07 (+0700)",
+          "n8nLastCheckedIso": "2026-10-01 21:00:56 +07 (+0700)",
           "n8nSchedule": "local health endpoint checked; workflow execution history not queried",
           "n8nRecentExecutions": [
             {
               "status": "OK",
-              "ts": "2026-09-30 21:03:31 +07 (+0700)",
-              "detail": "Local n8n health endpoint returned {\"status\":\"ok\"}"
+              "ts": "2026-10-01 21:00:56 +07 (+0700)",
+              "detail": "{\"status\":\"ok\"}"
             }
-          ]
+          ],
+          "n8nPriceAlertState": {
+            "read_error": "unreadable"
+          }
         },
         "last24hrTrades": {
           "count": 225,
@@ -4410,99 +4413,13 @@
           ]
         },
         "executiveNotes": [
-          "Paper-only status: no real trades are authorized or implied.",
-          "V2 rule remains small-increment planned positions only: one open planned position at a time, max 100 XRP or 500 ADA per new paper position.",
-          "The earlier V1 30k ADA churn was real paper output from an overly broad 95% rotation setting; it is archived and superseded by V2 small-increment planned positions.",
-          "Net edge = estimated move minus fees, spread, and slippage buffer; negative edge should be treated as not beating costs."
+          "Paper-only status: no real trades are authorized or implied by this dashboard.",
+          "V1 30k ADA churn was real paper output from an overly broad 95% rotation setting; those archived V1 churn files are preserved but superseded by V2 small-increment planned positions.",
+          "Asset holdings are reconciled from current V2 state only when readable; archived V1 churn trades are not mixed into current holdings.",
+          "Net edge = estimated move minus fees, spread, and slippage buffer. Positive is useful; negative means the signal probably does not beat trading costs."
         ]
       },
       "entries": [
-        {
-          "date": "2026-09-29",
-          "title": "Crypto Paper Trading Status",
-          "notes": [
-            "Crypto paper dashboard refreshed: portfolio 256,267.31 THB, vs buy-and-hold -29,368.52 THB (-10.28%), signal SELL_ADA, n8n OK. Paper-only; no real trades authorized.",
-            "V2 small-increment rules remain active; archived V1 churn excluded from current holdings/trades."
-          ]
-        },
-        {
-          "date": "2026-09-28",
-          "title": "Crypto Paper Trading Status",
-          "notes": [
-            "Paper-only V2 status refreshed: portfolio 253,541.61 THB, vs buy-and-hold -28,527.21 THB (-10.11%), action SELL_ADA, latest row SELL_XRP; n8n OK.",
-            "Holdings reconciled from current V2 state; archived V1 churn excluded.",
-            "Paper-only; no real trades authorized."
-          ]
-        },
-        {
-          "date": "2026-09-27",
-          "title": "V2 Dashboard Refresh",
-          "notes": [
-            "Paper-only V2 dashboard refreshed at 2026-09-27 21:05:12 +07 (+0700).",
-            "Portfolio marked at 257,562.25 THB vs buy-and-hold -30,802.61 THB (-10.68%).",
-            "Current signal/action: SELL_ADA; n8n health: OK.",
-            "Rendered trade/position rows: 225; holdings source: last reconciled V2 dashboard holdings; current Drive state/ledger unreadable.",
-            "Archived V1 30k ADA churn remains excluded from current holdings."
-          ]
-        },
-        {
-          "date": "2026-09-26",
-          "title": "Crypto Paper Trading Status",
-          "notes": [
-            "Paper-only V2 dashboard refreshed at 2026-09-26 21:00:37 +07 (+0700).",
-            "Portfolio marked at 256,862.56 THB vs buy-and-hold -31,233.89 THB (-10.84%).",
-            "Current signal/action: SELL_ADA; n8n health: OK.",
-            "Archived V1 30k ADA churn remains excluded from current holdings."
-          ]
-        },
-        {
-          "date": "2026-06-05",
-          "title": "Crypto paper trading status update",
-          "notes": [
-            "Paper-only V2 portfolio marked at 175,593.07 THB; daily status KILL_SWITCH.",
-            "Recommended action/signal: SELL_ADA; latest paper row SELL_XRP P0111.",
-            "Vs benchmark: -4,564.04 THB (-2.53%) using current public Bitkub marks."
-          ]
-        },
-        {
-          "date": "2026-06-04",
-          "title": "Crypto Paper Trading Status",
-          "notes": [
-            "Paper-only V2 dashboard refreshed: KILL_SWITCH daily guard, portfolio 213,117.87 THB, selected signal BUY_XRP.",
-            "Holdings reconciled from V2 state/trades: XRP 581.00, ADA 16,544.00, BTC 0.00948542, ETH 0.34473028, THB 32,472.71.",
-            "Vs buy-and-hold benchmark: 6,522.21 THB (3.16%).",
-            "Trade list rendered from current V2 CSV/state: 156 rows newest first; latest BUY_XRP.",
-            "V1 30k ADA churn remains archived and superseded by V2 small-increment planned positions; no real trades authorized."
-          ]
-        },
-        {
-          "date": "2026-06-03",
-          "title": "Crypto Paper Trading Status + Executive Dashboard",
-          "notes": [
-            "Paper-only status; no real trades are authorized or executed.",
-            "Current paper holdings: XRP 581.0, ADA 17294.0, BTC 0.00948542, ETH 0.34473028, THB 30,028.15; KUB 707.03838823 tracked separately for fee-credit status.",
-            "Portfolio value: 229,409.55 THB; P/L vs V2 start: -21,713.37 THB (0.0000%).",
-            "Daily status ACTIVE: -2.1928% vs today's start.",
-            "Vs buy-and-hold benchmark (831 XRP + 28,794 ADA): 727.68 THB (0.3182%).",
-            "Selected signal BUY_ADA; XRP score -5; ADA score -5; sentiment neutral_unavailable; regime BEAR.",
-            "Latest paper row: BUY_ADA 750.0 ADA @ 6.81 THB; open planned positions: P0027 SHORT ADA 750 @ 6.83 THB, P0028 SHORT XRP 150 @ 39.65 THB.",
-            "V1 30k ADA churn was real paper output from an overly broad 95% rotation setting; archived and superseded by V2 small-increment planned positions."
-          ]
-        },
-        {
-          "date": "2026-06-02",
-          "title": "Crypto Paper Trading Status + Executive Dashboard",
-          "notes": [
-            "Paper-only status; no real trades are authorized or executed.",
-            "Current paper holdings: XRP 731.0, ADA 16544.0, BTC 0.00948542, ETH 0.34473028, THB 30,313.58.",
-            "Portfolio value: 238,915.91 THB; P/L vs V2 start: -12,207.01 THB (-4.861%).",
-            "Daily status KILL_SWITCH: -3.4019% (-8,413.80 THB) vs today's start.",
-            "Vs buy-and-hold benchmark (831 XRP + 28,794 ADA): 213.89 THB (0.0896%).",
-            "Selected signal HOLD; XRP score 4, ADA score 3; sentiment neutral_unavailable; regime BULL.",
-            "Open planned position P0004: SHORT ADA: buy back ≤ 6.8838 THB; HODL rips unless BULL stop ≥ 7.1362 THB",
-            "V1 30k ADA churn was real paper output from an overly broad 95% rotation setting; archived and superseded by V2 small-increment planned positions."
-          ]
-        },
         {
           "date": "2026-05-31",
           "title": "Crypto Paper Trading Status + Executive Dashboard",
@@ -4523,6 +4440,64 @@
           ]
         },
         {
+          "date": "2026-06-02",
+          "title": "Crypto Paper Trading Status + Executive Dashboard",
+          "notes": [
+            "Paper-only status; no real trades are authorized or executed.",
+            "Current paper holdings: XRP 731.0, ADA 16544.0, BTC 0.00948542, ETH 0.34473028, THB 30,313.58.",
+            "Portfolio value: 238,915.91 THB; P/L vs V2 start: -12,207.01 THB (-4.861%).",
+            "Daily status KILL_SWITCH: -3.4019% (-8,413.80 THB) vs today's start.",
+            "Vs buy-and-hold benchmark (831 XRP + 28,794 ADA): 213.89 THB (0.0896%).",
+            "Selected signal HOLD; XRP score 4, ADA score 3; sentiment neutral_unavailable; regime BULL.",
+            "Open planned position P0004: SHORT ADA: buy back ≤ 6.8838 THB; HODL rips unless BULL stop ≥ 7.1362 THB",
+            "V1 30k ADA churn was real paper output from an overly broad 95% rotation setting; archived and superseded by V2 small-increment planned positions."
+          ]
+        },
+        {
+          "date": "2026-06-03",
+          "title": "Crypto Paper Trading Status + Executive Dashboard",
+          "notes": [
+            "Paper-only status; no real trades are authorized or executed.",
+            "Current paper holdings: XRP 581.0, ADA 17294.0, BTC 0.00948542, ETH 0.34473028, THB 30,028.15; KUB 707.03838823 tracked separately for fee-credit status.",
+            "Portfolio value: 229,409.55 THB; P/L vs V2 start: -21,713.37 THB (0.0000%).",
+            "Daily status ACTIVE: -2.1928% vs today's start.",
+            "Vs buy-and-hold benchmark (831 XRP + 28,794 ADA): 727.68 THB (0.3182%).",
+            "Selected signal BUY_ADA; XRP score -5; ADA score -5; sentiment neutral_unavailable; regime BEAR.",
+            "Latest paper row: BUY_ADA 750.0 ADA @ 6.81 THB; open planned positions: P0027 SHORT ADA 750 @ 6.83 THB, P0028 SHORT XRP 150 @ 39.65 THB.",
+            "V1 30k ADA churn was real paper output from an overly broad 95% rotation setting; archived and superseded by V2 small-increment planned positions."
+          ]
+        },
+        {
+          "date": "2026-06-04",
+          "title": "Crypto Paper Trading Status",
+          "notes": [
+            "Paper-only V2 dashboard refreshed: KILL_SWITCH daily guard, portfolio 213,117.87 THB, selected signal BUY_XRP.",
+            "Holdings reconciled from V2 state/trades: XRP 581.00, ADA 16,544.00, BTC 0.00948542, ETH 0.34473028, THB 32,472.71.",
+            "Vs buy-and-hold benchmark: 6,522.21 THB (3.16%).",
+            "Trade list rendered from current V2 CSV/state: 156 rows newest first; latest BUY_XRP.",
+            "V1 30k ADA churn remains archived and superseded by V2 small-increment planned positions; no real trades authorized."
+          ]
+        },
+        {
+          "date": "2026-06-05",
+          "title": "Crypto paper trading status update",
+          "notes": [
+            "Paper-only V2 portfolio marked at 175,593.07 THB; daily status KILL_SWITCH.",
+            "Recommended action/signal: SELL_ADA; latest paper row SELL_XRP P0111.",
+            "Vs benchmark: -4,564.04 THB (-2.53%) using current public Bitkub marks."
+          ]
+        },
+        {
+          "date": "2026-09-26",
+          "title": "Crypto Paper Trading Status",
+          "notes": [
+            "Paper-only V2 dashboard refreshed at 2026-09-26 21:00:37 +07 (+0700).",
+            "Portfolio marked at 256,862.56 THB vs buy-and-hold -31,233.89 THB (-10.84%).",
+            "Current signal/action: SELL_ADA; n8n health: OK.",
+            "Archived V1 30k ADA churn remains excluded from current holdings."
+          ]
+        },
+        {
           "date": "2026-09-26",
           "title": "Crypto paper-trading status refresh",
           "notes": [
@@ -4533,6 +4508,34 @@
           ]
         },
         {
+          "date": "2026-09-27",
+          "title": "V2 Dashboard Refresh",
+          "notes": [
+            "Paper-only V2 dashboard refreshed at 2026-09-27 21:05:12 +07 (+0700).",
+            "Portfolio marked at 257,562.25 THB vs buy-and-hold -30,802.61 THB (-10.68%).",
+            "Current signal/action: SELL_ADA; n8n health: OK.",
+            "Rendered trade/position rows: 225; holdings source: last reconciled V2 dashboard holdings; current Drive state/ledger unreadable.",
+            "Archived V1 30k ADA churn remains excluded from current holdings."
+          ]
+        },
+        {
+          "date": "2026-09-28",
+          "title": "Crypto Paper Trading Status",
+          "notes": [
+            "Paper-only V2 status refreshed: portfolio 253,541.61 THB, vs buy-and-hold -28,527.21 THB (-10.11%), action SELL_ADA, latest row SELL_XRP; n8n OK.",
+            "Holdings reconciled from current V2 state; archived V1 churn excluded.",
+            "Paper-only; no real trades authorized."
+          ]
+        },
+        {
+          "date": "2026-09-29",
+          "title": "Crypto Paper Trading Status",
+          "notes": [
+            "Crypto paper dashboard refreshed: portfolio 256,267.31 THB, vs buy-and-hold -29,368.52 THB (-10.28%), signal SELL_ADA, n8n OK. Paper-only; no real trades authorized.",
+            "V2 small-increment rules remain active; archived V1 churn excluded from current holdings/trades."
+          ]
+        },
+        {
           "date": "2026-09-30",
           "title": "Crypto Paper Trading Status Update",
           "notes": [
@@ -4540,6 +4543,15 @@
             "Action/status: SELL_ADA · UPDATED_WITH_DRIVE_READ_WARNING · n8n OK.",
             "Holdings: XRP 581.000000, ADA 15794.000000, BTC 0.009485, ETH 0.344730, THB 34865.91.",
             "V1 churn archives preserved/excluded; V2 remains paper-only."
+          ]
+        },
+        {
+          "date": "2026-10-01",
+          "title": "Crypto Paper Trading Status",
+          "notes": [
+            "Paper-only V2 dashboard refreshed: portfolio 252,203.63 THB, vs buy-and-hold -27,309.83 THB (-9.77%), signal SELL_ADA, trades/positions rendered 225, n8n OK. Drive V2 files were unreadable, so current holdings/trades used the last reconciled V2 dashboard snapshot with fresh Bitkub marks.",
+            "Holdings shown as XRP, ADA, BTC, ETH, THB only; XRP is reserve plus active, and THB is state thb_cash/last reconciled THB.",
+            "Archived V1 churn remains preserved and excluded from V2 holdings."
           ]
         }
       ]
@@ -5187,100 +5199,6 @@
       ],
       "entries": [
         {
-          "date": "2026-09-29",
-          "title": "Crypto Paper Trading Status",
-          "notes": [
-            "Crypto paper dashboard refreshed: portfolio 256,267.31 THB, vs buy-and-hold -29,368.52 THB (-10.28%), signal SELL_ADA, n8n OK. Paper-only; no real trades authorized.",
-            "V2 small-increment rules remain active; archived V1 churn excluded from current holdings/trades."
-          ]
-        },
-        {
-          "date": "2026-09-28",
-          "title": "Crypto Paper Trading Status",
-          "notes": [
-            "Paper-only V2 status refreshed: portfolio 253,541.61 THB, vs buy-and-hold -28,527.21 THB (-10.11%), action SELL_ADA, latest row SELL_XRP; n8n OK.",
-            "Trade List renders newest first with first 15 rows visible and older rows expandable."
-          ]
-        },
-        {
-          "date": "2026-09-27",
-          "title": "V2 Dashboard Refresh",
-          "notes": [
-            "Paper-only V2 dashboard refreshed at 2026-09-27 21:05:12 +07 (+0700).",
-            "Portfolio marked at 257,562.25 THB vs buy-and-hold -30,802.61 THB (-10.68%).",
-            "Current signal/action: SELL_ADA; n8n health: OK.",
-            "Rendered trade/position rows: 225; holdings source: last reconciled V2 dashboard holdings; current Drive state/ledger unreadable.",
-            "Archived V1 30k ADA churn remains excluded from current holdings."
-          ]
-        },
-        {
-          "date": "2026-09-26",
-          "title": "V2 Dashboard Refresh",
-          "notes": [
-            "Paper-only V2 dashboard refreshed at 2026-09-26 21:00:37 +07 (+0700).",
-            "Portfolio marked at 256,862.56 THB vs buy-and-hold -31,233.89 THB (-10.84%).",
-            "Current signal/action: SELL_ADA; n8n health: OK.",
-            "Archived V1 30k ADA churn remains excluded from current holdings."
-          ]
-        },
-        {
-          "date": "2026-06-05",
-          "title": "V2 paper dashboard refreshed",
-          "notes": [
-            "Holdings: XRP 581, ADA 15,794, BTC 0.00948542, ETH 0.34473028, THB 34,865.91.",
-            "Trade list now renders 225 V2 paper rows latest-first; older rows stay expandable after the first 15.",
-            "V1 30k ADA churn remains archived and excluded from current holdings."
-          ]
-        },
-        {
-          "date": "2026-06-04",
-          "title": "Crypto Paper Trading Status",
-          "notes": [
-            "Paper-only V2 dashboard refreshed: KILL_SWITCH daily guard, portfolio 213,117.87 THB, selected signal BUY_XRP.",
-            "Holdings reconciled from V2 state/trades: XRP 581.00, ADA 16,544.00, BTC 0.00948542, ETH 0.34473028, THB 32,472.71.",
-            "Vs buy-and-hold benchmark: 6,522.21 THB (3.16%).",
-            "Trade list rendered from current V2 CSV/state: 156 rows newest first; latest BUY_XRP.",
-            "V1 30k ADA churn remains archived and superseded by V2 small-increment planned positions; no real trades authorized."
-          ]
-        },
-        {
-          "date": "2026-06-03",
-          "title": "Crypto paper-trading status update",
-          "notes": [
-            "Paper-only V2 dashboard refreshed at 2026-06-03T23:22:44+07:00.",
-            "Portfolio ≈ 229,409.55 THB; daily status ACTIVE (-2.19%).",
-            "Holdings: XRP 581.0, ADA 17294.0, BTC 0.00948542, ETH 0.34473028, THB 30,028.15.",
-            "Latest planned paper action: BUY_ADA; open positions P0027 (SHORT ADA) and P0028 (SHORT XRP).",
-            "V1 30k ADA churn remains archived and excluded from current V2 holdings."
-          ]
-        },
-        {
-          "date": "2026-06-02",
-          "title": "Crypto Paper Trading Status",
-          "notes": [
-            "Paper-only status; no real trades are authorized or executed.",
-            "Current paper holdings: XRP 731.0, ADA 16544.0, BTC 0.00948542, ETH 0.34473028, THB 30,313.58.",
-            "Portfolio value: 238,915.91 THB; P/L vs V2 start: -12,207.01 THB (-4.861%).",
-            "Daily status KILL_SWITCH: -3.4019% (-8,413.80 THB) vs today's start.",
-            "Vs buy-and-hold benchmark (831 XRP + 28,794 ADA): 213.89 THB (0.0896%).",
-            "Selected signal HOLD; XRP score 4, ADA score 3; sentiment neutral_unavailable.",
-            "Open planned position P0004: SHORT ADA: buy back ≤ 6.8838 THB; HODL rips unless BULL stop ≥ 7.1362 THB",
-            "V1 30k ADA churn was real paper output from an overly broad 95% rotation setting; archived and superseded by V2 small-increment planned positions."
-          ]
-        },
-        {
-          "date": "2026-06-01",
-          "title": "Crypto Paper Trading Status",
-          "notes": [
-            "Paper-only; no real trades authorized.",
-            "Portfolio: 251,621.55 THB; daily P/L: +0.20%.",
-            "V2 open position: P0001 LONG XRP 100 @ 42.35 THB.",
-            "3 paper trades today (manual treasury allocation: 1500 ADA → BTC, ETH, THB).",
-            "HOLD recommendation; daily guard ACTIVE.",
-            "V1 30k ADA churn archived; V2 small-increment ledger active."
-          ]
-        },
-        {
           "date": "2026-05-31",
           "title": "Crypto Paper Trading Status",
           "notes": [
@@ -5298,6 +5216,73 @@
           ]
         },
         {
+          "date": "2026-06-01",
+          "title": "Crypto Paper Trading Status",
+          "notes": [
+            "Paper-only; no real trades authorized.",
+            "Portfolio: 251,621.55 THB; daily P/L: +0.20%.",
+            "V2 open position: P0001 LONG XRP 100 @ 42.35 THB.",
+            "3 paper trades today (manual treasury allocation: 1500 ADA → BTC, ETH, THB).",
+            "HOLD recommendation; daily guard ACTIVE.",
+            "V1 30k ADA churn archived; V2 small-increment ledger active."
+          ]
+        },
+        {
+          "date": "2026-06-02",
+          "title": "Crypto Paper Trading Status",
+          "notes": [
+            "Paper-only status; no real trades are authorized or executed.",
+            "Current paper holdings: XRP 731.0, ADA 16544.0, BTC 0.00948542, ETH 0.34473028, THB 30,313.58.",
+            "Portfolio value: 238,915.91 THB; P/L vs V2 start: -12,207.01 THB (-4.861%).",
+            "Daily status KILL_SWITCH: -3.4019% (-8,413.80 THB) vs today's start.",
+            "Vs buy-and-hold benchmark (831 XRP + 28,794 ADA): 213.89 THB (0.0896%).",
+            "Selected signal HOLD; XRP score 4, ADA score 3; sentiment neutral_unavailable.",
+            "Open planned position P0004: SHORT ADA: buy back ≤ 6.8838 THB; HODL rips unless BULL stop ≥ 7.1362 THB",
+            "V1 30k ADA churn was real paper output from an overly broad 95% rotation setting; archived and superseded by V2 small-increment planned positions."
+          ]
+        },
+        {
+          "date": "2026-06-03",
+          "title": "Crypto paper-trading status update",
+          "notes": [
+            "Paper-only V2 dashboard refreshed at 2026-06-03T23:22:44+07:00.",
+            "Portfolio ≈ 229,409.55 THB; daily status ACTIVE (-2.19%).",
+            "Holdings: XRP 581.0, ADA 17294.0, BTC 0.00948542, ETH 0.34473028, THB 30,028.15.",
+            "Latest planned paper action: BUY_ADA; open positions P0027 (SHORT ADA) and P0028 (SHORT XRP).",
+            "V1 30k ADA churn remains archived and excluded from current V2 holdings."
+          ]
+        },
+        {
+          "date": "2026-06-04",
+          "title": "Crypto Paper Trading Status",
+          "notes": [
+            "Paper-only V2 dashboard refreshed: KILL_SWITCH daily guard, portfolio 213,117.87 THB, selected signal BUY_XRP.",
+            "Holdings reconciled from V2 state/trades: XRP 581.00, ADA 16,544.00, BTC 0.00948542, ETH 0.34473028, THB 32,472.71.",
+            "Vs buy-and-hold benchmark: 6,522.21 THB (3.16%).",
+            "Trade list rendered from current V2 CSV/state: 156 rows newest first; latest BUY_XRP.",
+            "V1 30k ADA churn remains archived and superseded by V2 small-increment planned positions; no real trades authorized."
+          ]
+        },
+        {
+          "date": "2026-06-05",
+          "title": "V2 paper dashboard refreshed",
+          "notes": [
+            "Holdings: XRP 581, ADA 15,794, BTC 0.00948542, ETH 0.34473028, THB 34,865.91.",
+            "Trade list now renders 225 V2 paper rows latest-first; older rows stay expandable after the first 15.",
+            "V1 30k ADA churn remains archived and excluded from current holdings."
+          ]
+        },
+        {
+          "date": "2026-09-26",
+          "title": "V2 Dashboard Refresh",
+          "notes": [
+            "Paper-only V2 dashboard refreshed at 2026-09-26 21:00:37 +07 (+0700).",
+            "Portfolio marked at 256,862.56 THB vs buy-and-hold -31,233.89 THB (-10.84%).",
+            "Current signal/action: SELL_ADA; n8n health: OK.",
+            "Archived V1 30k ADA churn remains excluded from current holdings."
+          ]
+        },
+        {
           "date": "2026-09-26",
           "title": "Crypto paper-trading status refresh",
           "notes": [
@@ -5308,6 +5293,33 @@
           ]
         },
         {
+          "date": "2026-09-27",
+          "title": "V2 Dashboard Refresh",
+          "notes": [
+            "Paper-only V2 dashboard refreshed at 2026-09-27 21:05:12 +07 (+0700).",
+            "Portfolio marked at 257,562.25 THB vs buy-and-hold -30,802.61 THB (-10.68%).",
+            "Current signal/action: SELL_ADA; n8n health: OK.",
+            "Rendered trade/position rows: 225; holdings source: last reconciled V2 dashboard holdings; current Drive state/ledger unreadable.",
+            "Archived V1 30k ADA churn remains excluded from current holdings."
+          ]
+        },
+        {
+          "date": "2026-09-28",
+          "title": "Crypto Paper Trading Status",
+          "notes": [
+            "Paper-only V2 status refreshed: portfolio 253,541.61 THB, vs buy-and-hold -28,527.21 THB (-10.11%), action SELL_ADA, latest row SELL_XRP; n8n OK.",
+            "Trade List renders newest first with first 15 rows visible and older rows expandable."
+          ]
+        },
+        {
+          "date": "2026-09-29",
+          "title": "Crypto Paper Trading Status",
+          "notes": [
+            "Crypto paper dashboard refreshed: portfolio 256,267.31 THB, vs buy-and-hold -29,368.52 THB (-10.28%), signal SELL_ADA, n8n OK. Paper-only; no real trades authorized.",
+            "V2 small-increment rules remain active; archived V1 churn excluded from current holdings/trades."
+          ]
+        },
+        {
           "date": "2026-09-30",
           "title": "Crypto Paper Trading Status Update",
           "notes": [
@@ -5315,6 +5327,15 @@
             "Action/status: SELL_ADA · UPDATED_WITH_DRIVE_READ_WARNING · n8n OK.",
             "Holdings: XRP 581.000000, ADA 15794.000000, BTC 0.009485, ETH 0.344730, THB 34865.91.",
             "V1 churn archives preserved/excluded; V2 remains paper-only."
+          ]
+        },
+        {
+          "date": "2026-10-01",
+          "title": "Crypto Paper Trading Status",
+          "notes": [
+            "Paper-only V2 dashboard refreshed: portfolio 252,203.63 THB, vs buy-and-hold -27,309.83 THB (-9.77%), signal SELL_ADA, trades/positions rendered 225, n8n OK. Drive V2 files were unreadable, so current holdings/trades used the last reconciled V2 dashboard snapshot with fresh Bitkub marks.",
+            "Holdings shown as XRP, ADA, BTC, ETH, THB only; XRP is reserve plus active, and THB is state thb_cash/last reconciled THB.",
+            "Archived V1 churn remains preserved and excluded from V2 holdings."
           ]
         }
       ]
@@ -5430,6 +5451,22 @@
     }
   ],
   "dailyLogs": [
+    {
+      "date": "2026-10-01",
+      "title": "Crypto Paper Trading Status",
+      "summary": "Paper-only V2 dashboard refreshed: portfolio 252,203.63 THB, vs buy-and-hold -27,309.83 THB (-9.77%), signal SELL_ADA, trades/positions rendered 225, n8n OK. Drive V2 files were unreadable, so current holdings/trades used the last reconciled V2 dashboard snapshot with fresh Bitkub marks.",
+      "projects": [
+        "crypto-paper-trading"
+      ],
+      "subjects": [
+        "crypto-paper-trading"
+      ],
+      "highlights": [
+        "Portfolio marked at 252,203.63 THB paper-only.",
+        "Vs buy-and-hold: -27,309.83 THB (-9.77%).",
+        "Signal: SELL_ADA; n8n: OK; rendered rows: 225."
+      ]
+    },
     {
       "date": "2026-09-30",
       "title": "Crypto Paper Trading Dashboard Updated",
